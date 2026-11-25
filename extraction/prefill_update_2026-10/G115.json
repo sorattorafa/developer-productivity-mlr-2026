@@ -1,0 +1,29 @@
+{
+  "id": "G115",
+  "kind": "grey",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Both: DORA research team presents its own model, built from 78 interviews and the annual DORA survey (~5,000 respondents)."},
+    "gl_type": {"claude": "Blog (Google Cloud Blog post)", "nlm": "Blog (blog post)", "value": "Blog", "note": ""},
+    "dora_applied": {"claude": "Yes (empirical) (DORA AI Capabilities Model proposed and evaluated with the DORA survey)", "nlm": "unclear (model 'discussed and introduced'; notes traditional DORA delivery metrics are not named)", "value": null, "note": "Post introduces DORA's own AI Capabilities Model with survey-based results, but the four DORA delivery metrics are not used; neither extractor settles the level."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE not mentioned by either."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Capabilities that amplify the benefits of AI-assisted software development."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Neither mentions remote work or COVID-19."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either; only the 'annual survey' (~5,000 respondents) without a collection period."},
+    "cat_productivity": {"claude": "No (outcomes such as individual effectiveness and team/organizational performance are survey-measured, i.e. perceptual)", "nlm": "Yes (individual effectiveness, team, organizational and product performance as performance outcomes)", "value": null, "note": "Same outcomes listed by both; Claude marks them as measured via survey (perceived), NotebookLM presents them as performance dimensions."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Code quality as an outcome amplified by AI-accessible internal data; rollback/revert as safety net."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "'Friction' for employees/teams is an outcome, but neither frames it as satisfaction/well-being."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin basis: frequent commits (and rollback use) as version-control capability indicators."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM explicitly notes DORA delivery metrics are not named."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Working in small batches is one of the seven capabilities, not treated as a process metric by either."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Validated survey questions; annual DORA survey with almost 5,000 respondents; 78 interviews."}
+  },
+  "evidence": [
+    {"field": "gl_type", "quote": "Title: Introducing DORA’s inaugural AI Capabilities Model | Google Cloud Blog", "loc": "text source (retrieval header)"},
+    {"field": "ai_discussed", "quote": "The DORA research team has developed the inaugural DORA AI Capabilities Model to provide data-backed guidance for organizations grappling with these questions.", "loc": "text source (introduction)"},
+    {"field": "cat_survey", "quote": "Second, we developed and validated survey questions to ensure they were clear, reliable, and measured each capability accurately. Lastly, we evaluated the impact of a subset of these candidates using the rigorous methodology of designing and analyzing our annual survey—which reached almost 5,000 respondents.", "loc": "text source (The DORA AI Capabilities Model: 7 levers of success)"},
+    {"field": "cat_quality", "quote": "Connecting AI tools to internal data sources boosts their impact on individual effectiveness and code quality.", "loc": "text source (AI-accessible internal data)"},
+    {"field": "cat_activity", "quote": "Specifically, frequent commits amplify AI's positive influence on individual effectiveness, while the frequent use of rollback features boosts the performance of AI-assisted teams.", "loc": "text source (Strong version control practices)"}
+  ]
+}

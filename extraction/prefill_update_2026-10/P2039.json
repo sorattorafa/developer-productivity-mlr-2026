@@ -1,0 +1,34 @@
+{
+  "id": "P2039",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Mixed methods (concurrent embedded: survey with PLS-SEM/IPMA plus thematic analysis)", "nlm": "Mixed methods (concurrent embedded: survey with PLS-SEM/IPMA plus thematic analysis)", "value": "Mixed methods", "note": "Survey-based theoretical model plus qualitative analysis of open-ended responses."},
+    "research_method": {"claude": "Concurrent embedded mixed methods: large-scale survey analysed with PLS-SEM (CFA/EFA psychometric refinement of PICSE) and IPMA, plus reflexive thematic analysis of open-ended responses; 238 valid of 343 responses; 386 qualitative responses", "nlm": "Concurrent embedded mixed methods: survey with PLS-SEM and IPMA, EFA/CFA psychometric evaluation, reflexive thematic analysis; N = 238; 386 open-ended responses", "value": "Concurrent embedded mixed-methods design: cross-sectional survey (TXAI, PICSE-derived items, GenderMag facets, UTAUT; 5-point Likert) analysed with PLS-SEM after EFA/CFA refinement of PICSE, plus IPMA; reflexive thematic analysis of 386 open-ended responses on challenges and risks", "note": "The 343 received responses are reported only by Claude (not contradicted)."},
+    "context": {"claude": "Industry; professional developers at GitHub Inc. and Microsoft; 238 valid responses (Microsoft 154, GitHub 84)", "nlm": "Industry; professional developers at GitHub Inc. and Microsoft; N = 238 (GitHub 84, Microsoft 154)", "value": "industry; professional software developers at GitHub Inc. and Microsoft; 238 valid survey responses (Microsoft 154, GitHub 84)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not reported by either."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not reported by either."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Developers' trust in and adoption of genAI tools is the topic."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not specified by either; no mention of remote work or COVID-19 in the full text."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Productivity not measured; 'Functional value' (labelled Productivity by both) is a perceived survey construct, which goes to Survey."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Perceived System/Output quality of genAI (consistent accuracy, safe and secure practices, style matching, presentation, performance); genAI-induced technical debt discussed qualitatively."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: both classify trust in genAI (TXAI scale) as Satisfaction; frustration reported only qualitatively."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Both label self-reported genAI usage frequency 'Activity / Adoption', but it is not repository activity."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels many constructs 'DevEx' and Claude labels ease of use and goal maintenance 'DevEx', but the Noda/Storey/Forsgren DevEx framework is not used."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "All constructs measured by Likert survey; open-ended responses analysed qualitatively."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "We addressed these goals through a concurrent embedded mixed-methods design [34], combining a large-scale survey analyzed with PLS-SEM and IPMA with qualitative analyses of participants' open-ended responses.", "loc": "PDF p. 2"},
+    {"field": "research_method", "quote": "After excluding non-analytic responses (e.g., \"N/A\", off-topic or vague remarks), we retained 386 responses: 206 on challenges and 180 on risks.", "loc": "PDF p. 19"},
+    {"field": "context", "quote": "The final sample retained 238 responses (Microsoft: 154; GitHub: 84) spanning six continents and a wide range of SE experience.", "loc": "PDF p. 7"},
+    {"field": "ai_discussed, context", "quote": "We developed a theoretical model of developers' trust and adoption of genAI using a large-scale survey (N = 238) conducted at GitHub and Microsoft.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "cat_quality", "quote": "System/Output quality reflects genAI's presentation, safety and security practices, performance, and output quality-including the consistency and correctness of outputs relative to developers' styles and workflows (S2-S5, E3).", "loc": "PDF p. 10"},
+    {"field": "cat_satisfaction, cat_survey", "quote": "In this study, we used the validated Trust in eXplainable AI (TXAI) instrument [67, 109] to assess developers' trust in genAI tools.", "loc": "PDF p. 3"},
+    {"field": "cat_satisfaction", "quote": "Shallow solutions and repetitive failure loops wasted time, added frustration, and forced participants to abandon or work around the tool.", "loc": "PDF p. 25"},
+    {"field": "cat_survey", "quote": "All closed-ended questions used a 5-point Likert scale", "loc": "PDF p. 6 (Table 1 note)"}
+  ]
+}

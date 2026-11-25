@@ -1,0 +1,16 @@
+# Python dependencies of the replication package (tested with Python 3.10+)
+
+# Statistics and generated data (verify_statistics.py, metric_inventory.py, verdict_accuracy.py)
+openpyxl>=3.1
+scipy>=1.10
+numpy>=1.24
+
+# Figures (fig_metric_inventory.py, fig_framework_flow.py)
+matplotlib>=3.7
+plotly>=5.0
+kaleido>=0.2
+
+# Optional, only to re-run the extraction stage
+# (requires the source PDFs, a Google account for NotebookLM, and browser authentication):
+# notebooklm-py[browser]>=0.3
+# playwright>=1.40

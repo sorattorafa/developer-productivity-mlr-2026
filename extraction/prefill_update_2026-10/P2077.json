@@ -1,0 +1,35 @@
+{
+  "id": "P2077",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Survey (multiple-choice and open questions; descriptive statistics + thematic analysis)", "nlm": "Mixed methods (survey, quantitative and qualitative)", "value": null, "note": "Same design (one online survey with closed and open questions), different category: Claude Survey, NotebookLM Mixed methods."},
+    "research_method": {"claude": "Online survey (32 structured questions, multiple-choice and open-ended); descriptive statistics and qualitative thematic analysis; 85 valid responses; no statistical correlation tests", "nlm": "Mixed-methods survey, quantitative and qualitative; 85 respondents; non-probabilistic sampling; descriptive statistics and thematic analysis", "value": "Online survey (32 structured questions, multiple-choice and open-ended) of 85 female software engineers, non-probabilistic sampling via professional networks and women-in-tech communities; descriptive statistics of closed answers and thematic analysis of open answers; preliminary guidelines for inclusive productivity evaluation derived", "note": "Claude adds that reported 'correlations' have no statistical test (not contradicted)."},
+    "context": {"claude": "Industry; female software engineers in Brazil recruited via LinkedIn, WhatsApp, Telegram, GitHub, Stack Overflow and women-in-tech communities; 85 valid responses, mostly junior/mid-level, 12% in leadership", "nlm": "Industry / professional software engineering in Brazil; 85 female software engineers (59.7% aged 20–29, 42.4% junior, 12% leadership)", "value": "industry; female software engineers across Brazil recruited online (professional networks, social media, women-in-tech communities); 85 valid responses, mostly junior/mid-level (42.4% junior), 12% in leadership positions", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "No framework named."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "No framework named."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not reported; only a guideline to consider 'flexibility needs'."},
+    "data_window": {"claude": "January 20 – February 27, 2025 (survey collection)", "nlm": "no basis", "value": null, "note": "Only Claude states the period; full text confirms survey collection January 20 – February 27, 2025 (p. 5)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Sprint velocity (and task duration) as traditional productivity criteria critiqued and reported as used by companies (47.1%)."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin: defect resolution rate only in background (Section 2.1); participants propose 'quality and sustainability of delivered code' (maintainability) as an overlooked factor."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Peer feedback (35.3%), mentorship/onboarding and knowledge sharing, interruptions in meetings and code reviews."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Work-life balance satisfaction (mean 3.78/5), double workload, physiological factors, emotional labor."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "LOC / commit frequency, the most used company criterion (58.8%), critiqued."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "Both label sprint velocity 'Productivity/Delivery'; velocity counts as Productivity under the definition."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM's 'Satisfaction / DevEx' label on peer feedback is generic."},
+    "cat_agile": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin: only via sprint velocity ('tasks completed in Agile sprints'); both extractors tie it to Agile."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Self-report survey with closed and open questions."}
+  },
+  "evidence": [
+    {"field": "research_method, context", "quote": "The survey collected a total of 85 valid responses from female software engineers across Brazil between January 20 and February 27, 2025. It was disseminated through multiple channels, including professional networks, online forums, and women-in-tech communities", "loc": "PDF p. 5 (4.1 Data Collection Process)"},
+    {"field": "research_method, cat_survey", "quote": "The instrument comprises 32 structured questions on productivity perception, gender bias, recognition, microaggressions, work-life balance, and physiological aspects.", "loc": "PDF p. 2"},
+    {"field": "research_method", "quote": "The quantitative analysis involved descriptive statistics derived from multiple-choice responses.", "loc": "PDF p. 6 (4.2 Quantitative Data Analysis)"},
+    {"field": "research_method", "quote": "The qualitative analysis consisted of the thematic evaluation of open-ended responses, providing deeper insights into participants' experiences and perceptions.", "loc": "PDF p. 8 (4.3 Qualitative Data Analysis)"},
+    {"field": "cat_activity, cat_productivity, cat_collaboration", "quote": "Evaluation Criteria Used by Companies Lines of Code (LOC) / Commit Frequency Tasks Frequently Performed by Women Percentage (%) 58.8% Sprint Velocity Peer Feedback (Limited Scope) Mentorship / Onboarding 47.1% 35.3% 52.9%", "loc": "PDF p. 7 (Table 1; extracted text interleaves columns)"},
+    {"field": "cat_productivity, cat_agile", "quote": "Sprint Velocity, measuring tasks completed in Agile sprints", "loc": "PDF p. 2 (2.1)"},
+    {"field": "cat_collaboration, cat_quality", "quote": "Mentorship and knowledge sharing - Often cited as essential but rarely measured. • Emotional labor and team support - Crucial for effective team dynamics but frequently overlooked. • Quality and sustainability of delivered code - Emphasizing long-term maintainability.", "loc": "PDF p. 8 (4.3 Qualitative Data Analysis)"},
+    {"field": "cat_collaboration", "quote": "approximately 74% of the participants indicated frequent interruptions during meetings and code reviews, significantly impacting their professional visibility.", "loc": "PDF p. 6"},
+    {"field": "cat_satisfaction, cat_survey", "quote": "When asked about their ability to balance professional and personal responsibilities, respondents rated their satisfaction at an average of 3.78 out of 5", "loc": "PDF p. 8 (4.2.4 Work-Life Balance and External Factors)"}
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "P2031",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Mixed methods (4 phases: two questionnaires, semi-structured interviews, focus groups)", "nlm": "Mixed methods (4 phases: two questionnaires, semi-structured interviews, focus groups)", "value": "Mixed methods", "note": ""},
+    "research_method": {"claude": "4-phase mixed methods: questionnaire 1 (enjoyment 1-5, time spent 1-6, open questions), online semi-structured interviews, second (validation, Portuguese) questionnaire, two focus groups; medians/IQR, open and hybrid coding, Spearman correlation with permutation p-values; 173 practitioners (158 questionnaire, 11 interviews, 15 in focus groups)", "nlm": "4-phase mixed methods: 2 questionnaires, semi-structured interviews, focus groups; Spearman correlation with permutation testing; 173 practitioners (158 questionnaire [82 + 75], 11 interviewees, 15 focus-group participants)", "value": "Four-phase mixed-methods study: first questionnaire (task enjoyment 1–5, time spent 1–6, open questions), online semi-structured interviews, second validation questionnaire, two online focus groups; medians/IQR, open and hybrid coding, Spearman correlation (permutation p-values); 173 practitioners (158 questionnaire respondents, 11 interviewees, 15 focus-group participants)", "note": "Claude flags minor per-phase count inconsistencies in the paper (82 vs 81; 75 vs 77)."},
+    "context": {"claude": "Industry; practitioners of multiple roles from various companies, mainly Poland and Brazil; focus groups with two teams of a Brazilian finance company (51-200 employees); 173 practitioners", "nlm": "Industry; practitioners in Poland and Brazil across small to large companies; focus groups at a Brazilian finance company; 173 practitioners", "value": "industry; practitioners of multiple roles (developers, managers, QA, data engineers, admins, architects) mainly from Poland and Brazil; focus groups with two teams of one Brazilian finance company (51–200 employees); 173 practitioners", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned (both)."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE only cited (time spent is not productivity)."},
+    "ai_discussed": {"claude": "No", "nlm": "Yes", "value": null, "note": "Claude: study does not involve AI; only a focus-group suggestion to use LLMs for documentation. NotebookLM: LLM-assisted documentation discussed as a positive impact. Full text: one focus-group quote (p. 8) and a three-sentence discussion paragraph (p. 9)."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not reported; only data collection was online."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either; no collection dates found in the full text."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Productivity only cited from literature (Murphy-Hill, SPACE, Nichols); the authors state time spent is not productivity."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "Technical debt appears only as a dislike factor."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: enjoyment and time spent rated for meetings, code review, helping and interruptions; validated 'individual work vs. teamwork dilemma' and meeting-size findings; no dedicated collaboration metric."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Task enjoyment ratings (1–5) for 18 tasks and enjoyment/dislike factors."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Both tag self-reported time spent per task (ordinal 1–6) as Activity; it is not repository activity."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Both tag enjoyment 'Satisfaction / DevEx'; only Fagerholm & Münch developer experience is referenced, not the DevEx framework."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Sprint planning/daily meetings only as taxonomy examples."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Two questionnaires with ordinal scales, interviews and focus groups on perceptions."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "we performed a 4-phase mixed methods study using questionnaires, interviews, and focus groups with 173 practitioners of diverse backgrounds.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "research_method", "quote": "Lastly, we calculated the Spearman correlation between levels of enjoyment and time spent on the tasks - both overall and for each task separately.", "loc": "PDF p. 5"},
+    {"field": "context", "quote": "we strived to answer the RQs through a 4-phase mixed-methods study with 173 participants, based mainly in Poland and Brazil.", "loc": "PDF p. 1"},
+    {"field": "context", "quote": "Focus groups participants did not participate in the questionnaire and were members of two teams from a company in the finance field (51-200 employees) from Brazil.", "loc": "PDF p. 6"},
+    {"field": "research_method, context", "quote": "Table 2 showcases the overall data about all 158 questionnaire participants.", "loc": "PDF p. 5"},
+    {"field": "cat_collaboration", "quote": "The existence of the \"Individual work vs. teamwork dilemma\": Practitioners enjoy helping others, but they also dislike being interrupted.", "loc": "PDF p. 3 (Figure 1)"},
+    {"field": "cat_collaboration", "quote": "our focus group suggested that the number of participants in meetings should be minimized to the most crucial group and that notes from meetings were enough to communicate meeting results", "loc": "PDF p. 9"},
+    {"field": "cat_satisfaction, cat_survey", "quote": "(3) Ordinal scale questions about the enjoyment of each task (from 1 \"Strongly dislike\" to 5 \"Strongly enjoy\").", "loc": "PDF p. 3"}
+  ]
+}

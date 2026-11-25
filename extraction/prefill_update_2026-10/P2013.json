@@ -1,0 +1,34 @@
+{
+  "id": "P2013",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Architecture proposal evaluated with own industrial data."},
+    "study_type": {"claude": "Case study (architecture proposal + retrospective observational case study, described as mixed methods)", "nlm": "Case study (retrospective observational case study, mixed methods)", "value": "Case study", "note": "The paper calls its data collection mixed-methods (pipeline logs plus recorded incident meetings); the design is a single-organization retrospective case study."},
+    "research_method": {"claude": "Centralized CI/CD (IDP) architecture proposal evaluated by a retrospective observational case study: before/after comparison (decentralized 7 months vs. centralized 3 months) with DORA Lead Time, CFR and MTTR from Azure DevOps REST API pipeline logs and up to 39 recorded incident meetings; descriptive means, no statistical tests", "nlm": "Retrospective observational case study (mixed methods): pipeline execution logs via Azure DevOps REST API and up to 39 recorded Teams incident meetings; DORA Lead Time, CFR, MTTR compared between decentralized (7 months) and centralized (3 months) phases", "value": "Centralized CI/CD architecture (Internal Developer Platform) proposal evaluated by a retrospective observational case study; before/after comparison of decentralized (7 months) vs. centralized (3 months) phases using DORA Lead Time (pipeline duration), CFR and MTTR computed from Azure DevOps REST API pipeline-run logs and up to 39 recorded Microsoft Teams incident meetings; 30 microservices; descriptive comparison", "note": "Absence of statistical tests noted by Claude only (not contradicted)."},
+    "context": {"claude": "Industry: unnamed large enterprise with microservices/cloud-native stack (Azure Pipelines, Kubernetes, Helm); 30 of ~300 services migrated to production", "nlm": "Industry: large-scale enterprise with ~300 microservices; 30 microservices migrated to production", "value": "industry; unnamed large enterprise with ~300 microservices (Azure DevOps, Kubernetes); 30 microservices migrated to the centralized pipeline in production", "note": ""},
+    "dora_applied": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Lead Time, CFR and MTTR are the evaluation instrument (deployment frequency not used)."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": "LLM/AI-driven diagnostics only suggested as future work."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Recorded Microsoft Teams incident meetings are a data source, not a remote-work context."},
+    "data_window": {"claude": "April 2025–February 2026 (transition October–November 2025 excluded)", "nlm": "April 2025–February 2026", "value": "April 2025–February 2026", "note": "Transition months October–November 2025 excluded from calculations (Claude; confirmed in text). The text also mentions a deployment freeze 'December 2026 to January 2027', apparently a typo."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "No output/throughput metric beyond deployment counts (delivery)."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Change failure rate (16.7% → 2.0%) and MTTR (3.0 → 5.0 h)."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Incident meetings are only a proxy for MTTR/CFR."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Claude labels successful-deployment counts Delivery/Activity; deployment counts are delivery, not repository activity."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Lead Time for Changes (measured as pipeline duration, 22.6 → 5.0 min) and successful deployments (143 → 161)."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "DevOps/Platform Engineering context; pipeline duration is treated as Lead Time (delivery)."},
+    "cat_survey": {"claude": "No", "nlm": "No", "value": "No", "note": "No survey or interviews; only logs and recorded meetings."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "We conducted a retrospective observational case study on a large enterprise that transitioned to this exact architecture which allows us to directly perform a comparison against their previous decentralized approach.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "research_method", "quote": "This study uses a mixed-methods approach to evaluate the transition to a centralized CI/CD architecture. The gathered data was a combination of both historical pipeline execution logs and recorded incident meetings.", "loc": "PDF p. 3 (IV.B Data Collection Method)"},
+    {"field": "research_method", "quote": "To track incidents, we collected up to 39 recorded Microsoft Teams meetings where DevOps engineers collaborated to fix deployment failures during the migration period.", "loc": "PDF p. 4 (IV.B Data Collection Method)"},
+    {"field": "context, data_window", "quote": "The migration spanned a 10 month period ranging from April 2025 to February 2026. While the company housed over approximately 300 services, there were only 30 of them successfully migrated into the production environment.", "loc": "PDF p. 3 (IV.A Background Context)"},
+    {"field": "data_window", "quote": "Data during the transition period between October and November 2025 was excluded from the calculations", "loc": "PDF p. 4"},
+    {"field": "dora_applied, cat_quality, cat_delivery", "quote": "By analyzing the engineering effort across 30 microservices, we have evaluated its impact by three DORA metrics such as Lead Time, Mean Time to Restore (MTTR), and Change Failure Rate (CFR).", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "cat_quality, cat_delivery", "quote": "Our findings show that the centralized approach resulted in the reduction of Lead Time by 77.9% and CFR by 88.2%. On the contrary, the MTTR saw a significant increase by 63.0%", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "cat_delivery", "quote": "The centralized architecture experienced an increase in the number of successful deployments from 143 to 161 compared to the decentralized architecture", "loc": "PDF p. 5 (Results)"}
+  ]
+}

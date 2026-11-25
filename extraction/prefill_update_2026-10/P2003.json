@@ -1,0 +1,37 @@
+{
+  "id": "P2003",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Proposes and empirically validates the AI-Scrum framework with two teams."},
+    "study_type": {"claude": "Case study (comparative case study using mixed methods)", "nlm": "Mixed methods (comparative case study)", "value": null, "note": "Both describe the same design (comparative case study of two teams with survey, objective metrics and open-ended responses), but Claude classifies it as a case study and NotebookLM as mixed methods."},
+    "research_method": {"claude": "Comparative case study with mixed methods: 5-point Likert surveys, objective metrics (time savings, defect rates, test coverage), benchmarking against traditional Scrum, open-ended responses; IBM SPSS v20 (Cronbach's alpha, correlations, regression, factor analysis)", "nlm": "Mixed methods: comparative case study with quantitative metrics, Likert-scale survey analysed in SPSS v20 and qualitative analysis; Cronbach's alpha, correlations, regression (R² = 0.63)", "value": "Comparative case study of two Scrum teams (professional vs. student) using the proposed AI-Scrum framework; mixed methods: 5-point Likert survey (19 respondents), objective metrics (time per Scrum phase in hrs/sprint, defect rates, test coverage), benchmarking against traditional Scrum, open-ended responses; IBM SPSS v20 (Cronbach's alpha, survey-metric correlations, regression R² = 0.63, factor analysis)", "note": "Factor analysis and benchmarking reported only by Claude (not contradicted)."},
+    "context": {"claude": "Mixed: professional team (6 members, dental scheduling system) and academic team (11 CS students, teacher attendance system), resource-constrained Libyan setting; n=19 survey respondents", "nlm": "Mixed: 1 professional team (6 members, dental scheduling system) and 1 academic team (11 CS students, teacher attendance system), resource-constrained Libya; 19 survey respondents", "value": "mixed; resource-constrained Libyan setting, one professional team (6 developers/Scrum Master, dental booking system) and one academic team (11 CS students, teacher attendance system); 19 survey respondents", "note": "Claude flags that Table II response rates (6/7 and 5/5) are inconsistent with 6 + 11 members and n=19."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Both state no productivity-measurement framework (DORA, SPACE, DevEx) is mentioned."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by the paper according to both."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "AI tools (ClickUp AI, Windsurf, Diffblue Cover) embedded in every Scrum phase; AI impact on productivity is the core topic."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not reported by either."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either (NotebookLM only mentions short-term sprint cycles)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Time savings per Scrum phase (hrs/sprint, Table III) and sprint velocity."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Defect reduction (55–62%), test coverage (85–92%), code refactoring required."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "No communication/review/coordination metric; stand-up duration is treated as efficiency/time savings by both, and AI trust is trust in tools, not team trust."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "Both label perceived productivity and AI trust/usability as 'Satisfaction', but under the definitions these are perceptual measures (cat_survey); no satisfaction or well-being measure in the full text."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: both label AI-generated code adoption (%) as Activity (NotebookLM also automated report adoption), but these are AI-adoption shares; no commit/PR/LOC counts."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "Both label sprint velocity as Delivery, but velocity is Productivity under the definitions; no deployment, lead-time or release metric ('faster delivery' only qualitative)."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels perceptual items 'Satisfaction / DevEx' but states the DevEx framework is not cited."},
+    "cat_agile": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Time per Scrum ceremony/phase (backlog refinement, sprint planning, daily stand-ups) and sprint velocity in a Scrum process."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "5-point Likert survey (productivity perception, AI trust, challenges scales) plus open-ended responses."}
+  },
+  "evidence": [
+    {"field": "research_method", "quote": "Validated through comparative case studies in professional and academic teams in resource constrained settings", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "research_method, cat_survey", "quote": "Perceptual surveys : the number of respondents is 19 , and 5-point Likert scales was used", "loc": "PDF p. 3 (IV.B Data Analysis Overview)"},
+    {"field": "research_method", "quote": "The study employed IBM SPSS v20 for statistical analysis, ensuring robust evaluation of the AI-Scrum framework.", "loc": "PDF p. 3 (V. Results and Discussion)"},
+    {"field": "context", "quote": "Team 1 (Professionals): The team consistent of 6-members who developing a dental booking system.", "loc": "PDF p. 3 (IV.A Case Studies)"},
+    {"field": "context", "quote": "Team 2 (Students): The team consistent of eleven students who building a teacher attendance system.", "loc": "PDF p. 3 (IV.A Case Studies)"},
+    {"field": "ai_discussed", "quote": "AI-Scrum as an architecture that strategically incorporates available AI tools into Agile processes in support of software engineering productivity.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "cat_productivity, cat_quality, cat_agile", "quote": "Quantitative metrics which are:sprint velocity, defect rates and test coverage.", "loc": "PDF p. 3 (IV.B Data Analysis Overview)"},
+    {"field": "cat_productivity", "quote": "Academics saved 22% more time than professionals as shown in Table 3.", "loc": "PDF p. 4 (Time Efficiency)"},
+    {"field": "cat_agile", "quote": "Stand-up time reduction: Academics: 45% (vs. professionals: 30%).", "loc": "PDF p. 4 (Meetings & Documentation Efficiency)"},
+    {"field": "cat_quality", "quote": "62% defect reduction (vs. 55% for academics), and 92% test coverage (Diffblue Cover).", "loc": "PDF p. 5 (Quality & Defect Reduction)"},
+    {"field": "cat_survey", "quote": "Surveys: Feedback on an AI tool's usage with a Likert-scale on productivity, errors, and usability.", "loc": "PDF p. 3 (Data Collection)"}
+  ]
+}

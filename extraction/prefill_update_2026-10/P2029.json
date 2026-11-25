@@ -1,0 +1,37 @@
+{
+  "id": "P2029",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Mixed methods (industrial experience report: online A/B experiments, offline evaluation, qualitative UX studies, observational DiD)", "nlm": "Mixed methods (online A/B experiments, observational DiD causal inference, qualitative UX studies)", "value": "Mixed methods", "note": "Claude also frames it as an industrial experience report (workshop paper)."},
+    "research_method": {"claude": "Industrial experience report: online A/B experiments (2.5K+ users/group for 2 weeks; 10k+ users/group for 1 month), offline evaluation (chrF), qualitative UX studies, observational Difference-in-Differences (Callaway and Sant'Anna) on logs with ~36k treated vs 18k control developers", "nlm": "Online A/B experiments (2,500+ and 10,000+ developers per group), offline ChrF evaluation, qualitative UX studies, observational DiD causal inference (Callaway and Sant'Anna) with 36,000 treatment vs 18,000 control developers", "value": "Industrial experience report combining online A/B experiments (2,500+ users per group for 2 weeks; 10,000+ per group for 1 month), offline model evaluation (chrF), qualitative UX studies and an observational Difference-in-Differences analysis (Callaway and Sant'Anna) of log-based productivity metrics; ~36k adopters vs ~18k non-adopters; robustness checks (fixed-effect model, stratification)", "note": ""},
+    "context": {"claude": "Industry; Google internal IDE and software engineering toolchain; Google engineers (A/B groups 2.5K+ and 10k+ per group; DiD 36k treatment, 18k control)", "nlm": "Industry; Google internal enterprise IDE and toolchain; Google engineers (2,500+ and 10,000+ per A/B group; 36,000 treatment and 18,000 control)", "value": "industry; Google internal IDE and software engineering toolchain (code completion and Transform Code features); Google software engineers: A/B groups of 2,500+ and 10,000+ users, DiD with ~36k treatment and ~18k control developers", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not cited by name (both)."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not cited by name (both); Google's internal log-based metrics are used instead."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "AI-based IDE features (code completion, Transform Code) are the object of study."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not specified by either."},
+    "data_window": {"claude": "November 2023–December 2024 (DiD analysis window); code-completion metrics over 4 weeks in March 2025", "nlm": "Nov 2023–Dec 2024 (DiD); code-completion metrics March 2025", "value": "November 2023–December 2024 (DiD analysis window); code-completion metrics over 4 weeks in March 2025", "note": "A/B experiment dates not given."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Change List throughput (CLT), Active Coding Time per CL, investigation-session duration, FCML."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: quality of AI suggestions (acceptance rate as quality proxy, offline chrF, edits in unrelated files), not software-product quality."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Code review appears only in the CL definition."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: both tag acceptance rate as a Satisfaction proxy (paper: proxy for 'user annoyance'); Claude also lists the unspecified 'positive user perception on usefulness'."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Characters added per accept, shown suggestions, prompt counts, weekly active users/prompts."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "Both tag CLT 'Productivity / Delivery', but it is a throughput measure (CLs submitted per month), not deployment frequency or lead time."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM tags MeanDurInvSess and review time 'DevEx', but the DevEx framework is not used."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: only an unspecified 'positive user perception on usefulness' and qualitative UX studies used for design; metrics are log-based."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "We evaluate the impact of AI-powered features on productivity through causal inference, both online (A/B tests) and offline (observational causal analysis).", "loc": "PDF p. 5"},
+    {"field": "research_method", "quote": "We used observational data on developers' interactions with the feature and the Difference-in-Differences (DiD) causal inference framework, specifically the Callaway and Sant'Anna method [1].", "loc": "PDF p. 5"},
+    {"field": "context, research_method", "quote": "The treatment group ( 36k developers) consisted of users who adopted TC in January-December 2024 and the control group (18k developers) consisted of those who did not adopt it by December 2024.", "loc": "PDF p. 5"},
+    {"field": "context", "quote": "The data originates from Google's software engineering toolchain.", "loc": "PDF p. 5"},
+    {"field": "data_window", "quote": "The analysis window was from November 2023 to December 2024, with pre-adoption months serving as the pre-treatment period.", "loc": "PDF p. 5"},
+    {"field": "data_window", "quote": "Cumulatively, with the above improvements, in March 2025 over 4 weeks, we achieved the success metrics presented below", "loc": "PDF p. 3"},
+    {"field": "ai_discussed", "quote": "We discuss Google's journey in developing and refining two internal AI-based IDE features: code completion and natural-languagedriven code transformation (Transform Code).", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "cat_productivity", "quote": "Significant increase (17.5% with 95% confidence interval [15.9%, 19.0%]) in CLT per user-month", "loc": "PDF p. 5"},
+    {"field": "cat_quality, cat_satisfaction", "quote": "while keeping acceptance rate steady, which we treat as a proxy for quality and user annoyance.", "loc": "PDF p. 2"},
+    {"field": "cat_quality", "quote": "Offline evaluation on our curated evaluation dataset-which is a split of the collected rewrites-shows an improvement in the median ChrF score [15] from 84.5 to 88.8, a reduction of edits in unrelated files from 13 to 0.", "loc": "PDF p. 4"},
+    {"field": "cat_activity, cat_productivity", "quote": "Fraction of code written by ML (FCML) 28.7% FCML excluding paste in denominator 70.6% Acceptance rate 45% Average characters added per accept 62", "loc": "PDF p. 3 (success metrics table)"}
+  ]
+}

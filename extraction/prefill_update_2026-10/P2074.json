@@ -1,0 +1,39 @@
+{
+  "id": "P2074",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Action Design Research, qualitative (+ Likert evaluation of DPs) → Other", "nlm": "Action Design Research, qualitative (+ Likert survey) → Other", "value": "Other (action design research)", "note": "Both describe ADR (Sein et al. 2011) in a single company with qualitative data; could also be read as a single-company case study."},
+    "research_method": {"claude": "Action Design Research: discussions with company representatives, focus group, field notes/participant observation, semi-structured interviews; thematic analysis with Fagerholm's DX framework; DP evaluation by 4-point Likert questionnaire with descriptive statistics and Kendall's W", "nlm": "Action Design Research, qualitative: focus group, semi-structured interviews, participant observation, Likert-scale survey (23 items, 6 external practitioners, Kendall's W)", "value": "Action Design Research (Sein et al. 2011) in one company: problem formulation with two company representatives and a focus group (3 prospective users), field notes during artefact design, semi-structured interviews (4 practitioners) in BIE cycles, thematic analysis with Fagerholm's (2015) DX framework as lens; DEaC artefact built and evaluated; four design principles rated by 6 external practitioners on a 23-item 4-point Likert questionnaire (descriptive statistics, Kendall's W)", "note": ""},
+    "context": {"claude": "Industry; Finnish publicly listed software company (~€25M revenue 2023), ITSM product team of 14 developers; focus group 3, interviews 4 (participants 1, 4, 5, 6); 6 external evaluators", "nlm": "Industry; Finnish software company (€25M revenue), ITSM team of 14 developers; 6 internal participants; 6 external practitioners", "value": "industry; single Finnish publicly listed software company (~€25M revenue in 2023), ITSM product team of 14 developers; 6 internal participants (focus group of 3, interviews with 4) and 6 external practitioners evaluating the design principles", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": "Automation of environment setup (Docker), no AI."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not specified; only the focus group and interviews were held online (Microsoft Teams)."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either (only company revenue year 2023)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin: environment setup time (about one day of manual work vs. ~15 minutes / two Docker commands), from participant reports and field notes."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels the design-principle evaluation 'Quality / DevEx'; it is an artefact-reusability rating, not a software quality metric."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Cross-project collaboration only as a perceived benefit; no collaboration measure."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Developer experience (Fagerholm's DX) as the studied construct, incl. affective content (autonomy, emotions, frustration)."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels server/container restart time 'Activity / Delivery'; not repository activity."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "Server restart time (NotebookLM: 'Activity / Delivery') is a local tooling attribute, not a delivery metric."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Uses Fagerholm's (2015) DX framework; the DevEx framework (Forsgren et al. 2024, Greiler et al. 2022) is only referenced."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM lists Agile/DevOps as methodology context; no agile/process metric."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Interviews and focus group on perceived experience; 4-point Likert questionnaire for the design principles."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, context", "quote": "we conducted an Action Design Research (ADR) project (Sein et al., 2011) in a Finnish software company, where setting up and configuring development environments, particularly during employee onboarding processes, posed a major challenge.", "loc": "1. Introduction"},
+    {"field": "research_method, cat_satisfaction", "quote": "A more in-depth thematic analysis of the collected data was conducted during the reflection and feedback phase, using the conceptualisation of DX proposed by Fagerholm (2015) as a lens.", "loc": "3.3. Data analysis"},
+    {"field": "research_method, context", "quote": "Focus group workshop with three prospective users of the artefact (i.e., Participants 1, 2, 3 in Table 2).", "loc": "3.2. Data collection (table of data sources)"},
+    {"field": "research_method, context", "quote": "Semi-structured interviews with four practitioners from the case company (i.e., Participants 1, 4, 5, 6 in Table 2).", "loc": "3.2. Data collection (table of data sources)"},
+    {"field": "context", "quote": "The ADR project was conducted in a publicly listed software company with revenue of approximately € 25 million in 2023.", "loc": "3.1. Research context"},
+    {"field": "context", "quote": "The company's flagship product is an IT Service Management (ITSM) tool, and with 14 developers, the team working on the ITSM is the largest in the company.", "loc": "3.1. Research context"},
+    {"field": "research_method, context, cat_survey", "quote": "we asked six seasoned software professionals (four developers, one tester, and one designer) from outside the case company to evaluate them.", "loc": "4.5. Evaluating the reusability of DPs"},
+    {"field": "cat_survey", "quote": "rate the statements on a 4-point Likert Scale (1 = Totally Disagree and 4= Totally Agree).", "loc": "4.5. Evaluating the reusability of DPs"},
+    {"field": "research_method", "quote": "we conducted a Kendall's W test to evaluate the agreement among the six respondents.", "loc": "4.5. Evaluating the reusability of DPs"},
+    {"field": "cat_productivity", "quote": "\"I remember when I was starting it took like one day to resolve all of the errors. Compared to cloning the ESM and the containers repository which takes like 15 min if everything works right.\"", "loc": "4.1. Problem formulation"},
+    {"field": "cat_productivity", "quote": "Building and running the application with test data for the first time has been simplified from days of manual work into writing just two Docker commands.", "loc": "4.2. Building, intervention and evaluation (BIE)"},
+    {"field": "cat_satisfaction", "quote": "Affective dimension •Developer autonomy •Emotions", "loc": "3.3. Data analysis (table of DX themes)"},
+    {"field": "cat_satisfaction", "quote": "I think that when you have to troubleshoot too much it makes you frustrated and you get stuck and angry if you can't fix the problem. It might be too frustrating in the end.", "loc": "4.1. Problem formulation"}
+  ]
+}

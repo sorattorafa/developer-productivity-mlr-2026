@@ -1,0 +1,35 @@
+{
+  "id": "P2037",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Qualitative-Interviews (39 semi-structured interviews, reflexive thematic analysis)", "nlm": "Qualitative-Interviews (semi-structured interviews, reflexive thematic analysis)", "value": "Qualitative-Interviews", "note": ""},
+    "research_method": {"claude": "39 audio-recorded semi-structured Zoom interviews analysed by reflexive thematic analysis (Braun and Clarke), no IRR; 30 interviews from a prior DIY-tools study plus 9 new, 5 re-interviewed; non-probabilistic recruitment (networks, mailing lists, snowball)", "nlm": "Semi-structured interviews with reflexive thematic analysis, no IRR; 39 BLVSPs; non-probabilistic recruitment (networks, mailing lists, snowball)", "value": "Semi-structured, audio-recorded Zoom interviews with 39 blind and low vision software professionals (30 from a prior DIY-tools study, 9 new, 5 re-interviewed), analysed with reflexive thematic analysis (Braun and Clarke) without IRR; non-probabilistic recruitment via professional networks, mailing lists and snowball sampling", "note": "Two interview waves and re-interviews reported only by Claude (not contradicted)."},
+    "context": {"claude": "Industry; BLVSPs in corporate settings (startups to multinationals) or freelancing, several countries (67% North America); 39 participants, 21 software engineers", "nlm": "Industry and freelance; startups to multinationals; 39 BLVSPs (67% North America), software engineers n=21, accessibility specialists n=5", "value": "industry; blind and low vision software professionals in corporate settings (startups to multinationals) or freelancing, mainly North America (67%); 39 participants (21 software engineers, 5 accessibility specialists, others)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned (both)."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned (both)."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "GenAI use at work by BLV software professionals is the topic."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not specified by either; remote meetings appear only in related work."},
+    "data_window": {"claude": "May–July 2024 (30 interviews) and January–February 2025 (9 new interviews)", "nlm": "no basis", "value": null, "note": "Claude: May–July 2024 and January–February 2025. NotebookLM gives no period. Full text confirms Claude's dates (PDF p. 3)."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: only perceived productivity gains from interviews (assigned to Survey by the ficha); no productivity metric."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "Only one participant's confidence (80–90%) in GenAI visual descriptions; hallucinations discussed as a risk, no quality metric."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: themes 'Less reliance on sighted colleagues', 'Better participation in professional conversations' and the verification catch-22 (needing colleagues to verify); no collaboration metric."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Theme 'Productivity gains and well-being': reduced stress and mental toll (self-reported)."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Both tag self-reported GenAI usage frequency (and NotebookLM access labor) as Activity; not repository activity."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM tags several items 'DevEx'; the DevEx framework is not referenced."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Interviews about perceptions; all measures are self-reported."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "We conducted audio-recorded, semi-structured interviews with 39 BLVSPs over Zoom.", "loc": "PDF p. 3 (3.3 Procedure)"},
+    {"field": "research_method", "quote": "reflexive thematic analysis considers researcher subjectivity and interpretation as valuable analytical resources [13]. Therefore, we did not calculate IRR.", "loc": "PDF p. 4"},
+    {"field": "research_method", "quote": "30 participants were interviewed as part of the prior study on DIY tools [18], between May 2024 and July 2024. 9 additional participants were recruited specifically for this study on the use of GenAI at work, interviewed between January 2025 and February 2025.", "loc": "PDF p. 3 (3.3 Procedure)"},
+    {"field": "context", "quote": "are working or have worked in a software development position either in a corporate setting or as a freelancer, and have at least one year of work experience.", "loc": "PDF p. 2"},
+    {"field": "context", "quote": "Company sizes also varied, from startups to multinational corporations.", "loc": "PDF p. 3"},
+    {"field": "ai_discussed, cat_survey", "quote": "RQ1. How do BLVSPs perceive and utilize generative AI in the workplace?", "loc": "PDF p. 1 (Introduction)"},
+    {"field": "cat_satisfaction", "quote": "BLVSPs reported substantial improvements in their work efficiency and stress levels after using GenAI: \"I'm faster and I use less resources. I'm not as stressed\" (P10).", "loc": "PDF p. 6 (4.2.1)"},
+    {"field": "cat_collaboration", "quote": "4.2.2 Less Reliance on Sighted Colleagues. Despite needing sighted assistance at times, participants felt uneasy burdening their colleagues.", "loc": "PDF p. 6"},
+    {"field": "cat_collaboration", "quote": "Thus, participants perceived GenAI as \"the colleague that doesn't get annoyed at me\" (P7)", "loc": "PDF p. 6"}
+  ]
+}

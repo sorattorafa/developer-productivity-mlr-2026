@@ -1,0 +1,33 @@
+{
+  "id": "P2005",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Own survey data (104 respondents)."},
+    "study_type": {"claude": "Survey", "nlm": "Survey", "value": "Survey", "note": "Quantitative questionnaire analysed with PLS-SEM."},
+    "research_method": {"claude": "Quantitative, explanatory design; structured online 5-point Likert questionnaire; PLS-SEM in SmartPLS with 5,000 bootstrap resamples; snowball (non-random) sampling; 104 respondents", "nlm": "Quantitative survey (5-point Likert questionnaire, items AI1–DP4/S1–S4) analysed with PLS-SEM in SmartPLS (bootstrapping, 5,000 resamples); snowball sampling; N=104", "value": "Quantitative, explanatory cross-sectional survey; online 5-point Likert questionnaire, 104 respondents via snowball (non-random) sampling; PLS-SEM in SmartPLS (measurement and structural model, 5,000 bootstrap resamples) testing H1–H5 with developer productivity as mediator", "note": ""},
+    "context": {"claude": "Industry: medium and large IT companies in Sri Lanka; 104 developers, senior developers, tech leads and others", "nlm": "Industry: medium and large-scale IT organizations in Sri Lanka; 104 software developers (47% junior, 21% mid-level, 20% senior)", "value": "industry; medium and large-scale IT companies in Sri Lanka; 104 software professionals (47% junior, 21% mid-level, 20% senior developers, plus tech leads and others)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either; theory base is Socio-Technical Systems."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "AI-utilized onboarding (AI-assisted tools, conversational agents) is one of the three studied constructs."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not specified by either."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either; no collection period in the full text."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: both label Developer Productivity (DP1–DP4) as Productivity, but it is a self-reported Likert construct, i.e. perceived productivity (cat_survey under the definitions); output figures appear only as literature citations."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "Claude: bug/defect figures only cited from literature. NotebookLM tags perceived Scalability of Business Applications as Quality/Delivery; scalability is not a defect/stability/maintainability metric."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "No collaboration construct."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "No satisfaction or well-being construct."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "No repository activity data."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "Both tag perceived Scalability of Business Applications as Delivery (with organizational outcome/Quality); not a deployment, lead-time or release metric."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Onboarding constructs labelled 'DevEx' by both, but both state the DevEx framework is not referenced."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Methodology not reported; no process metrics."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "All constructs (AI, TU, TSP, DP, scalability) measured by self-reported 5-point Likert items."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "This study follows a quantitative and explanatory research design to assess the influence of developer onboarding practices on the scalability of business applications within the Sri Lankan IT companies.", "loc": "PDF p. 2 (III. Methodology)"},
+    {"field": "research_method, cat_survey", "quote": "104 responses were gathered through a five-point Likert scale questionnaire, which was analyzed with Partial Least Squares Structural Equation Modelling (PLS-SEM) using SmartPLS software", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "research_method", "quote": "The bootstrapping process was used to assess the significance of path coefficients with 5,000 resamples.", "loc": "PDF p. 3 (D. Data Analysis Method)"},
+    {"field": "research_method", "quote": "The snowball sampling technique was adapted to reach specialized groups.", "loc": "PDF p. 3"},
+    {"field": "context", "quote": "Through a quantitative approach, this research aims at medium and large-scale IT organizations of Sri Lanka, employing a non-random sampling technique.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "ai_discussed", "quote": "Results indicate that the utilization of AI-assisted tools during the onboarding process allows developers to better adapt to the development environment by automating any repetitive tasks and enhancing their coding efficiency", "loc": "PDF p. 5 (Discussion)"},
+    {"field": "cat_survey", "quote": "In addition to this, a self-reported questionnaire was implemented for our data collection, which increases the possibility of a common method bias.", "loc": "PDF p. 6 (Limitations)"}
+  ]
+}

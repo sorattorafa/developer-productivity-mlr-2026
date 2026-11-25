@@ -1,0 +1,33 @@
+{
+  "id": "P2114",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Own questionnaire data."},
+    "study_type": {"claude": "Survey (questionnaire with SEM model validation)", "nlm": "Survey (SEM via SmartPLS 3)", "value": "Survey", "note": ""},
+    "research_method": {"claude": "Quantitative questionnaire survey (7-point scale) validating a literature-derived conceptual model by PLS-SEM (SmartPLS 3); 200 emailed, 150 valid; pilot with 30 developers; five hypotheses", "nlm": "Quantitative survey; PLS-SEM via SmartPLS 3; 150 valid of 200 emailed questionnaires; pilot with 30 developers; five hypotheses", "value": "Cross-sectional questionnaire survey (7-point scale) testing a literature-derived conceptual model of knowledge work productivity with PLS-SEM (SmartPLS 3); pilot with 30 developers; 200 questionnaires emailed, 150 valid; five hypotheses, H1, H3, H4, H5 supported and H2 (efficiency strategies) not supported; R² = 0.695", "note": "Claude flags sign/p-value inconsistencies between Section 4.2 text and Fig. 2/Table B2 (e.g., collaboration β = -0.280 in text vs 0.280 in figure)."},
+    "context": {"claude": "Industry; software SMEs in Peninsular Malaysia (population 100, 70 randomly selected); 150 knowledge workers with >1 year experience", "nlm": "Industry; 70 SME software companies in Peninsular Malaysia; 150 developers, programmers and system analysts with >1 year experience", "value": "industry; software SMEs in Peninsular Malaysia (70 of 100 companies randomly selected); 150 knowledge workers (programmers and system analysts, >1 year experience)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Both: work mode not specified."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either (NotebookLM only says cross-sectional)."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Both tag KWP and programmer performance as Productivity, but both are perceived constructs measured by 7-point agreement items; perceived productivity goes to cat_survey per the definitions. Author may wish to review."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "Both tag KWP as Productivity/Quality because the paper defines KWP as 'quality of knowledge work'; no software-quality metric (defects, code quality, etc.)."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Collaboration construct (5 items: teamwork, trust, respect, voluntary communication); strongest path to KWP (β = 0.280 in Fig. 2)."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM's 'DevEx / Satisfaction / Process' tag is on the Innovation Strategies construct (better products/processes), not a satisfaction or well-being measure."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM tags programmer performance as Activity/Productivity, but it is a perceptual scale, not repository activity."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "No DevEx framework; NotebookLM's DevEx tag on Innovation Strategies is generic."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Both tag effectiveness/efficiency strategies as 'Process', but these are perceived organizational strategy scales (scope, timeliness, resources), not sprint/workflow process metrics. Borderline."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "All constructs measured by questionnaire on a 7-point agreement scale."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, cat_survey", "quote": "Altogether, 200 questionnaires have been sent out through email, 150 collected and valid for further analysis. In this research, all items were anchored 7 point interval scale ranging from", "loc": "PDF p. 4 (4. Method)"},
+    {"field": "research_method", "quote": "The measurement and structural model were analysed using SmartPLS 3 because the ability to predict theoretical model.", "loc": "PDF p. 5"},
+    {"field": "research_method", "quote": "Hence, the four hypotheses (H1, H3, H4 and H5) received statistical support and H2 did not receive enough statistical support.", "loc": "PDF p. 5 (4.2 Structural model)"},
+    {"field": "research_method, context", "quote": "which involved 30 software developers as respondent (programmer and system analyst) for this study in SME company.", "loc": "PDF p. 5"},
+    {"field": "context", "quote": "Furthermore, 100 SME software company was selected as population for this study, which located in Peninsular Malaysia. Apart from these 70 companies was selected randomly as sample size for the purpose of this study.", "loc": "PDF p. 5"},
+    {"field": "cat_collaboration", "quote": "On the KWP layer, five characteristics are considered; effectiveness strategies, efficiency strategies, collaboration, programmer performance, and innovation strategies.", "loc": "PDF p. 4 (3. Design Conceptual Model and Hypothesis)"},
+    {"field": "cat_collaboration", "quote": "This is because collaboration requires effective team works, and trust and respect among the team members are very prominent in the team collaboration.", "loc": "PDF p. 3 (2.2 Collaboration)"}
+  ]
+}

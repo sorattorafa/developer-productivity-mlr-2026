@@ -1,0 +1,33 @@
+{
+  "id": "P2050",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Replication of a controlled experiment (new data)."},
+    "study_type": {"claude": "Experiment (external replication of a controlled experiment)", "nlm": "Experiment (replicated controlled experiment)", "value": "Experiment", "note": ""},
+    "research_method": {"claude": "External/differentiated replication of a controlled experiment; 2x2 factorial between-subjects (Approach TDD vs. YW; Object BSK vs. MRA); SAM plus liking; STR; ANOVA-Type Statistic and Cliff's delta", "nlm": "Replicated controlled experiment; 2x2 factorial design; SAM 9-point scales plus liking; STR; ANOVA Type Statistic; Cliff's delta reported for the baseline", "value": "Replicated controlled experiment; 2x2 factorial between-subjects design (Approach: TDD vs. Your Way; Object: Bowling Score Keeper vs. Mars Rover API), single 3-hour Java/JUnit session; affective reactions via Self-Assessment Manikin plus liking (12 DVs) and development performance (STR); ANOVA-Type Statistic, Cliff's delta; compared with the baseline experiment", "note": ""},
+    "context": {"claude": "Academic; 59 second-year CS undergraduates in the SE course at the University of Bari (baseline: 29 third-year, University of Basilicata)", "nlm": "Academic; 59 second-year CS undergraduates (replication), 29 third-year (baseline); University of Bari and University of Basilicata, Italy", "value": "academic; SE course at the University of Bari (Italy), lab session; 59 second-year CS undergraduates (baseline: 29 third-year undergraduates, University of Basilicata)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not referenced."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not referenced."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "On-site lab session (both)."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "STR: user stories implemented within a fixed 3-hour window, normalized to [0, 100]."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "Acceptance test suites only verify which user stories count as implemented."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Affective reactions (pleasure, arousal, dominance, liking) are the dependent variables."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels STR 'Productivity / Delivery'; it is stories done in fixed time (Productivity)."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels affective DVs 'DevEx / Satisfaction' but states DevEx is not referenced."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "TDD (an XP practice) is the treatment, not a measured process metric; borderline if the author codes the agile practice itself."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Self-Assessment Manikin and liking rating scales (self-report)."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, context", "quote": "To validate the results of the experiment by Romano et al. [21] (also called baseline experiment from here on), we conducted a replicated experiment with 59 novice developers.", "loc": "PDF p. 2"},
+    {"field": "research_method", "quote": "The design of the baseline experiment was 2 * 2 factorial [27]. Such a kind of between-subjects design has two factors (i.e., two IVs) having two levels each.", "loc": "PDF p. 6"},
+    {"field": "research_method", "quote": "by using ANOVA Type Statistic (ATS) [4], a nonparametric version of ANOVA recommended in the HCI research field to analyze rating-scale data in factorial designs", "loc": "PDF p. 6"},
+    {"field": "context", "quote": "II-year undergraduates in CS taking the SE course at the University of Bari Participant number 29 59", "loc": "PDF p. 8 (Table 2)"},
+    {"field": "cat_satisfaction, cat_survey", "quote": "To measure the affective reactions of developers, we used the Self-Assessment Manikin instrument complemented with a liking dimension.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "cat_productivity", "quote": "count the number of user stories each participant implemented within the fixed time frame (i.e., three hours)", "loc": "PDF p. 7"},
+    {"field": "cat_productivity", "quote": "We used ATS to analyze STR because the normality assumption of ANOVA was not met (Shapiro-Wilk normality test p-value = 0.001).", "loc": "PDF p. 12 (replication results)"}
+  ]
+}

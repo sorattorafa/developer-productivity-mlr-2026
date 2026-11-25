@@ -1,0 +1,34 @@
+{
+  "id": "P2125",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Reports Google's own survey, log and diary-study data."},
+    "study_type": {"claude": "Experience report (industry column based on internal mixed methods)", "nlm": "Mixed methods", "value": null, "note": "Claude: experience report (IEEE Software column); NotebookLM: mixed methods. Same data sources, different design label."},
+    "research_method": {"claude": "Experience report drawing on Google's internal mixed methods: quarterly longitudinal survey (EngSat), cross-tool logs with badging data, diary studies and interviews; findings framed as guidelines", "nlm": "Mixed methods: EngSat longitudinal survey, In-Session Pipeline tool logs plus badging data, diary studies and qualitative interviews, triangulated", "value": "Descriptive report (IEEE Software column) of Google's triangulated productivity measurement: quarterly longitudinal EngSat survey (~5,000 responses/quarter, nearly 100,000 since Q1 2018), cross-tool developer logs combined with badging data and activity thresholds validated by a survey of >1,000 developers, diary studies and interviews", "note": "Design label differs (experience report vs mixed methods), so it is left out of the line; data sources and numbers agree."},
+    "context": {"claude": "Industry, Google software engineering during and after COVID-19; EngSat ~5,000 responses/quarter, nearly 100,000 since Q1 2018; >1,000 developers for threshold validation; diary/interview sizes not reported", "nlm": "Industry (Google); ~5,000 survey responses/quarter, ~100,000 total since Q1 2018, diary studies, tool logs, >1,000 developers for threshold validation", "value": "industry; Google software engineering, pandemic remote work and transition to hybrid-first; EngSat ~5,000 responses/quarter (nearly 100,000 since Q1 2018), threshold-validation survey of >1,000 developers, diary studies and interviews (size not reported)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": "Both state that AI/ML is not used or addressed."},
+    "remote_covid": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Pandemic remote work ('work from pandemic') and the move to hybrid work are the topic."},
+    "data_window": {"claude": "EngSat since Q1 2018 (pre-, during and post-pandemic); end not stated", "nlm": "EngSat since Q1 2018; end not stated", "value": "EngSat survey data since Q1 2018 (end not stated); covers pre-, during and post-pandemic periods", "note": "Only the start of the survey series is stated; log and diary-study periods not given."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Ramp-up speed of new engineers (3-6 weeks slower) and time actively coding a change from logs."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "No quality metric listed by either."},
+    "cat_collaboration": {"claude": "No", "nlm": "Yes", "value": null, "note": "Claude: no collaboration metric (paper says collaboration is not yet measured quantitatively). NotebookLM: diary-study friction/interruptions labelled DevEx/Collaboration."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "EngSat job satisfaction and satisfaction with workload management (dropped >10%)."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: cross-tool log activity (time actively coding, minutes of activity per day), not commit/PR counts."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels ramp-up time 'Delivery', but it is onboarding speed, not a delivery metric."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Flow and friction asked in diary studies, but the DevEx framework is not used; NotebookLM states it is not cited."},
+    "cat_agile": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: only the EngSat item on changing/unclear product requirements, which both label Process."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Quarterly EngSat survey, diary studies and interviews."}
+  },
+  "evidence": [
+    {"field": "research_method, context, cat_survey", "quote": "As part of our regular productivity research, we run a quarterly survey, we collect logs from all of our developer tools, and we run diary studies and interviews with developers.", "loc": "PDF p. 3"},
+    {"field": "context, data_window", "quote": "since the first quarter of 2018, collecting nearly a hundred thousand survey responses in that time. (We get around 5,000 responses each quarter, on average.)", "loc": "PDF p. 3"},
+    {"field": "research_method, cat_activity", "quote": "we set thresholds of activity in our log data that determine how many minutes of activity get counted as a work day; we validated these thresholds against a", "loc": "PDF p. 4"},
+    {"field": "remote_covid", "quote": "Once we realized that the future of work was going to look very different from the prepandemic world, we augmented our data pipeline to include whether someone is working from home or from the office.", "loc": "PDF p. 4"},
+    {"field": "cat_productivity", "quote": "During COVID, our internal research found that new engineers to the company were ramping up three to six weeks slower than those who ramped up before the pandemic.", "loc": "PDF p. 5"},
+    {"field": "cat_productivity, cat_activity", "quote": "This data stream enables us to create detailed metrics, such as the amount of time engineers spent actively coding a given change", "loc": "PDF p. 4"},
+    {"field": "cat_satisfaction, cat_survey", "quote": "Our survey data indicate that the percentage of all engineers who were satisfied with their ability to manage their workload dropped by more than 10% during the pandemic.", "loc": "PDF p. 5"},
+    {"field": "cat_agile", "quote": "In the last three months, how much have changing or unclear product requirements hindered your team's productivity?", "loc": "PDF p. 5"}
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "P2028",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Experiment (laboratory eye-tracking study)", "nlm": "Experiment (quantitative eye-tracking study)", "value": "Experiment", "note": "Both label it Experiment; the design is an observational lab/in-office eye-tracking study with no treatment manipulation."},
+    "research_method": {"claude": "Lab eye-tracking study (EyeLink Portable Duo, up to 2000 Hz) plus Chrome-extension logging of GitHub Copilot suggestions and keypresses; Likert 1-5 and Paas 1-9 questionnaires; proportions, non-linear regression, significance tests; 4,444 suggestions (2,202 after filter)", "nlm": "Eye-tracking study (EyeLink Portable Duo, 2000 Hz) combined with IDE DOM (PosEyeDOM) and keypress logging; post-task Likert/Paas forms and post-experiment Likert questionnaire; 4,444 suggestions, 2,202 looked at", "value": "Eye-tracking study (EyeLink Portable Duo, 2000 Hz) synchronized with Chrome-extension DOM logging of GitHub Copilot inline suggestions and keypress events; post-task Likert (1–5) and Paas (1–9) ratings and final Likert questionnaire; 35 recruited, 33 analysed; 4,444 suggestions logged (2,202 after the 250 ms filter); proportions, non-linear regression and significance tests", "note": "Statistical analysis details stated only by Claude (not contradicted)."},
+    "context": {"claude": "Mixed; professionals from three software companies and students, sessions at company offices and a university eye-tracking lab; TypeScript tasks on the Chrome Dino game in VS Code Web with GitHub Copilot; 35 recruited (17 professionals, 18 students), 33 analysed", "nlm": "Mixed (industry and academic); 3 software companies and a university eye-tracking lab; 33 analysed (17 professionals, 16 CS students), 35 recruited", "value": "mixed; offices of three software companies and a university eye-tracking lab, TypeScript tasks on a Chrome Dino game codebase in VS Code Web with GitHub Copilot; 35 recruited (17 professional developers, 18 CS students), 33 analysed", "note": "NotebookLM's 17/16 split of the 33 analysed is not stated in the paper (it gives 17/18 for the 35 recruited)."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Claude: not cited; NotebookLM: discussed conceptually only. 'DORA' does not occur in the full text."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Claude: not cited; NotebookLM: discussed conceptually only. SPACE framework not found in the full text."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "GitHub Copilot inline GenAI suggestions are the object of study."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "On-site sessions (company offices and lab)."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Task completion and completion time (26 completed Task 1 in 25.47 min on average)."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "Both tag the deletion rate (NotebookLM also the acceptance rate) partly as Quality, but neither is a defect/error/code-quality metric; Claude mentions maintainability only as a measure that resists quantification."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Individual programming tasks only."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: perceived helpfulness and distraction of suggestions (Likert), tagged Satisfaction by both; no well-being measure."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Suggestion counts, accept/reject keypress events and deletion-event rates (IDE event counts rather than repository activity)."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Both tag some metrics 'DevEx/Flow', but the DevEx framework is not used; 'developer experience' appears only generically."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Post-task Likert/Paas forms and final Likert questionnaire."}
+  },
+  "evidence": [
+    {"field": "study_type, context", "quote": "We conducted the experiment at the offices of three participating software development companies and in an eye-tracking lab of the university.", "loc": "PDF p. 3"},
+    {"field": "research_method", "quote": "From our 35 initially recruited participants, we had to exclude two due to technical issues that prevented the automatic logging of code suggestions. For the remaining 33 participants, we logged 4'444 code suggestions", "loc": "PDF p. 6"},
+    {"field": "context", "quote": "17 were professional developers and 18 were computer science students.", "loc": "PDF p. 4"},
+    {"field": "ai_discussed", "quote": "we present the first in-depth eye-tracking study of how developers interact with generative AI code suggestions during programming.", "loc": "PDF p. 1"},
+    {"field": "cat_productivity", "quote": "In terms of tasks, 26 participants were able to complete the first task. The average completion time for these participants was 25.47 minutes", "loc": "PDF p. 6"},
+    {"field": "cat_activity", "quote": "During these windows, deletion events occurred at a much higher rate (0.226 Hz) compared to the rest of the session (0.039 Hz)", "loc": "PDF p. 6"},
+    {"field": "cat_survey, cat_satisfaction", "quote": "Participants were asked to rate on a Likert scale from 1 to 5 how much they considered the suggestions during programming, their helpfulness, how distracting they were", "loc": "PDF p. 4"},
+    {"field": "cat_survey", "quote": "their mental effort (Rate the mental effort you invested to solve the task), rated on a Paas scale [44] from 1 to 9.", "loc": "PDF p. 4"}
+  ]
+}

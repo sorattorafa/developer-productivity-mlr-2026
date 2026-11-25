@@ -1,0 +1,434 @@
+{
+ "P2016": {
+  "id": "P2016",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Explicit aim (abstract, p. 2): introduce the DevEx Metrics Compass and report what the 120+ metric dataset reveals; no formal RQs."
+   },
+   "method": {
+    "score": 3,
+    "why": "'Structured curation' (pp. 4-5) without search strategy, inclusion criteria, annotation procedure or reliability; the 20+ leader interviews have no method."
+   },
+   "sample": {
+    "score": 3,
+    "why": "120+ metrics from literature and 50+ organizations (examples named, p. 5); number of papers/sources and how they were selected not reported."
+   },
+   "threats": {
+    "score": 3,
+    "why": "Only a three-sentence 'Note' on partial public data and research lag (p. 10); 'Remaining Challenges' (pp. 12-14) covers tool scope, not validity."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Descriptive counts only (45 sources, 72%, 63%); dimension 'times' sum to the 120 metrics and contradict the 'fewer metrics' claim (pp. 9-10)."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Open-source metric dataset and navigation tool across DORA/SPACE/Core 4, useful for practice; tool not evaluated, explicitly not a new framework."
+   }
+  },
+  "score": 3.5,
+  "anchors": [
+   "P1345",
+   "P1275"
+  ],
+  "flag": "internal inconsistencies: dimension counts labelled 'times' (process 25, enablement 26, quality 20, system 11, output 9, team 6, customer 7, business 16) sum to the 120 metrics, output 9 is below its own examples throughput 27 and produced code 25, and business 16 > system 11/output 9 contradicts 'the further you move ... the fewer established metrics' (pp. 9-10); Fig. 3 caption shows four tracked metrics although the removal is 'not pictured' (five marked on p. 6); DORA given as five metrics with change lead time (p. 2) vs 'original four' with cycle time (p. 9); 'nine' vs 'more than nine' frameworks (pp. 1-2). Own data are the curated metric counts (dataset open-sourced on GitHub, p. 15); the Alex outcome 'a few months after' (pp. 14-15) is a fictional scenario, not data"
+ },
+ "P2020": {
+  "id": "P2020",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Explicit aim (p. 2): perceived AI impact across the SPACE dimensions; guiding questions on productivity, dimensions and team adoption (p. 4)."
+   },
+   "method": {
+    "score": 4,
+    "why": "SPACE-structured survey plus interviews and observation; analysis descriptive only, qualitative coding not described, 'focus groups' (p. 2) never reported."
+   },
+   "sample": {
+    "score": 4,
+    "why": "530 of 3,500 (15%); Microsoft randomized U.S. IC pool with exclusions, externals via networks (pp. 2-3); no demographics; qualitative samples undated."
+   },
+   "threats": {
+    "score": 4,
+    "why": "'Survey Limitations' (p. 3): response bias, perceptions not outcomes, AI-user skew, geographic restriction; non-significance/causality caveat (p. 7); short."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Percentages and means only; Table 2 group n, base rates for 'seven times' and tests missing; multi-agent findings from an unreferenced study."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Useful SPACE lens on AI perceptions with team/organizational moderators and recommendations; perception-only, largely confirms prior findings."
+   }
+  },
+  "score": 4.0,
+  "anchors": [
+   "P1299",
+   "P0495"
+  ],
+  "flag": "internal inconsistencies: limitations say the study 'focused on developers who regularly use AI tools' (p. 3) although 25% of respondents report not using AI regularly (p. 3), and the SPACE items are reported for 'AI adopters' without their n; 'focus groups' named in the methodology (p. 2) but never reported; the controlled multi-agent study of eight developers (Sara Chizari, pp. 6-7) is not the authors' data and has no reference entry; 'seven times more likely' and 'four percent less likely' given without base rates or tests (pp. 3-4)"
+ },
+ "P2021": {
+  "id": "P2021",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Explicit aim (pp. 1-2): describe EngThrive's principles, metrics, infrastructure and case studies as a scalable productivity-measurement approach."
+   },
+   "method": {
+    "score": 3,
+    "why": "Framework description plus internal case studies; 'full methodological treatment ... beyond the scope' (p. 1); control groups and analyses undescribed."
+   },
+   "sample": {
+    "score": 4,
+    "why": "Microsoft; tens of thousands in telemetry/survey, case orgs of thousands, ~4,000 and 3,000 developers (pp. 8-11); survey and control-group n missing."
+   },
+   "threats": {
+    "score": 3,
+    "why": "No limitations section; passing caveats only (SRE Agent 'not a controlled experiment' p. 11, snow-day confounding p. 10, telemetry maturity p. 3)."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Effect sizes without n, tests or intervals; metric 'validation' promised (p. 1) not shown; several figures from a talk [5], a panel [7] or uncited internal research."
+   },
+   "contribution": {
+    "score": 5,
+    "why": "New operational framework (speed/ease/quality, thriving guardrail, I2C, BDD) run at Microsoft scale; broadly useful for practice, not independently validated."
+   }
+  },
+  "score": 3.83,
+  "anchors": [
+   "P1261",
+   "P1280"
+  ],
+  "flag": "possible exclusion: case-study data not traceable - no n, control-group design or analysis method, methodology declared out of scope (p. 1), some figures sourced to a conference talk [5], a panel [7] or uncited 'internal research' (pp. 6, 9-10) (cf. FT-EC3 precedent P2006/P2010; no contradictions among its own figures found); p. 1 says metrics 'and their validation are described in the sections that follow' but no validation is reported; AI survey shares cited from [6] (arXiv version) differ from the ACM Queue SPACE of AI (P2020): collaboration 49% vs 48%, and the ~10%/~3% culture moderators do not appear there; first author affiliated with DX, a commercial vendor (p. 13)"
+ },
+ "P2044": {
+  "id": "P2044",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Explicit aim and two RQs (how managers define and measure developer productivity) stated (p. 2); the ML part has no formal RQ."
+   },
+   "method": {
+    "score": 3,
+    "why": "Brief thematic analysis; detailed CRISP-DM pipeline, but labelling undescribed, test split doubles as validation set (p. 3); productivity proxy never validated; app only in Figma."
+   },
+   "sample": {
+    "score": 3,
+    "why": "12 managers from 6 Indonesian software houses well tabulated (Tables 3-4); ML data from one unnamed house, number of developers and labellers not reported."
+   },
+   "threats": {
+    "score": 3,
+    "why": "No threats/limitations section; only 'slight overfitting' (p. 15), generic 'limitations imposed by data-driven approaches' (p. 18), ethics as future work."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Tables 5-7 report classifier metrics, but text contradicts them (confusion matrix 828 vs 713 test items; 'fastest training'); productivity claims unevaluated."
+   },
+   "contribution": {
+    "score": 3,
+    "why": "Limited: screenshot/URL surveillance classifier with an unvalidated productivity proxy; manager definitions confirm known views; validation is unanimous manager agreement."
+   }
+  },
+  "score": 3.33,
+  "anchors": [
+   "P1297",
+   "P0529"
+  ],
+  "flag": "possible exclusion: results contradict own tables (cf. FT-EC3 precedent P2006/P2010) - SVC confusion matrix in the text (378 of 405 and 370 of 423, i.e. 828 instances, p. 15) vs Table 7 support 374/339 = 713 (20% of 3,563) and recalls 0.92/0.84; abstract and p. 14 claim EfficientNetV2B0 'trained the fastest and converged in the fewest epochs', contradicted by Table 5 (1991.0 s, 31 epochs vs InceptionV3 1369.5 s, ResNet50V2 4 epochs); 'macro average of 0.89 on the same metrics' (p. 15) vs Table 7 recall/F1 0.88; labelling procedure undescribed and order of augmented oversampling vs split unclear (leakage risk behind 99.6%); IRB and informed consent 'Not applicable' although developers' screenshots and URLs were recorded (pp. 2, 18)"
+ },
+ "P2047": {
+  "id": "P2047",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Explicit aim, five specific objectives, RQ1-RQ2 and hypotheses H1-H2 (pp. 2-3)."
+   },
+   "method": {
+    "score": 2,
+    "why": "Bayesian causal model fitted to synthetic data whose relations 'were defined according to the proposed causal graph' (p. 5): circular; no real data."
+   },
+   "sample": {
+    "score": 2,
+    "why": "No participants or real projects; synthetic dataset size never reported; 'prototypical' CI/CD setting only (pp. 1, 4-5)."
+   },
+   "threats": {
+    "score": 3,
+    "why": "Sec. 6 'Study limitations' (p. 10) is generic, calls the synthetic data 'observational' and omits the circular data generation."
+   },
+   "evidence": {
+    "score": 2,
+    "why": "No coefficients, intervals or tests despite 'statistically significant' claims; Table 2 MAE/RMSE 2.4/3.1 vs Table 5 0.98/1.28; Table 3 variables absent from Table 1."
+   },
+   "contribution": {
+    "score": 3,
+    "why": "Illustrative DX-to-release-time causal model; results follow from authors' own simulation assumptions, so practical value is limited."
+   }
+  },
+  "score": 2.83,
+  "anchors": [
+   "P0129",
+   "P0011"
+  ],
+  "flag": "below FT-EC3 threshold (<3.0); not empirical; possible exclusion: FT-EC2 (synthetic data only, cf. P2002/P2009/P2124) and FT-EC3 (internal inconsistencies, cf. P2006/P2010): Table 2 (MAE 2.4, RMSE 3.1 days) contradicts Table 5 (MAE 0.98, RMSE 1.28) for the same model (pp. 7, 10); Tables 3-4 variables (CI/CD integration time, context switching, satisfaction index, story points) are not in the model's Table 1; 'informed consent was obtained from all individual participants' (p. 11) vs 'does not involve human participants' (p. 12); several citations do not match the listed references"
+ },
+ "P2048": {
+  "id": "P2048",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Explicit aim (multifactorial conceptual model for ASD team productivity) and four RQs, RQ1-RQ4 (pp. 2, 6)."
+   },
+   "method": {
+    "score": 4,
+    "why": "Fenton & Bieman design protocol, expert content validation (Likert) and exploratory Scrum application; validation perception-only, comparison criteria self-scored (Table 5)."
+   },
+   "sample": {
+    "score": 4,
+    "why": "Expert funnel 30-17-10 with inclusion criteria (Table 1, p. 7); 110 students at four Colombian HEIs; number of teams and survey instrument not reported."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Sec. 5.3 'Threats to Validity' (pp. 17-18): expert count, student generalizability, observer bias, no industrial validation; omits self-scoring bias."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Only aggregate expert means/SD (Table 6) and acceptance percentages; no productivity measured; abstract claims 'real-world scenarios' validation (p. 1)."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Structured factor-metric-procedure model with traceability; incremental (extends authors' ICCSA 2025 paper, adds no new factors)."
+   }
+  },
+  "score": 4.0,
+  "anchors": [
+   "P0536",
+   "P0478"
+  ],
+  "flag": "internal inconsistencies (minor; data traceable, not the P2006/P2010 pattern): collection periods sum to 98.9% (64.4% + 34.5%, p. 15); 23 factors evaluated vs 22 selected without explanation (p. 8); 'exploratory empirical application in real teams' (p. 18) vs student-only validation; experts described as 'professionals' (p. 14) vs MinCiencias-ranked researchers (Table 1, p. 7)"
+ },
+ "P2066": {
+  "id": "P2066",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Explicit aim (develop and validate TDIM) and three enumerated gaps it addresses (p. 7); no formal RQs or hypotheses."
+   },
+   "method": {
+    "score": 3,
+    "why": "Convergent mixed-methods design stated (Sec. 4), but data access, debt categorization and cost conversions undescribed; announced CFA/SEM not reported."
+   },
+   "sample": {
+    "score": 4,
+    "why": "89 projects, 23 orgs, sectors and inclusion criteria; 412 leaders, 62% of 665 (Sec. 4.2-4.3); orgs unnamed, recruitment not described."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Sec. 4.5 'Validity and Reliability' and Sec. 8 with six specific limitations; cites SPACE-based construct validity and mitigations absent from methods."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Regression and calibration statistics reported, but abstract's 23%/31% effects not derivable from results (34%/14%, p. 14); undefined TDI; unit mismatches."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Links technical-debt indicators to DORA metrics with category-level interest rates and remediation ROI; useful if the data hold."
+   }
+  },
+  "score": 4.0,
+  "anchors": [
+   "P0556",
+   "P1261"
+  ],
+  "flag": "possible exclusion: FT-EC3 (data not traceable / internal inconsistencies, cf. P2006/P2010 excluded regardless of mean): 23 unnamed organizations with no data-access, ethics, consent or data-availability statement; abstract effects (23% velocity, 31% defect density) not in or derivable from Results; predictor shifts between 'debt-to-code ratio', 'debt density' and 'debt ratio'; TDIM has 'three' (p. 7) vs 'four' (p. 8) formulations; Fig. 2 uses an undefined 'TDI'; avoided cost in developer-hours includes a dollar cost of delay; announced CFA/SEM and joint display not reported; Sec. 7 recommendations (0.25 threshold, 15-20% capacity) without analysis; SPACE claimed but not operationalized"
+ },
+ "P2072": {
+  "id": "P2072",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 4,
+    "why": "Aim stated in one sentence ('presents a holistic model', p. 1) plus motivating questions; no RQs, scope loosely bounded."
+   },
+   "method": {
+    "score": 2,
+    "why": "Practitioner essay from authors' experience; no research method, no reference list, proposed stochastic simulation not run (p. 19)."
+   },
+   "sample": {
+    "score": 2,
+    "why": "No data, participants or organization studied; only general commercial software development (authors at Adobe/Google)."
+   },
+   "threats": {
+    "score": 2,
+    "why": "No limitations section; only scope caveats ('does not attempt to define...metrics', p. 5; 'theoretical so far in our experience', p. 17)."
+   },
+   "evidence": {
+    "score": 2,
+    "why": "No empirical results; figures asserted without data or calculation (e.g., 'as much as a 50 percent increase' in deployed value, p. 8)."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Useful shared vocabulary (develop/deploy/operate, four forms of impact, consensus DDR cost) from experienced practitioners; unvalidated."
+   }
+  },
+  "score": 2.67,
+  "anchors": [
+   "P1280",
+   "P0129"
+  ],
+  "flag": "below FT-EC3 threshold (<3.0); not empirical; possible exclusion: FT-EC2 (conceptual model without data or evaluation, cf. P2002/P2009/P2124); note same venue and type as P1280 (ACM Queue practitioner framework, scored 5.0 in the original corpus), but no prior-research synthesis, no references, no illustrative data"
+ },
+ "P2090": {
+  "id": "P2090",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Explicit RQ1-RQ3 (pp. 2-3) and hypotheses H1-H4 for the evaluation (Sec. 6.2.1)."
+   },
+   "method": {
+    "score": 3,
+    "why": "DSR with 4-expert face validation and author-built demo; ITS/DiD study written partly as protocol ('foresees', 'Tool may vary', pp. 28-30)."
+   },
+   "sample": {
+    "score": 3,
+    "why": "4 experts with years of experience; treated/control teams' organization, sector, size and matching criteria not reported."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Sec. 5.5 covers internal/external/construct validity, but for the demo only; brief validity notes pp. 30, 34-35."
+   },
+   "evidence": {
+    "score": 2,
+    "why": "Table 8 statistics contradicted by abstract, conclusions and limitations (expert-only validation); deployment counts contradict DF +162% (pp. 30-31)."
+   },
+   "contribution": {
+    "score": 3,
+    "why": "Five-layer framework consolidating established DevOps/SRE/DORA practices (phase contracts, RACI, SLO gates); evaluation evidence unreliable."
+   }
+  },
+  "score": 3.33,
+  "anchors": [
+   "P0030",
+   "P0011"
+  ],
+  "flag": "possible exclusion: data not traceable and contradicted by own text (cf. P2006, P2010) - abstract (p. 1), conclusions ('structured plan to capture quantitative signals', p. 34) and limitations (p. 35) describe only expert interviews and a theoretical use case, while Sec. 6.2-6.3 report an executed 21-week ITS/DiD quasi-experiment; IRB approval 12 Nov 2025, 13 days before submission (25 Nov 2025), for a 21-week study; internal inconsistencies: 238 baseline (6 weeks) vs 421 post-adoption (15 weeks) deployments imply about 40 vs 28 per week, contradicting DF median 0.8 -> 2.1/day (Table 8); SLO attainment 96.1%/99.2% not attainable as 'percentage of weeks' over 12 or 24 team-weeks; effect sizes (Cliff's delta) announced but not reported; H4 Likert instrument and respondents undescribed; 'aggregated dataset shared' without link; Table 2 citation numbers do not match the reference list"
+ },
+ "P2102": {
+  "id": "P2102",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Explicit aim to identify and validate DX sub-constructs and items for DL platforms; RQ1 stated (p. 3)."
+   },
+   "method": {
+    "score": 4,
+    "why": "Standard Delphi (CVR), EFA, CFA sequence; but one-round 4-expert Delphi, same 225 cases for EFA/CFA, post hoc error covariances."
+   },
+   "sample": {
+    "score": 4,
+    "why": "n=225 of 260 with gender, age, education (Table 4); recruitment, experience, platform and 'insincere' exclusion criterion unreported."
+   },
+   "threats": {
+    "score": 3,
+    "why": "Only two sentences at the end of the discussion on unmeasured confounders and external validity (p. 11); no section."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Loadings, AVE, CR, Fornell-Larcker and fit indices fully tabulated; common method bias announced but not reported; raw chi-square omitted."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Validated cognition/affection/conation DX instrument (Fagerholm and Munch); platform-specific, productivity/efficiency items dropped during validation."
+   }
+  },
+  "score": 4.0,
+  "anchors": [
+   "P0665",
+   "P0664"
+  ],
+  "flag": "internal inconsistencies (minor): abstract calls the three first-order factors 'second-order constructs' and reports 'p < 0.5' (p. 1) vs p < 0.05 (Sec. 4.5.4); common method bias assessment announced (abstract, Fig. 1) but not reported; Lawshe CVR threshold for five panelists applied to a four-expert panel (p. 4); behavioral items labelled D1-D9 (Table 5) vs B1-B9 (Tables 6-7); affective items 3 and 4 identical (Table 2); citation errors (DeVellis [12], Kaiser missing)"
+ },
+ "G083": {
+  "id": "G083",
+  "kind": "grey",
+  "criteria": {
+   "authority": {
+    "score": 4,
+    "why": "Bachelor's thesis, TUM (November 2025), professor supervisor and advisor named; undergraduate tier, one below master's theses (G082)."
+   },
+   "rigor": {
+    "score": 4,
+    "why": "Metric definitions, implementation, codebases (state 16.11.2025), hardware and Pytest CI described; n=1 implementation per cell, no significance tests, ChatGPT-assisted test oracle."
+   },
+   "currency": {
+    "score": 6,
+    "why": "Dated November 17, 2025; repository snapshot 16.11.2025."
+   },
+   "objectivity": {
+    "score": 4,
+    "why": "No commercial interest; but 'CUDA consistently highest' (pp. 58, 60) contradicted by Table 7.5 (Vulkan, OpenCL higher)."
+   },
+   "references": {
+    "score": 5,
+    "why": "66 references, mostly primary metric literature (McCabe, Halstead, Campbell/SonarQube) and framework documentation; one misattribution (p. 14)."
+   },
+   "novelty": {
+    "score": 4,
+    "why": "Framework-enriched Halstead vocabulary and CLI tool for GPU frameworks; complexity never validated against developer effort or time."
+   }
+  },
+  "score": 4.5,
+  "anchors": [
+   "G087",
+   "G082"
+  ],
+  "flag": "possible exclusion: irrelevance - 'developer productivity' appears only in the title (and two reference titles); no productivity construct defined or measured, complexity used as unvalidated proxy for implementation difficulty, no human participants; internal inconsistencies: Cyclomatic/Cognitive factors swapped (7.56 vs 3.06, p. 52; Table 7.4 gives 55/18 and 68/9); 'CUDA consistently highest' (pp. 58, 60, abstract) vs Table 7.5; CPP 'least complex' in matrix multiplication vs Vulkan/Boost lower (p. 58); OpenACC 'not present before' though in Table 7.5; repository 'will be available' (p. 14) vs 'planned to make public' (p. 61)"
+ },
+ "G094": {
+  "id": "G094",
+  "kind": "grey",
+  "criteria": {
+   "authority": {
+    "score": 5,
+    "why": "DOE Exascale Computing Project technical report (ECP-U-RPT-2020-0001), national-lab team led by Heroux and McInnes."
+   },
+   "rigor": {
+    "score": 3,
+    "why": "PSIP workflow described, but interviews and surveys lack N, period, instrument and analysis; case studies narrative (pp. 14-15, App. C)."
+   },
+   "currency": {
+    "score": 4,
+    "why": "January 28, 2020; activities 2017-2019; predates SPACE, DevEx and AI assistants; old like G096 (4)."
+   },
+   "objectivity": {
+    "score": 4,
+    "why": "No commercial interest, but self-report of the funded program, promotional tone ('profound', p. 34), no independent evaluation."
+   },
+   "references": {
+    "score": 4,
+    "why": "46 references, mix of peer-reviewed work and the project's own BSSw blog posts and reports."
+   },
+   "novelty": {
+    "score": 4,
+    "why": "Consolidated PSIP/PTC guidance and three ECP case studies; PSIP already published (ref. [15]); productivity not measured."
+   }
+  },
+  "score": 4.0,
+  "anchors": [
+   "G016",
+   "G096"
+  ],
+  "flag": "not empirical for productivity: only outreach counts are quantified (webinars, Table 2); productivity gains from PSIP asserted without measures or baselines (pp. 14, 17, 33-34); interviews and surveys without N or analysis; PSIP explicitly 'not meant to be an assessment or evaluation tool' (p. 16)"
+ }
+}

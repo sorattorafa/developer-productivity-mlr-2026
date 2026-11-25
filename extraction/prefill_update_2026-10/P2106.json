@@ -1,0 +1,30 @@
+{
+  "id": "P2106",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Experience-based position column; not a synthesis of studies."},
+    "study_type": {"claude": "Other (conceptual essay / expert-opinion position paper)", "nlm": "Other (expert opinion / position paper)", "value": "Other (position paper / expert-opinion column)", "note": ""},
+    "research_method": {"claude": "Conceptual essay / expert opinion based on the experience of Google's Engineering Productivity Research team; no empirical data collection", "nlm": "Expert opinion / position paper; inaugural 'Developer Productivity for Humans' column; conceptual, no primary dataset", "value": "Position paper / expert-opinion column (inaugural 'Developer Productivity for Humans' column, IEEE Software) drawing on the authors' experience leading Google's Engineering Productivity Research team; conceptual argument with no empirical data", "note": ""},
+    "context": {"claude": "Industry; Google (Engineering Productivity Research team); no sample", "nlm": "Industry; Google; sample not specified (conceptual)", "value": "not reported (conceptual; no empirical sample); authors' experience at Google (Engineering Productivity Research team)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE only cited as an example framework for selecting multiple metrics."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Hybrid/distributed teams only named as a future column topic; pandemic only as an example of external context."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either (conceptual column, no data)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Throughput metrics (lines of code per minute) discussed critically as a flawed productivity measure."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "Flaky tests and technical debt appear only as productivity factors; no quality metric."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Code-review bias and team dispersion discussed as factors, not metrics."},
+    "cat_satisfaction": {"claude": "No", "nlm": "Yes", "value": null, "note": "NotebookLM lists employee attrition/retention as a Satisfaction metric (measure of happiness); Claude classes attrition as an organizational cost and reports no satisfaction metric. Text discusses happiness and attrition in one paragraph."},
+    "cat_activity": {"claude": "No", "nlm": "Yes", "value": null, "note": "Same metric (lines of code per minute), labelled Productivity (throughput) by Claude and Productivity/Activity by NotebookLM."},
+    "cat_delivery": {"claude": "No", "nlm": "Yes", "value": null, "note": "NotebookLM labels build speed 'Delivery / DevEx'; Claude treats it as a technical factor. Build speed is discussed only as an example of a productivity factor."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Flow and context switching discussed via build speed, but the DevEx framework is not used."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Agile methods and TDD mentioned only as general best practices."},
+    "cat_survey": {"claude": "No", "nlm": "No", "value": "No", "note": ""}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "The “Developer Productivity for Humans” column aims to draw attention to advances and challenges in research and practice in tools and practices that help improve developers’ day-to-day tasks.", "loc": "PDF p. 1 (From the Editors)"},
+    {"field": "research_method, context", "quote": "WE LEAD A mixed-methods research team at Google that seeks to understand what makes engineers productive and happy.", "loc": "PDF p. 1"},
+    {"field": "research_method", "quote": "We need to think about measuring productivity in a holistic and multifaceted way, not in a reductionist, unidimensional way.", "loc": "PDF p. 5 (Developer Productivity for Humans)"},
+    {"field": "cat_productivity", "quote": "Conflating throughput with productivity: One might count the lines of code written by a developer in a certain period and calculate a simple output per unit time “productivity” measure like lines of code per minute.", "loc": "PDF p. 3 (Software Engineering Is a Complex, Creative Endeavor)"}
+  ]
+}

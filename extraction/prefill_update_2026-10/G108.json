@@ -1,0 +1,32 @@
+{
+  "id": "G108",
+  "kind": "grey",
+  "fields": {
+    "primary_secondary": {"claude": "Secondary (article 'mainly based' on the Multitudes report)", "nlm": "no basis (summarizes Multitudes and LeadDev survey findings plus expert recommendations, without classifying)", "value": null, "note": "Journalistic piece reporting third-party survey results (Multitudes; LeadDev AI Impact Report 2025) plus original interview quotes; neither extractor settles Primary vs Secondary."},
+    "gl_type": {"claude": "Article (blog post / journalistic tech news-analysis article)", "nlm": "Article (blog post / industry article)", "value": "Article", "note": "Both give 'Blog post / article'; LeadDev piece by its Managing Editor (technology journalism)."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Both state DORA is not mentioned."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Both state SPACE is not mentioned."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Measuring the impact of AI coding tools on engineering productivity."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Neither mentions remote work or COVID-19."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either (survey collection periods not given)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "'Customer value delivered' bucket: features, with PRs shipped or tickets completed as fallbacks; velocity/speed."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "'Customer pain created' bucket: number of incidents, bug reports, leading quality indicators."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Collaboration only named once as a dimension of system-level productivity (Sridhar quote); no collaboration metric."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "'Impact on human engineers' bucket: out-of-hours work as indicator (NotebookLM: wellbeing/burnout)."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "AI usage data (tokens, lines accepted, cost) and PRs shipped as fallback; lines of code criticized."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin basis: roadmap delivery speed ('delivering on their roadmaps faster') and speed/velocity OKRs; no specific delivery metric."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "'DevX' appears only in an interviewee's job title."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "OKRs and experiments are goal-setting practices, not agile/process metrics."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Article reports Multitudes survey (700+ professionals) and LeadDev AI Impact Report 2025 survey findings."}
+  },
+  "evidence": [
+    {"field": "gl_type", "quote": "Michael is LeadDev’s Managing Editor, with over 10 years’ experience in technology journalism.", "loc": "text source (About the author)"},
+    {"field": "ai_discussed", "quote": "Organizations are still struggling to measure AI’s impact on engineering productivity, as board-level expectations shift from teams simply adopting AI tools to delivering tangible output with them.", "loc": "text source (opening paragraph)"},
+    {"field": "cat_productivity, cat_activity", "quote": "As for customer value delivered, this should link to a unit of customer value, like a feature, but fallbacks might be pull requests shipped or tickets completed, Peate added.", "loc": "text source (Which metrics are key?)"},
+    {"field": "cat_quality", "quote": "Meanwhile, the number of incidents is the obvious metric to use for gauging customer pain created, but bug reports are also a good way to track the broader impact.", "loc": "text source (Which metrics are key?)"},
+    {"field": "cat_satisfaction", "quote": "Finally, AI rollouts are bringing more out-of-hours work, so teams should track this as an indicator of the human impact of AI changes, Peate said.", "loc": "text source (Which metrics are key?)"},
+    {"field": "cat_activity", "quote": "Specifically, track AI usage data like tokens used, lines accepted, and cost, plus the dates of AI interventions.", "loc": "text source (Which metrics are key?)"},
+    {"field": "cat_delivery", "quote": "Ultimately, the most important question is whether teams are delivering on their roadmaps faster and with confidence,", "loc": "text source (Which metrics are key?)"},
+    {"field": "cat_survey", "quote": "Only 31% of firms have Objectives and Key Results (OKRs) in place to specifically measure the impact of AI tooling, according to Multitudes’ survey.", "loc": "text source (The challenge of measuring engineering productivity)"}
+  ]
+}

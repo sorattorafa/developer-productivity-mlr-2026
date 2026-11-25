@@ -1,0 +1,33 @@
+{
+  "id": "G097",
+  "kind": "grey",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Both describe the authors' own single case study at Zenseact (27 semi-structured interviews) and a proposed evaluation survey."},
+    "gl_type": {"claude": "Thesis (Master's thesis, Chalmers University of Technology)", "nlm": "Thesis (Master's thesis / academic report)", "value": "Thesis", "note": ""},
+    "dora_applied": {"claude": "No (reference only)", "nlm": "No (reference only)", "value": "No (reference only)", "note": "DORA only in the title of a cited reference (Witczak, 2023)."},
+    "space_applied": {"claude": "Yes (guidance)", "nlm": "Yes (guidance)", "value": "Yes (guidance)", "note": "Proposed recurring survey has questions within SPACE dimensions. Claude also notes SPACE probes in the interview guide, but findings are reported thematically, not per dimension."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Perceptions and evaluation of GenAI use in software development."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Neither mentions remote work or COVID-19."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Interview period not stated by either (thesis dated June 2024)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Time savings (survey Q7, hours saved per week) and productivity improvements proposed as quantitative evaluation metrics."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin basis: number of bugs introduced by GenAI and quality of software outputs named as metrics of interest; not measured."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Code review counts only as SPACE example metrics from the literature; knowledge-sharing sessions are an adoption practice, not a metric."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Satisfaction and well-being statements in the proposed survey; job satisfaction effects in interview findings."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Commits, PRs and LOC only cited (SPACE examples) or rejected as metrics."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "DevEx dimensions (cognitive load) used to derive questions in the proposed survey."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Agile organization is context only; story points only as a cited SPACE example."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "27 semi-structured interviews on perceptions; proposed quarterly Likert survey."}
+  },
+  "evidence": [
+    {"field": "gl_type", "quote": "Master's thesis in Management and Economics of Innovation", "loc": "PDF p. 1"},
+    {"field": "ai_discussed, cat_productivity, cat_satisfaction", "quote": "Evaluating GenAI in software development involves both quantitative metrics like time savings and productivity, and qualitative measures such as user satisfaction and perceived value, to fully assess its impact and utility.", "loc": "PDF p. 5"},
+    {"field": "cat_survey", "quote": "The semi-structured interviews were held with people from all the different departments of the case company but with slightly more focus on the Engineering department. This resulted in 27 interviews", "loc": "PDF p. 39"},
+    {"field": "cat_quality", "quote": "Other aspects potentially interesting to evaluate according to software developers were related to the coding process such as the number of bugs introduced by these tools.", "loc": "PDF p. 82"},
+    {"field": "space_applied, cat_devex", "quote": "The survey contains several questions that are directly linked to DevEx and SPACE.", "loc": "PDF p. 83"},
+    {"field": "space_applied, cat_satisfaction", "quote": "This results in the following questions within the satisfaction and well-being dimension from SPACE \"When using GenAI tools I feel more creative\"", "loc": "PDF p. 83"},
+    {"field": "cat_devex", "quote": "and cognitive load within DevEx \"I believe GenAI can provide me with insights and perspectives I may not have thought of myself\"", "loc": "PDF p. 83"},
+    {"field": "cat_survey", "quote": "To enable quantitative analysis, Likert scales have been used for several questions.", "loc": "PDF p. 87"},
+    {"field": "cat_productivity, cat_quality", "quote": "During interviews it was described that quantitative metrics of interest were time savings, productivity improvements, and quality of software outputs.", "loc": "PDF p. 89"}
+  ]
+}

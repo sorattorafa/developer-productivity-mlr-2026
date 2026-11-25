@@ -1,0 +1,285 @@
+{
+  "_metadata": {
+    "source": "MLR_Final_Consolidated.xlsx",
+    "note": "Recomputed from the human-coded (H) columns of the master."
+  },
+  "corpus": {
+    "academic_included": 153,
+    "grey_included": 75,
+    "total": 228
+  },
+  "framework_application": {
+    "academic": {
+      "DORA": {
+        "n": 9,
+        "pct": 5.9
+      },
+      "SPACE": {
+        "n": 19,
+        "pct": 12.4
+      },
+      "DevEx": {
+        "n": 12,
+        "pct": 7.8
+      }
+    },
+    "grey": {
+      "DORA": {
+        "n": 36,
+        "pct": 48.0
+      },
+      "SPACE": {
+        "n": 23,
+        "pct": 30.7
+      },
+      "DevEx": {
+        "n": 20,
+        "pct": 26.7
+      }
+    },
+    "any_academic": {
+      "n": 35,
+      "pct": 22.9
+    },
+    "any_grey": {
+      "n": 54,
+      "pct": 72.0
+    }
+  },
+  "framework_named_vs_applied": {
+    "_note": "named = framework appears in the free-text 'Frameworks Mentioned' field (col 15); applied = operationalized as the measurement instrument (human-coded).",
+    "academic": {
+      "DORA": {
+        "named": 19,
+        "applied": 9
+      },
+      "SPACE": {
+        "named": 48,
+        "applied": 19
+      },
+      "DevEx": {
+        "named": 35,
+        "applied": 12
+      }
+    },
+    "grey": {
+      "DORA": {
+        "named": 23,
+        "applied": 36
+      },
+      "SPACE": {
+        "named": 16,
+        "applied": 23
+      },
+      "DevEx": {
+        "named": 15,
+        "applied": 20
+      }
+    }
+  },
+  "tests": {
+    "DORA_academic_vs_grey": {
+      "table": [
+        [
+          9,
+          144
+        ],
+        [
+          36,
+          39
+        ]
+      ],
+      "fisher_p": 3.4247783064591554e-13
+    },
+    "any_framework_academic_vs_grey": {
+      "table": [
+        [
+          35,
+          118
+        ],
+        [
+          54,
+          21
+        ]
+      ],
+      "chi2": 49.0,
+      "p": 2.569751576829652e-12
+    }
+  },
+  "metric_categories_all": {
+    "Survey/perceptual": {
+      "n": 168,
+      "pct": 73.7
+    },
+    "Productivity/performance": {
+      "n": 163,
+      "pct": 71.5
+    },
+    "Satisfaction/well-being": {
+      "n": 143,
+      "pct": 62.7
+    },
+    "Quality": {
+      "n": 128,
+      "pct": 56.1
+    },
+    "Collaboration": {
+      "n": 113,
+      "pct": 49.6
+    },
+    "Activity/code": {
+      "n": 104,
+      "pct": 45.6
+    },
+    "Delivery performance": {
+      "n": 74,
+      "pct": 32.5
+    },
+    "Agile/process": {
+      "n": 69,
+      "pct": 30.3
+    },
+    "DevEx dimensions": {
+      "n": 32,
+      "pct": 14.0
+    },
+    "Remote/COVID": {
+      "n": 23,
+      "pct": 10.1
+    }
+  },
+  "metric_categories_per_academic_source": {
+    "mean_of_9": 3.8,
+    "distribution": {
+      "0": 1,
+      "1": 7,
+      "2": 31,
+      "3": 39,
+      "4": 21,
+      "5": 25,
+      "6": 17,
+      "7": 11,
+      "8": 1
+    }
+  },
+  "temporal": {
+    "academic": {
+      "2016-2019": 19,
+      "2020-2022": 25,
+      "2023-2026": 109
+    },
+    "grey": {
+      "2016-2019": 2,
+      "2020-2022": 6,
+      "2023-2026": 67
+    }
+  },
+  "framework_by_period_academic": {
+    "DORA": {
+      "2016-2019": 0,
+      "2020-2022": 0,
+      "2023-2026": 9
+    },
+    "SPACE": {
+      "2016-2019": 0,
+      "2020-2022": 3,
+      "2023-2026": 16
+    },
+    "DevEx": {
+      "2016-2019": 0,
+      "2020-2022": 0,
+      "2023-2026": 12
+    }
+  },
+  "sample_sizes_human": {
+    "n_studies": 98,
+    "median": 57,
+    "sum": 39137,
+    "bins": {
+      "101-500": 23,
+      "1-30": 36,
+      "2000+": 10,
+      "31-100": 22,
+      "501-2000": 7
+    }
+  },
+  "quality": {
+    "academic_dyba_1_5": {
+      "n": 153,
+      "mean": 4.19,
+      "sd": 0.61
+    },
+    "grey_aacods_1_6": {
+      "n": 75,
+      "mean": 4.27,
+      "sd": 1.04
+    }
+  },
+  "vendor_sensitivity": {
+    "n_vendor": 33,
+    "n_independent": 42,
+    "DORA": {
+      "vendor_pct": 72.7,
+      "independent_pct": 28.6
+    },
+    "SPACE": {
+      "vendor_pct": 27.3,
+      "independent_pct": 33.3
+    },
+    "DevEx": {
+      "vendor_pct": 21.2,
+      "independent_pct": 31.0
+    }
+  },
+  "grey_engagement_levels": {
+    "DORA": {
+      "empirical": 12,
+      "guidance": 24,
+      "referenced_only": 15,
+      "mentioned": 51
+    },
+    "SPACE": {
+      "empirical": 10,
+      "guidance": 13,
+      "referenced_only": 15,
+      "mentioned": 38
+    },
+    "DevEx": {
+      "empirical": 5,
+      "guidance": 15,
+      "referenced_only": 10,
+      "mentioned": 30
+    }
+  },
+  "grey_any_mentioned": {
+    "n": 64,
+    "pct": 85.3
+  },
+  "grey_any_empirical": {
+    "n": 23,
+    "pct": 30.7
+  },
+  "tests_empirical": {
+    "DORA": {
+      "acad_applied": 9,
+      "grey_empirical": 12,
+      "fisher_p": 0.0256
+    },
+    "SPACE": {
+      "acad_applied": 19,
+      "grey_empirical": 10,
+      "fisher_p": 0.8352
+    },
+    "DevEx": {
+      "acad_applied": 12,
+      "grey_empirical": 5,
+      "fisher_p": 1.0
+    },
+    "any_empirical": {
+      "acad": 35,
+      "grey": 23,
+      "chi2": 1.23,
+      "p": 0.268
+    }
+  }
+}

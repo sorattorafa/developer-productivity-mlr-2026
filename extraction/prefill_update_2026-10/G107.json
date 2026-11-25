@@ -1,0 +1,29 @@
+{
+  "id": "G107",
+  "kind": "grey",
+  "fields": {
+    "primary_secondary": {"claude": "Secondary", "nlm": "Secondary", "value": "Secondary", "note": "Both: news article summarizing the 2025 DORA State of AI-Assisted Software Development report; no new data."},
+    "gl_type": {"claude": "Article (InfoQ news article covering an industry report)", "nlm": "Article (industry report summary / tech news article)", "value": "Article", "note": ""},
+    "dora_applied": {"claude": "No (reference only)", "nlm": "No (reference only)", "value": "No (reference only)", "note": "DORA report and DORA AI Capabilities Model are discussed/summarized; no DORA metrics are measured or operationalized (four keys not named)."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE not mentioned by either."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Whole article is about AI-assisted software development."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Neither mentions remote work or COVID-19."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either; only '2025 DORA report' (survey of ~5,000 professionals) with no collection period."},
+    "cat_productivity": {"claude": "No (productivity only self-reported, i.e. survey)", "nlm": "Yes (problem-solving speed, code-writing efficiency, code production speed/volume)", "value": null, "note": "Claude treats the productivity gains as self-reported only; NotebookLM lists them as productivity and speed metrics."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Defects, deployment failures, operational instability, technical debt; discussed qualitatively, no figures."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Code review and cross-team collaboration appear as practices/capabilities, not as measures."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "'Developer experience' only mentioned in passing."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Larger PRs/changesets and code volume only mentioned in passing."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Software delivery performance is the central outcome, but only as an aggregate; specific DORA delivery metrics are not named."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM lists 'Developer Experience (DevEx) practices', but not the DevEx framework or its dimensions."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Working in small batches appears as a capability, not a process metric."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Summarized report rests on a survey of ~5,000 professionals and 100+ hours of interviews; self-reported adoption, productivity and trust."}
+  },
+  "evidence": [
+    {"field": "gl_type", "quote": "InfoQ Homepage News AI Is Amplifying Software Engineering Performance, Says The 2025 DORA Report", "loc": "text source (page header)"},
+    {"field": "ai_discussed, cat_delivery", "quote": "The 2025 DevOps Research and Assessment (DORA) report, titled State of AI-Assisted Software Development, finds that AI does not automatically improve software delivery performance.", "loc": "text source (opening paragraph)"},
+    {"field": "cat_survey", "quote": "The research draws on survey responses from nearly 5,000 technology professionals and more than 100 hours of qualitative interviews.", "loc": "text source (second paragraph)"},
+    {"field": "cat_quality", "quote": "This dynamic may increase the likelihood of defects, deployment failures, or operational instability if not properly managed.", "loc": "text source (paragraph on system stability)"},
+    {"field": "cat_delivery", "quote": "Organizations with mature DevOps practices, well-defined development workflows, and strong platform capabilities are far more likely to convert AI-driven productivity gains into measurable improvements in delivery performance.", "loc": "text source (paragraph on AI amplifying the engineering system)"}
+  ]
+}

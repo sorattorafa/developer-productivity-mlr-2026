@@ -1,0 +1,35 @@
+{
+  "id": "P2043",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Case study (qualitative single-case study)", "nlm": "Case study (qualitative single-case study)", "value": "Case study", "note": ""},
+    "research_method": {"claude": "Qualitative single-case study (Yin; Runeson & Höst) with hybrid (abductive) thematic analysis (Fereday & Muir-Cochrane); triangulation of 28 semi-structured interviews, 9 archival documents incl. DORA self-assessments 2021–2023, and a validation focus group (7 experts); member checking; Cohen's kappa 0.86", "nlm": "Qualitative single-case study with hybrid abductive thematic analysis; 28 semi-structured interviews, 9 archival documents (incl. longitudinal DORA assessments 2021–2023), expert focus group (7 participants)", "value": "Qualitative single-case study with hybrid (abductive) thematic analysis (Fereday & Muir-Cochrane), deductive codebooks (DevOps capability and metric taxonomies, ISO/IEC/IEEE 12207 processes) plus inductive coding; triangulation of 28 semi-structured interviews, 9 internal archival documents (incl. longitudinal DORA self-assessments 2021–2023) and a 90-minute expert focus group (7 participants)", "note": "Member checking and inter-rater kappa (0.86) reported only by Claude (not contradicted)."},
+    "context": {"claude": "Industry; US-based global SaaS company (enterprise digital experience platforms), founded 2007, >1,200 employees; 28 interviewees in USA, India, Canada, Europe", "nlm": "Industry; US-based global SaaS company (enterprise digital experience platforms), established 2007, >1,200 employees; 28 interviewees in USA, India, Canada, Europe", "value": "industry; single US-based global SaaS company (enterprise digital experience platforms; founded 2007, >1,200 employees) adopting DevOps; 28 interviewees (14 individual contributors, 6 managers, 5 team leads, 2 directors, 1 staff engineer) in USA, India, Canada and Europe", "note": ""},
+    "dora_applied": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Internal DORA self-assessments 2021–2023 (IT performance, lead time, DF, CFR, MTTR, burnout) are the longitudinal quantitative data."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not specified by either; geographic distribution of participants (and videoconference interviews, NotebookLM) only describe the sample."},
+    "data_window": {"claude": "2021–2023 (DORA assessments); interviews June–September 2023", "nlm": "2021–2023", "value": "2021–2023 (archival DORA self-assessments; interviews June–September 2023)", "note": "Interview months stated only by Claude (not contradicted)."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels IT Performance Index and lead time 'Productivity / Delivery', but these are DORA delivery metrics (go to Delivery)."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Change failure rate, MTTR, system availability, escaped/critical defects in production."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Collaboration appears only as a DevOps capability/factor; Westrum culture only referenced."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Staff burnout (DORA assessments) and Team Happiness (M21)."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Claude labels pipeline onboarding status 'Activity / Process' and NotebookLM labels releases/unowned repositories 'Activity'; none is raw repository activity."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Lead time score, deployment frequency score, IT Performance Index, successful releases."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels staff burnout 'Cultural / DevEx'; DevEx framework not used."},
+    "cat_agile": {"claude": "Yes", "nlm": "no basis", "value": null, "note": "Claude lists pipeline onboarding status (DevOps pipeline adoption over time) as an Activity/Process metric; NotebookLM gives no process/pipeline metric (methodology 'DevOps' for both)."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "DORA self-assessment surveys, interviews and focus group."}
+  },
+  "evidence": [
+    {"field": "study_type", "quote": "To address this problem, this research conducts an in-depth single-case study to explore and explain the relational mechanisms (interaction) among DevOps capabilities, metrics, and lifecycle processes.", "loc": "PDF p. 3"},
+    {"field": "research_method", "quote": "A hybrid (abductive) thematic analysis approach, guided by the analytical framework proposed by Fereday and Muir-Cochrane (2006), was employed to process the empirical interview data.", "loc": "PDF p. 10"},
+    {"field": "research_method, data_window, cat_survey", "quote": "The study conducted 28 semi-structured interviews between June and September 2023 using an open-ended guide which is provided in full in Appendix A.", "loc": "PDF p. 9"},
+    {"field": "research_method", "quote": "A 90-minute focus group was conducted with seven experts", "loc": "PDF p. 9"},
+    {"field": "context", "quote": "The study focuses on a US-based private software company operating globally in the SaaS industry. Established in 2007 with over 1,200 employees, the organization provides enterprise digital experience platforms.", "loc": "PDF p. 9"},
+    {"field": "dora_applied, data_window", "quote": "Key artifacts included longitudinal DORA self-assessment reports (2021-2023) capturing performance metrics (e.g., DF, MLT) and strategic presentations (D04-D06) outlining the transformation vision.", "loc": "PDF p. 9"},
+    {"field": "dora_applied, cat_quality, cat_satisfaction, cat_delivery", "quote": "Internal DORA assessment results (2021-2023) Metric IT Performance Index (%) System Availability (%) Change Failure Rate (%) Staff Burnout (%) Lead Time Score (0-100) MTTR Score (0-100) Deployment Frequency Score (0-100)", "loc": "PDF p. 15 (Table 7)"},
+    {"field": "cat_delivery, cat_quality", "quote": "Successful releases increased from 1,648 in 2021 to 2,084 in 2023, while critical defects identified in production decreased by over 70% (I01, I06, I20).", "loc": "PDF p. 14"},
+    {"field": "cat_satisfaction", "quote": "Analysis revealed a bidirectional relationship between 'Support for learning' (C02) and 'Team Happiness' (M21).", "loc": "PDF p. 18"}
+  ]
+}

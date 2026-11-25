@@ -1,0 +1,36 @@
+{
+  "id": "P2038",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Mixed methods (controlled human study / experiment with mixed methods)", "nlm": "Mixed methods (controlled experiment / mixed methods)", "value": "Mixed methods", "note": "Both describe a controlled study with logs, survey and qualitative coding; the paper calls it a mixed-methods design."},
+    "research_method": {"claude": "Controlled human study, 3 ACATs x 3 task types; IDE logs (ccdc-plugin), screen recordings, post-task Likert survey, personalized interviews; descriptive statistics plus open coding with negotiated agreement; 1,909 min of recordings, 1,257 behaviour instances", "nlm": "Controlled experiment / mixed methods; quantitative interaction logs and survey, qualitative coding of screen recordings (1,909 min); 3 ACATs x 3 task types", "value": "Controlled human study with mixed methods; 3 ACATs (GitHub Copilot, Tabnine, CodeGeeX) x 3 Python task types (ADS, MSD, RTD); VSCode extension logs (ccdc-plugin), screen recordings (1,909 min), post-task Likert survey (with vs. without ACAT) and personalized interviews; descriptive statistics and open coding of interaction behaviours", "note": "Counts of behaviour instances (1,257 of 47 behaviours) reported only by Claude (not contradicted)."},
+    "context": {"claude": "Academic; CS students at Beihang University (China), Python tasks representative of SE education; 27 students", "nlm": "Academic; Beihang University, CS education; 27 CS students", "value": "academic; Beihang University (China), CS students on Python programming tasks; 27 students (10 senior undergraduates, 17 graduate students)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "space_applied": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "SPACE operationalizes self-perceived productivity (Efficiency and flow, Performance, Satisfaction and well-being)."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "AI coding assistants (Copilot, Tabnine, CodeGeeX) are the object of study."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Both list work mode 'Remote' only because the experiment was run remotely on the platform; remote work is not a topic of the study."},
+    "data_window": {"claude": "January 2024", "nlm": "early 2024", "value": "January 2024", "note": "NotebookLM says 'early 2024'; full text states the survey was conducted in January 2024."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Only self-perceived productivity (survey); task completion rate and duration deliberately not measured. NotebookLM labels acceptance rate 'Productivity / Activity', but it is a suggestion-interaction count."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Code-quality evaluation criteria for suggestions (correct syntax, similarity to correct code, readability, style, comments) rated by participants."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE Communication dimension excluded (individual tasks)."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "SPACE Satisfaction and well-being via perceived strenuousness of programming without the tool."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Interaction frequency and acceptance counts logged by the IDE extension."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "'Efficiency and flow' is the SPACE dimension; DevEx framework not used."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Post-task Likert survey and interviews."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "Our study employs a mixed-methods approach, encompassing both quantitative and qualitative data types.", "loc": "PDF p. 15"},
+    {"field": "research_method, context", "quote": "To achieve this goal, we design a controlled human study involving 27 CS students, simulating real-world programming scenarios.", "loc": "PDF p. 3"},
+    {"field": "context", "quote": "our 27 participants consist of 6 females and 21 males, with 10 being senior undergraduate students and the remaining 17 graduate students.", "loc": "PDF p. 11"},
+    {"field": "space_applied", "quote": "To ensure construct validity, we base our measurement on the SPACE framework [17], which defines productivity across five dimensions", "loc": "PDF p. 20"},
+    {"field": "ai_discussed", "quote": "we conducted a study with 27 CS students, examining their interactions with 3 widely used ACATs across 5 key dimensions", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "data_window", "quote": "Given the survey was conducted in January 2024, respondents' feedback reflects their ACAT interactions at that time point.", "loc": "PDF p. 40"},
+    {"field": "cat_quality", "quote": "codequality-related metrics, which assess the technical soundness and clarity of generated code (e.g., correct syntax, similarity to correct code, readability, consistent code style, inclusion of comments)", "loc": "PDF p. 31"},
+    {"field": "cat_satisfaction, space_applied", "quote": "Satisfaction and well-being: measured through participants' sentiment on reliance, operationalized via the perceived strenuousness of programming without the tool.", "loc": "PDF p. 20"},
+    {"field": "cat_activity", "quote": "Using our extension \"ccdc-plugin,\" we quantify the level of interaction by counting the total number of ACAT recommendations and the number of recommendations accepted by participants.", "loc": "PDF p. 16"},
+    {"field": "cat_survey", "quote": "The quantitative data includes code interaction metrics (e.g., code recommendation acceptance counts) and survey responses (Likert-scale ratings), which provide measurable insights into user engagement and satisfaction.", "loc": "PDF p. 15"}
+  ]
+}

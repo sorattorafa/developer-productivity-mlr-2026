@@ -1,0 +1,37 @@
+{
+  "id": "P2108",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Mixed methods (multi-phase: diary study, follow-up interviews, daily surveys, logs-based signals, validation against self-report)", "nlm": "Mixed methods (diary study, interviews, daily end-of-day surveys, logs-based modeling via word2vec, quarterly surveys)", "value": "Mixed methods", "note": "Claude describes the article genre as a magazine column / industrial practice report, but its method description is the same multi-phase mixed design. Sample sizes not reported, so the author may prefer Experience report."},
+    "research_method": {"claude": "Multi-phase human-centered approach: (1) diary study, follow-up interviews and end-of-day daily surveys; (2) logs-based signals (word2vec over cross-tool log sequences; friction components vs thresholds); (3) validation against diaries and quarterly longitudinal survey; sample sizes not reported", "nlm": "Mixed methods: qualitative diary study, follow-up interviews, daily end-of-day surveys for a week, cross-tool logs modeling via word2vec, quarterly longitudinal surveys; thresholds via classification", "value": "Multi-phase human-centered metric development: (1) diary study with follow-up interviews and end-of-day surveys over one week to capture experienced flow and friction; (2) logs-based metrics: focus time from word2vec task similarity over cross-tool log sequences, and a composite friction metric (build/test latency, flaky tests, blocked submissions aggregated per developer-day, thresholds set as a classification problem); (3) validation against diary data and a quarterly longitudinal survey; sample sizes not reported", "note": ""},
+    "context": {"claude": "Industry; Google (internal development infrastructure, builds, tests, change lists); sample not reported", "nlm": "Industry; Google software developers (diary, interview and survey participants)", "value": "industry; Google developers (internal development tools and infrastructure); sample sizes not reported", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin: ML/NLP (word2vec) is part of the proposed focus-time measurement instrument; no AI coding tools discussed."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not reported by either."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either (only 'a week' of daily surveys, no dates)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Logs-based productivity indicators (number of change lists, iteration-loop duration) used to calibrate friction thresholds; focus time framed as an input to productivity."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Flaky tests as a friction component."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Rounds of review mentioned only as an example of a less human metric."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Quarterly survey sentiment items (satisfaction with code complexity, project velocity, tools, development speed) used to validate friction thresholds."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Number of change lists; number of builds discussed critically; logged events/sessions used as controls."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin: latency of tests tied to change-list submission and CI-blocked submission attempts, labelled Delivery by both."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Flow/focus and friction are measured and labelled DevEx by both, but the DevEx framework (Noda/Storey/Forsgren) is not cited; Google's own line of work."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels blocked submissions 'Process / Delivery', but it is a CI friction component, not an agile/process metric."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Diary study, end-of-day surveys, interviews and a quarterly survey item on flow."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "by: 1) understanding developers’ subjective experiences, 2) identifying logs-based signals that most closely represent these experiences, and 3) validating our metrics against self-reported data.", "loc": "PDF p. 2"},
+    {"field": "research_method, cat_survey", "quote": "We conducted a diary study with follow-up interviews to hear from developers directly and identify generalizable characteristics of flow that informed our logs-based metric.", "loc": "PDF p. 2 (Measuring Flow and Focus)"},
+    {"field": "research_method, cat_survey", "quote": "To do this, we surveyed a sample of developers at the end of their workday each day for a week to better understand whether they experienced friction", "loc": "PDF p. 4 (Letting Developers Define Friction)"},
+    {"field": "research_method, cat_survey", "quote": "we validated that our metric was capturing the behaviors of interest using diary data and quarterly survey", "loc": "PDF p. 3 (Validating the Focus Time Metric)"},
+    {"field": "context", "quote": "Teams at Google have been putting together friction", "loc": "PDF p. 3 (Measuring Friction)"},
+    {"field": "ai_discussed, research_method", "quote": "We derived task similarity using a natural language processing technique called word2vec.", "loc": "PDF p. 3 (Defining the Focus Time Metric)"},
+    {"field": "research_method", "quote": "We treated this as a classification problem aimed at identifying individual developers that showed reduced productivity as measured by our logs-based indicators", "loc": "PDF p. 5"},
+    {"field": "cat_productivity, cat_activity", "quote": "productivity metrics (e.g., fewer change lists, longer iteration loops).", "loc": "PDF p. 5 (Balancing Self-Report and Logs Data)"},
+    {"field": "cat_satisfaction, cat_survey", "quote": "developer sentiment items from our quarterly survey that we hypothesized are related to friction (e.g., lower ratings of satisfaction with code complexity or project velocity)", "loc": "PDF p. 5 (Balancing Self-Report and Logs Data)"},
+    {"field": "cat_quality, cat_delivery", "quote": "These components included the latencies of local builds and tests, the latencies of testing that are associated with submitting change lists, and issues with flaky tests and blocked submission attempts.", "loc": "PDF p. 5"},
+    {"field": "cat_activity", "quote": "For example, number of builds is an easily accessible metric that on some level reflects work being done, but it fails to capture how the work is being done.", "loc": "PDF p. 1"}
+  ]
+}

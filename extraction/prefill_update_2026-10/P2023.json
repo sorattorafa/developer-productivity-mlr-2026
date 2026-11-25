@@ -1,0 +1,35 @@
+{
+  "id": "P2023",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Mixed methods", "nlm": "Mixed methods", "value": "Mixed methods", "note": "Longitudinal IDE telemetry plus survey and interviews."},
+    "research_method": {"claude": "Mixed methods: two-year longitudinal IDE telemetry analysis (Mixed Linear Model Regression), online survey (5-point Likert), 5 post-survey semi-structured interviews", "nlm": "Mixed methods: longitudinal IDE telemetry analysis, survey, semi-structured interviews", "value": "Mixed methods: two-year longitudinal analysis of IDE telemetry (800 devices, 400 AI users vs 400 non-users, 151,904,543 events; monthly trends via Mixed Linear Model Regression) on five workflow dimensions, plus online survey (5-point Likert; 62 valid responses) and 5 follow-up semi-structured interviews", "note": "Mixed Linear Model reported only by Claude (not contradicted)."},
+    "context": {"claude": "Industry; professional developers using JetBrains IDEs (IntelliJ IDEA, PyCharm, PhpStorm, WebStorm), study with JetBrains; 800 devices, 62 survey respondents, 5 interviewees", "nlm": "Industry; professional developers in the JetBrains ecosystem (IntelliJ IDEA, PyCharm, PhpStorm, WebStorm); 800 developers, 62 survey respondents, 5 interviewees", "value": "industry; professional developers using JetBrains IDEs (IntelliJ IDEA, PyCharm, PhpStorm, WebStorm), study run with JetBrains; 800 developers' telemetry (JetBrains AI Assistant users vs non-users), 62 survey respondents, 5 interviewees", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "DORA not mentioned."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE only referenced (to justify code output as an activity indicator)."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "In-IDE AI coding assistants are the object of study (AI users vs non-users)."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not specified by either."},
+    "data_window": {"claude": "October 2022–October 2024", "nlm": "two years (no dates)", "value": null, "note": "Claude: logs from October 2022 to October 2024; NotebookLM: only 'over 2 years'. Full text: devices active in Oct 2022 and Oct 2024; trend analysis on October 2022 to September 2024 (24 months)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Typed characters as productivity proxy (RQ1); perceived productivity and coding time in survey."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Debugging instances as code-quality proxy; perceived code quality and readability."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels external pastes 'Collaboration/Reuse', but code reuse is not a collaboration metric; AI as 'second pair of eyes' only in interview quotes."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "No", "value": null, "note": "Claude lists overall satisfaction with AI coding tools (71% satisfied) as a survey metric; NotebookLM does not mention it. In the paper it is a context question alongside reliance on AI."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "IDE event counts: deletions, external pastes, IDE window activations (and typed characters)."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Both tag context switching 'DevEx', but the DevEx framework is not used or cited."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "5-point Likert survey of perceived changes in the five dimensions, plus interviews."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, context", "quote": "We address this gap with a mixed-method study of AI adoption in IDEs, combining longitudinal two-year fine-grained telemetry from 800 developers with a survey of 62 professionals.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "research_method, context", "quote": "We analyze 151,904,543 fine-grained, anonymized IDE interaction logs collected over two years from 800 software developers, including 400 AI users and 400 AI non-users.", "loc": "PDF p. 1 (Introduction)"},
+    {"field": "research_method", "quote": "Given the non-normal distribution and heteroscedasticity of our data, we performed Mixed Linear Model Regression [39] for trend analysis.", "loc": "PDF p. 6"},
+    {"field": "ai_discussed", "quote": "Telemetry reveals that AI users produce substantially more code but also delete significantly more.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "cat_productivity", "quote": "As a proxy for productivity, we counted the number of typed characters in the editor (RQ1)", "loc": "PDF p. 5"},
+    {"field": "cat_quality", "quote": "As a proxy for code quality, we chose the number of debugging instances (RQ2).", "loc": "PDF p. 5"},
+    {"field": "cat_activity", "quote": "As a proxy for code editing, we chose the number of deletions, including delete keystrokes, backspaces, undos, etc. (RQ3).", "loc": "PDF p. 5"},
+    {"field": "cat_activity", "quote": "As a proxy for context switching, we chose the number of IDE window activations (RQ5).", "loc": "PDF p. 5"},
+    {"field": "cat_survey", "quote": "Seven 5-point Likert-scale questions regarding perception of their workflow after they started using AI.", "loc": "PDF p. 4 (3.1.1 Data collection)"}
+  ]
+}

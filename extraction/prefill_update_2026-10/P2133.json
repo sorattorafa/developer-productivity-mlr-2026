@@ -1,0 +1,36 @@
+{
+  "id": "P2133",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Mixed methods (user study with telemetry, retrospective self-labeling, quantitative analysis, post-study survey)", "nlm": "Mixed methods (pilot, user study with retrospective video labeling, Markov modeling, post-study survey)", "value": "Mixed methods", "note": "Proposes the CUPS taxonomy and validates it in a user study."},
+    "research_method": {"claude": "Remote lab user study with Copilot telemetry and screen recording; participants retrospectively label segments with the CUPS taxonomy; time per state, Markov chain/state machine, n-grams, statistical tests; SPACE-based post-study survey", "nlm": "Pilot study, user study with retrospective video labeling, state machine/Markov chain modeling, post-study survey", "value": "User study (taxonomy refined in a pilot): 21 programmers solved time-limited (~20 min) coding tasks in VS Code with GitHub Copilot; telemetry plus screen recordings, retrospectively self-labeled with the 12-state CUPS taxonomy (3,137 segments); analysis of time per state, state-machine (Markov) transitions and an adjusted verification-time metric; post-study survey based on a SPACE-based productivity survey", "note": ""},
+    "context": {"claude": "Industry; programmers from a large organization (Microsoft: engineers of varied seniority, researchers, graduate interns); ~20-min tasks in VS Code with Copilot (August 2022 version)", "nlm": "Industry / corporate research lab (Microsoft); 21 programmers (software engineers, researchers, graduate student interns)", "value": "industry; single large organization (Microsoft), remote lab sessions in VS Code with GitHub Copilot; 21 programmers (software engineers, researchers, graduate interns; 19 used Python)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "space_applied": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin: only the post-study survey, adapted from Ziegler et al.'s SPACE-based instrument; the main instrument is CUPS."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Interaction with GitHub Copilot is the object of study."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Study run over video call on a remote VM; work mode not a topic."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either (Claude only notes the August 2022 Copilot version)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Task completion time and time costs per CUPS state (51.5% of session in Copilot-specific states)."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: proposed survival rate of accepted suggestions and a survey item on code-quality concern; no defect metric measured."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "Both label the post-study survey 'Satisfaction', but the items they list are perceived speed/productivity, flow, information search and quality concern."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Telemetry event counts: suggestions shown/accepted, acceptance rate, time to accept."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Both use 'DevEx' as a label only; the DevEx framework is not cited."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels state transitions 'Activity/Process', but they are interaction states, not process metrics."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Post-study Likert survey and retrospective self-labeling."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "we conducted a user study with 21 developers who were asked to retrospectively review videos of their coding sessions and explicitly label their intents and actions using this model, with an option to add new states if necessary.", "loc": "PDF p. 2 (1 Introduction)"},
+    {"field": "research_method", "quote": "To understand if there was a pattern in participant behavior, we modeled transitions between two states as a state machine.", "loc": "PDF p. 9"},
+    {"field": "context", "quote": "To recruit participants, we posted invitations to developer-focused email distribution lists within our large organization.", "loc": "PDF p. 7 (5.2 Participants)"},
+    {"field": "context", "quote": "We conducted the study over a video call and asked participants to use a remote desktop application to access a virtual machine (VM).", "loc": "PDF p. 7 (5.1 Procedure)"},
+    {"field": "space_applied, cat_survey", "quote": "After completing the study, participants were asked to complete a survey based on the productivity survey in [40], which focuses on the SPACE framework of programmer productivity [13].", "loc": "PDF p. 13 (6.6 Post-Study Survey Answers)"},
+    {"field": "ai_discussed, cat_productivity", "quote": "We found that the total time participants spend in these states is 51.5 %", "loc": "PDF p. 9"},
+    {"field": "cat_productivity", "quote": "On average, participants took 12.23 minutes (sample standard deviation,", "loc": "PDF p. 7"},
+    {"field": "cat_activity", "quote": "During the coding tasks, Copilot showed participants a total of 1024 suggestions, out of which they accepted 34.0%.", "loc": "PDF p. 7"},
+    {"field": "cat_quality", "quote": "We recommend using measures such as the fraction of suggestions accepted that survive in the codebase after a certain time period (e.g. 10 minutes).", "loc": "PDF p. 13"},
+    {"field": "cat_quality, cat_survey", "quote": "We found that 6/21 participants agreed or strongly agreed with the statement that they were concerned about the quality of their code when using Copilot.", "loc": "PDF p. 13"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "G083",
+  "kind": "grey",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Both describe the author's own CLI tool and complexity measurements of GPU-framework implementations."},
+    "gl_type": {"claude": "Thesis (Bachelor's thesis in Informatics, TUM)", "nlm": "Thesis (Bachelor's thesis in Informatics)", "value": "Thesis", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Both state DORA is not mentioned."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Both state SPACE is not mentioned."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": "Only a methodological mention (Claude): ChatGPT 5.0 assisted in validating larger test samples; NotebookLM does not mention AI."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "data_window": {"claude": "Repository snapshot of 16.11.2025 (code files, not a period)", "nlm": "no basis", "value": null, "note": "Only Claude gives a date (state of the GitHub repositories on 16.11.2025); NotebookLM gives none."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Productivity appears only in the title; no productivity metric is defined or measured (Halstead time is a formula-based estimate)."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Code complexity metrics (Cyclomatic, Cognitive/SonarQube, Nesting Depth, Halstead) implemented and compared, framed as implementation/understanding difficulty (NotebookLM: maintainability)."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: SLOC is measured, but as static code size/complexity of benchmark files, not repository activity (no commits, diffs or churn)."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Both state DevEx is not mentioned."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "No", "nlm": "No", "value": "No", "note": "No human participants."}
+  },
+  "evidence": [
+    {"field": "gl_type", "quote": "Bachelor's Thesis in Informatics", "loc": "PDF p. 1"},
+    {"field": "cat_quality", "quote": "The metrics are Source Lines of Code (SLOC) complexity, Cyclomatic Complexity, Nesting Depth Complexity, Cognitive Complexity, and Halstead complexity.", "loc": "PDF p. 7 (Abstract)"},
+    {"field": "cat_quality", "quote": "The complexity may be interpreted as implementation difficulty of the code or similarly as the difficulty in understanding the code.", "loc": "PDF p. 7 (Abstract)"},
+    {"field": "cat_quality", "quote": "In other words is there a relationship between the code complexity metric and error-proneness of programs measured by the amount of time devs need to find errors.", "loc": "PDF p. 15"}
+  ]
+}

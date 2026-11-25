@@ -1,0 +1,34 @@
+{
+  "id": "P2129",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Quasi-experiment (exploratory, cross-sectional, natural quasi-experiment via survey)", "nlm": "Quasi-experiment (exploratory, cross-sectional, natural quasi-experiment)", "value": "Quasi-experiment", "note": "Survey-based comparison of non-randomized Copilot users vs non-users."},
+    "research_method": {"claude": "Exploratory cross-sectional natural quasi-experiment; survey of 57 questions (mostly 5-point Likert) comparing Copilot users and non-users; Top 2-Box; one-sided Mann-Whitney U with RBC and CLES; Bonferroni p < 0.0056; items adapted from GitHub Research's SPACE-based survey", "nlm": "Exploratory cross-sectional natural quasi-experiment; 57-item online survey; Top 2-Box; Mann-Whitney U, RBC, CLES; Bonferroni-corrected threshold", "value": "Exploratory, cross-sectional natural quasi-experiment (non-randomized users vs non-users of GitHub Copilot); 57-question survey, mostly 5-point Likert, items adapted from GitHub Research's survey; Top 2-Box analysis and one-sided Mann-Whitney U tests with rank-biserial correlation and CLES, Bonferroni-corrected p < 0.0056 over 9 hypotheses", "note": ""},
+    "context": {"claude": "Industry (public sector), Norwegian Welfare Administration (NAV), ~1000 IT employees, agile teams; 115 responses (67 users, 48 non-users), Method section says 114 (67/47)", "nlm": "Industry / public sector, NAV Norway, IT department ~1000 employees; 115 participants (67 users, 48 non-users)", "value": "industry (public sector); IT department of the Norwegian welfare administration NAV (~1000 employees, agile teams); 115 survey responses (67 Copilot users, 48 non-users)", "note": "Claude notes the Method section reports 114 respondents (67/47); the Results section reports 115 (67/48)."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "space_applied": {"claude": "No (instrument derived from a SPACE-based survey; subset of items, framework not applied systematically)", "nlm": "Yes (survey items adapted from GitHub's SPACE-based survey)", "value": null, "note": "Claude: referenced only; NotebookLM: referenced and applied via the adapted items."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "GitHub Copilot adoption is the object of study."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not reported; remote workers mentioned once as speculation in the Discussion."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either (Copilot access granted September 2023; survey date not given)."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Only perceived productivity ('Productive when coding' Likert item), which goes to Survey."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "'Dependent on colleagues' item; implications for teamwork and knowledge sharing."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Job satisfaction, focus on satisfying work, frustration when coding."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Both label 'Searches for information online' Activity, but it is a Likert attitude item, not repository activity."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels items 'DevEx', but the DevEx framework is not cited; flow item comes from SPACE."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Agile/Scrum is the setting and the implication (Scrum Masters), but no process metric is used."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Likert survey is the only instrument."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "The research design can be described as an exploratory, cross-sectional, natural quasi-experiment involving two distinct groups: users and non-users of Copilot in NAV.", "loc": "PDF p. 2 (2 Method and Study Design)"},
+    {"field": "research_method", "quote": "we employed the nonparametric Mann-Whitney U Test [9] to assess differences between the groups' distributions, complemented by the Rank-Biserial Correlation (RBC) [7] and the Common Language Effect Size (CLES) [10] for evaluating effect magnitude.", "loc": "PDF p. 3"},
+    {"field": "research_method, cat_survey", "quote": "The final questionnaire consisted of 57 questions (28 for both groups and an additional 29 for the users), most of them being 5-point Likert Agreement scale-type questions.", "loc": "PDF p. 3"},
+    {"field": "context", "quote": "NAV has about 1000 employees in their IT department, and the teams follow agile principles of software development.", "loc": "PDF p. 2"},
+    {"field": "context", "quote": "The final survey collected a total of 115 responses, comprising 67 users and 48 non-users of GitHub Copilot.", "loc": "PDF p. 3 (3 Results)"},
+    {"field": "ai_discussed, cat_collaboration", "quote": "Findings reveal that Copilot users experience significantly greater focus on engaging tasks and less dependence on colleagues compared to non-users, while non-users maintain a more cautious stance on AI use in the public sector.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "cat_collaboration", "quote": "This confirmed our hypothesis, with nearly half of the users disagreeing with the notion that they rely on assistance or guidance from colleagues, compared to just a fifth of the non-users.", "loc": "PDF p. 4"},
+    {"field": "cat_satisfaction, cat_survey", "quote": "Users also reported a notably higher job satisfaction than the non-users, with 87% of the users agreeing that they felt satisfied in their job, as compared to 73% of the non-users.", "loc": "PDF p. 5 (4 Discussion)"}
+  ]
+}

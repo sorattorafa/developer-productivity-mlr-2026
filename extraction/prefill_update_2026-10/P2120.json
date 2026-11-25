@@ -1,0 +1,34 @@
+{
+  "id": "P2120",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Own survey and StackOverflow data."},
+    "study_type": {"claude": "Mixed methods (developer survey plus thematic analysis of StackOverflow threads)", "nlm": "Mixed methods (literature-guided survey, Likert analysis, thematic analysis, Q&A thread mining)", "value": "Mixed methods", "note": ""},
+    "research_method": {"claude": "Developer survey (11 questions, closed- and open-ended; 4-point scales analysed numerically, inductive thematic analysis) plus thematic analysis of 38 StackOverflow threads selected from 169 search results", "nlm": "Literature-guided survey with Likert analysis and thematic analysis, plus thematic analysis of 38 accepted StackOverflow threads", "value": "Literature-guided developer survey (11 questions; closed-ended 4-point agreement/frequency scales analysed by mean scores and ranks, open-ended answers by thematic analysis; 170 responses) plus thematic analysis of 38 StackOverflow threads with accepted answers (query \"flaky test hasaccepted:yes\")", "note": "'169 search results' reported only by Claude (not contradicted)."},
+    "context": {"claude": "Mixed; developers recruited via Twitter, LinkedIn and Sheffield Digital, commercial and/or open-source, no specific organization; StackOverflow community", "nlm": "Mixed (commercial and open-source software development); 170 survey respondents and 38 StackOverflow threads", "value": "mixed; developers recruited via Twitter, LinkedIn and Sheffield Digital (commercial and/or open-source development, no specific organization), plus StackOverflow threads; 170 survey respondents and 38 threads", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not referenced by either."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not referenced by either."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": "ML only mentioned as a domain whose random data makes tests flaky."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Both: work mode not specified."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Both tag the perceived productivity/efficiency-loss statements (SQ4.2, SQ4.3) as Productivity, but these are agreement ratings; perceived productivity goes to cat_survey per the definitions."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Flaky tests (test reliability), their frequency and causes are the study object."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_satisfaction": {"claude": "No", "nlm": "Yes", "value": null, "note": "NotebookLM tags the testing-confidence-loss statement (SQ4.4) as Satisfaction/DevEx and lists frustration as a psychological cost; Claude mentions frustration only as a negative factor and tags confidence under Quality/Productivity/DevEx."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM tags several self-reported frequency items (flaky test observation, actions, ignoring failures) as Activity, but none is repository activity."},
+    "cat_delivery": {"claude": "No", "nlm": "Yes", "value": null, "note": "NotebookLM tags the perceived CI-hindrance statement (SQ4.5) as Delivery/Productivity; Claude's only Delivery tag is a literature-cited build-restart statistic (Durieux et al.)."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "'Developer experience' in the title is generic; no DevEx framework."},
+    "cat_agile": {"claude": "Yes", "nlm": "No", "value": null, "note": "Claude tags the self-reported action frequencies (re-run, quarantine, repair) as Process; NotebookLM tags them Activity/DevEx. CI is the context, no sprint/workflow metric."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Developer survey with 4-point agreement and frequency scales."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, context, cat_survey", "quote": "To that end, we designed a literature-guided developer survey that we deployed on social media, receiving 170 total responses. We also searched on StackOverflow and analyzed 38 threads relevant to flaky tests, offering a distinct perspective free of any self-reporting bias.", "loc": "PDF p. 1"},
+    {"field": "research_method", "quote": "We performed thematic analysis [11] on the questions and accepted answers in these threads to gain insights into the flaky tests for which developers require assistance to diagnose and repair.", "loc": "PDF p. 1"},
+    {"field": "research_method", "quote": "The query we used was \"flaky test hasaccepted:yes\".", "loc": "PDF p. 4"},
+    {"field": "context", "quote": "We disseminated the survey on Twitter and LinkedIn, specifically asking for developer participants. We also circulated the survey among Sheffield Digital, a regional technology business forum [7].", "loc": "PDF p. 2"},
+    {"field": "context", "quote": "SQ10: How many years experience do you have in commercial and/or open-source software development?", "loc": "PDF p. 3"},
+    {"field": "research_method, cat_survey", "quote": "To address RQ2, this question posed eight statements and asked participants to rate their agreement on a four-point scale.", "loc": "PDF p. 2"},
+    {"field": "cat_quality", "quote": "SQ4.1: Reliability: Flaky tests reduce the reliability of testing.", "loc": "PDF p. 2"},
+    {"field": "cat_quality", "quote": "developers rate issues in setup and teardown to be the most common causes of flaky tests.", "loc": "PDF p. 1 (Abstract)"}
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "P2024",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Experience report (longitudinal industrial case study)", "nlm": "Case study (empirical longitudinal study)", "value": null, "note": "Claude leads with Experience report, NotebookLM with Case study. The paper says 'We report on the industrial deployment of WhatsCode' and is organised as a chronological narrative (SEIP track)."},
+    "research_method": {"claude": "Longitudinal industrial deployment report (25 months, 2023–2025) with production metrics (generated/accepted diffs, close rate, verification coverage, precision, weekly active users) and qualitative practitioner feedback; chronological narrative in three eras", "nlm": "25-month longitudinal empirical evaluation of a GenAI tool deployment (case study)", "value": "25-month longitudinal report of a production GenAI deployment (WhatsCode, 2023–2025), narrated in three eras (foundation, agentless, agentic); production metrics such as generated/accepted diffs and close rates per lint type, privacy verification coverage, code quality score, bug-triage precision and weekly active users; no comparison group", "note": "Qualitative practitioner feedback (Workplace threads) reported only by Claude."},
+    "context": {"claude": "Industry; WhatsApp (Meta), compliance-relevant, polyglot mono-repo (Android, iOS, Web, server; >1M LOC); 3,000+ accepted changes; ~20% weekly active usage; number of engineers not reported", "nlm": "Industry; WhatsApp (Meta), >3 billion users, polyglot monorepo (Android, iOS, Web, Server); 3,000+ accepted diffs; 20% weekly active users", "value": "industry; WhatsApp (Meta) engineering organisation, privacy/compliance-sensitive polyglot codebase (Android, iOS, Web, server); 3,000+ accepted AI-generated code changes, ~20% weekly active usage among WhatsApp engineers (number of engineers not reported)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "DORA not mentioned."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE not mentioned."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Domain-specific GenAI/agentic development system (LLMs, RAG, agents) is the object of study."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not specified by either."},
+    "data_window": {"claude": "25 months, 2023–2025", "nlm": "25 months, 2023–2025", "value": "2023–2025 (25 months of deployment)", "note": "Text adds that the foundation era began in July 2023 and diff counts run to September 2025."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Volume of accepted AI-generated changes (feature development assists, refactors, framework adoptions) as business-impact/efficiency output."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Code quality score by detected lint issues (45% to 64%), bug-triage precision, incident root-cause identification, test generation."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: human-AI collaboration modes (one-click rollout 60%, commandeer-revise 40%) and code review organisation (dedicated vs distributed reviewers) affecting acceptance."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "No satisfaction measure; Claude cites anecdotal practitioner feedback, NotebookLM labels weekly active users 'Satisfaction' (adoption, not satisfaction)."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Committed/generated diff counts by platform and category over time."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "Both tag diff counts and close rates 'Delivery', but no lead time, deployment or release metric is reported."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "DevEx framework not used (NotebookLM: DevEx only referenced as a general concept)."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "No", "nlm": "No", "value": "No", "note": "No survey or interview instrument; Claude mentions only anecdotal feedback threads."}
+  },
+  "evidence": [
+    {"field": "research_method, data_window, ai_discussed", "quote": "Over 25 months (2023-2025), WhatsCode evolved from targeted privacy automation to autonomous agentic workflows integrated with end-to-end feature development and DevOps processes.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "research_method", "quote": "Based on systematic analysis of 25 months of WhatsCode deployment across WhatsApp's engineering organization, this study addresses two fundamental research questions", "loc": "PDF p. 2 (2.4 Research Focus)"},
+    {"field": "context, ai_discussed", "quote": "We report on the industrial deployment of WhatsCode, a domainspecific AI development system that supports WhatsApp (serving over 3 billion users) and processes millions of lines of code across multiple platforms.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "context", "quote": "The system achieved significant organic adoption with approximately 20% weekly active usage among WhatsApp engineers", "loc": "PDF p. 7"},
+    {"field": "cat_productivity, context", "quote": "generating over 3,000 accepted code changes with acceptance rates ranging from 9% to 100% across different automation domains. The system committed 692 automated refactor/fix changes, 711 framework adoptions, 141 feature development assists", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "cat_quality", "quote": "most notably demonstrated by one Media team's code quality score (measured by detected lint issues) improvement from 45% to 64%.", "loc": "PDF p. 7"},
+    {"field": "cat_collaboration", "quote": "one-click rollout for high-confidence changes (60% of cases) and commandeer-revise for complex decisions (40%).", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "cat_collaboration", "quote": "83% success rate for PowerShell fixes with dedicated reviewers vs. 31% for intent fixes with distributed review", "loc": "PDF p. 9"},
+    {"field": "cat_activity", "quote": "committed diffs accelerated sharply after the agentic rollout (Q2 2025), with Android exhibiting the fastest growth, rising from near zero to approximately 1,500 diffs by September 2025.", "loc": "PDF p. 7 (Figure 4)"}
+  ]
+}

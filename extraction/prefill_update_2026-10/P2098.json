@@ -1,0 +1,35 @@
+{
+  "id": "P2098",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Quantitative analysis of a mined dataset plus prototype; not a review."},
+    "study_type": {"claude": "Repository mining (quantitative repository mining + supervised ML + prototype)", "nlm": "Repository mining (repository mining / machine learning / quantitative)", "value": "Repository mining", "note": ""},
+    "research_method": {"claude": "Quantitative repository mining of the 20-MAD dataset; supervised ML with a theory-informed burnout proxy label (Bd, threshold 0.5); stratified 70-30 split and five-fold cross-validation; Spearman correlation; dashboard prototype with NLP interface", "nlm": "Repository mining / ML / quantitative; rolling time-window feature extraction, composite proxy score Bd, supervised classification (ANN best of ten models), React-Vite dashboard with LLM-based natural language interface", "value": "Repository mining of the 20-MAD dataset (Jira issues merged with GitHub commits, rolling time-window features); supervised ML classification of a theory-informed composite burnout-risk proxy label (Bd = 0.35W + 0.25I + 0.25C + 0.15X, threshold 0.5); ten classifiers compared (stratified 70-30 split, five-fold cross-validation; ANN best); Spearman correlation of predictors; dashboard prototype with LLM-based natural language interface", "note": "Split and cross-validation details reported only by Claude (not contradicted)."},
+    "context": {"claude": "OSS; historical Mozilla-Apache (20-MAD) data, Apache projects such as Hadoop, HDFS, Zookeeper; number of developers/issues/commits not reported", "nlm": "OSS; 20-MAD dataset with Jira and GitHub data from Apache projects (Hadoop, HDFS, Zookeeper)", "value": "OSS; Mozilla-Apache 20-MAD dataset, Jira issues and GitHub commits of Apache projects (Hadoop, HDFS, Zookeeper); number of developers/records not reported", "note": "Authors frame it as an initial repository-based evaluation, not a study of industrial Scrum/Kanban teams."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "ML classifiers are the proposed burnout-risk measurement instrument; LLM-based natural language interface in the dashboard."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not reported by either; full text mentions COVID-19 once in the literature review (passing)."},
+    "data_window": {"claude": "no basis", "nlm": "no basis (dataset described as 20 years of Jira/GitHub data, no dates)", "value": null, "note": "No analysed period stated by either; NotebookLM only repeats the dataset name ('20 years'); rolling window length w not reported."},
+    "cat_productivity": {"claude": "No", "nlm": "Yes", "value": null, "note": "NotebookLM tags unresolved_issue_ratio as 'Productivity / Quality'; Claude groups the Jira issue features under Workload/Delivery and reports no productivity metric."},
+    "cat_quality": {"claude": "No", "nlm": "Yes", "value": null, "note": "NotebookLM lists issue_reopen_rate (Quality/Process) as a metric; Claude places it among indicators only cited in the introduction. Model accuracy/F1 is not a software quality metric."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels unique_components 'Process / Collaboration', but it is a context-switching count; GitHub teamwork styles only cited."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Burnout risk (well-being) is the predicted outcome, via the composite proxy score Bd."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "commits_count, total_lines_changed, average_lines_changed and commit-timing features are the main predictors."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin basis: average_issue_age feature (rho = 0.030; not defined in the text), which both label Delivery; cycle/lead time appears only in the introduction."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "DevEx framework not mentioned; cognitive load mentioned only as a burnout mechanism."},
+    "cat_agile": {"claude": "No", "nlm": "Yes", "value": null, "note": "NotebookLM lists work_in_progress (WIP) as a study metric (conflated with workload intensity Wd) and agile methodology; Claude lists WIP only among indicators cited in the introduction and methodology as not specified."},
+    "cat_survey": {"claude": "No", "nlm": "No", "value": "No", "note": "Survey instruments (MBI, BAT) are discussed but deliberately replaced by a repository-based proxy."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, context", "quote": "This historical dataset contains issue-tracking data from Jira and code activity data from GitHub, for several Apache projects, including Hadoop, HDFS, and Zookeeper.", "loc": "PDF p. 3"},
+    {"field": "context", "quote": "Thus, this research reflects as an initial repository-based evaluation of a multimodal burnout prediction framework rather than a direct study of industrial Scrum/Kanban teams.", "loc": "PDF p. 1"},
+    {"field": "research_method, cat_satisfaction", "quote": "a theory-informed proxy measure of burnout risk was developed based on four workrelated dimensions, such as workload intensity, irregular working patterns, task complexity, and context-switching.", "loc": "PDF p. 3"},
+    {"field": "research_method", "quote": "Five-fold cross-validation was used to ensure robustness and minimize overfitting.", "loc": "PDF p. 3"},
+    {"field": "ai_discussed", "quote": "An LLM architecture based natural language interface was developed and integrated into the dashboard, allowing stakeholders to query the system whenever necessary.", "loc": "PDF p. 3"},
+    {"field": "ai_discussed, research_method", "quote": "Several machine learning models were trained and evaluated for predicting developer burnout. Among all the trained models, Artificial Neural Network (ANN) revealed superior predictive performance", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "cat_activity", "quote": "Among all predictors, commits count showed the strongest positive association with burnout risk by obtaining a Spearman correlation coefficient (ρ) of 0.519.", "loc": "PDF p. 4"},
+    {"field": "cat_activity", "quote": "other significant indicators of burnout include total lines changed (ρ = 0.486), and issues handled in the backlog of Jira (ρ = 0.454)", "loc": "PDF p. 4"},
+    {"field": "cat_delivery", "quote": "unresolved_issue_ratio 0.196 weekend_work_ratio 0.138 high_priority_ratio 0.088 average_issue_age 0.030", "loc": "PDF p. 4 (Table II)"}
+  ]
+}

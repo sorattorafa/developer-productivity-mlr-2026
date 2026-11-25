@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this replication package, please cite the accompanying article and this package."
+title: "Replication package of Past, Present, and Future of Developer Productivity Measurement: A Multivocal Literature Review"
+type: dataset
+repository-code: "https://github.com/sorattorafa/developer-productivity-mlr-2026"
+authors:
+  - family-names: "Soratto"
+    given-names: "Rafael Rampin"
+    affiliation: "State University of Maringá (UEM)"
+  - family-names: "Coimbra"
+    given-names: "Getúlio"
+    affiliation: "Federal University of Technology – Paraná (UTFPR)"
+  - family-names: "Melegati"
+    given-names: "Jorge"
+    affiliation: "INESC TEC, Faculty of Engineering, University of Porto"
+  - family-names: "Steinmacher"
+    given-names: "Igor"
+    affiliation: "Northern Arizona University"
+  - family-names: "Wiese"
+    given-names: "Igor"
+    affiliation: "State University of Maringá (UEM)"
+version: "2.0.1"
+date-released: "2026-11-25"
+license: CC-BY-4.0
+keywords:
+  - developer productivity
+  - developer experience
+  - multivocal literature review
+  - DORA
+  - SPACE
+  - DevEx
+  - AI coding assistants
+  - software measurement

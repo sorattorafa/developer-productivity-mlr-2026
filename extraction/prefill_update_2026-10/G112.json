@@ -1,0 +1,28 @@
+{
+  "id": "G112",
+  "kind": "grey",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Both: McKinsey's own analysis of ~300 companies, four-level model and agent-factory model."},
+    "gl_type": {"claude": "Other (book excerpt published as McKinsey 'Our Insights' article)", "nlm": "Other (book excerpt / industry report)", "value": "Other (book excerpt)", "note": "Excerpt from the book 'Rewired' (Wiley, 2026), published on mckinsey.com."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Both state DORA is not mentioned."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Both state SPACE is not mentioned."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Gen AI and AI agents in software development (four levels, agent factory)."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Neither mentions remote work or COVID-19."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either; period of the ~300-company analysis not given."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Productivity gains (16–30% top performers; 40–70% and 50% in cases; 10x/20x), used in aggregate without operational definition."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Software quality gains (31–45%); defect rates as a tracked outcome."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Human review of agent output appears as a skill, not a collaboration measure."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "Only customer experience, not developer satisfaction."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Time to market (16–30%), release frequency as tracked outcome, idea-to-impact cycle time."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_agile": {"claude": "No", "nlm": "Yes", "value": null, "note": "NotebookLM lists the shift from two-week sprints to daily sprint reviews as a delivery-cadence metric; Claude mentions the daily sprint review only in the narrative."},
+    "cat_survey": {"claude": "No", "nlm": "No", "value": "No", "note": "Method of the ~300-company analysis not described; no perceptual instrument."}
+  },
+  "evidence": [
+    {"field": "gl_type", "quote": "Excerpted with permission from the publisher, Wiley, from Rewired: How Leading Companies Win with Technology and AI by Eric Lamarre, Kate Smaje, and Rob Levin, with Alex Singla and Alexander Sukharevsky.", "loc": "text source (About the author(s))"},
+    {"field": "ai_discussed", "quote": "If gen AI has a killer application, it’s software development—one of the most profound shifts in the history of programming.", "loc": "text source (opening)"},
+    {"field": "cat_productivity, cat_quality, cat_delivery", "quote": "We found that a small group of top performers—roughly the top quintile—are achieving 16–30 percent improvements in productivity, time to market, and customer experience, along with 31–45 percent gains in software quality.", "loc": "text source (Best practices for adopting AI in software development)"},
+    {"field": "cat_quality, cat_delivery", "quote": "Institutionalize tracking outcomes—release frequency, defect rates, customer experience—not just simple adoption metrics.", "loc": "text source (Best practices for adopting AI in software development)"}
+  ]
+}

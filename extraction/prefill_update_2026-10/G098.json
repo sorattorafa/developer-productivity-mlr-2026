@@ -1,0 +1,31 @@
+{
+  "id": "G098",
+  "kind": "grey",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Both: own thematic analysis of 1,110 open-ended survey responses from Google engineers, plus 2025 DORA report figures."},
+    "gl_type": {"claude": "Blog (DORA Insights blog post / insight article)", "nlm": "Blog (blog post / practitioner guide, DORA Insights)", "value": "Blog", "note": ""},
+    "dora_applied": {"claude": "No (reference only)", "nlm": "Yes (empirical)", "value": null, "note": "Claude: 2025 DORA report only referenced as source of cited figures (adoption, trust, throughput/instability); NotebookLM: DORA report 'used extensively as data base and empirical grounding'. Own data is a thematic analysis of open-ended survey comments."},
+    "space_applied": {"claude": "No (reference only)", "nlm": "No (reference only)", "value": "No (reference only)", "note": "SPACE only recommended to identify 'a constellation of metrics', alongside SEQ, HEART and VSM."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Whole article is about the impact of AI tools on the SDLC."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Neither mentions remote work or COVID-19."},
+    "data_window": {"claude": "Q3 2025 (responses about the previous three months)", "nlm": "Q3 2025", "value": "Q3 2025 (survey; responses refer to the previous three months)", "note": ""},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Velocity tension and SEQ (speed, ease, quality) recommended as developer-productivity indicators."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Software delivery instability (DORA 2025), failed deployment recovery time, deployment rework rates, production incidents."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Code review as AI use case, reviewer cognitive load, adapting the review process; code review turnaround times as VSM indicator."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "No satisfaction/well-being metric; trust in AI code is a survey figure, not a wellbeing measure."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin basis: only 'lines of code accepted', discussed critically (kept as adoption indicator, rejected as productivity measure)."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Software delivery throughput (DORA 2025 finding) and VSM downstream indicators."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Cognitive load and flow state mentioned as constructs, but no use of the DevEx framework."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Small batches and estimation adjustments appear only as recommendations, not metrics."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Open-ended survey responses (own data) plus DORA survey figures on perceived productivity and trust."}
+  },
+  "evidence": [
+    {"field": "gl_type", "quote": "by Jessica Baolin Nathen Harvey March 10, 2026 Posted in: AI Adoption Culture Productivity", "loc": "text source (page header)"},
+    {"field": "ai_discussed, data_window, cat_survey", "quote": "To better understand the practical impact of AI on the SDLC, researchers conducted a thematic deep dive into 1,110 open-ended survey responses from Google software engineers in Q3 2025.", "loc": "text source (Research methodology)"},
+    {"field": "cat_productivity", "quote": "Google uses speed, ease, and quality (SEQ) as indicators of developer productivity.", "loc": "text source (Measure impact, not output)"},
+    {"field": "cat_quality, cat_collaboration, cat_delivery", "quote": "Value Stream Management (VSM) can be used to evaluate current processes and to identify system bottlenecks signaled by downstream indicators like code review turnaround times, failed deployment recovery time, deployment rework rates, and production incidents.", "loc": "text source (Measure impact, not output)"},
+    {"field": "cat_collaboration", "quote": "Velocity gains for an individual author frequently translate into a significantly increased cognitive load for the reviewer.", "loc": "text source (1. The push and pull on velocity)"},
+    {"field": "cat_delivery, cat_quality", "quote": "higher AI adoption is associated with an increase in both software delivery throughput and software delivery instability.", "loc": "text source (introduction; repeated in 1. The push and pull on velocity)"},
+    {"field": "cat_activity", "quote": "While measures like lines of code accepted may still be a worthwhile indicator of tool adoption and effectiveness, AI can easily inflate the volume of code generated", "loc": "text source (Measure impact, not output)"}
+  ]
+}

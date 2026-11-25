@@ -1,0 +1,32 @@
+{
+  "id": "P2096",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Survey (quantitative, online)", "nlm": "Survey (quantitative)", "value": "Survey", "note": ""},
+    "research_method": {"claude": "Online quantitative survey; Mini-IPIP (20 items), Collective Self-Esteem scale (16 items), 3-item perceived team productivity (5-point Likert); multiple linear regression with nine predictors and backward elimination (alpha = .10); VIF, Durbin-Watson, residual and Q-Q checks", "nlm": "Online survey; Mini-IPIP (20 items), Luhtanen and Crocker CSE scale (16 items), 3 self-assessed productivity items (5-point Likert); multiple linear regression with backward elimination; VIF and Durbin-Watson diagnostics", "value": "Cross-sectional online survey (short communication); Big Five via Mini-IPIP (20 items), Collective Self-Esteem scale (16 items) and 3-item self-assessed team productivity, all 5-point Likert; multiple linear regression with nine predictors and backward elimination (alpha = .10); assumption checks (VIF, Durbin-Watson, residual and Q-Q plots); n = 71", "note": ""},
+    "context": {"claude": "OSS; active contributors recruited via five OSS mailing lists (Apache OpenOffice, Mozilla, Eclipse, Python-dev, VirtualBox); 71 respondents (50.7% developers, 22.6% PMs, 14.0% leads, 12.7% UX/UI)", "nlm": "OSS; active contributors via 5 mailing lists (Apache OpenOffice, Mozilla, Eclipse, Python-dev, VirtualBox); 71 responses with the same role split", "value": "OSS; convenience sample of active contributors recruited via five OSS developer mailing lists (Apache OpenOffice, Mozilla, Eclipse, Python-dev, VirtualBox); 71 complete responses (50.7% developers, 22.6% project managers, 14.0% team/tech leads, 12.7% UX/UI designers)", "note": "Country of residence not recorded."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE cited only to justify self-assessed productivity."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": "AI appears only in the authors' declaration of using Claude Code for manuscript editing (NotebookLM flags 'Usa IA/ML? Yes' for this)."},
+    "remote_covid": {"claude": "No", "nlm": "Yes", "value": null, "note": "Claude: work mode not reported (sample described as distributed OSS development). NotebookLM: Remote (distributed OSS development). The full text mentions distributed development only as the scope of generalization and in threats to validity."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Survey period not stated by either."},
+    "cat_productivity": {"claude": "No (perceived productivity only)", "nlm": "No (perceived productivity only)", "value": "No", "note": "Borderline: perceived team productivity is the dependent variable, but it is the mean of three self-assessed Likert items (perceived productivity, which the definition routes to cat_survey). Author to confirm."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: 'delivers software with high quality' is one self-report item inside the productivity composite (Claude tags the composite Productivity/Delivery/Quality); no quality metric."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Both tag Collective Self-Esteem (team social identity: membership esteem, public/private CSE) as Collaboration/Social identity; borderline fit (group identification rather than communication or coordination)."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "Neuroticism is a personality trait, not a well-being measure."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: 'delivers software on time' is one self-report item inside the productivity composite."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "All constructs self-reported on Likert scales."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "Personality was measured using the Mini-IPIP [11], a 20-item scale (four items per Big Five trait) rated on a 5-point Likert scale. Social identity was measured using the Collective Self-Esteem scale [10], with 16 items (four per CSE dimension) rated on a 5-point Likert scale.", "loc": "3.2. Measures"},
+    {"field": "research_method, cat_survey", "quote": "Team productivity was operationalized as the mean of three self-assessed items: \"The team delivers software on time\", \"The team delivers software with high quality\", and \"We are an effective team\" (5-point Likert scale).", "loc": "3.2. Measures"},
+    {"field": "research_method", "quote": "We used multiple linear regression with backward elimination.", "loc": "Abstract (Method)"},
+    {"field": "context", "quote": "We distributed an online survey through five open-source software (OSS) project developer mailing lists: Apache OpenOffice, Mozilla (web, general, and extension development), Eclipse, Python-dev, and VirtualBox.", "loc": "3.1. Participants and procedure"},
+    {"field": "context", "quote": "We received 71 complete responses: software developers (50.7%), project managers (22.6%), team/tech leads (14.0%), and UX/UI designers (12.7%).", "loc": "3.1. Participants and procedure"},
+    {"field": "cat_collaboration", "quote": "Social identity was measured using the Collective Self-Esteem scale [10], with 16 items (four per CSE dimension) rated on a 5-point Likert scale.", "loc": "3.2. Measures"}
+  ]
+}

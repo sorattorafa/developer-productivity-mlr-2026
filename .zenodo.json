@@ -1,0 +1,40 @@
+{
+  "upload_type": "dataset",
+  "title": "Replication package of \"Past, Present, and Future of Developer Productivity Measurement: A Multivocal Literature Review\"",
+  "version": "2.0.1",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "creators": [
+    {
+      "name": "Soratto, Rafael Rampin",
+      "affiliation": "State University of Maringá (UEM)"
+    },
+    {
+      "name": "Coimbra, Getúlio",
+      "affiliation": "Federal University of Technology – Paraná (UTFPR)"
+    },
+    {
+      "name": "Melegati, Jorge",
+      "affiliation": "INESC TEC, Faculty of Engineering, University of Porto"
+    },
+    {
+      "name": "Steinmacher, Igor",
+      "affiliation": "Northern Arizona University"
+    },
+    {
+      "name": "Wiese, Igor",
+      "affiliation": "State University of Maringá (UEM)"
+    }
+  ],
+  "description": "<p>Replication package of a multivocal literature review (MLR) on developer productivity measurement from 2016 to 2026. The review includes 228 sources, 153 academic and 75 from the gray literature, found in searches run in January and February 2026 and updated on 3 October 2026.</p><p>The package contains the search strings and exports, the selection workbook with the fate of every search record, the reading form of each source, the outputs of the two LLM-based extractors and their comparison, the master coding spreadsheet, the quality assessments, the scripts that recompute the reported statistics and figures, and the LaTeX sources of the article. The full texts of the reviewed sources are not redistributed.</p>",
+  "keywords": [
+    "developer productivity",
+    "developer experience",
+    "multivocal literature review",
+    "DORA",
+    "SPACE",
+    "DevEx",
+    "AI coding assistants",
+    "software measurement"
+  ]
+}

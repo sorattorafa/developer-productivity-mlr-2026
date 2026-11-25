@@ -1,0 +1,30 @@
+{
+  "id": "G109",
+  "kind": "grey",
+  "fields": {
+    "primary_secondary": {"claude": "Secondary", "nlm": "Secondary", "value": "Secondary", "note": "Both: news article reporting a third-party MIT/Wharton study of 100,000+ GitHub developers, plus two practitioner quotes."},
+    "gl_type": {"claude": "Article (blog post / journalistic tech news article)", "nlm": "Article (blog post / industry article)", "value": "Article", "note": "Both give 'Blog post / article'; LeadDev piece by a freelance journalist."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Both state DORA is not mentioned."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Both state SPACE is not mentioned."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Effect of three generations of AI coding tools (autocomplete, sync agents, async agents)."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Neither mentions remote work or COVID-19."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Study period not stated by either; both only note app-store releases rising 'since mid-2025'."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "'Task-level productivity' is measured through commits/LOC/PRs (activity) and releases (delivery); no separate productivity metric."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "Testing and maintenance only mentioned in passing."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Code review capacity as the bottleneck (weak-link hypothesis); review about half of a developer's job; open PRs per project."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "'Busier' developers, but no wellbeing measure."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Commits (+40/140/180%), lines of code (+741%), pull requests (+65%)."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Software releases (+20%); app-store releases."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Work-in-progress before the constraint only mentioned conceptually in a quote."},
+    "cat_survey": {"claude": "No", "nlm": "No", "value": "No", "note": "Reported study uses GitHub data, not a perceptual instrument."}
+  },
+  "evidence": [
+    {"field": "gl_type", "quote": "Chris Stokel-Walker is a freelance journalist based in the UK.", "loc": "text source (About the author)"},
+    {"field": "ai_discussed", "quote": "The researchers evaluated three successive generations of AI tools – autocomplete tools like the original GitHub Copilot, synchronous agents like Claude Code, and async agents that operate autonomously", "loc": "text source (Evolution, not revolution)"},
+    {"field": "cat_activity", "quote": "Early autocomplete tools boosted coding activity, as measured by commits, by 40%.", "loc": "text source (Evolution, not revolution)"},
+    {"field": "cat_activity, cat_delivery", "quote": "That 741% increase in code written only translates to a 65% bump in pull requests (PRs), and just a 20% increase in actual software releases.", "loc": "text source (Evolution, not revolution)"},
+    {"field": "cat_collaboration", "quote": "As human capacity for code review remains largely fixed, the sheer volume of AI-generated code simply creates a traffic jam later in the pipeline.", "loc": "text source (Evolution, not revolution)"},
+    {"field": "cat_collaboration", "quote": "Review is now about half of a developer’s job, but many teams still treat it as the final step in the process rather than the primary constraint on delivery,", "loc": "text source (Managing the change)"}
+  ]
+}

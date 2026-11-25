@@ -1,0 +1,31 @@
+{
+  "id": "P2012",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Framework proposal with own small pilot comparison."},
+    "study_type": {"claude": "Other (exploratory framework proposal with small pilot comparison)", "nlm": "Mixed methods (conceptual workflow framework + pilot task-based comparison)", "value": null, "note": "Claude treats it as an exploratory framework paper with an illustrative pilot (Other); NotebookLM as mixed methods. The pilot compares AI-assisted vs. manual implementation of two UI tasks."},
+    "research_method": {"claude": "Exploratory study: conceptual workflow framework (drafting, verification, refinement) plus pilot task-based comparison of AI-assisted vs. manual implementation with accessibility-focused verification; 2 pilot tasks, 4 exploratory task types; no participants, AI tool or numeric results reported", "nlm": "Conceptual workflow framework plus pilot task-based comparison (AI-assisted vs. manual) of 2 representative UI tasks across 4 task categories; manual timing and counts", "value": "Exploratory study: workflow-based productivity framework (drafting, verification, refinement) illustrated by a small pilot comparing AI-assisted vs. manual implementation of two front-end UI tasks (form with validation, keyboard-accessible modal) under the same acceptance criteria, with accessibility-focused verification; four task types rated qualitatively (Table I); participants, AI tool and numeric pilot results not reported", "note": "Absence of participants, tool and numbers stated by Claude, not contradicted by NotebookLM."},
+    "context": {"claude": "Front-end UI development tasks; industry or academic setting not reported", "nlm": "Academic / independent research; front-end UI development tasks", "value": null, "note": "Claude: setting not reported; NotebookLM: academic/independent research (author is an independent researcher). Both: 2 pilot UI tasks, participants not reported."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Productivity and rework of generative-AI-assisted front-end development is the topic."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Not reported."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Time to first working draft and total time to acceptable completion."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Number of accessibility issues found in verification and refinement cycles (rework)."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels refinement cycles 'Delivery / Quality'; it is a rework count, not a delivery metric."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "No", "nlm": "No", "value": "No", "note": "No survey or interviews."}
+  },
+  "evidence": [
+    {"field": "research_method", "quote": "Each task was implemented under two conditions: manual development without generative AI support and AI-assisted development using the same requirements and acceptance criteria.", "loc": "PDF p. 2 (pilot comparison)"},
+    {"field": "research_method, cat_productivity, cat_quality", "quote": "For each implementation, we recorded time to first working draft, total time to acceptable completion, the number of accessibility issues identified during verification, and the number of refinement cycles required before acceptance.", "loc": "PDF p. 2 (pilot comparison)"},
+    {"field": "research_method", "quote": "This pilot is intended as an initial illustration of the framework rather than a generalizable empirical study.", "loc": "PDF p. 2"},
+    {"field": "research_method, ai_discussed", "quote": "The paper's main contribution is a practical framework for evaluating AI-assisted productivity across drafting, verification, and refinement stages.", "loc": "PDF p. 3 (Conclusion)"},
+    {"field": "ai_discussed, cat_productivity", "quote": "In the pilot comparison, AI-assisted development appeared to reduce drafting effort for the more structured task, particularly form creation.", "loc": "PDF p. 3 (VII. Pilot Observations)"}
+  ]
+}

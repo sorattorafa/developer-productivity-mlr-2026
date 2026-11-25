@@ -1,0 +1,57 @@
+source,raw_item
+G003,"developer experience, product excellence, and organizational effectiveness"
+G003,time-based measures and frequency
+G004,measures of high-performing teams
+G008,devops metrics
+G009,métricas de resultados (outcomes)
+G012,lifecycle metrics
+G012,productivity & ci/cd
+G012,ai impact (gitlab duo)
+G020,outras
+G022,system metrics
+G023,measurement approaches
+G026,key metrics
+G027,engineering metrics
+G035,speed
+G035,effectiveness
+G035,quality
+G047,multi-dimensional metrics
+G053,individual-level metrics
+G053,team-level metrics
+G053,system-level metrics
+G090,traditional metrics (critiqued)
+G092,erosao na developer experience (negative cohort)
+G093,governance specification baseline in literature
+G094,developer productivity & sustainability metrics
+G096,production metrics
+G099,enterprise size threshold (<200 developers)
+G107,escopo e amostra da pesquisa
+G109,developer study sample size
+G112,métricas de governança e alinhamento
+P0013,deployment environment (what is deployed where)
+P0027,48 productivity factors
+P0129,social welfare
+P0129,threshold completed
+P0129,price-of-stability (pos)
+P0129,price-of-anarchy (poa)
+P0208,relevance of solutions (x1)
+P0473,agreement level
+P0473,team formation phase
+P0486,word frequency
+P0521,project status statistics
+P0529,qualitative codes (49 consequences)
+P0551,frequency of expectation types
+P0551,"inter-coder agreement (kappa, pi, alpha)"
+P0603,probability bias rating
+P0603,cost bias rating
+P1286,formulário de extração (parsifal)
+P1286,síntese de dados (codificação)
+P2031,finding agreement rating
+P2048,quality
+P2074,"avaliação dos princípios de design (dp evaluation: accessibility, importance, novelty, actability, effectiveness)"
+P2079,reddit thread score
+P2086,multilayer neural network model (candidate)
+P2093,data saturation index [6]
+P2128,development platform
+P2128,development type
+P2128,propensity score & average treatment effect

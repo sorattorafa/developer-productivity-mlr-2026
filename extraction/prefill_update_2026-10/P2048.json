@@ -1,0 +1,36 @@
+{
+  "id": "P2048",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Own conceptual model with own expert and student validation."},
+    "study_type": {"claude": "Other (conceptual model proposal with expert-judgment and exploratory validation)", "nlm": "Mixed methods (conceptual modelling, expert judgment, exploratory Scrum workshops/surveys, iterative review)", "value": null, "note": "Claude frames the design as a conceptual model proposal (-> Other); NotebookLM labels it Mixed methods."},
+    "research_method": {"claude": "Conceptual model (UML class diagram) following the Fenton & Bieman protocol in two phases (design, validation); expert judgment (Likert 1-5, mean/SD), exploratory empirical validation (workshops + survey in academic setting), iterative review; comparison with four literature models on criteria C1-C9", "nlm": "Conceptual modelling (UML) based on Fenton & Bieman protocol; content validation by expert judgment (Likert); exploratory empirical application via Scrum workshops/surveys; iterative review; comparative scoring against SPACE, DAT, MCRT, SHF on 9 criteria", "value": "Conceptual model proposal (UML class diagram) following the Fenton & Bieman measurement protocol in two phases (design, validation); content validation by expert judgment (10 experts, five-point Likert, mean/SD), exploratory application in Scrum workshops with 110 students plus acceptance survey, iterative review; author-scored comparison with four existing models (SPACE, DAT, MCRT, SHF) on nine criteria", "note": "No productivity values measured; validation is perception-based."},
+    "context": {"claude": "academic; experts with MinCiencias researcher classification; 110 final-semester students at four Colombian HEIs in Scrum teams, two three-week sprints, 2024-2025", "nlm": "academic; 4 Colombian HEIs, 110 undergraduate Systems/Software Engineering students, 10 MinCiencias-recognized experts; 2 sprints (6 weeks)", "value": "academic; four Colombian higher education institutions, student Scrum teams over two sprints (six weeks); 10 experts (content validation) and 110 undergraduate Systems/Software Engineering students (exploratory validation)", "note": "Number of student teams not reported."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "DORA not mentioned by either."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE described in background and compared in Table 5, not used as instrument."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": "AI only in related work (Borg et al.) and GenAI as future work; NotebookLM's 'uses AI/ML: Yes' rests only on these mentions."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "data_window": {"claude": "Validation at different times between 2024 and 2025 (end of 2024 and 2025 academic periods)", "nlm": "no basis (only duration: 2 sprints, 6 weeks)", "value": null, "note": "Only Claude states a period (2024-2025); NotebookLM gives only the six-week duration."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Velocity (sum of user stories completed per iteration), work capacity and team capacity among model factors."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Quality is a model factor (Flexibility category); participants suggested rework and post-delivery errors."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Communication factor (Socio Human); participants asked for collaboration/communication evaluation."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Team satisfaction, customer satisfaction, intrinsic motivation, pride, commitment among model factors."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: DAT, MCRT (code contributions) and SPACE Activity only described in background and compared in Table 5; not used."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "No deployment, lead-time or cycle-time metric."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM tags several socio-human factors as DevEx, but the DevEx framework is not used."},
+    "cat_agile": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Measurement process operationalized for Scrum (BPMN; planning, execution, evaluation); velocity per iteration."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Expert Likert instrument and acceptance survey with students."}
+  },
+  "evidence": [
+    {"field": "research_method", "quote": "The development of the model was based on the measurement protocol proposed by Fenton and Bieman and included two main stages: design and validation.", "loc": "PDF p. 1"},
+    {"field": "context", "quote": "The validation was conducted in an academic setting involving 110 university students enrolled in Software Engineering courses at four Higher Education Institutions in Colombia.", "loc": "PDF p. 14"},
+    {"field": "context, cat_agile", "quote": "The duration of the study was six weeks, structured into two sprints", "loc": "PDF p. 14"},
+    {"field": "cat_productivity, cat_agile", "quote": "For example, the metric for the Velocity factor may be the sum of user stories completed during an iteration.", "loc": "PDF p. 10"},
+    {"field": "cat_quality", "quote": "Goal setting, Quality, Requirements handling by the Team", "loc": "PDF p. 8"},
+    {"field": "cat_quality", "quote": "they suggested including metrics associated with work quality, such as rework and post-delivery errors", "loc": "PDF p. 16"},
+    {"field": "cat_collaboration, cat_satisfaction", "quote": "Decision power, Communication, Atmosphere, Social skills, Intrinsic motivation, Pride, Team Setup, Confidence, Team leader, Commitment, Team satisfaction", "loc": "PDF p. 9"},
+    {"field": "cat_agile", "quote": "the theoretical abstraction of the model was translated into a concrete productivity measurement process for teams implementing the Scrum framework.", "loc": "PDF p. 14"},
+    {"field": "research_method, cat_survey", "quote": "Experts rated each statement using a five-point Likert scale, where 1 = Strongly Disagree, 2 = Disagree, 3 = Neutral, 4 = Agree, and 5 = Strongly Agree.", "loc": "PDF p. 7"},
+    {"field": "research_method, cat_survey", "quote": "The validation process included gathering feedback through a survey designed to assess the level of acceptance of the proposal", "loc": "PDF p. 8"}
+  ]
+}

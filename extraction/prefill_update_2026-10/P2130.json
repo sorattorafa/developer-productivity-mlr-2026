@@ -1,0 +1,35 @@
+{
+  "id": "P2130",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Survey (descriptive quantitative + Grounded Theory coding of open answers)", "nlm": "Survey (mixed quantitative descriptive and qualitative GT coding)", "value": "Survey", "note": ""},
+    "research_method": {"claude": "Online personal-opinion survey (Molléri et al. guidelines), pilot-validated; descriptive statistics plus Grounded Theory open and axial coding; 7 RQs; 58 valid of 61 responses", "nlm": "Survey with quantitative descriptive statistics and qualitative Grounded Theory coding; guidelines of Molléri et al.; pilot and expert review; 7 RQs", "value": "Online personal-opinion survey (Molléri et al. guidelines, pilot-tested) on human and organizational productivity factors selected from the literature; descriptive statistics for closed items and Grounded Theory open and axial coding (phases 1-2) of open answers; 7 RQs; 58 valid responses of 61", "note": ""},
+    "context": {"claude": "Industry; Brazilian software companies during COVID-19 remote work; 58 team members from all regions (mostly Northeast and Southeast), 91.4% in teams of 0-20", "nlm": "Industry; Brazilian software development companies across all regions; 58 team members; 91.4% in teams of 0-20", "value": "industry; development teams of Brazilian software companies in pandemic remote work; 58 team members (developers, managers, testers, designers, analysts) from all Brazilian regions, mostly Northeast and Southeast, 91.4% in teams of up to 20 people", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "remote_covid": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Forced remote work during COVID-19 is the study's subject."},
+    "data_window": {"claude": "12-31 May 2020", "nlm": "12-31 May 2020", "value": "12–31 May 2020 (survey period)", "note": ""},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Only perceived productivity (Q28 self-rating, Q29 open answers), which goes to Survey."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Team collaboration (Q14), ease of communication (Q17), communication tools (Q18-Q20)."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Motivation (Q21), feelings during isolation (Q22), health practices (Q23)."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels perceived turnover 'Activity', but it is not repository activity."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels task time distribution (Q12) 'Delivery/Process', but it is a perceived rating, not a delivery metric."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "cat_agile": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: only the perceived rating of time distribution for tasks (Q12, and Claude adds work-routine Q13), labelled Process by both; no sprint or ceremony metric."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "All measures are self-reported survey items (ordinal and 1-8 scales, open questions)."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "For this, we design and conduct a personal opinion survey through an online questionnaire to collect the software team members' perceptions on this topic. We based the survey's design on the guidelines established by Mólleri et al. [17, 18].", "loc": "PDF p. 3 (3 Methodology)"},
+    {"field": "research_method", "quote": "used only the GT's phases 1 and 2 to identify the categories and their relationships", "loc": "PDF p. 4"},
+    {"field": "context", "quote": "The population selected for the study were people who worked in development teams of Brazilian software companies.", "loc": "PDF p. 3 (3.2 Population)"},
+    {"field": "data_window, context, research_method", "quote": "Our survey was made available from 12 to 31 May 2020, in several lists and groups of IT professionals in Brazil. There were 61 participants, 3 of them did not meet the validation criteria", "loc": "PDF p. 4 (4.1 Participants Profile)"},
+    {"field": "remote_covid", "quote": "This global crisis has affected the software industry, as companies have adopted work from home (remote work) in order to protect their employees [9].", "loc": "PDF p. 1 (1 Introduction)"},
+    {"field": "cat_collaboration, cat_satisfaction", "quote": "93.1% consider they have a collaborative team and 84.5% have easy communication with their co-workers; 84.5% feel motivated;", "loc": "PDF p. 2"},
+    {"field": "cat_satisfaction, cat_survey", "quote": "How motivated do you feel to perform your tasks? (not very motivated 1 - 8 very motivated) Check the options that show your feelings during the period of social isolation.", "loc": "PDF p. 4 (Table 2: Questionnaire)"},
+    {"field": "cat_agile", "quote": "In question Q12, we analyzed the time distribution to perform tasks by asking participants to rate this factor using the following scale (unsatisfactory, regular, good, excellent).", "loc": "PDF p. 6"},
+    {"field": "cat_survey", "quote": "we identified that 74.1% of the participants consider their productivity remains good or excellent", "loc": "PDF p. 1 (Abstract)"}
+  ]
+}

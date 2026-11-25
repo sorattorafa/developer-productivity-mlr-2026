@@ -1,0 +1,36 @@
+{
+  "id": "P2032",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Repository mining (quasi-experimental DiD)", "nlm": "Repository mining (quantitative; quasi-experimental DiD)", "value": "Repository mining", "note": "Quasi-experimental staggered DiD on mined GitHub data; Quasi-experiment would also fit, but both extractors lead with Repository mining."},
+    "research_method": {"claude": "Repository mining, quasi-experimental: staggered DiD (Borusyak et al. imputation estimator), propensity score matching (1:3), dynamic panel GMM (Arellano-Bond); robustness checks (TWFE, Callaway & Sant'Anna); 806 treated + 1,380 control repositories, monthly Jan 2024–Aug 2025", "nlm": "Repository mining, quantitative: staggered DiD with propensity score matching and dynamic panel GMM; robustness analyses; 806 Cursor-adopting and 1,380 matched control repositories, Jan 2024–Aug 2025", "value": "Repository mining with a quasi-experimental staggered difference-in-differences design (Borusyak et al. estimator) on propensity-score-matched controls, plus dynamic panel GMM models (Arellano-Bond); SonarQube-based quality metrics; robustness checks on sustained-use and active-repository subsets; 806 Cursor-adopting vs 1,380 matched control repositories, monthly panel", "note": "Estimator names and 1:3 matching ratio stated only by Claude (not contradicted)."},
+    "context": {"claude": "OSS; GitHub open-source repositories (>=10 stars; TypeScript, Python, JavaScript, Go, Rust); 806 adopters + 1,380 controls", "nlm": "OSS; GitHub projects (>=10 stars; TypeScript, Python, JavaScript, Go, Rust); 806 adopters + 1,380 matched controls", "value": "OSS; GitHub open-source projects with ≥10 stars (mainly TypeScript, Python, JavaScript, Go, Rust); 806 Cursor-adopting repositories and 1,380 matched control repositories", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned (both)."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE only cited as background for velocity/quality metrics."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Cursor (LLM agent assistant) adoption is the treatment."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not specified by either; distributed OSS collaboration appears only in the external-validity discussion."},
+    "data_window": {"claude": "January 2024–August 2025 (monthly panel)", "nlm": "January 2024–August 2025", "value": "January 2024–August 2025 (monthly panel; adoptions January 2024–March 2025)", "note": ""},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Development velocity: commits and lines added per month, used as productivity proxies."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "SonarQube static analysis warnings, duplicate line density, cognitive complexity (technical debt)."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM tags number of contributors as Collaboration, but it is only a covariate."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "Excitement–frustration–abandonment cycle offered only as an explanation."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Commits, lines added, LOC, issues/PRs and GHArchive event counts."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "'Refactoring sprints' only as a recommendation (Claude)."},
+    "cat_survey": {"claude": "No", "nlm": "No", "value": "No", "note": ""}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "We then use a difference-in-differences (DiD) design with staggered adoption [28, 30], comparing repositories that adopt Cursor at different times to a matched control group that never adopts during our observation period.", "loc": "PDF p. 2"},
+    {"field": "research_method, context", "quote": "we use propensity score matching [25] to select 1,380 similar repositories from those never adopting Cursor during our observation period.", "loc": "PDF p. 2"},
+    {"field": "research_method", "quote": "we fit dynamic panel generalized method of moments (GMM) models [22] to support our interpretation of the DiD results", "loc": "PDF p. 3"},
+    {"field": "context", "quote": "we follow prior work [58, 61, 102] by requiring at least 10 stars at collection time", "loc": "PDF p. 4"},
+    {"field": "data_window", "quote": "For each repository in the treatment and control group, we collect monthly outcome metrics and time-varying covariates from January 2024 to August 2025.", "loc": "PDF p. 5"},
+    {"field": "data_window", "quote": "This yields 806 repositories with adoption dates between January 2024 and March 2025 that are still available on GitHub at the time of data analysis (August 2025).", "loc": "PDF p. 4"},
+    {"field": "ai_discussed", "quote": "In this paper, we estimate the causal effect of adopting a widely popular LLM agent assistant, namely Cursor, on development velocity and software quality.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "cat_productivity, cat_activity", "quote": "Commitsit : Number of commits in repository i at month t; • Lines Addedit : Total lines added, summed over all commits in repository i at month t. Both have been used as productivity proxies", "loc": "PDF p. 5 (3.2.1 Outcomes)"},
+    {"field": "cat_quality", "quote": "Static Analysis Warningsit : Total number of reliability, maintainability, and security issues for repository i at month t, as detected by SonarQube's static analysis.", "loc": "PDF p. 5 (3.2.1 Outcomes)"},
+    {"field": "cat_quality", "quote": "Static analysis warnings increase by 30% and code complexity increases by 41% post-adoption according to the Borusyak et al. [28] DiD estimator.", "loc": "PDF p. 2"}
+  ]
+}

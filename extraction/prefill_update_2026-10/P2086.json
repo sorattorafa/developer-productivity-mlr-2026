@@ -1,0 +1,33 @@
+{
+  "id": "P2086",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Own metric development and validation on company data."},
+    "study_type": {"claude": "Experience report (magazine column on metric design)", "nlm": "Mixed methods (log analysis, mutation testing, human rating, correlation)", "value": null, "note": "Claude: experience report of metric design with quantitative analysis; NotebookLM: mixed methods. Both describe the same procedures (see research_method)."},
+    "research_method": {"claude": "Metric-design experience report: 13 candidate metrics explored; validation by mutation testing, seasonal patterns, human judgment (50 schedules rated by 8 team members), negative cases and correlations; quantitative analysis of Google engineer data", "nlm": "Quantitative log analysis and metric modeling; 13 candidate metrics; mutation testing, human rating experiment (50 schedules, 8 raters), correlation with office frequency and CL throughput", "value": "Development and validation of a work-schedule consistency metric (weekly Markov consistency) on engineer work-status logs: 13 candidate metrics compared; mutation testing, seasonal patterns, human ratings of 50 sampled schedules by 8 team members, discriminant correlations with office frequency and working days; association with CL throughput; four metric-quality criteria proposed (face, convergent, discriminant, criterion validity)", "note": "Design label differs (see study_type); procedures agree. No detailed statistics reported (magazine column)."},
+    "context": {"claude": "Industry; Google, post-COVID hybrid work; tens of thousands of engineers, 50 schedules rated by 8 team members", "nlm": "Industry (Google), hybrid work; tens of thousands of engineers, 50 schedules, 8 raters", "value": "industry; Google engineering (post-COVID hybrid work); population of tens of thousands of engineers, 50 sampled schedules rated by 8 team members", "note": "Google is named only through the authors' affiliations in the full text."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Both state DORA is not mentioned."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Both state SPACE is not mentioned."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": "Only a neural-network candidate metric, rejected as unintuitive; AI is not a topic of developer work."},
+    "remote_covid": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Metric built after the COVID pandemic to inform hybrid-work policy; findings compare hybrid and in-office schedules."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either (seasonal dips in June, November, January mentioned without years)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "CL throughput as the productivity outcome for schedule-consistency groups."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "CL throughput is a count of submitted changelists (Claude labels it Productivity/Activity; NotebookLM describes it as changelists submitted per engineer from repository logs). NotebookLM's other 'Activity' labels are work-schedule metrics, not code activity."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM tags CL throughput 'Productivity / Delivery', but no deployment/lead-time/cycle-time metric is used."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Both tag the consistency metric 'DevEx', but the DevEx framework is not mentioned."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: eight team members rated sampled schedules as consistent/inconsistent to validate the metric; no developer self-report or survey."}
+  },
+  "evidence": [
+    {"field": "research_method, remote_covid", "quote": "In this article, we describe some criteria we consider when building a productivity metric, illustrating with an example of a novel metric for work schedule consistency that we built in the aftermath of the COVID pandemic", "loc": "PDF p. 1"},
+    {"field": "remote_covid, context", "quote": "Back when studying hybrid work was cool, our team sought to understand how office usage patterns related to engineering productivity metrics.", "loc": "PDF p. 1"},
+    {"field": "research_method", "quote": "We explored 13 candidate metrics to capture \"office consistency,\" and we landed on \"Weekly Markov Consistency\"-the metric described in the sidebar.", "loc": "PDF p. 1"},
+    {"field": "research_method", "quote": "We took a uniform schedule (all in the office) and introduced increasing amounts of noise, randomly mutating one day at each increment.", "loc": "PDF p. 3"},
+    {"field": "research_method, context", "quote": "To do this, we sampled 50 schedules (five per decile of the distribution) and asked eight team members to rate them as either consistent or inconsistent.", "loc": "PDF p. 3"},
+    {"field": "cat_productivity, cat_activity, remote_covid", "quote": "For example, we observed that engineers who worked consistent hybrid schedules (1-3 days in office per week) had CL throughput indistinguishable from those that worked consistent schedules entirely in the office.", "loc": "PDF p. 4"},
+    {"field": "context", "quote": "There are many factors that affect how an individual behaves, but these results sum up what we see in a population of tens of thousands of engineers in our data set: consistency matters to productivity", "loc": "PDF p. 4"}
+  ]
+}

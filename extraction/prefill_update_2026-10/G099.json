@@ -1,0 +1,29 @@
+{
+  "id": "G099",
+  "kind": "grey",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Both: DX's own quarterly benchmark data from 400+ companies (preview of the Q1 2026 report)."},
+    "gl_type": {"claude": "Blog (blog post / newsletter previewing an industry report)", "nlm": "Blog (blog post / industry report preview)", "value": "Blog", "note": "Post previews the full AI-Assisted Engineering Q1 2026 Impact Report, which is not part of the text."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Neither finds DORA named; NotebookLM notes change failure rate is a DORA-aligned concept."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "No framework named."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Quarterly benchmark of AI adoption and impact in engineering."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Neither mentions remote work or COVID-19."},
+    "data_window": {"claude": "no basis (report labelled Q1 2026; 'prior quarter's data')", "nlm": "no basis (report labelled Q1 2026)", "value": null, "note": "Not stated explicitly by either; both only name the report edition (Q1 2026, compared with Q4 2025)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "AI time savings in hours per week by tenure band; code shipped by EMs."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Change failure rate / defects ('quality volatility'), only as a full-report topic in the post."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Pull requests shipped by engineering managers (2x in Q4 2025, 4x now)."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "Throughput only mentioned qualitatively in the closing remarks (Claude); not listed by NotebookLM."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "No", "nlm": "No", "value": "No", "note": "Neither identifies a perceptual instrument; how time savings are measured is not described in the post."}
+  },
+  "evidence": [
+    {"field": "gl_type", "quote": "This post was originally published in Engineering Enablement, DX’s newsletter dedicated to sharing research and perspectives on developer productivity.", "loc": "text source (header)"},
+    {"field": "ai_discussed", "quote": "Each quarter, we analyze the prior quarter’s data to benchmark AI adoption rates, productivity impact, and how teams are using these tools.", "loc": "text source (introduction)"},
+    {"field": "cat_productivity", "quote": "Junior engineers who use AI daily are now saving 4.9 hours per week, edging out daily Staff+ users who are saving 4.8 hours.", "loc": "text source (Junior engineers now save more time with AI than Staff+ engineers)"},
+    {"field": "cat_quality", "quote": "Quality volatility: Why some companies are seeing change failure rates swing by 2% (a 50% increase in defects), and why automated testing is no longer optional.", "loc": "text source (What else is in the report?)"},
+    {"field": "cat_activity", "quote": "In Q4, we noted that engineering managers who used AI daily were shipping twice as many pull requests over the period of time the sample was taken. That figure has doubled again: engineering managers are now shipping 4x as much code.", "loc": "text source (Engineering managers are shipping 4x more code than six months ago)"}
+  ]
+}

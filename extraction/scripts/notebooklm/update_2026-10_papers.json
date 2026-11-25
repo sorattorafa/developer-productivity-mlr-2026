@@ -1,0 +1,1185 @@
+[
+ {
+  "id": "P2001",
+  "screening_id": "U0001",
+  "title": "Leading GenAI-Accelerated Engineering Productivity",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2002",
+  "screening_id": "U0002",
+  "title": "Governance-Aware AI-Assisted Developer Productivity Evaluation in Hybrid Work Environments",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2003",
+  "screening_id": "U0004",
+  "title": "Enhancing Software Engineering Productivity Through AI-Scrum Framework: A Case Study in Libyan Contexts",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "P2004",
+  "screening_id": "U0009",
+  "title": "Adaptive AI Productivity Assistant for Developers in Visual Studio Code",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2005",
+  "screening_id": "U0012",
+  "title": "Evaluating the Role of AI, Technology Used, and Technology Skill Proficiency in Onboarding: A Quantitative Study of Developer Productivity and Scalability in Sri Lanka",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2006",
+  "screening_id": "U0013",
+  "title": "Digital Transformation in IT Project Management: The Impact of Cloud Technologies on Efficiency and Agile Performance",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2007",
+  "screening_id": "U0018",
+  "title": "A Systematic Literature Review on Intelligent Tools and the Developer Experience",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "P2008",
+  "screening_id": "U0021",
+  "title": "AI-Augmented Software Engineering for Rapid Feature Delivery and Operations Automation",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2009",
+  "screening_id": "U0023",
+  "title": "Beyond Correctness: Measuring Hallucination Impact in AI-Assisted Development Workflows",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2010",
+  "screening_id": "U0024",
+  "title": "From AI Drag to AI Boost: A Preceptorship Framework for Developing Software Engineering Expertise in the Agentic Era",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2011",
+  "screening_id": "U0028",
+  "title": "Unveiling the Drivers of Developer Satisfaction: Causal Inference Perspective",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2012",
+  "screening_id": "U0045",
+  "title": "Productivity and Rework in AI-Assisted Front-End UI Development: A Workflow-Based Exploratory Study",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2013",
+  "screening_id": "U0070",
+  "title": "Abstracting Deployment Complexity with Platform Engineering Through Centralized Continuous Integration and Continuous Delivery",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2014",
+  "screening_id": "U0107",
+  "title": "BayesInsights: Modelling Software Delivery and Developer Experience with Bayesian Networks at Bloomberg",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2015",
+  "screening_id": "U0110",
+  "title": "Adopting Concepts for Sustainable Improvement of the Developer Experience within a Medium-sized Corporation",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2016",
+  "screening_id": "U0111",
+  "title": "Too Many DevEx Metrics, Too Little Guidance: DevEx Metrics Compass: making sense of developer experience measurement",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2017",
+  "screening_id": "U0119",
+  "title": "Beyond the Numbers: Evaluating DevOps Adoption in an Enterprise Software Development Organisation",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2018",
+  "screening_id": "U0126",
+  "title": "Examining Productivity in Educational Environments: Perspectives of Professors and Students on a Capstone Project",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2019",
+  "screening_id": "U0127",
+  "title": "Developers’ Experience with Generative AI Beyond Productivity Assessment – Insights from an Empirical Mixed-Methods Field Study",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2020",
+  "screening_id": "U0133",
+  "title": "The SPACE of AI",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2021",
+  "screening_id": "U0135",
+  "title": "EngThrive: Make It Fast and Easy to Do Great Work: Building a durable model for outcome-oriented engineering measurement",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2022",
+  "screening_id": "U0151",
+  "title": "Next Level: a maturity model in construction for the evolution of software teams based on performance indicators",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2023",
+  "screening_id": "U0177",
+  "title": "Evolving with AI: A Longitudinal Analysis of Developer Logs",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2024",
+  "screening_id": "U0179",
+  "title": "WhatsCode: Large-Scale GenAI Deployment for Developer Efficiency at WhatsApp",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2025",
+  "screening_id": "U0181",
+  "title": "Code with Me or for Me? How Increasing AI Automation Transforms Developer Workflows",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2026",
+  "screening_id": "U0183",
+  "title": "LLM-EMM: A Large Language Model--Driven Efficiency Measurement and Modeling Framework for Software Development in Digitally Transforming Enterprises",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2027",
+  "screening_id": "U0185",
+  "title": "Experimental Analysis of Productive Interaction Strategy with ChatGPT: User Study on Function and Project-level Code Generation Tasks",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2028",
+  "screening_id": "U0189",
+  "title": "An Eye for AI: Eye-Tracking the Micro-Interruptions of GenAI Code Suggestions",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2029",
+  "screening_id": "U0192",
+  "title": "Achieving Productivity Gains with AI-based IDE features: A Journey at Google",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2030",
+  "screening_id": "U0200",
+  "title": "From Gains to Strains: Modeling Developer Burnout with GenAI Adoption",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2031",
+  "screening_id": "U0204",
+  "title": "Understanding Task Enjoyment in Software Development: A Mixed-Methods Study on Practitioners From Poland and Brazil",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2032",
+  "screening_id": "U0251",
+  "title": "Speed at the Cost of Quality: How Cursor AI Increases Short-Term Velocity and Long-Term Complexity in Open-Source Projects",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2033",
+  "screening_id": "U0298",
+  "title": "Adoption of AI Assisted Coding – Cognitive Barriers, Motivational Factors and Productivity Gains",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2034",
+  "screening_id": "U0308",
+  "title": "Generative AI and the Future of Professional Software Development: Survey Findings from Finland",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2035",
+  "screening_id": "U0313",
+  "title": "At What Cost? Software Developers’ Well-Being in the Age of GenAI",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2036",
+  "screening_id": "U0323",
+  "title": "AI IDEs or Autonomous Agents? Measuring the Impact of Coding Agents on Software Development",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2037",
+  "screening_id": "U0349",
+  "title": "\"Game Changer\" or \"Overenthusiastic Drunk Acquaintance\"? Generative AI Use by Blind and Low Vision Software Professionals in the Workplace",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2038",
+  "screening_id": "U0381",
+  "title": "Understanding and Enhancing CS Students’ Interaction Experience with AI Coding Assistant Tools",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2039",
+  "screening_id": "U0392",
+  "title": "What Needs Attention? Prioritizing Drivers of Developers’ Trust and Adoption of Generative AI",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2040",
+  "screening_id": "U0442",
+  "title": "The Influence of Environmental Odors on Student Programmers During Code Comprehension and Code Writing",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2041",
+  "screening_id": "U0466",
+  "title": "Divergence or Convergence? A Deep Insight into the Crowd Collaboration and its Productivity in Open Source Software based on Entropy",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2042",
+  "screening_id": "U0473",
+  "title": "Towards an Appropriate Level of Reliance on AI: A Preliminary Reliance-Control Framework for AI in Software Engineering",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2043",
+  "screening_id": "U0522",
+  "title": "Strategic initiatives in DevOps adoption: a case study on the interplay of capabilities, metrics, and processes",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2044",
+  "screening_id": "U0602",
+  "title": "Exploring machine learning to support software managers' insights on software developer productivity",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "P2045",
+  "screening_id": "U0604",
+  "title": "The impact of the software architecture on the developer productivity",
+  "type": "academic",
+  "year": "2022"
+ },
+ {
+  "id": "P2046",
+  "screening_id": "U0609",
+  "title": "Technology Adoption: Exploring the Impact of Generative AI Use on Software Developer Performance",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "P2047",
+  "screening_id": "U0628",
+  "title": "Mathematical Modelling of the Impact of Developer Experience Metrics on the Duration of the Release Cycle in Full-Stack Projects",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2048",
+  "screening_id": "U0660",
+  "title": "Beyond Traditional Metrics: Toward a Multifactorial Model for Measuring Productivity in Agile Software Teams",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2049",
+  "screening_id": "U0690",
+  "title": "Creating benchmarkable components to measure the quality of AI-enhanced developer tools",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "P2050",
+  "screening_id": "U0732",
+  "title": "Results from a Replicated Experiment on the Affective Reactions of Novice Developers When Applying Test-Driven Development",
+  "type": "academic",
+  "year": "2020"
+ },
+ {
+  "id": "P2051",
+  "screening_id": "U0742",
+  "title": "From Assistants to Agents: Exploring Efficiency and Human Agency in AI-Supported Programming",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2052",
+  "screening_id": "U0752",
+  "title": "Investigating the key factors influencing software developer productivity in developing regions",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "P2053",
+  "screening_id": "U0761",
+  "title": "Understanding Generative AI Adoption in Development Work: The Role of Developer Experience",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2054",
+  "screening_id": "U0764",
+  "title": "Socio-technical Friction: An Emergent Grounded Theory of DevSecOps Challenges",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "P2055",
+  "screening_id": "U0767",
+  "title": "Continuance use of AI coding assistants among South Korean Industry Developers: A survey case study with large language models",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "P2056",
+  "screening_id": "U0772",
+  "title": "Understanding developer well-being: measuring mental health and productivity in software teams",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2057",
+  "screening_id": "U0784",
+  "title": "Towards Understanding Team Congestion in Large-Scale Software Development",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2058",
+  "screening_id": "U0826",
+  "title": "Platform engineering as organizational strategy: platform gravity, friction, and the economics of scaling internal developer platforms",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2059",
+  "screening_id": "U0833",
+  "title": "Echoes of AI: Investigating the downstream effects of AI assistants on software maintainability",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2060",
+  "screening_id": "U0845",
+  "title": "Interruptibility of software developers and its prediction using psycho-physiological sensors: a replication",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2061",
+  "screening_id": "U0889",
+  "title": "How Employee Competencies Affect Productivity of Information Technology Professionals: An Indian Study",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "P2062",
+  "screening_id": "U0893",
+  "title": "A comprehensive analysis of security risks and productivity impacts of AI-generated code",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2063",
+  "screening_id": "U1024",
+  "title": "The Impact of AI-Generated Solutions on Software Architecture and Productivity: Results from a Survey Study",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2064",
+  "screening_id": "U1493",
+  "title": "Developing high-performance engineering teams: a practical Framework for mentorship and technical growth",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2065",
+  "screening_id": "U1499",
+  "title": "Designing with Dev-X: A systematic mapping of Developer Experience interventions and their business impact",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2066",
+  "screening_id": "U1500",
+  "title": "Technical Debt Quantification and Its Impact on Software Delivery Performance: A Cost-Benefit Analysis Framework for Enterprise Systems",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2067",
+  "screening_id": "U1501",
+  "title": "MEASURING SOFTWARE DEVELOPER PRODUCTIVITY: REVIEW OF APPROACHES AND THEIR LIMITATIONS",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2068",
+  "screening_id": "U1505",
+  "title": "Software Developers' Perceptions of Productivity: An Industry-focused Study",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "P2069",
+  "screening_id": "U1508",
+  "title": "AI-Era Software Developer Productivity and Performance Metrics",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2070",
+  "screening_id": "U1512",
+  "title": "PlatFab: A Platform Engineering Approach to Improve Developer Productivity.",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "P2071",
+  "screening_id": "U1520",
+  "title": "What Affects Developer Experience",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "P2072",
+  "screening_id": "U1528",
+  "title": "Develop, Deploy, Operate: A holistic model for understanding the costs and value of software development",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "P2073",
+  "screening_id": "U1529",
+  "title": "Beyond Productivity Gains: Analyzing the Effects of AI-assisted Coding Tools on Developer Experience within a Brazilian Fintech Organization",
+  "type": "academic",
+  "year": null
+ },
+ {
+  "id": "P2074",
+  "screening_id": "U1541",
+  "title": "Using development environment as code for enhancing developer experience: An action design research study",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2075",
+  "screening_id": "U1542",
+  "title": "Cognitive Load and Developer Productivity Analysis Across Agile and Waterfall Software Development Life Cycle Phases",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "P2076",
+  "screening_id": "U1543",
+  "title": "Predictive Metrics: Transforming Engineering Productivity and Software Quality",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "P2077",
+  "screening_id": "U1546",
+  "title": "Bridging the Gap: A Data-Driven Analysis of How Traditional Software Engineering Productivity Metrics Overlook Women's Performance",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "P2078",
+  "screening_id": "U1551",
+  "title": "Are We Measuring the Wrong Things? How Software Project Leaders View Gen-AI-Assisted Developer Productivity",
+  "type": "academic",
+  "year": null
+ },
+ {
+  "id": "P2079",
+  "screening_id": "U1565",
+  "title": "Understanding ADHD Developers' Challenges Through the Lens of Developer Experience: A Qualitative Study of the r/ADHD_Programmers Community on …",
+  "type": "academic",
+  "year": null
+ },
+ {
+  "id": "P2080",
+  "screening_id": "U1604",
+  "title": "AI-assisted Collaboration: Exploring Developer Experience with GitHub Copilot and Windsurf",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2081",
+  "screening_id": "U1613",
+  "title": "The Effect Of Visual Studio Code Usability Based On Nielsen's Attributes On The Programming Productivity Of Informatics Students",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2082",
+  "screening_id": "U1616",
+  "title": "How AI communication capabilities affect developer productivity in AI pair programming: Insights from a large software development organization",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "P2083",
+  "screening_id": "U1626",
+  "title": "The Developer Experience of LGBTQIA+ People in Agile Teams: A Multivocal Literature Review",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "P2084",
+  "screening_id": "U1652",
+  "title": "A Journey Through SPACE",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "P2085",
+  "screening_id": "U1656",
+  "title": "The transformative influence of llms on software development \\&developer productivity",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "P2086",
+  "screening_id": "U1690",
+  "title": "What Makes a Good Productivity Metric?",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2087",
+  "screening_id": "U1700",
+  "title": "AI-Assisted Debugging Tools for Enhancing Developer Productivity in Large Codebases Using Genetic Programming Algorithms",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "P2088",
+  "screening_id": "U1751",
+  "title": "Multi-Dimensional Activity Metrics for Open-Source Developers: A Time-Series Characterization",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2089",
+  "screening_id": "U1783",
+  "title": "Mobilizing DevOps: exploration of DevOps adoption in mobile software development",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "P2090",
+  "screening_id": "U1814",
+  "title": "Highly Efficient Software Development Using DevOps and Microservices: A Comprehensive Framework",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2091",
+  "screening_id": "U1835",
+  "title": "THE IMPACT OF AGENTIC CODING ON THE MODERN SOFTWARE DEVELOPMENT LIFECYCLE.",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2092",
+  "screening_id": "U1837",
+  "title": "Connecting Mental Health and Productivity: A Metric Catalog for Software Development Teams",
+  "type": "academic",
+  "year": null
+ },
+ {
+  "id": "P2093",
+  "screening_id": "U1861",
+  "title": "An actionable framework to investigate and foster women inclusion in software development teams in proprietary software ecosystems",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "P2094",
+  "screening_id": "U1886",
+  "title": "A dive into the state of parallel application development in high-performance computing",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2095",
+  "screening_id": "U1948",
+  "title": "AI-Assisted Software Testing Improvements",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "P2096",
+  "screening_id": "U1954",
+  "title": "Both personality and social identity predict perceived software team productivity: A survey study",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2097",
+  "screening_id": "U1979",
+  "title": "Integrating Generative AI Across the Agile Software Development Lifecycle",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2098",
+  "screening_id": "U2011",
+  "title": "Multimodal Workload Analysis for Developer Burnout Prediction: Integrating Jira and GitHub Activity Data",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2099",
+  "screening_id": "U2050",
+  "title": "Measuring productivity: All models are wrong, but some are useful",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "G081",
+  "screening_id": "U1497",
+  "title": "Measuring Platform Success",
+  "type": "grey",
+  "year": "2026"
+ },
+ {
+  "id": "G082",
+  "screening_id": "U1556",
+  "title": "Generative AI and Software Developer Productivity-A Pilot Case Study at a Finnish Technology Consultancy",
+  "type": "grey",
+  "year": "2025"
+ },
+ {
+  "id": "G083",
+  "screening_id": "U1633",
+  "title": "Implementation and Comparison of Code Complexity Metrics to Assess Developer Productivity",
+  "type": "grey",
+  "year": "2025"
+ },
+ {
+  "id": "G084",
+  "screening_id": "U1697",
+  "title": "How Effective are AI-powered Code Assistants in Enhancing Developer Productivity?",
+  "type": "grey",
+  "year": "2025"
+ },
+ {
+  "id": "G085",
+  "screening_id": "U1706",
+  "title": "Case study: The impact of codebase modernisation on developer experience",
+  "type": "grey",
+  "year": "2026"
+ },
+ {
+  "id": "G086",
+  "screening_id": "U1735",
+  "title": "AI-Assisted and Low-Code Development in Practice: A Case Study of SocialMize on Developer Productivity, Code Quality, and Perceived Trust and Usability",
+  "type": "grey",
+  "year": "2026"
+ },
+ {
+  "id": "G087",
+  "screening_id": "U1856",
+  "title": "How generative artificial intelligence (AI) tools can enhance software development?",
+  "type": "grey",
+  "year": "2026"
+ },
+ {
+  "id": "G088",
+  "screening_id": "U1939",
+  "title": "The Three Pillars of Platform Strength–Scale, Security, and Metrics",
+  "type": "grey",
+  "year": "2026"
+ },
+ {
+  "id": "G089",
+  "screening_id": "U1942",
+  "title": "Exploring Perspectives of Software Developers on AI Tool Use and Productivity: A Literature Review and Empirical Findings",
+  "type": "grey",
+  "year": "2026"
+ },
+ {
+  "id": "P2100",
+  "screening_id": "U0115",
+  "title": "Beyond the Commit: Developer Perspectives on Productivity with AI Coding Assistants",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2101",
+  "screening_id": "U0125",
+  "title": "What's DAT? Three Case Studies of Measuring Software Development Productivity at Meta With Diff Authoring Time",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "P2102",
+  "screening_id": "U0706",
+  "title": "Evaluation of the nomological validity of cognitive, emotional, and behavioral factors for the measurement of developer experience",
+  "type": "academic",
+  "year": "2021"
+ },
+ {
+  "id": "P2103",
+  "screening_id": "U0770",
+  "title": "No silver bullets: Why understanding software cycle time is messy, not magic",
+  "type": "academic",
+  "year": "2025"
+ },
+ {
+  "id": "P2104",
+  "screening_id": "U0774",
+  "title": "Human-AI experience in integrated development environments: a systematic literature review",
+  "type": "academic",
+  "year": "2026"
+ },
+ {
+  "id": "G090",
+  "screening_id": "U1511",
+  "title": "Developer productivity with and without github copilot: A longitudinal mixed-methods case study",
+  "type": "grey",
+  "year": "2025"
+ },
+ {
+  "id": "G091",
+  "screening_id": "U1572",
+  "title": "The Productivity-Reliability Paradox: Specification-Driven Governance for AI-Augmented Software Development",
+  "type": "grey",
+  "year": "2026"
+ },
+ {
+  "id": "G092",
+  "screening_id": "U1658",
+  "title": "The Impact of AI Coding Assistants on Software Engineering: A Longitudinal Study",
+  "type": "grey",
+  "year": "2026"
+ },
+ {
+  "id": "G093",
+  "screening_id": "U1693",
+  "title": "Knowledge activation: AI skills as the institutional knowledge primitive for agentic software development",
+  "type": "grey",
+  "year": "2026"
+ },
+ {
+  "id": "P2105",
+  "screening_id": "J001",
+  "title": "Code and commit metrics of developer productivity: a study on team leaders perceptions",
+  "type": "academic",
+  "year": "2020"
+ },
+ {
+  "id": "P2106",
+  "screening_id": "J002",
+  "title": "A human-centered approach to developer productivity",
+  "type": "academic",
+  "year": "2022"
+ },
+ {
+  "id": "P2107",
+  "screening_id": "J003",
+  "title": "Towards a theory of software developer job satisfaction and perceived productivity",
+  "type": "academic",
+  "year": "2019"
+ },
+ {
+  "id": "P2108",
+  "screening_id": "J004",
+  "title": "Developer productivity for humans, part 6: Measuring flow, focus, and friction for developers",
+  "type": "academic",
+  "year": "2023"
+ },
+ {
+  "id": "P2109",
+  "screening_id": "J006",
+  "title": "Visualizing interaction data inside &outside the ide to characterize developer productivity",
+  "type": "academic",
+  "year": "2020"
+ },
+ {
+  "id": "P2110",
+  "screening_id": "J007",
+  "title": "Team productivity factors in agile software development: an exploratory survey with practitioners",
+  "type": "academic",
+  "year": "2023"
+ },
+ {
+  "id": "P2111",
+  "screening_id": "J008",
+  "title": "Productivity Factors in Agile Software Development Projects",
+  "type": "academic",
+  "year": "2023"
+ },
+ {
+  "id": "P2112",
+  "screening_id": "J010",
+  "title": "Measuring developer experience with a longitudinal survey",
+  "type": "academic",
+  "year": "2024"
+ },
+ {
+  "id": "P2113",
+  "screening_id": "J012",
+  "title": "Developer productivity for humans, part 8: Creativity in software engineering",
+  "type": "academic",
+  "year": "2024"
+ },
+ {
+  "id": "P2114",
+  "screening_id": "J013",
+  "title": "The effect of knowledge work productivity factors on software development",
+  "type": "academic",
+  "year": "2017"
+ },
+ {
+  "id": "P2115",
+  "screening_id": "J014",
+  "title": "Software development teams: factors influencing their productivity",
+  "type": "academic",
+  "year": "2023"
+ },
+ {
+  "id": "P2116",
+  "screening_id": "J015",
+  "title": "Developer Thriving: four sociocognitive factors that create resilient productivity on software teams",
+  "type": "academic",
+  "year": "2024"
+ },
+ {
+  "id": "P2117",
+  "screening_id": "J016",
+  "title": "Assessment on the effectiveness of github copilot as a code assistance tool: an empirical study",
+  "type": "academic",
+  "year": "2024"
+ },
+ {
+  "id": "P2118",
+  "screening_id": "J017",
+  "title": "Defining teamwork productivity factors in agile software development",
+  "type": "academic",
+  "year": "2022"
+ },
+ {
+  "id": "P2119",
+  "screening_id": "J018",
+  "title": "Factors influencing productivity of agile software development teamwork: A qualitative system dynamics approach",
+  "type": "academic",
+  "year": "2017"
+ },
+ {
+  "id": "P2120",
+  "screening_id": "J019",
+  "title": "Surveying the developer experience of flaky tests",
+  "type": "academic",
+  "year": "2022"
+ },
+ {
+  "id": "P2121",
+  "screening_id": "J020",
+  "title": "Team productivity in agile software development: a systematic mapping study",
+  "type": "academic",
+  "year": "2022"
+ },
+ {
+  "id": "P2122",
+  "screening_id": "J021",
+  "title": "Productivity, turnover, and team stability of agile teams in open-source software projects",
+  "type": "academic",
+  "year": "2020"
+ },
+ {
+  "id": "P2123",
+  "screening_id": "J022",
+  "title": "Social and human factor classification of influence in productivity in software development teams",
+  "type": "academic",
+  "year": "2020"
+ },
+ {
+  "id": "P2124",
+  "screening_id": "J023",
+  "title": "… Software Engineering Tasks: The Software Evaluation for Well-Being and Optimal Psychological Functioning in a Context-Aware Environment Assessment Framework",
+  "type": "academic",
+  "year": "2024"
+ },
+ {
+  "id": "P2125",
+  "screening_id": "J024",
+  "title": "Developer productivity for humans, part 2: Hybrid productivity",
+  "type": "academic",
+  "year": "2023"
+ },
+ {
+  "id": "P2126",
+  "screening_id": "J025",
+  "title": "Analysis of factors influencing developers' sentiments in commit logs: insights from applying sentiment analysis",
+  "type": "academic",
+  "year": "2022"
+ },
+ {
+  "id": "P2127",
+  "screening_id": "J026",
+  "title": "A review of literature about models and factors of productivity in the software factory",
+  "type": "academic",
+  "year": "2018"
+ },
+ {
+  "id": "P2128",
+  "screening_id": "J027",
+  "title": "On software productivity analysis with propensity score matching",
+  "type": "academic",
+  "year": "2017"
+ },
+ {
+  "id": "P2129",
+  "screening_id": "J028",
+  "title": "Copilot's island of joy: balancing individual satisfaction with team interaction in agile development",
+  "type": "academic",
+  "year": "2024"
+ },
+ {
+  "id": "P2130",
+  "screening_id": "J030",
+  "title": "How human and organizational factors influence software teams productivity in covid-19 pandemic: A brazilian survey",
+  "type": "academic",
+  "year": "2020"
+ },
+ {
+  "id": "P2131",
+  "screening_id": "J032",
+  "title": "Significant productivity gains through programming with large language models",
+  "type": "academic",
+  "year": "2024"
+ },
+ {
+  "id": "P2132",
+  "screening_id": "J033",
+  "title": "A tale of two cities: Software developers working from home during the covid-19 pandemic",
+  "type": "academic",
+  "year": "2021"
+ },
+ {
+  "id": "P2133",
+  "screening_id": "J035",
+  "title": "Reading between the lines: Modeling user behavior and costs in AI-assisted programming",
+  "type": "academic",
+  "year": "2024"
+ },
+ {
+  "id": "P2134",
+  "screening_id": "J036",
+  "title": "Taking flight with copilot",
+  "type": "academic",
+  "year": "2023"
+ },
+ {
+  "id": "G094",
+  "screening_id": "J005",
+  "title": "Advancing scientific productivity through better scientific software: Developer productivity and software sustainability report",
+  "type": "grey",
+  "year": "2020"
+ },
+ {
+  "id": "G095",
+  "screening_id": "J009",
+  "title": "Increasing developer productivity by assigning well-defined roles in teams",
+  "type": "grey",
+  "year": "2020"
+ },
+ {
+  "id": "G096",
+  "screening_id": "J011",
+  "title": "A multivocal literature review on developer experience",
+  "type": "grey",
+  "year": "2020"
+ },
+ {
+  "id": "G097",
+  "screening_id": "J031",
+  "title": "Evaluating the Use of Generative AI in Software Development Proposing a Tentative Framework",
+  "type": "grey",
+  "year": "2024"
+ },
+ {
+  "id": "G098",
+  "screening_id": "GU01",
+  "title": "Balancing AI tensions",
+  "type": "grey",
+  "year": "2026"
+ },
+ {
+  "id": "G099",
+  "screening_id": "GU02",
+  "title": "AI Impact Report: Q1 2026",
+  "type": "grey",
+  "year": "2026"
+ },
+ {
+  "id": "G100",
+  "screening_id": "GU03",
+  "title": "AI measurement framework: Complete guide for engineering leaders",
+  "type": "grey",
+  "year": "2026"
+ },
+ {
+  "id": "G101",
+  "screening_id": "GU04",
+  "title": "AI in engineering: Q2 2026 benchmarks and research readout",
+  "type": "grey",
+  "year": "2026"
+ },
+ {
+  "id": "G102",
+  "screening_id": "GU05",
+  "title": "2026 Software Engineering Benchmarks Report",
+  "type": "grey",
+  "year": "2026"
+ },
+ {
+  "id": "G103",
+  "screening_id": "GU06",
+  "title": "The AI engineering productivity gap: 2026 benchmarks",
+  "type": "grey",
+  "year": "2026"
+ },
+ {
+  "id": "G104",
+  "screening_id": "GU07",
+  "title": "2026 State of Engineering Management Report",
+  "type": "grey",
+  "year": "2026"
+ },
+ {
+  "id": "G105",
+  "screening_id": "GU08",
+  "title": "AI Accountability Report",
+  "type": "grey",
+  "year": "2026"
+ },
+ {
+  "id": "G106",
+  "screening_id": "GU09",
+  "title": "New modes of delivering software, a new Gartner Magic Quadrant, and a lot of open questions",
+  "type": "grey",
+  "year": "2026"
+ },
+ {
+  "id": "G107",
+  "screening_id": "GU10",
+  "title": "AI Is Amplifying Software Engineering Performance, Says the 2025 DORA Report",
+  "type": "grey",
+  "year": "2026"
+ },
+ {
+  "id": "G108",
+  "screening_id": "GU11",
+  "title": "The struggle to prove AI productivity gains",
+  "type": "grey",
+  "year": "2026"
+ },
+ {
+  "id": "G109",
+  "screening_id": "GU12",
+  "title": "AI isn't making developers more productive, it's making them busier",
+  "type": "grey",
+  "year": "2026"
+ },
+ {
+  "id": "G110",
+  "screening_id": "GU13",
+  "title": "Measuring engineering productivity is harder than ever",
+  "type": "grey",
+  "year": "2026"
+ },
+ {
+  "id": "G111",
+  "screening_id": "GU14",
+  "title": "The AI Impact Report 2026",
+  "type": "grey",
+  "year": "2026"
+ },
+ {
+  "id": "G112",
+  "screening_id": "GU15",
+  "title": "The AI revolution in software development",
+  "type": "grey",
+  "year": "2026"
+ },
+ {
+  "id": "G113",
+  "screening_id": "GU16",
+  "title": "AI's impact on software engineers in 2026: key trends, Part 2",
+  "type": "grey",
+  "year": "2026"
+ },
+ {
+  "id": "G114",
+  "screening_id": "GU17",
+  "title": "How tech companies measure the impact of AI on software development",
+  "type": "grey",
+  "year": "2025"
+ },
+ {
+  "id": "G115",
+  "screening_id": "GU18",
+  "title": "Introducing DORA's inaugural AI Capabilities Model",
+  "type": "grey",
+  "year": "2025"
+ }
+]

@@ -1,0 +1,33 @@
+{
+  "id": "P2060",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Replication study generating new lab data."},
+    "study_type": {"claude": "Experiment (external close replication of a controlled lab experiment)", "nlm": "Experiment (external close replication, quantitative)", "value": "Experiment", "note": "External close replication of the Züger and Fritz (2015) lab study."},
+    "research_method": {"claude": "External close replication (Group I) of a controlled lab experiment with biometric sensors; ML classification (Naïve Bayes, Weka) with 10×10-fold CV vs. majority classifier; short post-interviews; 82 interruption samples, ~10 h of biophysical data", "nlm": "External close replication, quantitative; Naïve Bayes via Weka, WrapperSubsetEval feature selection, 10x10-fold cross-validation; 82 interruption samples over 10 hours of programming sessions", "value": "External close replication of a controlled lab experiment (Züger and Fritz 2015); 10 one-on-one 60-minute programming sessions with tablet interruptions, 82 interruption samples, ~10 hours of biometric data (EEG, ECG, EDA, skin temperature); Naïve Bayes classification (Weka, wrapper-based feature selection) evaluated by 10×10-fold CV against a majority-class baseline; post-session interview/questionnaire", "note": ""},
+    "context": {"claude": "Academic; university lab (Vienna University of Economics and Business), code-change tasks on JHotDraw; 10 participants (4 graduate, 2 undergraduate, 3 professionals, 1 HTL graduate)", "nlm": "Academic/laboratory setting (Vienna University of Economics and Business), JHotDraw Java maintenance tasks; 10 participants (same breakdown)", "value": "academic; controlled university lab (Vienna University of Economics and Business), three code-change tasks on the Java code base of JHotDraw; 10 participants (4 graduate students, 2 undergraduate students, 3 professionals, 1 HTL graduate)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "ML (Naïve Bayes) is the instrument evaluated for automatically measuring developer interruptibility; no AI coding tools."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "On-site lab study. Full text has one speculative sentence on post-COVID work environment (notifications vs. in-person interruptions, p. 22)."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either (only submission/publication dates)."},
+    "cat_productivity": {"claude": "No", "nlm": "Yes", "value": null, "note": "NotebookLM labels interruption/resumption/edit lag as Productivity; Claude labels the lags Activity/Flow. Paper uses lags as indicators of interruptibility; perceived productivity only as motivation."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels self-reported task completion/difficulty as Quality, which is not a quality metric under the definition."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: perceived disturbance and mental workload ratings (both extractors label them generic DevEx); no satisfaction/well-being measure."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Both use the label Activity for lags (Claude) or biometric signals (NotebookLM); no repository activity metrics."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "DevEx framework not used (Claude: not reported); 'DevEx' labels on metrics are generic."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Five-point Likert self-reports of interruptibility (target variable), mental workload and disturbance; post-session questionnaire."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "We conducted an external close replication of the original lab study. As such, we held ten one-on-one sessions in which participants were asked to perform three code change tasks during a 60-minute programming session", "loc": "PDF p. 1"},
+    {"field": "research_method, ai_discussed", "quote": "Biophysical data on brain, eye, heart, and skin activity were collected from ten participants for a total of ten hours. Using a Naïve Bayes classifier, we were not able to generate models that performed significantly better than the proposed baseline (majority classifier).", "loc": "PDF p. 26"},
+    {"field": "research_method", "quote": "model performance is measured in terms of the average accuracy which the model configuration scores in the 10x10-fold cross-validation (CV) step", "loc": "PDF p. 16"},
+    {"field": "context", "quote": "All participants in the lab study had to work on the following three code-change tasks in the Java code base of JHotDraw", "loc": "PDF p. 7"},
+    {"field": "context", "quote": "They had a diverse academic profile with four graduate students, two undergraduate students, three professionals, and one HTL13 graduate.", "loc": "PDF p. 11 (\"13\" is a footnote marker)"},
+    {"field": "ai_discussed", "quote": "Can biometric sensors be used to automatically measure interruptibility of software developers with high accuracy in a controlled (lab) environment?", "loc": "PDF p. 5"},
+    {"field": "cat_survey", "quote": "The participants' ratings of perceived interruptibility were collected on a five-point Likert scale : 1 (\"very interruptible\")-5 (\"very uninterruptible\"). This also applies to perceived disturbance of the interruption and the mental load at the time of the interruption.", "loc": "PDF p. 9"}
+  ]
+}

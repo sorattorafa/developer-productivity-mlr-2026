@@ -1,0 +1,35 @@
+{
+  "id": "P2085",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Secondary", "nlm": "Secondary", "value": "Secondary", "note": "Single-author literature review of AI pair programmer studies."},
+    "study_type": {"claude": "Review-Secondary (literature review)", "nlm": "Review-Secondary (literature review / systematic survey)", "value": "Review-Secondary", "note": ""},
+    "research_method": {"claude": "Single-author literature review in four stages (Definition, Search, Selection, Analysis) following a prior review; Google Scholar search of selected SE/HCI venues plus iterative snowballing; thematic analysis with open coding; 23 publications; 11-category taxonomy and 12 open problems", "nlm": "Literature review / systematic survey with thematic analysis and open coding; 23 publications; 11-category, 53-subcategory taxonomy; 12 open problems", "value": "Single-author literature review in four stages (Definition, Search, Selection, Analysis); Google Scholar search of selected SE/HCI venues plus iterative snowballing; thematic analysis with open coding of 23 publications (20 papers, 3 surveys/blogs/articles); output is an 11-category, 53-subcategory taxonomy and 12 open problems", "note": "Search details (Google Scholar, snowballing) given only by Claude, not contradicted."},
+    "context": {"claude": "Academic; review of studies on LLM-based AI pair programmers (Copilot, ChatGPT, Tabnine etc.), some with industry association; 23 publications", "nlm": "SE and HCI literature spanning industry, academic and OSS settings; 23 publications (20 papers, 3 surveys/blogs/articles)", "value": "academic (secondary/review); 23 publications (20 scholarly papers and 3 developer surveys/blogs/articles) on LLM-based AI pair programmers", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Both state DORA is not mentioned."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Both state SPACE is not mentioned."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "LLMs as AI pair programming assistants are the review topic."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not reported; NotebookLM only notes the taxonomy's team levels (up to multinational teams)."},
+    "data_window": {"claude": "2015–2024 (Table I papers)", "nlm": "2015–2025", "value": null, "note": "End year differs between extractors; no explicit coverage period in the method section."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Productivity uplift, efficiency, time to completion/success synthesized as benefits and cognitive factors."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Quality of generated artifacts (no universal standard, 'gap in selected metrics'), non-compilable code, accuracy, complexity."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "'Level of Collaboration' taxonomy category is team size/setting and human-AI collaboration, not a collaboration metric."},
+    "cat_satisfaction": {"claude": "Yes (trust labelled Satisfaction/Trust)", "nlm": "Yes (usability perception and developer sentiment)", "value": null, "note": "Agreed Yes but not confirmed in the full text: trust is a concern about AI tools and sentiment appears only as an open problem; no satisfaction or well-being measure is synthesized."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: code volume added/omitted appears once, as one cited study's productivity/quality measure [27]; both extractors class it as Productivity."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Cognitive load is a taxonomy factor, but the DevEx framework is not used (both say DevEx is not mentioned)."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "SDLC stages only; no agile/process metric."},
+    "cat_survey": {"claude": "No", "nlm": "Yes", "value": null, "note": "NotebookLM lists usability perception/sentiment collected by questionnaires and interviews. Claude lists no perceptual metric, only the critique that large survey studies are self-reported; Stack Overflow Developer Survey is one source."}
+  },
+  "evidence": [
+    {"field": "study_type, primary_secondary, ai_discussed", "quote": "To identify the potential and prevailing obstacles, we systematically reviewed contemporary scholarly publications, emphasizing the perspectives of software developers and usability concerns.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "research_method", "quote": "To conduct our literature review, we followed the process used in a previous literature review [34]. This procedure involves four distinct stages: Definition, Search, Selection, and Analysis.", "loc": "PDF p. 3 (IV. Methodology)"},
+    {"field": "research_method", "quote": "The initial pool of collected papers served as a foundation for an iterative snowballing process to uncover further related publications within our domain of interest.", "loc": "PDF p. 3 (IV.B Search)"},
+    {"field": "research_method", "quote": "To achieve this, we used thematic analysis as our methodology.", "loc": "PDF p. 4 (IV.D Analysis)"},
+    {"field": "research_method, context", "quote": "Our investigative study encompassed a review of 23 distinct publications, inclusive of conference proceedings, journal articles, and developer surveys.", "loc": "PDF p. 4 (VI. Survey Findings)"},
+    {"field": "ai_discussed", "quote": "With LLMs increasingly serving as AI Pair Programming Assistants spurred the development of specialized models aimed at aiding software engineers.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "cat_productivity", "quote": "4) Productivity: A significant uplift in overall productivity is confirmed by numerous studies [33], [40]. A particular investigation used the volume of code added and omitted as a measure of productivity and quality [27].", "loc": "PDF p. 7"},
+    {"field": "cat_productivity", "quote": "Efficient tools can potentially reduce the time span required to realize a task, encompassing the time to select, implement, and subsequently validate a solution against user specifications.", "loc": "PDF p. 8"},
+    {"field": "cat_quality", "quote": "Diverse methodologies exist to assess various aspects of software quality. While a study reports favorable outcomes concerning quality enhancement [28], we perceive a gap in selected metrics.", "loc": "PDF p. 7"}
+  ]
+}

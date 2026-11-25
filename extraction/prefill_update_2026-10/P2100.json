@@ -1,0 +1,41 @@
+{
+  "id": "P2100",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Mixed methods (sequential exploratory: survey + semi-structured interviews)", "nlm": "Mixed methods (sequential exploratory: quantitative survey + qualitative semi-structured interviews)", "value": "Mixed methods", "note": ""},
+    "research_method": {"claude": "Sequential exploratory mixed methods: large-scale survey on the DX platform (two AI-assistant items) + 11 semi-structured interviews with inductive open coding and descriptive thematic analysis; Pearson correlation satisfaction x time savings (N = 2754)", "nlm": "Sequential exploratory mixed methods: quantitative survey (2,989 respondents, DX platform, satisfaction and perceived time savings) + 11 qualitative semi-structured interviews; Pearson r = 0.34", "value": "Sequential exploratory mixed-methods design: large-scale company survey on the DX platform (two AI-assistant items: satisfaction and perceived weekly time savings with GitHub Copilot; 2989 respondents; Pearson correlation between the two items) followed by 11 semi-structured interviews analysed with inductive open coding and descriptive thematic analysis; six-factor framework with proposed survey questions", "note": "Section 4.1 reports 2898 engineers answering at least one item (Claude flags the 2989/2898 inconsistency; NotebookLM uses both figures)."},
+    "context": {"claude": "Industry; BNY Mellon (financial company), developers with GitHub Copilot access; ~8000 engineers answered the general survey, 2989 the analysed items; 11 interviewees (early career, mid career, management; backend/full-stack/frontend)", "nlm": "Industry; financial services enterprise BNY Mellon; 2,989 survey respondents and 11 interview participants", "value": "industry; BNY Mellon (financial services), developers with access to GitHub Copilot; 2989 survey respondents (of ~8000 engineers who took the company survey) and 11 interviewees across seniority levels and roles", "note": "~8000 figure reported by Claude, mentioned by NotebookLM only in limitations (not contradicted)."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Referenced only: Factor 3 compared with DORA throughput metrics (Table 3, Section 5.2)."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Referenced only: Factors 2 and 4 compared with SPACE dimensions (Table 3)."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "GitHub Copilot (LLM coding assistant) is the object of study."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not reported by either; interviews were merely conducted virtually via Teams."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either (survey and interview dates not given)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Factor 3 rate of task completion/throughput; perceived time savings (self-reported)."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin basis: quality of task completion and 'bugs avoided' in Factor 3; review quality in Factor 4 (both extractors tag peer review as Quality/Collaboration)."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Factor 4 ease of peer review (review comments, reviewer-author trust)."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "General satisfaction (CSAT) survey item; Factor 2 frustration."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Not measured: commit frequency, code completion acceptance and LOC are discussed (Sections 4.2, 5.1) and LOC is one suggested margin in Factor 3; acceptance rates could not be obtained."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": null, "note": "Agreed Yes but not confirmed in the full text: both tag Factor 3 (rate of task completion, a productivity measure) as Delivery; deployment frequency and lead time appear only in the DORA comparison (Section 5.2)."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: both say the DX survey platform/framework (Greiler, Storey & Noda 2022) was applied, but only as the vehicle for two items (satisfaction, time savings); Noda/Storey/Forsgren DevEx dimensions are not operationalized. Cognitive load (Factor 2) comes from interviews and is mapped to SPACE."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM mentions 'sprint tracking' only as a possible collection method for Factor 3; no process metric."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Survey items (satisfaction, perceived time savings), interviews on perceptions, proposed survey questions per factor (Table 2)."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "We employed a sequential exploratory mixed-methods research design [11] involving two phases.", "loc": "PDF p. 2 (Research Design)"},
+    {"field": "research_method, context", "quote": "At BNY Mellon, we conduct a survey with 2989 developer responses and 11 in-depth interviews.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "research_method", "quote": "To answer RQ2, we conducted inductive open coding and applied a descriptive thematic analysis of all responses to the questions about perceptions on productivity metrics.", "loc": "PDF p. 4 (3.2 Interview, Analysis)"},
+    {"field": "context", "quote": "The survey was completed by around 8000 total engineers throughout the company.", "loc": "PDF p. 3 (3.1 Survey, Participants)"},
+    {"field": "context, ai_discussed", "quote": "Regarding our particular questions, we had 2989 respondents—which is a majority of engineers who have access to GitHub Copilot", "loc": "PDF p. 3 (3.1 Survey, Participants)"},
+    {"field": "ai_discussed", "quote": "This study analyzes the validity of different approaches to evaluating the productivity impacts of AI coding assistants by leveraging mixed-method research.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "cat_satisfaction, cat_survey", "quote": "(1) General satisfaction [15, 42]: Consumer Satisfaction score for GitHub Copilot.", "loc": "PDF p. 3 (3.2 Protocol)"},
+    {"field": "cat_productivity, cat_survey", "quote": "(2) Perceived time savings [26]: On average, how much time is saved with GitHub Copilot per week?", "loc": "PDF p. 3 (3.2 Protocol)"},
+    {"field": "cat_productivity, cat_quality", "quote": "Do AI tools improve the rates of and quality of task completion?", "loc": "PDF p. 5 (Factor 3)"},
+    {"field": "cat_productivity", "quote": "Many participants noted the importance of measuring throughout (P5,9,11)—i.e., the rate at which individual or teams can complete a well-defined task", "loc": "PDF p. 5 (Factor 3)"},
+    {"field": "cat_quality, cat_activity", "quote": "By what measurable margin (time saved, lines of code written, bugs avoided) do tasks complete faster?", "loc": "PDF p. 7 (Table 2)"},
+    {"field": "cat_collaboration", "quote": "Does the use of AI affect trust between reviewers and authors?", "loc": "PDF p. 7 (Table 2, Ease of peer review)"},
+    {"field": "cat_satisfaction, cat_survey", "quote": "How often do developers experience frustration due to irrelevant, incorrect, or repetitive AI suggestions?", "loc": "PDF p. 7 (Table 2)"},
+    {"field": "cat_activity", "quote": "Commit frequency and code completion acceptance are frequently used to measure a developer’s usage of AI coding assistants.", "loc": "PDF p. 8 (5.1 Operationalizing AI productivity factors)"},
+    {"field": "cat_activity", "quote": "Using simple metrics like the number of lines of code written does not necessarily correlate with impact.", "loc": "PDF p. 5 (Factor 3)"}
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "G094",
+  "kind": "grey",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Program report on the IDEAS-ECP project's own strategies, PSIP guidance, case studies and outreach data."},
+    "gl_type": {"claude": "Report (technical report ECP-U-RPT-2020-0001)", "nlm": "Report (industry/technical report; also called government white paper)", "value": "Report", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Both state DORA is not mentioned."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Both state SPACE is not mentioned."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": "Not discussed by either."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either (report dated January 2020)."},
+    "data_window": {"claude": "Outreach data June 2017-December 2019 (Table 2); project activities 2017-2019", "nlm": "no basis", "value": null, "note": "Only Claude states a period (webinar data June 2017-December 2019); NotebookLM gives none."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: developer productivity is defined as a construct (quality, development time, staffing resources), but both note that no productivity metric is defined or measured ('difficult to define')."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "PSIP progress tracking cards on verification/test coverage, test-suite management, CI build regressions and unit/regression testing (EXAALT, ExaStar)."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: collaboration in aggregate teams, onboarding and code reviews are discussed as needs and practices, but no collaboration metric."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Only outreach counts (webinar registrations, attendees, contributions), not repository activity."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Both state DevEx is not mentioned."},
+    "cat_agile": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "PSIP iterative process-improvement planning with progress tracking card values (0-5 steps); agile (Scrum, Kanban) discussed as needing adaptation for science teams."},
+    "cat_survey": {"claude": "Yes", "nlm": "No", "value": null, "note": "Claude reports community surveys and team interviews used to identify needs (no N, instrument or analysis reported); NotebookLM does not mention them."}
+  },
+  "evidence": [
+    {"field": "gl_type", "quote": "ECP-U-RPT-2020-0001 Advancing Scientific Productivity through Better Scientific Software: Developer Productivity and Software Sustainability Report", "loc": "PDF p. 1"},
+    {"field": "cat_quality", "quote": "(2) implement a CI pipeline to automatically detect build regressions, and (3) add unit/regression testing to the CI pipeline.", "loc": "PDF p. 35 (Appendix C, EXAALT)"},
+    {"field": "cat_quality", "quote": "This work was retroactively represented by a PTC for verification coverage and test-suite management, shown in the left-hand side of Figure 24.", "loc": "PDF p. 36 (Appendix C, ExaStar)"},
+    {"field": "cat_agile", "quote": "Construct a progress tracking card (PTC): A PTC is a brief document containing the target, or goal, of the planning activity and a step-by-step list of activities or outcomes (range of 0-5 is suggested)", "loc": "PDF p. 16 (PSIP workflow)"},
+    {"field": "cat_agile", "quote": "Many agile methodologies rely on the implicit assumption that a software team has several developers who could be assigned a given project task, making dynamic assignment straightforward.", "loc": "PDF p. 12"}
+  ]
+}

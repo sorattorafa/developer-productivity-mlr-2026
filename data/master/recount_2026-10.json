@@ -1,0 +1,1035 @@
+{
+ "original": {
+  "n_academic": 66,
+  "n_grey": 55,
+  "n_total": 121,
+  "share_academic": 54.5,
+  "share_grey": 45.5,
+  "period_academic": {
+   "2016-2019": 15,
+   "2020-2022": 16,
+   "2023-2026": 35
+  },
+  "period_grey": {
+   "2016-2019": 2,
+   "2020-2022": 4,
+   "2023-2026": 49
+  },
+  "post2022_academic_pct": 53.0,
+  "post2022_grey_pct": 89.1,
+  "grey_tier": {
+   "1st": 19,
+   "2nd": 32,
+   "3rd": 4
+  },
+  "acad_applied": {
+   "DORA": {
+    "n": 3,
+    "pct": 4.5
+   },
+   "SPACE": {
+    "n": 10,
+    "pct": 15.2
+   },
+   "DevEx": {
+    "n": 7,
+    "pct": 10.6
+   }
+  },
+  "acad_applied_by_period": {
+   "DORA": {
+    "2016-2019": 0,
+    "2020-2022": 0,
+    "2023-2026": 3
+   },
+   "SPACE": {
+    "2016-2019": 0,
+    "2020-2022": 3,
+    "2023-2026": 7
+   },
+   "DevEx": {
+    "2016-2019": 0,
+    "2020-2022": 0,
+    "2023-2026": 7
+   }
+  },
+  "acad_any_framework": {
+   "n": 17,
+   "pct": 25.8,
+   "one": 15,
+   "two_plus": 2
+  },
+  "acad_no_framework": {
+   "n": 49,
+   "survey": [
+    32,
+    65.3
+   ],
+   "satisfaction": [
+    29,
+    59.2
+   ],
+   "productivity": [
+    31,
+    63.3
+   ]
+  },
+  "acad_ai": {
+   "n": 12,
+   "pct": 18.2,
+   "by_period": {
+    "2016-2019": 0,
+    "2020-2022": 1,
+    "2023-2026": 11
+   },
+   "post2022_share_of_post2022": 31.4
+  },
+  "grey_ai": {
+   "n": 24,
+   "pct": 43.6
+  },
+  "acad_remote": {
+   "n": 10,
+   "by_period": {
+    "2016-2019": 0,
+    "2020-2022": 6,
+    "2023-2026": 4
+   },
+   "pct_by_period": {
+    "2016-2019": 0.0,
+    "2020-2022": 37.5,
+    "2023-2026": 11.4
+   }
+  },
+  "grey_levels": {
+   "DORA": {
+    "mentioned": 42,
+    "empirical": 11,
+    "guidance": 24,
+    "referenced_only": 7,
+    "empirical_pct": 20.0,
+    "guidance_pct": 43.6,
+    "ref_only_pct": 12.7
+   },
+   "SPACE": {
+    "mentioned": 28,
+    "empirical": 7,
+    "guidance": 12,
+    "referenced_only": 9,
+    "empirical_pct": 12.7,
+    "guidance_pct": 21.8,
+    "ref_only_pct": 16.4
+   },
+   "DevEx": {
+    "mentioned": 27,
+    "empirical": 4,
+    "guidance": 14,
+    "referenced_only": 9,
+    "empirical_pct": 7.3,
+    "guidance_pct": 25.5,
+    "ref_only_pct": 16.4
+   }
+  },
+  "grey_any_mentioned": {
+   "n": 51,
+   "pct": 92.7
+  },
+  "grey_any_empirical": {
+   "n": 18,
+   "pct": 32.7
+  },
+  "tests": {
+   "DORA": 0.0102,
+   "SPACE": 0.796,
+   "DevEx": 0.7524,
+   "any_empirical": {
+    "chi2": 0.41,
+    "p": 0.522
+   }
+  },
+  "categories": {
+   "Productivity/Performance": {
+    "n": 97,
+    "pct": 80.2,
+    "acad": 46,
+    "acad_pct": 69.7,
+    "grey": 51,
+    "grey_pct": 92.7
+   },
+   "Quality": {
+    "n": 63,
+    "pct": 52.1,
+    "acad": 21,
+    "acad_pct": 31.8,
+    "grey": 42,
+    "grey_pct": 76.4
+   },
+   "Collaboration": {
+    "n": 69,
+    "pct": 57.0,
+    "acad": 31,
+    "acad_pct": 47.0,
+    "grey": 38,
+    "grey_pct": 69.1
+   },
+   "Satisfaction/Wellbeing": {
+    "n": 83,
+    "pct": 68.6,
+    "acad": 42,
+    "acad_pct": 63.6,
+    "grey": 41,
+    "grey_pct": 74.5
+   },
+   "Activity/Code": {
+    "n": 58,
+    "pct": 47.9,
+    "acad": 22,
+    "acad_pct": 33.3,
+    "grey": 36,
+    "grey_pct": 65.5
+   },
+   "Delivery Performance": {
+    "n": 47,
+    "pct": 38.8,
+    "acad": 8,
+    "acad_pct": 12.1,
+    "grey": 39,
+    "grey_pct": 70.9
+   },
+   "DevEx Dimensions": {
+    "n": 25,
+    "pct": 20.7,
+    "acad": 7,
+    "acad_pct": 10.6,
+    "grey": 18,
+    "grey_pct": 32.7
+   },
+   "Agile/Process": {
+    "n": 50,
+    "pct": 41.3,
+    "acad": 16,
+    "acad_pct": 24.2,
+    "grey": 34,
+    "grey_pct": 61.8
+   },
+   "Survey/Perceptual": {
+    "n": 84,
+    "pct": 69.4,
+    "acad": 46,
+    "acad_pct": 69.7,
+    "grey": 38,
+    "grey_pct": 69.1
+   }
+  },
+  "remote_all_pct": 10.7,
+  "categories_per_source_mean": 4.8,
+  "single_category": {
+   "n": 4,
+   "pct": 3.3
+  },
+  "focus_by_period_pct": {
+   "Satisfaction/Wellbeing": {
+    "2016-2019": 60,
+    "2020-2022": 63,
+    "2023-2026": 66
+   },
+   "Activity/Code": {
+    "2016-2019": 7,
+    "2020-2022": 56,
+    "2023-2026": 34
+   },
+   "Delivery Performance": {
+    "2016-2019": 0,
+    "2020-2022": 6,
+    "2023-2026": 20
+   },
+   "DevEx Dimensions": {
+    "2016-2019": 0,
+    "2020-2022": 0,
+    "2023-2026": 20
+   },
+   "Quality": {
+    "2016-2019": 7,
+    "2020-2022": 31,
+    "2023-2026": 43
+   },
+   "Collaboration": {
+    "2016-2019": 20,
+    "2020-2022": 56,
+    "2023-2026": 54
+   },
+   "Remote/COVID": {
+    "2016-2019": 0,
+    "2020-2022": 38,
+    "2023-2026": 11
+   }
+  },
+  "venue_type": {
+   "Journal": 15,
+   "Conference": 43,
+   "Workshop": 7,
+   "Thesis": 1
+  },
+  "methods": {
+   "Survey": 17,
+   "Mixed Methods": 10,
+   "Repository Mining": 8,
+   "Review / Secondary": 7,
+   "Qualitative / Interviews": 7,
+   "Conceptual / Other": 7,
+   "Case Study": 7,
+   "Controlled Experiment": 2,
+   "Quasi-Experiment": 1
+  },
+  "strength": {
+   "substantiated (secondary synthesis)": 8,
+   "substantiated": 23,
+   "questionnaire": 29,
+   "mentioned": 4,
+   "framework proposal": 2
+  },
+  "human_samples": {
+   "n": 45,
+   "median": 57,
+   "below30": 17
+  },
+  "context": {
+   "Industry": 44,
+   "Academic/secondary": 8,
+   "Other/not specified": 6,
+   "Mixed": 4,
+   "OSS": 4
+  },
+  "quality": {
+   "acad_mean": 4.43,
+   "acad_sd": 0.6,
+   "grey_mean": 4.24,
+   "grey_sd": 1.11
+  },
+  "vendor_empirical": {
+   "n_vendor": 28,
+   "n_independent": 27,
+   "DORA": {
+    "vendor_pct": 32.1,
+    "independent_pct": 7.4
+   },
+   "SPACE": {
+    "vendor_pct": 14.3,
+    "independent_pct": 11.1
+   },
+   "DevEx": {
+    "vendor_pct": 3.6,
+    "independent_pct": 11.1
+   }
+  },
+  "challenges": {
+   "coded": 66,
+   "n": 30,
+   "pct": 45.5,
+   "by_period": {
+    "2016-2019": [
+     7,
+     15,
+     46.7
+    ],
+    "2020-2022": [
+     5,
+     16,
+     31.3
+    ],
+    "2023-2026": [
+     18,
+     35,
+     51.4
+    ]
+   },
+   "themes": {
+    "T4": 17,
+    "T7": 14,
+    "T1": 11,
+    "T2": 5,
+    "T3": 5,
+    "T6": 4,
+    "T5": 3
+   }
+  },
+  "inventory": {
+   "canonical_9cat": 59,
+   "sources_covered": 119,
+   "top15": [
+    [
+     "deployment frequency",
+     "Delivery",
+     27,
+     4,
+     23
+    ],
+    [
+     "satisfaction",
+     "Satisf",
+     25,
+     10,
+     15
+    ],
+    [
+     "productivity / efficiency score",
+     "ProdPerf",
+     24,
+     14,
+     10
+    ],
+    [
+     "lead time for changes",
+     "Delivery",
+     22,
+     5,
+     17
+    ],
+    [
+     "flow state / focus time",
+     "DevExDim",
+     21,
+     12,
+     9
+    ],
+    [
+     "lines of code changed",
+     "Activity",
+     20,
+     13,
+     7
+    ],
+    [
+     "task / contribution throughput",
+     "ProdPerf",
+     18,
+     6,
+     12
+    ],
+    [
+     "defects / rollbacks",
+     "Quality",
+     16,
+     13,
+     3
+    ],
+    [
+     "change failure rate",
+     "Quality",
+     16,
+     2,
+     14
+    ],
+    [
+     "perceived productivity (self-report)",
+     "SurveyPerc",
+     16,
+     13,
+     3
+    ],
+    [
+     "code quality / health",
+     "Quality",
+     15,
+     8,
+     7
+    ],
+    [
+     "mean time to restore",
+     "Quality",
+     15,
+     2,
+     13
+    ],
+    [
+     "performance rating",
+     "ProdPerf",
+     14,
+     12,
+     2
+    ],
+    [
+     "activity counts (generic)",
+     "Activity",
+     13,
+     7,
+     6
+    ],
+    [
+     "code-review interaction",
+     "Collab",
+     12,
+     8,
+     4
+    ]
+   ],
+   "change failure rate": [
+    16,
+    2,
+    14
+   ],
+   "mean time to restore": [
+    15,
+    2,
+    13
+   ],
+   "perceived productivity (self-report)": [
+    16,
+    13,
+    3
+   ],
+   "affect / sentiment": [
+    5,
+    5,
+    0
+   ],
+   "AI suggestion acceptance / persistence": [
+    11,
+    3,
+    8
+   ],
+   "deployment frequency": [
+    27,
+    4,
+    23
+   ],
+   "lead time for changes": [
+    22,
+    5,
+    17
+   ],
+   "satisfaction": [
+    25,
+    10,
+    15
+   ],
+   "productivity / efficiency score": [
+    24,
+    14,
+    10
+   ],
+   "flow state / focus time": [
+    21,
+    12,
+    9
+   ]
+  }
+ },
+ "integrated": {
+  "n_academic": 153,
+  "n_grey": 75,
+  "n_total": 228,
+  "share_academic": 67.1,
+  "share_grey": 32.9,
+  "period_academic": {
+   "2016-2019": 19,
+   "2020-2022": 25,
+   "2023-2026": 109
+  },
+  "period_grey": {
+   "2016-2019": 2,
+   "2020-2022": 6,
+   "2023-2026": 67
+  },
+  "post2022_academic_pct": 71.2,
+  "post2022_grey_pct": 89.3,
+  "grey_tier": {
+   "1st": 29,
+   "2nd": 41,
+   "3rd": 5
+  },
+  "acad_applied": {
+   "DORA": {
+    "n": 9,
+    "pct": 5.9
+   },
+   "SPACE": {
+    "n": 19,
+    "pct": 12.4
+   },
+   "DevEx": {
+    "n": 12,
+    "pct": 7.8
+   }
+  },
+  "acad_applied_by_period": {
+   "DORA": {
+    "2016-2019": 0,
+    "2020-2022": 0,
+    "2023-2026": 9
+   },
+   "SPACE": {
+    "2016-2019": 0,
+    "2020-2022": 3,
+    "2023-2026": 16
+   },
+   "DevEx": {
+    "2016-2019": 0,
+    "2020-2022": 0,
+    "2023-2026": 12
+   }
+  },
+  "acad_any_framework": {
+   "n": 35,
+   "pct": 22.9,
+   "one": 31,
+   "two_plus": 4
+  },
+  "acad_no_framework": {
+   "n": 118,
+   "survey": [
+    86,
+    72.9
+   ],
+   "satisfaction": [
+    71,
+    60.2
+   ],
+   "productivity": [
+    77,
+    65.3
+   ]
+  },
+  "acad_ai": {
+   "n": 61,
+   "pct": 39.9,
+   "by_period": {
+    "2016-2019": 0,
+    "2020-2022": 1,
+    "2023-2026": 60
+   },
+   "post2022_share_of_post2022": 55.0
+  },
+  "grey_ai": {
+   "n": 41,
+   "pct": 54.7
+  },
+  "acad_remote": {
+   "n": 20,
+   "by_period": {
+    "2016-2019": 0,
+    "2020-2022": 8,
+    "2023-2026": 12
+   },
+   "pct_by_period": {
+    "2016-2019": 0.0,
+    "2020-2022": 32.0,
+    "2023-2026": 11.0
+   }
+  },
+  "grey_levels": {
+   "DORA": {
+    "mentioned": 51,
+    "empirical": 12,
+    "guidance": 24,
+    "referenced_only": 15,
+    "empirical_pct": 16.0,
+    "guidance_pct": 32.0,
+    "ref_only_pct": 20.0
+   },
+   "SPACE": {
+    "mentioned": 38,
+    "empirical": 10,
+    "guidance": 13,
+    "referenced_only": 15,
+    "empirical_pct": 13.3,
+    "guidance_pct": 17.3,
+    "ref_only_pct": 20.0
+   },
+   "DevEx": {
+    "mentioned": 30,
+    "empirical": 5,
+    "guidance": 15,
+    "referenced_only": 10,
+    "empirical_pct": 6.7,
+    "guidance_pct": 20.0,
+    "ref_only_pct": 13.3
+   }
+  },
+  "grey_any_mentioned": {
+   "n": 64,
+   "pct": 85.3
+  },
+  "grey_any_empirical": {
+   "n": 23,
+   "pct": 30.7
+  },
+  "tests": {
+   "DORA": 0.0256,
+   "SPACE": 0.8352,
+   "DevEx": 1.0,
+   "any_empirical": {
+    "chi2": 1.23,
+    "p": 0.268
+   }
+  },
+  "categories": {
+   "Productivity/Performance": {
+    "n": 163,
+    "pct": 71.5,
+    "acad": 100,
+    "acad_pct": 65.4,
+    "grey": 63,
+    "grey_pct": 84.0
+   },
+   "Quality": {
+    "n": 128,
+    "pct": 56.1,
+    "acad": 72,
+    "acad_pct": 47.1,
+    "grey": 56,
+    "grey_pct": 74.7
+   },
+   "Collaboration": {
+    "n": 113,
+    "pct": 49.6,
+    "acad": 70,
+    "acad_pct": 45.8,
+    "grey": 43,
+    "grey_pct": 57.3
+   },
+   "Satisfaction/Wellbeing": {
+    "n": 143,
+    "pct": 62.7,
+    "acad": 95,
+    "acad_pct": 62.1,
+    "grey": 48,
+    "grey_pct": 64.0
+   },
+   "Activity/Code": {
+    "n": 104,
+    "pct": 45.6,
+    "acad": 58,
+    "acad_pct": 37.9,
+    "grey": 46,
+    "grey_pct": 61.3
+   },
+   "Delivery Performance": {
+    "n": 74,
+    "pct": 32.5,
+    "acad": 27,
+    "acad_pct": 17.6,
+    "grey": 47,
+    "grey_pct": 62.7
+   },
+   "DevEx Dimensions": {
+    "n": 32,
+    "pct": 14.0,
+    "acad": 12,
+    "acad_pct": 7.8,
+    "grey": 20,
+    "grey_pct": 26.7
+   },
+   "Agile/Process": {
+    "n": 69,
+    "pct": 30.3,
+    "acad": 33,
+    "acad_pct": 21.6,
+    "grey": 36,
+    "grey_pct": 48.0
+   },
+   "Survey/Perceptual": {
+    "n": 168,
+    "pct": 73.7,
+    "acad": 115,
+    "acad_pct": 75.2,
+    "grey": 53,
+    "grey_pct": 70.7
+   }
+  },
+  "remote_all_pct": 10.1,
+  "categories_per_source_mean": 4.4,
+  "single_category": {
+   "n": 9,
+   "pct": 3.9
+  },
+  "focus_by_period_pct": {
+   "Satisfaction/Wellbeing": {
+    "2016-2019": 53,
+    "2020-2022": 64,
+    "2023-2026": 63
+   },
+   "Activity/Code": {
+    "2016-2019": 5,
+    "2020-2022": 52,
+    "2023-2026": 40
+   },
+   "Delivery Performance": {
+    "2016-2019": 5,
+    "2020-2022": 4,
+    "2023-2026": 23
+   },
+   "DevEx Dimensions": {
+    "2016-2019": 0,
+    "2020-2022": 0,
+    "2023-2026": 11
+   },
+   "Quality": {
+    "2016-2019": 16,
+    "2020-2022": 24,
+    "2023-2026": 58
+   },
+   "Collaboration": {
+    "2016-2019": 26,
+    "2020-2022": 48,
+    "2023-2026": 49
+   },
+   "Remote/COVID": {
+    "2016-2019": 0,
+    "2020-2022": 32,
+    "2023-2026": 11
+   }
+  },
+  "venue_type": {
+   "Journal": 52,
+   "Conference": 92,
+   "Workshop": 8,
+   "Thesis": 1
+  },
+  "methods": {
+   "Mixed Methods": 35,
+   "Survey": 29,
+   "Conceptual / Other": 16,
+   "Repository Mining": 15,
+   "Review / Secondary": 14,
+   "Case Study": 13,
+   "Qualitative / Interviews": 12,
+   "Controlled Experiment": 10,
+   "Experience report": 7,
+   "Quasi-Experiment": 2
+  },
+  "strength": {
+   "substantiated (secondary synthesis)": 15,
+   "substantiated": 61,
+   "questionnaire": 65,
+   "mentioned": 10,
+   "framework proposal": 2
+  },
+  "human_samples": {
+   "n": 98,
+   "median": 54.5,
+   "below30": 35
+  },
+  "context": {
+   "Industry": 98,
+   "Academic/secondary": 22,
+   "Mixed": 13,
+   "OSS": 10,
+   "Other/not specified": 10
+  },
+  "quality": {
+   "acad_mean": 4.19,
+   "acad_sd": 0.61,
+   "grey_mean": 4.27,
+   "grey_sd": 1.04
+  },
+  "vendor_empirical": {
+   "n_vendor": 33,
+   "n_independent": 42,
+   "DORA": {
+    "vendor_pct": 30.3,
+    "independent_pct": 4.8
+   },
+   "SPACE": {
+    "vendor_pct": 12.1,
+    "independent_pct": 14.3
+   },
+   "DevEx": {
+    "vendor_pct": 3.0,
+    "independent_pct": 9.5
+   }
+  },
+  "challenges": {
+   "coded": 153,
+   "n": 85,
+   "pct": 55.6,
+   "by_period": {
+    "2016-2019": [
+     9,
+     19,
+     47.4
+    ],
+    "2020-2022": [
+     9,
+     25,
+     36.0
+    ],
+    "2023-2026": [
+     67,
+     109,
+     61.5
+    ]
+   },
+   "themes": {
+    "T4": 51,
+    "T7": 37,
+    "T6": 30,
+    "T1": 25,
+    "T2": 14,
+    "T3": 14,
+    "T5": 12
+   }
+  },
+  "inventory": {
+   "canonical_9cat": 62,
+   "sources_covered": 226,
+   "top15": [
+    [
+     "perceived productivity (self-report)",
+     "SurveyPerc",
+     49,
+     43,
+     6
+    ],
+    [
+     "productivity / efficiency score",
+     "ProdPerf",
+     48,
+     32,
+     16
+    ],
+    [
+     "lines of code changed",
+     "Activity",
+     45,
+     29,
+     16
+    ],
+    [
+     "code quality / health",
+     "Quality",
+     45,
+     30,
+     15
+    ],
+    [
+     "task / contribution throughput",
+     "ProdPerf",
+     44,
+     27,
+     17
+    ],
+    [
+     "satisfaction",
+     "Satisf",
+     44,
+     28,
+     16
+    ],
+    [
+     "task completion time",
+     "ProdPerf",
+     42,
+     30,
+     12
+    ],
+    [
+     "flow state / focus time",
+     "DevExDim",
+     39,
+     28,
+     11
+    ],
+    [
+     "defects / rollbacks",
+     "Quality",
+     36,
+     29,
+     7
+    ],
+    [
+     "commit count",
+     "Activity",
+     32,
+     22,
+     10
+    ],
+    [
+     "deployment frequency",
+     "Delivery",
+     32,
+     9,
+     23
+    ],
+    [
+     "engagement / motivation / retention",
+     "Satisf",
+     30,
+     24,
+     6
+    ],
+    [
+     "AI suggestion acceptance / persistence",
+     "Activity",
+     28,
+     20,
+     8
+    ],
+    [
+     "lead time for changes",
+     "Delivery",
+     28,
+     11,
+     17
+    ],
+    [
+     "performance rating",
+     "ProdPerf",
+     27,
+     23,
+     4
+    ]
+   ],
+   "change failure rate": [
+    25,
+    9,
+    16
+   ],
+   "mean time to restore": [
+    21,
+    8,
+    13
+   ],
+   "perceived productivity (self-report)": [
+    49,
+    43,
+    6
+   ],
+   "affect / sentiment": [
+    17,
+    16,
+    1
+   ],
+   "AI suggestion acceptance / persistence": [
+    28,
+    20,
+    8
+   ],
+   "deployment frequency": [
+    32,
+    9,
+    23
+   ],
+   "lead time for changes": [
+    28,
+    11,
+    17
+   ],
+   "satisfaction": [
+    44,
+    28,
+    16
+   ],
+   "productivity / efficiency score": [
+    48,
+    32,
+    16
+   ],
+   "flow state / focus time": [
+    39,
+    28,
+    11
+   ]
+  }
+ }
+}

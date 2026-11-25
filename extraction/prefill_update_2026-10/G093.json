@@ -1,0 +1,30 @@
+{
+  "id": "G093",
+  "kind": "grey",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Author's own framework (Knowledge Activation) plus Yahoo deployment and survey (n = 67)."},
+    "gl_type": {"claude": "Article (arXiv pre-print, cs.AI)", "nlm": "Article (academic pre-print / technical paper)", "value": "Article", "note": "arXiv pre-print, not peer reviewed; author employed by Yahoo, where the framework was deployed."},
+    "dora_applied": {"claude": "No (reference only)", "nlm": "No (reference only)", "value": "No (reference only)", "note": "DORA 2025 report cited for the AI productivity paradox."},
+    "space_applied": {"claude": "No (reference only)", "nlm": "No (reference only)", "value": "No (reference only)", "note": "SPACE discussed in background and recommended for future measurement."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Knowledge delivery for agentic AI software development (AI skills for coding agents)."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Neither mentions remote work or COVID-19."},
+    "data_window": {"claude": "Survey 1–15 May 2026; deployment over 57 days", "nlm": "no basis", "value": null, "note": "Only Claude states the survey dates; NotebookLM gives no data period."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Self-reported time saved per week (mean 2.6 h); knowledge density (task-completion value per token) proposed."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: only perceived first-try policy compliance (Likert) and proposed correction frequency/agent accuracy; no code quality measure."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Institutional knowledge and the senior 'knowledge tax' are conceptual; no collaboration or knowledge-sharing metric measured."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Net Promoter Score (+35) and perceived developer-experience improvements."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "68 merged PRs to the skill corpus are only descriptive deployment statistics (Claude)."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: DevEx (cognitive load) justifies the intervention and the survey asks about mental effort and flow, but both extractions treat DevEx as referenced; drivers are the author's own items."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Anonymous cross-sectional Likert survey of 67 engineers (40 active users)."}
+  },
+  "evidence": [
+    {"field": "gl_type", "quote": "arXiv:2603.14805v2 [cs.AI] 4 Jun 2026", "loc": "PDF p. 1"},
+    {"field": "ai_discussed", "quote": "The bottleneck to effective agentic software development is not model capability but knowledge architecture.", "loc": "PDF p. 1"},
+    {"field": "cat_productivity, cat_satisfaction", "quote": "statistically significant developer-experience improvements (large to very large effect sizes on all four perceived-experience drivers, a mean of 2.6 hours per week saved per engineer, a Net Promoter Score of +35", "loc": "PDF p. 1"},
+    {"field": "cat_survey", "quote": "To assess the deployment's effect on developer experience, we fielded an anonymous, online cross-sectional survey of Yahoo engineers between May 1 and May 15, 2026.", "loc": "PDF p. 41"},
+    {"field": "cat_satisfaction", "quote": "We computed bootstrap confidence intervals for the Net Promoter Score with 10,000 resamples.", "loc": "PDF p. 42"},
+    {"field": "cat_productivity, cat_survey", "quote": "Active users reported saving a mean of 2.6 hours per week (95% CI: 1.6-3.6 hours)", "loc": "PDF p. 43"}
+  ]
+}

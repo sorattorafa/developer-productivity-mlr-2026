@@ -1,0 +1,34 @@
+{
+  "id": "P2116",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Own survey data."},
+    "study_type": {"claude": "Survey (large-scale online Likert-type survey)", "nlm": "Survey (quantitative survey, serial mediation path analysis)", "value": "Survey", "note": ""},
+    "research_method": {"claude": "Cross-sectional online survey (Qualtrics, Likert-type); Pearson correlations and regression-based serial mediation path analysis with covariates; six hypotheses; DTS (10 items, α = 0.86), VVQ (3 items, α = 0.83), HMU (2 items), single-item PPR", "nlm": "Quantitative survey; serial mediation path analysis; six hypotheses; DTS α = 0.86, VVQ α = 0.83, HMU 2 items, single-item PPR", "value": "Cross-sectional online survey (Qualtrics, Likert-type items); regression-based serial mediation path analysis (HMU → VVQ → DTS → PPR) controlling for coding experience and time spent coding; six hypotheses; Developer Thriving Scale (10 items, α = 0.86), Visibility and Value Questionnaire (3 items, α = 0.83), Healthy Metrics Use (2 items), single-item perceived productivity rating", "note": "Pearson correlations reported by Claude only (not contradicted)."},
+    "context": {"claude": "Industry; 12+ industries and organization sizes; 1,282 full-time individual-contributor developers recruited by snowball sampling (social media, Pluralsight platforms)", "nlm": "Industry; 12+ industries, company sizes 1 to 10,000+; 1,282 full-time individual-contributor developers", "value": "industry; developers from 12+ industries (Technology 19.4%, Financial services 11.9%, others) and organization sizes from 1 to 10,000+ employees, recruited by snowball sampling; 1,282 full-time individual-contributor developers", "note": "Snowball recruitment stated by Claude (NotebookLM mentions it under limitations)."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE only referenced (criticized for lacking psychometric evidence for satisfaction/well-being)."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Both: work mode not specified."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Both tag the outcome as Productivity, but it is a single-item self-reported perceived productivity rating (PPR); perceived productivity goes to cat_survey per the definitions."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "Technical debt only mentioned as a measurement pitfall."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Both tag the VVQ (work visible and valued by teammates and managers) as Collaboration; DTS also covers knowledge sharing (learning culture) and team support."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Developer Thriving Scale (motivation, belonging, support) framed as a driver of developer satisfaction/well-being."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Lines of code discussed only as a surface-metric pitfall."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Both use 'DevEx' tags generically; no Noda/Storey/Forsgren DevEx framework."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM tags Healthy Metrics Use as Process/Organizational, but it is a perception of team metric use, not a process metric."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "All constructs, including productivity, measured by self-report survey items."}
+  },
+  "evidence": [
+    {"field": "study_type, context", "quote": "Across 1,282 full-time developers in 12+ industries, we tested the factors of our framework and found it predictive of developers' self-reported productivity.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "research_method", "quote": "we conducted a linear regression-based serial mediation path analysis with the HMU as our independent variable, VVQ as our first mediator, DSS as our second mediator, and PPR as our outcome variable", "loc": "PDF p. 7"},
+    {"field": "research_method, context", "quote": "We utilized snowball sampling and advertised our online Qualtrics survey publicly on various social media", "loc": "PDF p. 5 (Survey Sample Recruitment and Description)"},
+    {"field": "cat_survey", "quote": "To operationalize this complex concept, we also chose to ask developers to rate their own productivity over a recent period of time.", "loc": "PDF p. 4 (Perceived productivity rating)"},
+    {"field": "cat_collaboration", "quote": "asks respondents to rate the extent to which they believe their technical work is visible and valued by teammates and managers.", "loc": "PDF p. 4 (Visibility and value questionnaire)"},
+    {"field": "cat_collaboration, cat_satisfaction", "quote": "Learning culture A developer is 1. learning new skills as a developer 2. able to share the things they learn at work. Support and belonging A developer 1. is supported to grow, learn, and make mistakes by their team", "loc": "PDF p. 2 (Table 1)"},
+    {"field": "cat_satisfaction", "quote": "The framework builds on the known connection between developer satisfaction and productivity to answer what drives satisfaction in the first place.", "loc": "PDF p. 2"},
+    {"field": "cat_satisfaction, cat_survey", "quote": "The measure draws from models of thriving in health and psychology to identify four primary factors: motivation and self-efficacy, support and belonging, learning culture, and agency.", "loc": "PDF p. 4 (Developer thriving scale)"}
+  ]
+}

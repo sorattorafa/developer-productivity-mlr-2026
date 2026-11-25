@@ -1,0 +1,34 @@
+{
+  "id": "P2036",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Repository mining (quasi-experimental staggered DiD)", "nlm": "Repository mining (quantitative; quasi-experimental staggered DiD)", "value": "Repository mining", "note": "Quasi-experimental staggered DiD on mined GitHub data; Quasi-experiment would also fit."},
+    "research_method": {"claude": "Repository mining; longitudinal causal study with staggered DiD, propensity score matching, Borusyak et al. imputation estimator and event study; AIDev dataset v3; AF 401 vs 606 controls (15,664 obs), IF 117 vs 73 controls (3,572 obs)", "nlm": "Repository mining; quasi-experimental staggered DiD with propensity score matching (Borusyak et al. estimator); AIDev v3; AF 401 vs 606 controls (15,664 obs), IF 117 vs 73 controls (3,572 obs)", "value": "Repository mining with a longitudinal quasi-experimental staggered difference-in-differences design (Borusyak et al. imputation estimator, event-study dynamics) and propensity score matching on AIDev dataset (v3) repositories; agent-first: 401 treated vs 606 controls (15,664 obs); IDE-first: 117 treated vs 73 controls (3,572 obs); SonarQube quality metrics", "note": ""},
+    "context": {"claude": "OSS; GitHub repositories from AIDev v3 with >=10 stars and >=10 agentic PRs; AF 401 + 606 controls, IF 117 + 73 controls", "nlm": "OSS; GitHub repositories (AIDev v3; >=10 stars, >=10 agentic PRs); AF 401 + 606 controls, IF 117 + 73 controls", "value": "OSS; GitHub repositories from the AIDev dataset (v3) with ≥10 stars and ≥10 agentic PRs; 401 agent-first repositories (606 matched controls) and 117 IDE-first repositories (73 matched controls)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned (both)."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned (both)."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Adoption of LLM coding agents vs AI IDEs is the treatment."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not specified by either (NotebookLM notes distributed OSS development only as setting)."},
+    "data_window": {"claude": "January 2024–November 2025 (PRs parsed)", "nlm": "no basis", "value": null, "note": "Claude: PRs parsed January 2024–November 2025. NotebookLM gives only a 6-month post-adoption panel, no calendar period. Full text: 'January 2024 through November 2025' (PDF p. 2)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Development velocity: monthly commits and lines added."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "SonarQube static-analysis warnings, cognitive complexity, duplicated-line density, comment-line density."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Contributors and issue comments are covariates only; coordination/review overhead only as interpretation."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Commit counts, lines added, LOC (Claude tags commits/lines as Activity/Productivity; NotebookLM lines added as Productivity/Activity)."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM tags commits 'Productivity / Delivery'; commit counts are not a delivery metric."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM tags complexity 'Quality / DevEx'; the DevEx framework is not used."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "No", "nlm": "No", "value": "No", "note": ""}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, context, ai_discussed", "quote": "We present a longitudinal causal study of agent adoption in open-source repositories using staggered difference-in-differences with matched controls.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "research_method", "quote": "We estimate average and dynamic treatment effects using the imputation-based DiD estimator of Borusyak et al. [18]", "loc": "PDF p. 3"},
+    {"field": "research_method, context", "quote": "After filtering, our heterogeneous samples contain 401 AF repositories matched to 606 controls and 117 IF repositories matched to 73 controls.", "loc": "PDF p. 3"},
+    {"field": "context", "quote": "We build on the AIDev dataset (v3) [28], which links GitHub repositories to AI-generated pull requests", "loc": "PDF p. 2 (3.1)"},
+    {"field": "context", "quote": "We restrict analysis to repositories with ≥10 stars to exclude toy and spam projects and require ≥10 agentic PRs per treated repository to ensure non-trivial exposure.", "loc": "PDF p. 3"},
+    {"field": "cat_productivity, cat_activity, cat_quality", "quote": "We measure development velocity via monthly commit counts and lines added; software quality via static-analysis warnings, duplicatedline density, and cognitive complexity using SonarQube[11].", "loc": "PDF p. 3 (Outcomes and Covariates)"},
+    {"field": "cat_productivity", "quote": "AF repos see large average gains (+36.3% commits; +76.6% lines added), whereas IF repos show minimal changes (+3.1%; −6.3%).", "loc": "PDF p. 3"},
+    {"field": "cat_quality", "quote": "quality risks are persistent across settings, with static-analysis warnings and cognitive complexity rising by roughly 18% and 39%, indicating sustained agent-induced technical debt", "loc": "PDF p. 1 (Abstract)"}
+  ]
+}

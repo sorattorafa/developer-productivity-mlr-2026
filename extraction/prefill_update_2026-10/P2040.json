@@ -1,0 +1,34 @@
+{
+  "id": "P2040",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Experiment (controlled between-subjects eye-tracking experiment)", "nlm": "Experiment (controlled eye-tracking study)", "value": "Experiment", "note": ""},
+    "research_method": {"claude": "Controlled between-subjects experiment with eye tracking (Tobii Pro Fusion 120 Hz, iTrace); three hidden odor conditions (Lemon, Neutral, Fish); Digit Span, TTCT, PANAS-SF and Likert survey; ANOVA/Kruskal-Wallis, t-tests/Mann-Whitney U, Cohen's d and Hedge's g", "nlm": "Controlled eye-tracking experiment, quantitative; three odor groups; task duration/accuracy, fixations, saccades, Digit Span, TTCT, PANAS; ANOVA, Kruskal-Wallis, t-tests, Mann-Whitney U, Cohen's d, Hedge's g", "value": "Controlled between-subjects experiment with eye tracking (Tobii Pro Fusion 120 Hz, iTrace) and covert odor exposure in three groups (Lemon, Neutral, Fish); code comprehension, code writing and prose comprehension tasks; Digit Span, TTCT, PANAS-SF and post-task Likert survey; ANOVA/Kruskal-Wallis with t-tests/Mann-Whitney U, Cohen's d and Hedge's g", "note": ""},
+    "context": {"claude": "Academic lab office setting; 30 Vanderbilt University CS students (10 per group), C++ tasks", "nlm": "Academic (Vanderbilt University); 30 student programmers (29 undergraduate, 1 graduate), 3 groups of 10", "value": "academic; controlled office/lab setting at Vanderbilt University, C++ tasks; 30 CS student programmers (10 per odor group; 1 graduate student)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not referenced by either."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not referenced by either."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Both: on-site lab experiment. Remote work appears only in related work and one implication sentence ('both remote and in person')."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Task duration and task accuracy as productivity measures (RQ1)."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Code Writing accuracy scored with a 28-point rubric (test cases, efficiency, comments, style)."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Individual tasks."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Mood via PANAS-SF (pre/post)."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels Digit Span/TTCT/pretest scores 'Activity', but they are cognitive tests, not repository activity."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels eye-tracking measures 'DevEx' but states the DevEx framework is only referenced; full text only mentions 'developer experience' in passing."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "PANAS questionnaire and seven-item post-task Likert survey."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, context", "quote": "We conducted a rigorously controlled human eye-tracking study with 30 student programmers who completed Code Comprehension, Code Writing, and Prose Comprehension tasks while they were unknowingly exposed to one of three environmental odors: Lemon, Fish, or Neutral.", "loc": "PDF p. 23 (Conclusion)"},
+    {"field": "research_method", "quote": "we conducted a non-parametric Kruskal-Wallis test, then Mann-Whitney U-tests if the Kruskal-Wallis test revealed a significant group-level difference.", "loc": "PDF p. 10"},
+    {"field": "context", "quote": "we recruited Computer Science students from Vanderbilt University using in-class presentations, flyers, class forum posts, and mailing-list advertisements.", "loc": "PDF p. 5"},
+    {"field": "context", "quote": "Of these 30 participants, the average age was 20.53, seven were women, one was a graduate student, and 16 spoke English as a first language.", "loc": "PDF p. 6"},
+    {"field": "cat_productivity", "quote": "Using the first and last timestamps from the eye-tracking files, we then calculated the task durations for each participant.", "loc": "PDF p. 11"},
+    {"field": "cat_quality", "quote": "For scoring Code Writing, we created a rubric out of 28 points that considered whether the code passed the test cases, if it was commented effectively, and if it was written efficiently and formatted consistently.", "loc": "PDF p. 11"},
+    {"field": "cat_satisfaction, cat_survey", "quote": "Since we were interested in measuring participants' mood throughout the task, at this stage we administered a short form of the Positive and Negative Affect Schedule (PANAS) mood assessment to obtain a baseline measure [89].", "loc": "PDF p. 9"},
+    {"field": "cat_survey", "quote": "The post survey also included seven Likert-scale questions asking participants to indicate whether they were pleased with their performance on the tasks, whether they felt distracted, and whether it was easy to focus while completing the tasks", "loc": "PDF p. 10"}
+  ]
+}

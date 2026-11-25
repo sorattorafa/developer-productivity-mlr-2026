@@ -1,0 +1,37 @@
+{
+  "id": "P2101",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Mixed methods (metric proposal and validation + controlled experiment + post-hoc case study + counterfactual model)", "nlm": "Mixed methods (controlled experiment, case studies, survey, observational UX study, descriptive statistics)", "value": "Mixed methods", "note": "Industrial metric proposal (DAT) with validation and three case studies."},
+    "research_method": {"claude": "Telemetry-based metric (DAT) proposal and validation (UX screen-recording study ~20 diffs, survey 968 diffs, descriptive statistics, visualizations); controlled experiment on typed mocking (~10,000 diffs, stratified Welch's t-test); post-hoc React auto-memoization case study (mixed-effects regression, Wasserstein distance); counterfactual code-sharing model (~50,000 diffs)", "nlm": "Mixed methods: controlled experiment (typed mocking, ~10,000 diffs), case studies (React n >> 10,000; code sharing ~50,000 diffs), survey (968 diffs), observational UX screen-recording study (~20 diffs), descriptive statistics", "value": "Proposal of the telemetry-based Diff Authoring Time (DAT) metric, validated by an observational UX screen-recording study (~20 diffs), a one-question post-diff survey (968 diffs) and descriptive statistics; three case studies: controlled experiment on typed mocking in Hack (~10,000 diffs, two-tailed Welch's t-test), post-hoc case study on React auto-memoization (n >> 10,000 diffs, mixed-effects regression, Wasserstein distance), counterfactual estimation of code-sharing savings (~50,000 diffs)", "note": "Welch's t-test reported only by Claude (not contradicted)."},
+    "context": {"claude": "Industry; Meta (Infrastructure/DevInfra organization), internal tool development; Hack, React, code-sharing frameworks", "nlm": "Industry; Meta Platforms, Inc., DevInfra organization", "value": "industry; Meta Platforms (Infrastructure/DevInfra organization), internal developer tooling (Hack, React, code-sharing frameworks); diff-level samples from ~20 to ~50,000 diffs per study", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "DORA not mentioned by either."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE only referenced as an umbrella framework that defers metric choice to users."},
+    "ai_discussed": {"claude": "No", "nlm": "Yes", "value": null, "note": "Claude: only mentions (LLaMA-33B vs 65B as an example diff-level experiment; coding agents may initially worsen DAT; future work). NotebookLM: discusses LLM base models, AI-assisted authoring and coding agents."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not specified by either."},
+    "data_window": {"claude": "three weeks in 2024 (typed mocking experiment only)", "nlm": "no basis", "value": null, "note": "Only Claude reports a period (three weeks in 2024, typed-mocking experiment); other studies undated."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "DAT (active authoring time per diff) is the proposed productivity/velocity metric; TSD also discussed."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "No quality metric; quality only mentioned as an aspect beyond velocity."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Review time only cited in related work."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "Satisfaction mentioned only as an aspect beyond velocity."},
+    "cat_activity": {"claude": "No", "nlm": "Yes", "value": null, "note": "NotebookLM lists LOC and change count as Activity metrics; Claude treats them as metrics cited in related work. LOC is used only as a covariate (React model) and for size terciles (code sharing)."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin basis: Code Gestation Time (coding start to diff landing), a predecessor metric superseded by DAT, labelled Delivery by both (NotebookLM also tags DAT as Delivery)."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "DevEx (Fagerholm & Münch; DevEx in Action) and DX Core 4 only referenced."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Continuous Experimentation culture, not agile/process metrics."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "One-question post-diff survey of self-estimated time (968 diffs) used to validate DAT."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, cat_productivity", "quote": "This paper introduces Diff Authoring Time (DAT), a precise, yet conceptually simple approach to measuring software development productivity that enables rigorous experimentation.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "research_method, cat_survey", "quote": "We validate DAT through observational studies, surveys, visualizations, and descriptive statistics.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "research_method", "quote": "We analyzed n =∼ 20 diffs, achieving an average accuracy of over 90%", "loc": "PDF p. 5 (3.3.1 UX study)"},
+    {"field": "research_method, cat_survey", "quote": "Therefore, we conducted a large-scale survey asking developers to estimate the time spent on a diff.", "loc": "PDF p. 5 (3.3.2 Large Scale Survey)"},
+    {"field": "research_method, cat_survey", "quote": "We received responses for 968 unique diffs to compare with DAT values.", "loc": "PDF p. 5 (3.3.2 Large Scale Survey)"},
+    {"field": "research_method", "quote": "To estimate the effect of typed mocking, we employ a two-tailed Welch's t-test, testing on the mean DAT difference between control and test groups.", "loc": "PDF p. 6"},
+    {"field": "research_method", "quote": "As a post-hoc case study with non-randomized data, we use the Wasserstein distance to measure the difference between groups.", "loc": "PDF p. 8"},
+    {"field": "research_method", "quote": "We initially applied this method to two major code-sharing frameworks, covering thousands of code-sharing diffs and counterfactual diffs monthly", "loc": "PDF p. 9 (6.3 Results)"},
+    {"field": "context", "quote": "Out of more than 20 studies completed with DAT, we highlight three, demonstrating DAT's impact across Meta: (1) A controlled experiment found that the introduction of mock types led to", "loc": "PDF p. 2"},
+    {"field": "cat_productivity", "quote": "DAT does exactly this by measuring the active time taken to develop a diff", "loc": "PDF p. 3"},
+    {"field": "cat_delivery", "quote": "CGT, a composite metric, measured time from coding start to diff landing, mixing active engineering with technical time to release", "loc": "PDF p. 3"}
+  ]
+}

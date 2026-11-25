@@ -1,0 +1,36 @@
+{
+  "id": "P2072",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Conceptual model proposal by practitioners, not a review of other studies."},
+    "study_type": {"claude": "Other (conceptual essay / position paper)", "nlm": "Other (conceptual model / technical position paper)", "value": "Other (conceptual model / position paper)", "note": ""},
+    "research_method": {"claude": "Conceptual essay/position paper proposing a conceptual model; no data collection, no research method described, no validation", "nlm": "Conceptual model / technical position paper based on authors' industry experience; no primary empirical data", "value": "Conceptual position paper proposing the holistic Develop, Deploy, Operate model (three interdependent processes, four forms of measurable impact, consensus estimation function for defect detection and resolution cost); based on authors' industry experience; no empirical data collection or validation", "note": ""},
+    "context": {"claude": "Industry; commercial software development in general; no organization studied, no sample (authors from Adobe and Google)", "nlm": "Industry; large-scale commercial software development (Google, Adobe, AWS); sample not applicable (conceptual)", "value": "not reported (conceptual; no empirical sample); commercial software development from the authors' industry experience (Adobe, Google)", "note": "AWS appears only in an author biography."},
+    "dora_applied": {"claude": "No", "nlm": "Yes", "value": null, "note": "Claude: DORA logic used to argue, no measurement (referenced); NotebookLM labels DORA 'referenced and applied' for delivery metrics. No measurement in this conceptual paper."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE cited only (proxies used in a constellation of metrics in tension)."},
+    "ai_discussed": {"claude": "No", "nlm": "Yes", "value": null, "note": "Claude: AI only as an example of strategic capability; NotebookLM: AI discussed as strategic capability with productivity impact. Full text has two sentences on AI (pp. 15-16)."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not specified by either."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either (no data; conceptual paper)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Conceptual discussion only: feature count/feature velocity as aspirational productivity measure; engineering capacity; edit-build-test cycles."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "DDR cost estimation, defect-generation rate, defect false negatives/positives, outages, change failure rate (conceptual)."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "No collaboration metric; code review mentioned only as a presubmit improvement."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Developer well-being, satisfaction and morale, turnover risk from toil (conceptual)."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: LOC and number of proposed/submitted changes discussed only as inadequate productivity proxies; IDE/tool usage metrics."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Commit-to-deploy time, release cadence, failed deployment recovery time (DORA logic, conceptual)."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Both tag some metrics 'DevEx', but the DevEx framework (Noda/Storey/Forsgren) is not used; Claude reports it is not mentioned."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: workflow-phase latency/defect-filtering values and WIP are discussed conceptually, but no sprint/scrum/kanban or process metric is identified by either."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: self-reported productivity proposed as 'a good, if limited, proxy'; no instrument described."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "This article presents a holistic model for understanding the costs and commercial value of software development.", "loc": "PDF p. 1"},
+    {"field": "research_method, cat_quality", "quote": "Instead, we suggest a consensus estimation function for DDR (defect detection and resolution). The cost of DDR scales linearly with both the number of engineers exposed to the defect and the time since introduction.", "loc": "PDF p. 14"},
+    {"field": "research_method", "quote": "We suggest four forms of impact, three of which are quantitative.", "loc": "PDF p. 11 (Evaluating Impact)"},
+    {"field": "context", "quote": "Titus Winters is a senior principal scientist at Adobe, focusing on developer experience.", "loc": "PDF p. 24 (author biographies)"},
+    {"field": "cat_productivity", "quote": "We aspire to measure \"feature count\" or \"feature velocity,\" but in practice, that is still difficult, except in large aggregates.", "loc": "PDF p. 5"},
+    {"field": "cat_activity", "quote": "We've known since Dijkstra that it isn't lines of code. The number of proposed or submitted changes at best indicates activity, not outcomes.", "loc": "PDF p. 5"},
+    {"field": "cat_quality", "quote": "Change failure rate. Filtering defects properly should lower the rate of outages and bugs that appear in production.", "loc": "PDF p. 21"},
+    {"field": "cat_delivery", "quote": "DORA focuses on time \"from commit to deploy\" specifically, because it permits comparison across changes. This metric should be driven downward for most if not all teams.", "loc": "PDF p. 22"},
+    {"field": "cat_satisfaction", "quote": "toil and sluggish development processes will diminish satisfaction and morale, making turnover more likely", "loc": "PDF p. 17 (Table 1)"},
+    {"field": "cat_survey, cat_satisfaction", "quote": "asking humans whether they are productive is a good, if limited, proxy. In DORA, productivity is considered a well-being metric for this reason.", "loc": "PDF p. 23"}
+  ]
+}

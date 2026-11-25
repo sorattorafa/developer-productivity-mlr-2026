@@ -1,0 +1,35 @@
+{
+  "id": "P2097",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Other (framework/tool proposal, design science, with experimental A/B evaluation)", "nlm": "Mixed methods (framework prototyping, A/B testing, controlled experiment, LLM benchmarking, ablation)", "value": null, "note": "Both describe a GenAI framework proposal evaluated in a controlled testbed; Claude frames it as a tool proposal with experimental evaluation, NotebookLM as mixed methods."},
+    "research_method": {"claude": "Framework proposal (MetaGPT multi-agent, web app) plus A/B comparison against a manual baseline of historical DORA metrics; benchmarking of 7 LLMs; ablation study; SAST security tests; ~30 tasks in 2 domains", "nlm": "Framework engineering/prototyping; A/B testing and controlled experiment against a manual baseline; benchmarking of 7 LLMs; ablation study; ~30 code generation and refactoring tasks in 2 domains", "value": "Design and evaluation of a GenAI framework (MetaGPT multi-agent pipeline in a web application) for the Scrum lifecycle; comparative A/B evaluation against a manual baseline of historical DORA metrics on about 30 code generation/refactoring tasks in two domains (hospital management, e-commerce); benchmarking of 7 paid and local LLMs; ablation study; automated unit tests and SAST; outcomes as DORA metrics and defect density per KLOC", "note": "Coding-speed gain omitted: NotebookLM reports a measured 55.8% increase, Claude notes the body attributes 55.8% to cited Copilot studies. No statistics; DORA results given as ranges."},
+    "context": {"claude": "Academic; controlled testbed simulating two-week Agile sprints; baseline from unspecified traditional cohorts; ~30 tasks, 2 systems, 7 LLMs; developers not reported", "nlm": "Academic; simulated Agile environment (Astana IT University), two-week Scrum sprints; 2 domains, ~30 tasks, 7 LLMs", "value": "academic; controlled multi-domain testbed simulating two-week Agile sprints (Astana IT University authors); about 30 tasks across a hospital management system and an e-commerce system, 7 LLMs; no developer sample reported", "note": "Baseline 'traditional engineering cohorts' not described."},
+    "dora_applied": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "DORA metrics (deployment frequency, lead time, CFR, MTTR) with 2023 DORA 'High' benchmarks are the evaluation instrument; Claude notes collection procedure in the testbed is not described."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "GenAI/LLM multi-agent framework across the SDLC is the object of study."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not reported."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either."},
+    "cat_productivity": {"claude": "No", "nlm": "Yes", "value": null, "note": "NotebookLM lists 'Coding Speed Increase (%)' (55.8%) as a measured productivity metric. Claude: 55.8% and tool speed are not the framework's own measures; in the body 55.8% is a finding of cited Copilot studies, though the abstract presents it as a finding."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Defect density per KLOC, change failure rate, MTTR, security findings (SAST)."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "'Collaborative' refers to MetaGPT agent roles, not human collaboration."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM tags deployment frequency 'Delivery / Activity'; it is a delivery metric."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Deployment frequency and lead time for changes vs. baseline."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_agile": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Framework embedded in Scrum ceremonies (backlog, sprint planning with past sprint velocities) and two-week sprint testbed; no separate agile metric is reported."},
+    "cat_survey": {"claude": "No", "nlm": "No", "value": "No", "note": ""}
+  },
+  "evidence": [
+    {"field": "research_method, ai_discussed", "quote": "This paper explores the integration of Generative Artificial Intelligence (GenAI) across the Agile Scrum methodology to automate these traditionally labor-intensive phases. It proposes a structured framework that evolved from a basic messaging prototype into a comprehensive web application, utilizing multi-agent collaborative systems like MetaGPT.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "context, cat_agile", "quote": "To ensure rigorous validation of the proposed framework, the experimental design utilized a controlled, multidomain testbed simulating standard two-week Agile sprints.", "loc": "PDF p. 3"},
+    {"field": "research_method, context, dora_applied", "quote": "The validation methodology employed a comparative A/B testing approach. A manual development baseline was established using historical DORA metrics from traditional engineering cohorts. The AI-assisted framework was subsequently evaluated across around 30 distinct code generation and refactoring tasks (around 15 per domain).", "loc": "PDF p. 3"},
+    {"field": "research_method", "quote": "Furthermore, an ablation study was conducted-selectively bypassing the architectural design and defect analysis modules-to empirically validate the necessity of the complete multi-agent pipeline.", "loc": "PDF p. 3"},
+    {"field": "research_method, context", "quote": "Consequently, several Large Language Models (LLMs) were tested across the framework: premium flagship models (GPT4o, Claude 3.5 Sonnet, Gemini 1.5 Pro), budget-tier APIs (Gemini Flash, GPT-3.5 Turbo), and free, locally hosted opensource options via Ollama (Llama 3 8B, Mistral).", "loc": "PDF p. 3"},
+    {"field": "dora_applied", "quote": "To objectively measure the framework's success, industrystandard DORA (DevOps Research and Assessment) metrics are utilized.", "loc": "PDF p. 2"},
+    {"field": "cat_quality, dora_applied", "quote": "The overall performance and operational impact were quantified using standard DORA metrics alongside Defect Density per KLOC.", "loc": "PDF p. 3"},
+    {"field": "cat_delivery, cat_quality", "quote": "While the free, local models (Llama 3, Mistral) successfully improved deployment frequency and reduced the defect rate below the traditional baseline, their propensity for logic errors required heavier human intervention during the QA phase, slightly bottlenecking the Lead Time for Changes.", "loc": "PDF p. 3"},
+    {"field": "cat_agile", "quote": "During planning, generative AI analyzes past sprint velocities to predict the effort required for new tasks and maps out technical dependencies.", "loc": "PDF p. 2"}
+  ]
+}

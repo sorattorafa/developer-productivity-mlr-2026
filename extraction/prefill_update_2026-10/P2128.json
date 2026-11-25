@@ -1,0 +1,33 @@
+{
+  "id": "P2128",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "NotebookLM's 'secondary' refers to secondary (existing) data, not to a review of studies."},
+    "study_type": {"claude": "Repository mining (quantitative re-analysis of project datasets)", "nlm": "Repository mining (secondary observational data analysis)", "value": "Repository mining", "note": "Re-analysis of existing project benchmark datasets (ISBSG, Finnish), not code repositories."},
+    "research_method": {"claude": "Quantitative re-analysis comparing propensity score matching with linear regression (three formulations, AIC variable selection); preliminary correlation ratio and Cramer's V", "nlm": "Observational data analysis comparing PSM (logistic regression propensity scores, closest matching, ATE, c-statistic) with linear regression", "value": "Quantitative re-analysis of two project datasets comparing propensity score matching (logistic-regression propensity scores, closest-pair matching, average treatment effect, c-statistic) with linear regression (three model formulations, AIC variable selection); preliminary correlation ratio and Cramer's V", "note": ""},
+    "context": {"claude": "Industry; ISBSG Release 9 cross-company dataset (3026 projects, 20 countries; 610 after filtering) and single-company Finnish dataset (407; 400 after filtering)", "nlm": "Industry; ISBSG Release 9 (3,026 projects, 20 countries; 610 filtered) and Finnish company dataset (407; 400 filtered); 1,010 projects in total", "value": "industry; ISBSG Release 9 cross-company dataset (companies in 20 countries; 3,026 projects, 610 after filtering) and a single Finnish company dataset (407 projects, 400 after filtering)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned; Claude notes reference [15] is a workshop named SPACE, not the framework."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": "Classical statistics only (logistic and linear regression)."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not reported by either."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Productivity = function points / summary work effort (response variable)."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: only the required-quality level (5-point ordinal) analysed as a productivity factor, not a quality outcome."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels work effort 'Activity', but effort in person-hours is not repository activity."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": null, "note": "Agreed Yes (project duration labelled Delivery) but not confirmed in the full text as a delivery metric: duration appears only as an explanatory/confounder variable."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels development type 'Process', but it is a project category, not a process metric."},
+    "cat_survey": {"claude": "No", "nlm": "No", "value": "No", "note": "No perceptual instrument; data from existing project datasets."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "We revisited classical software productivity analyses on ISBSG and Finnish datasets. The differences of critical factors between the propensity score and the linear regression were investigated.", "loc": "PDF p. 1 (Abstract, Method)"},
+    {"field": "research_method", "quote": "The procedure of PSM is three-folds: 1) calculation of propensity score, 2) matching data points based on the score, and 3) calculation of average treatment effect (ATE).", "loc": "PDF p. 2"},
+    {"field": "context", "quote": "Included projects were collected from software development companies in 20 countries. The dataset has 3026 projects and 99 variables.", "loc": "PDF p. 3 (III-A Dataset)"},
+    {"field": "context", "quote": "the number of data points was 610 in the analysis", "loc": "PDF p. 3"},
+    {"field": "context", "quote": "The dataset has 407 projects and 45 variables. We deleted projects whose software size, duration, and effort were zero. As a result, 400 projects remained.", "loc": "PDF p. 4 (Finnish dataset)"},
+    {"field": "cat_productivity", "quote": "The productivity was defined as a ratio of FP divided by summary work effort, and follows traditional definition [15].", "loc": "PDF p. 3"},
+    {"field": "cat_quality", "quote": "This section focused on the influence of required quality of software to productivity.", "loc": "PDF p. 4"}
+  ]
+}

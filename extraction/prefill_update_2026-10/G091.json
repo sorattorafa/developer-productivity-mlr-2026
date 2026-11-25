@@ -1,0 +1,34 @@
+{
+  "id": "G091",
+  "kind": "grey",
+  "fields": {
+    "primary_secondary": {"claude": "Secondary (multivocal SLR of 67 sources, plus own frameworks and illustrative pilot)", "nlm": "Secondary (MLR of 67 sources, plus own frameworks and pilot data)", "value": "Secondary", "note": "The MLR is the core method; the paper also proposes PRP, AAMT and SGM and reports a small illustrative pilot (14 engineers), so the author may judge it Primary."},
+    "gl_type": {"claude": "Article (arXiv pre-print)", "nlm": "Whitepaper (white paper / MLR)", "value": null, "note": "Claude classes it as an arXiv pre-print (Article); NotebookLM as a white paper."},
+    "dora_applied": {"claude": "No (reference only)", "nlm": "No (reference only)", "value": "No (reference only)", "note": "DORA 2024 findings cited as evidence; pilot lead time/rollbacks are not framed as DORA measurement."},
+    "space_applied": {"claude": "Yes (empirical)", "nlm": "Yes (empirical)", "value": "Yes (empirical)", "note": "Both: SPACE is the review's analytical lens (Section 3.6, with TCE). In the text the lens is declared but findings are not organized dimension by dimension; author should confirm."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "AI coding assistants and agentic tools are the topic."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Neither mentions remote work or COVID-19."},
+    "data_window": {"claude": "Review coverage January 2022–April 2026 (search February–April 2026); pilot four months, undated", "nlm": "Review coverage 2022–2026", "value": "review coverage January 2022–April 2026", "note": "NotebookLM gives 2022–2026 without months; pilot period not dated by either."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Task completion speed, tasks completed and throughput synthesized as the individual side of the PRP."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Change failure rate, defect density, bug counts, delivery stability, code quality dimensions; pilot hotfixes and rollbacks."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "PR review time (+91%) and the code review bottleneck as an amplifying mechanism."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "Well-being only noted as understudied; pilot measures confidence, not satisfaction."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Merged PRs, PR size, LOC, suggestion acceptance, code churn."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "DORA delivery metrics, cycle time, pilot median lead time per feature."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_agile": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin basis: AAMT treats Agile (sprint velocity, iteration compression); pilot reports hotfixes per sprint."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Pilot Likert questionnaires (developer confidence 3.1 to 3.9) and interviews; cited developer surveys."}
+  },
+  "evidence": [
+    {"field": "primary_secondary, data_window", "quote": "Through a multivocal systematic literature review encompassing 67 sources (29 peer-reviewed studies, 18 pre-prints, 12 structured industry reports, and 8 grey literature sources), published between January 2022 and April 2026", "loc": "PDF p. 1"},
+    {"field": "ai_discussed", "quote": "Since 2022, the rapid adoption of AI-powered coding assistants has produced a striking empirical contradiction", "loc": "PDF p. 1"},
+    {"field": "cat_productivity", "quote": "controlled studies report individual-level productivity gains of 20-56% on well-scoped tasks, while the most rigorous randomized controlled trial to date documents a 19% slowdown for experienced developers on mature codebases", "loc": "PDF p. 1"},
+    {"field": "space_applied", "quote": "The SPACE framework (Forsgren et al. 2021) organizes productivity and quality findings along the five dimensions of Satisfaction, Performance, Activity, Communication, and Efficiency.", "loc": "PDF p. 7"},
+    {"field": "cat_quality, cat_activity, cat_productivity", "quote": "output metrics (task completion speed, lines of code, suggestion acceptance rates) that coexist with statistically significant degradation in system-level dependability metrics (delivery stability, change failure rate, code churn, defect density in production).", "loc": "PDF p. 8"},
+    {"field": "cat_collaboration", "quote": "When AI tools accelerate individual code generation without proportional acceleration of the review pipeline, the result is a growing queue of unreviewed pull requests that absorbs the productivity gains at the organizational level", "loc": "PDF p. 11"},
+    {"field": "cat_delivery", "quote": "Organizational-level DORA metrics (deployment frequency, lead time, change failure rate) showed no measurable improvement despite the individual-level gains.", "loc": "PDF p. 11"},
+    {"field": "cat_agile", "quote": "At Tier 2, the sprint velocity increase observed in multiple studies (Smit et al. 2024: +10.6% PRs) creates pressure to compress iteration cycles, potentially accelerating the cadence without ensuring that verification keeps pace.", "loc": "PDF p. 13"},
+    {"field": "cat_survey", "quote": "triangulated with semi-structured interviews and brief Likert-scale questionnaires administered at the end of each phase.", "loc": "PDF p. 20"},
+    {"field": "cat_delivery, cat_quality, cat_agile, cat_survey", "quote": "Median lead time per feature Late-stage hotfixes per sprint Rollbacks per month Code churn (lines reverted <2 weeks) Developer-reported confidence (Likert 1-5)", "loc": "PDF p. 20 (Table 4, pilot)"}
+  ]
+}

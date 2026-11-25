@@ -1,0 +1,34 @@
+{
+  "id": "P2002",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Conceptual framework proposal, not a review of other studies."},
+    "study_type": {"claude": "Other (conceptual governance-oriented framework proposal)", "nlm": "Other (conceptual framework)", "value": "Other (conceptual framework proposal)", "note": ""},
+    "research_method": {"claude": "Conceptual governance-oriented framework design; illustrative example output and qualitative comparison with existing approaches; no empirical evaluation", "nlm": "Conceptual framework/methodology; illustrative example outputs (0-10 scores per SPACE dimension); comparative table against existing approaches", "value": "Conceptual, governance-oriented framework proposal (no empirical evaluation); SPACE-based mapping of evidence sources, illustrative example output with 0–10 scores per dimension, qualitative comparison with existing evaluation approaches", "note": ""},
+    "context": {"claude": "Industry/organizational, software-intensive hybrid and remote work; no sample or dataset", "nlm": "Industry, software engineering in hybrid and remote work; sample not applicable (conceptual)", "value": "not reported (conceptual; no empirical sample); framed for software-intensive organizations in hybrid and remote work", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "DORA only used as a comparison approach in Table III."},
+    "space_applied": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "SPACE dimensions structure the evidence mapping (Table I) and the scored outputs."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "AI is the proposed evaluation instrument (scores plus natural-language explanations)."},
+    "remote_covid": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Hybrid and remote work environments are the stated context."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either (conceptual paper, no data)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Performance dimension: task completion records, milestone delivery (NotebookLM labels it Quality/Delivery)."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Only 'quality indicators' as a Performance evidence source, without detail."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Communication & Collaboration dimension (team interactions, coordination events, shared artifacts)."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Satisfaction & Well-Being dimension."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Activity dimension: commit frequency, task updates, interaction logs."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin basis: 'cycle time patterns' as an Efficiency & Flow evidence source; DORA metrics only compared."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "DevEx only referenced; NotebookLM labels some dimensions 'DevEx', but they are SPACE dimensions."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "No sprint/iteration/process metrics; 'workflow continuity' is a flow indicator."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Self-reports as evidence source for Satisfaction & Well-Being."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, context", "quote": "The proposed methodology is conceptual and governance-oriented rather than empirical; therefore, it does not rely on a single predefined dataset.", "loc": "PDF p. 3"},
+    {"field": "research_method", "quote": "To contextualize the proposed approach, its characteristics were compared with commonly used productivity evaluation methods, including output-centric metrics, DevOps-oriented", "loc": "PDF p. 4"},
+    {"field": "space_applied", "quote": "Rather than aggregating activity into a single metric, the methodology maps data sources to distinct productivity dimensions based on the SPACE framework proposed by Forsgren et al [1].", "loc": "PDF p. 3"},
+    {"field": "ai_discussed", "quote": "As illustrated in Fig. 2, the AI-assisted workflow produces paired outputs for each productivity dimension. Each output includes a normalized quantitative indicator and a corresponding natural-language explanation.", "loc": "PDF p. 3"},
+    {"field": "remote_covid, context", "quote": "This paper framed AI-assisted productivity evaluation as a governance challenge rather than a technical optimization problem, emphasizing accountability, transparency, and ethical oversight in hybrid and remote work environments.", "loc": "PDF p. 6"},
+    {"field": "cat_satisfaction, cat_survey", "quote": "Satisfaction &Well-Being Self-reports, engagement signals, task continuity patterns Perceived work experience and sustainability", "loc": "PDF p. 3 (Table I)"},
+    {"field": "cat_productivity, cat_quality, cat_activity", "quote": "Performance Task completion records, milestone delivery, quality indicators Commit frequency, task updates, interaction logs", "loc": "PDF p. 3 (Table I; extracted text interleaves the Performance and Activity rows)"},
+    {"field": "cat_collaboration, cat_delivery", "quote": "Team interactions, coordination events, shared artifacts Cycle time patterns, interruption indicators, workflow continuity", "loc": "PDF p. 3 (Table I; Communication & Collaboration and Efficiency & Flow rows)"}
+  ]
+}

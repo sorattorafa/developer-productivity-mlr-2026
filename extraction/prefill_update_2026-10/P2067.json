@@ -1,0 +1,34 @@
+{
+  "id": "P2067",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Secondary", "nlm": "Secondary", "value": "Secondary", "note": "Narrative review of measurement approaches; no own data."},
+    "study_type": {"claude": "Review-Secondary (narrative/conceptual literature review)", "nlm": "Review-Secondary (literature review / conceptual review)", "value": "Review-Secondary", "note": "Self-described as a 'systematic review', but both extractors note no search protocol."},
+    "research_method": {"claude": "Narrative/conceptual literature review; called 'systematic review' but no search protocol, selection criteria or analysis procedure; metrics organized into classical, modern/DevOps and experimental groups", "nlm": "Literature review / secondary research; conceptual narrative review without formal systematic search protocol (e.g., PRISMA); classical, DevOps/DORA and experimental approaches", "value": "Narrative/conceptual literature review (self-described as a 'systematic review'; no search protocol, selection criteria or synthesis procedure reported); approaches organized by data source (issue trackers, Git platforms) and three metric groups (classical, DevOps/DORA, experimental), followed by a limitations analysis (invisible work, team dynamics, missing context, metric-induced behavior)", "note": ""},
+    "context": {"claude": "Academic literature review; no defined corpus (bibliography of 8 references); discusses industry tool data (Jira, Git) and OSS studies", "nlm": "Mixed (industry, OSS and controlled experimental studies in the cited literature); sample not applicable (secondary review)", "value": "academic (secondary/review); no defined corpus (narrative review; bibliography of 8 references covering industry tool data, OSS and controlled-experiment studies)", "note": "Reference count reported only by Claude (bibliography has 8 entries)."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "DORA metrics referenced as the 'modern (DevOps)' metric group and critiqued."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE referenced as the multidimensional concept; dimensions only listed."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Section 4.3 (experimental metrics) discusses the GitHub Copilot study (55.8% faster) and its limits. Claude's 'uses AI: No' refers to the paper's own method."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not reported by either."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either (no review coverage period; cited works 2006–2024)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Classical output/time metrics (completed tasks, time to complete a task) and Copilot task completion time."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin basis: only DORA MTTR and change failure rate, listed without detail (Claude labels them Delivery/Quality and Delivery/Stability)."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "No", "value": null, "note": "Claude: Git comments/code review interactions as data plus Section 5.2 on coordination and collaboration. NotebookLM: no collaboration metric, only team communication as a factor and uncaptured aspect."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "Only the SPACE 'Satisfaction and well-being' dimension listed."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "LOC, commits, merge/pull requests from Git platforms."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "DORA deployment frequency and lead time."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "DevEx not mentioned."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "No sprint/process metrics; Jira data only as a source."},
+    "cat_survey": {"claude": "No", "nlm": "No", "value": "No", "note": "Only a general call to combine quantitative data with qualitative evaluation."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "The aim of this article is to provide a systematic review of the existing approaches for measuring developer productivity, focusing on the tools used, the available data, and the applied metrics.", "loc": "PDF p. 2 (journal p. 621)"},
+    {"field": "research_method", "quote": "These metrics can be generally divided into three groups: classical, modern (DevOps), and experimental (Hernández-López et al., 2013).", "loc": "PDF p. 4 (journal p. 623)"},
+    {"field": "context", "quote": "In this article, a review of the main approaches for measuring software developer productivity was made, including the tools used, the available data sources, and the applied metrics.", "loc": "PDF p. 8 (journal p. 627, Conclusion)"},
+    {"field": "ai_discussed, cat_productivity", "quote": "With the introduction of new technologies such as artificial intelligence, experimental approaches for measuring productivity also appear. An example is the study of GitHub Copilot, where productivity is measured through time to complete a specific task and the level of successful completion.", "loc": "PDF p. 5 (journal p. 624, 4.3 Experimental metrics)"},
+    {"field": "cat_productivity, cat_activity", "quote": "Classical metrics are based on a simple model: they compare output to time spent. The most commonly used indicators include: ● number of lines of code; ● number of completed tasks; ● time to complete a task.", "loc": "PDF p. 4 (journal p. 623, 4.1 Classical metrics)"},
+    {"field": "cat_activity", "quote": "Git-based platforms provide information about commits, merge requests (or pull requests), changes in the code, as well as history of interactions between developers through comments and code review.", "loc": "PDF p. 3 (journal p. 622)"},
+    {"field": "cat_delivery", "quote": "The most well-known are the DORA metrics (DevOps Research and Assessment), which include: ● deployment frequency;", "loc": "PDF p. 4 (journal p. 623)"},
+    {"field": "cat_delivery, cat_quality", "quote": "● lead time; ● mean time to recovery; ● change failure rate. These metrics provide a better view of process efficiency and the ability of the team to deliver value.", "loc": "PDF p. 5 (journal p. 624)"}
+  ]
+}

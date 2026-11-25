@@ -1,0 +1,30 @@
+# OS and editor files
+.DS_Store
+*.swp
+*~
+
+# Full texts of the reviewed sources are not redistributed (copyright)
+pdfs/
+
+# Python
+__pycache__/
+*.pyc
+
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+latex-article/*.pdf
+
+# Office lock files
+~$*
+.~lock.*#
+
+# Run state of the NotebookLM tooling
+extraction/scripts/notebooklm/progress*.json

@@ -1,0 +1,35 @@
+{
+  "id": "P2107",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Survey", "nlm": "Mixed methods (on-site interviews/observations, literature review, iterative survey, regression, clustering)", "value": null, "note": "Claude: survey (the site visit only gave context). NotebookLM counts the on-site interviews/observations as a method. Full text states those interviews and observations are outside the paper's scope and only motivated the survey."},
+    "research_method": {"claude": "Iteratively developed and piloted survey (after a three-month site visit and literature review); Likert distributions, Spearman correlations with Bonferroni, hierarchical clustering of factors, stepwise linear regression, PAM clustering; theory building", "nlm": "Mixed methods: on-site interviews/observations, literature review, iterative survey, stepwise linear regression, PAM clustering; generic theory instantiated for the company", "value": "Iteratively developed and piloted survey (factors from literature review and a three-month on-site visit; Likert items on importance of and satisfaction with 44 social/technical factors and impact of 24 challenges); 465 developers analysed; Spearman correlations, hierarchical clustering into composite factors, stepwise linear regression on overall job satisfaction and perceived productivity, PAM clustering by self-reported time on activities; theory building", "note": "Both describe the same components; they differ only on whether the site visit makes it mixed methods (see study_type). Spearman/hierarchical clustering details reported only by Claude (not contradicted)."},
+    "context": {"claude": "Industry; Microsoft, large company with tens of thousands of developers and diverse products; survey sent to 5,000 employees, 640 responses (13%), 465 developers analysed", "nlm": "Industry; Microsoft (North America, Europe, Asia); 640 responses of 5,000 surveyed (13%), 465 developers analysed", "value": "industry; Microsoft (single large software company, offices worldwide, diverse products); final survey sent to 5,000 employees, 640 responses (13%), 465 developers analysed", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "On-site work (35% own office, 65% shared/open workspace); no remote or COVID context."},
+    "data_window": {"claude": "no basis (only the earlier survey, March 2017)", "nlm": "no basis", "value": null, "note": "Neither states when the analysed final survey ran; full text: redeployed October 2017 ('Fall of 2017')."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Both label the single-item perceived productivity measure as Productivity, but under the ficha perceived productivity counts as Survey/Perceptual; velocity/LOC appear only in related work."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "Poor architecture and legacy code are survey challenges, not quality metrics."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Neither labels it Collaboration, but both report measured self-reported time on code review, meetings, helping/mentoring and team-culture/co-worker factors (and meetings/communication-channel challenges)."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Overall job satisfaction is a dependent variable; satisfaction with 44 factors."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Both label self-reported hours per work activity 'Activity', but no repository activity metric is used; LOC/commits only in related work (NotebookLM lists them as discussed metrics)."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM tags mined repository metrics (LOC, commits, velocity) 'Delivery / Activity', but they appear only in related work."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "DevEx framework not mentioned; 'DevEx' labels on factors are generic."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Company uses both waterfall and agile practices (context only)."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Single-item Likert measures of job satisfaction and perceived productivity; factor and challenge ratings."}
+  },
+  "evidence": [
+    {"field": "research_method", "quote": "Following a literature review on these concepts and other factors that emerged over several months of observations on site, we developed and deployed multiple versions of a survey to derive, refine, confirm, and investigate factors that impact developer job satisfaction and perceived productivity.", "loc": "PDF p. 2"},
+    {"field": "research_method", "quote": "These initial interviews and team meeting observations are outside the scope of this paper, but we mention this to provide motivation for our survey.", "loc": "PDF p. 4"},
+    {"field": "research_method", "quote": "For the analysis of RQ3, we used stepwise linear regression with Overall Satisfaction and Perceived Productivity as the dependent variables.", "loc": "PDF p. 6"},
+    {"field": "research_method", "quote": "we used the Partitioning Around Medoids (PAM) clustering algorithm [38] on the selfreported time spent on different activities from the survey.", "loc": "PDF p. 6"},
+    {"field": "context", "quote": "Our case company, Microsoft, is a large software company with tens of thousands of developers distributed in offices around the world.", "loc": "PDF p. 4 (3.1 The Case Company)"},
+    {"field": "context", "quote": "Our final survey was distributed to another 5,000 employees in software engineering, program management, and data science, sampled uniformly at random across all product groups and geographic locations", "loc": "PDF p. 5"},
+    {"field": "context, research_method", "quote": "We received 640 responses in total, a response rate of 13 percent (comparable to the response rates of many other software engineering surveys [33]), of which 465 indicated that they were software developers.", "loc": "PDF p. 5"},
+    {"field": "cat_satisfaction, cat_survey", "quote": "satisfied are you with your current job?” (Overall Satisfaction) and “I am satisfied with my productivity at work.” (Perceived Productivity) as the dependent variables for the analysis in this paper.", "loc": "PDF p. 5"},
+    {"field": "cat_collaboration", "quote": "we asked them to approximate how many hours they spend writing code, testing, reviewing code, writing documentation, working with requirements, attending meetings, answering emails, learning, doing admin tasks, networking, and helping others.", "loc": "PDF p. 5"}
+  ]
+}

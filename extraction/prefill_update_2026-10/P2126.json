@@ -1,0 +1,32 @@
+{
+  "id": "P2126",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Repository mining (with sentiment analysis)", "nlm": "Repository mining", "value": "Repository mining", "note": ""},
+    "research_method": {"claude": "Repository mining of commit logs (git log) with SentiStrength-SE sentiment analysis, descriptive analysis and Pearson correlation; 5 RQs", "nlm": "Repository mining: quantitative analysis of commit logs with SentiStrength-SE and Pearson correlation; 5 RQs", "value": "Repository mining of commit logs (git log) with lexicon-based sentiment analysis (SentiStrength-SE) of 86,515 commit messages; descriptive analysis by team size, change-activity type, commit contribution and time, plus Pearson correlations; 5 RQs", "note": ""},
+    "context": {"claude": "OSS; seven popular, long-lived GitHub projects (PostgreSQL, Glibc, Eclipse-CDT, GNUCash, WordPress, Firebug, Rhino); 86,515 commit messages", "nlm": "OSS; 7 popular GitHub projects with >10 years of history; 86,515 commit messages", "value": "OSS; seven popular GitHub projects with more than 10 years of history (PostgreSQL, Glibc, Eclipse-CDT, GNUCash, WordPress, Firebug, Rhino); 86,515 commit messages", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not cited."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not cited."},
+    "ai_discussed": {"claude": "Partial (lexicon-based NLP tool; ML/DL only as future work)", "nlm": "Yes (SentiStrength-SE automated NLP classifier)", "value": null, "note": "Claude treats the dictionary-based SentiStrength-SE as only partly AI; NotebookLM counts it as AI. ML/deep learning appears only as future work in the text."},
+    "remote_covid": {"claude": "Yes (work mode: remote, geographically dispersed OSS volunteers; not detailed)", "nlm": "Yes (work mode: remote / geographically dispersed)", "value": null, "note": "Agreed Yes but not confirmed in the full text: only one background sentence in the abstract on geographically dispersed OSS volunteers; remote work is not studied."},
+    "data_window": {"claude": "from each project's start to February 2019 (Firebug to October 2017)", "nlm": "no basis", "value": null, "note": "Only Claude states the period; NotebookLM mentions observation dates exist but does not give them."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Sentiment-productivity link argued from literature only; no productivity metric."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels project size (LOC) 'Quality/Product', but it is a size descriptor, not a quality metric."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: both label team size / active developers per year as Collaboration, but these are contributor counts derived from commits."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Developer sentiment (positive/negative/neutral) in commit messages and sentiment volume."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Commit contribution, commits per year, change-activity types (add/delete/modify)."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels commit contribution 'Activity/Delivery', but it is a commit share, not a delivery metric."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "DevEx not cited."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels change-activity type 'Process/Activity', but it is a file-change classification, not a process metric."},
+    "cat_survey": {"claude": "No", "nlm": "No", "value": "No", "note": "Sentiment is detected automatically from commit text; no perceptual instrument."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, context", "quote": "We examined a total of 86,515 commit messages of seven OSS projects to analyze developers' sentiments in commit logs.", "loc": "PDF p. 8 (4. Results and analysis, RQ1)"},
+    {"field": "research_method", "quote": "The commit logs of the projects were retrieved using the git log command.", "loc": "PDF p. 7"},
+    {"field": "research_method", "quote": "We applied Pearson Correlation to identify the correlation between commit contribution and sentiments (positive, negative, and neutral).", "loc": "PDF p. 15"},
+    {"field": "context", "quote": "The projects were selected based on popularity, size, number of commits, number of contributors involved, long project history (more than 10 years), and having a valid Git (distributed version control system) repository.", "loc": "PDF p. 6"},
+    {"field": "cat_satisfaction, research_method", "quote": "Our study uses the Sentistrength-SE [15] tool to detect polarity of sentiments conveyed in commit logs messages.", "loc": "PDF p. 3"},
+    {"field": "cat_activity", "quote": "Commit contribution is the percentage of commits made by each individual contributor in a project.", "loc": "PDF p. 14"}
+  ]
+}

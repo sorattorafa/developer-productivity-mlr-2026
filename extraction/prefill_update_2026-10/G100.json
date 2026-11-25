@@ -1,0 +1,31 @@
+{
+  "id": "G100",
+  "kind": "grey",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Both: vendor guide presenting DX's own AI Measurement Framework, backed by DX's own benchmark data."},
+    "gl_type": {"claude": "Blog (vendor blog post / practitioner guide)", "nlm": "Blog (blog post / guide)", "value": "Blog", "note": ""},
+    "dora_applied": {"claude": "No (reference only)", "nlm": "No (reference only)", "value": "No (reference only)", "note": "DORA metrics only named as complementary to AI metrics, together with DX Core 4."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE not mentioned by either."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Framework for measuring utilization, impact and cost of AI coding assistants and agents."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Neither mentions remote work or COVID-19."},
+    "data_window": {"claude": "no basis (figures from DX Q1 2026 report; longitudinal study over more than a year)", "nlm": "no basis (figures from DX Q1 2026 report)", "value": null, "note": "Not stated by either as a data period; both only cite the Q1 2026 report edition."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "AI-driven time savings (hours/week), PR throughput, human-equivalent hours; Booking.com 16% throughput gain."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Change fail percentage, code maintainability, change confidence; CFR swings up to 2 points."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Meeting-heavy days and interruption frequency appear in one sentence only (listed by Claude, in an insight by NotebookLM)."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Developer satisfaction as a direct impact metric; Developer Experience Index (DXI) as indirect metric."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Percentage of AI-assisted PRs, share of AI-generated committed code, PRs merged per week."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin basis: 'perceived rate of delivery' (Core 4 indirect metric); DORA only named as complement; PR cycle time only as an example (Claude)."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "DXI is listed, but no explicit use of the DevEx framework dimensions."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Perceptual metrics: developer satisfaction, perceived rate of delivery, change confidence."}
+  },
+  "evidence": [
+    {"field": "gl_type", "quote": "URL: https://getdx.com/blog/ai-measurement-framework-guide/", "loc": "text source (retrieval header)"},
+    {"field": "ai_discussed", "quote": "An AI measurement framework is a structured system for tracking, interpreting, and acting on the right signals when evaluating AI-assisted engineering.", "loc": "text source (introduction)"},
+    {"field": "cat_productivity, cat_satisfaction, cat_survey", "quote": "Direct metrics offer immediate signals to evaluate the effectiveness of specific tools: AI-driven time savings (developer hours/week) Developer satisfaction Human-equivalent hours (HEH) of work completed by agents", "loc": "text source (Impact: how is AI affecting engineering productivity?)"},
+    {"field": "cat_productivity, cat_quality, cat_delivery, cat_survey, cat_satisfaction", "quote": "Indirect metrics, through regression and longitudinal analysis of DX Core 4 measures, surface longer-term benefits and hidden risks: PR throughput Perceived rate of delivery Developer Experience Index (DXI) Code maintainability Change confidence Change fail percentage", "loc": "text source (Impact: how is AI affecting engineering productivity?)"},
+    {"field": "cat_quality", "quote": "Others are seeing serious degradation, with change failure rates swinging by as much as 2 percentage points, meaning some companies are shipping 50% more defects than before.", "loc": "text source (Why \"we'll know it when we see it\" doesn't work for AI ROI)"},
+    {"field": "cat_activity", "quote": "Key utilization metrics include: AI tool usage (DAUs/WAUs) Percentage of PRs that are AI-assisted Percentage of committed code that is AI-generated Tasks assigned to agents", "loc": "text source (Utilization: how much are developers adopting and using AI tools?)"},
+    {"field": "cat_activity, cat_productivity", "quote": "PR throughput gap: daily AI users merge a median of 2.4 PRs per week, compared to 1.5 for non-users", "loc": "text source (Setting goals based on real industry data)"}
+  ]
+}

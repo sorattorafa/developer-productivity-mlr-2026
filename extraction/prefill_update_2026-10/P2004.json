@@ -1,0 +1,35 @@
+{
+  "id": "P2004",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Tool design plus own evaluation with developers."},
+    "study_type": {"claude": "Other (tool design and evaluation: VS Code extension)", "nlm": "Mixed methods (system implementation, user experiment, telemetry, synthetic traces, interviews)", "value": null, "note": "Claude classifies it as a tool paper with multi-phase evaluation (Other); NotebookLM as mixed methods."},
+    "research_method": {"claude": "Design and evaluation of a VS Code extension; multi-phase evaluation (real-world usage monitoring, synthetic trace modeling, semi-structured interviews) with 12 developers over 3–4 weeks; XGBoost predictive models", "nlm": "System implementation and user evaluation with 12 developers over 3–4 weeks; telemetry tracking, synthetic trace modeling, semi-structured interviews; XGBoost forecasting and Gemini LLM components", "value": "Design and evaluation of an AI productivity assistant (VS Code extension); multi-phase evaluation with 12 professional developers over 3–4 weeks (real-world usage monitoring, synthetic trace modeling, semi-structured interviews); XGBoost forecasting evaluated on 90-day activity traces (336 workday-prediction samples), LLM (Gemini) coaching and code-risk components", "note": ""},
+    "context": {"claude": "Industry (professional developers), but evaluation primarily with individual developers on personal projects; academic development context (SLIIT, Sri Lanka)", "nlm": "Industry / individual professional developers on personal coding projects in VS Code", "value": "industry; individual professional developers working mainly on personal projects in VS Code; 12 developers (junior, mid-level and senior)", "note": "Claude also notes the authors' academic affiliation (SLIIT, Sri Lanka)."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE cited only as a conceptual justification ('aligns with this perspective'), not as instrument."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "XGBoost forecasting, LLM daily coach and Gemini-based code risk analyzer are the proposed tool."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not specified by either."},
+    "data_window": {"claude": "3–4-week evaluation; 90-day activity traces (no calendar dates)", "nlm": "3–4-week evaluation; 90-day activity traces (no calendar dates)", "value": "3–4-week evaluation period; forecaster evaluated on 90-day activity traces (calendar dates not stated)", "note": "Durations only; no calendar period reported."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "AI-generated productivity score, hourly productivity score, issue task completions (+24%), error fix time."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Diagnostics density, defect density in code reviews (-31%), bug resolution time, LLM code risk level."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Meetings, code reviews and teamwork explicitly not captured (limitation); defect density in reviews is a quality metric."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: Claude labels user ratings of the tool (accuracy, personalization, clarity) as Satisfaction; NotebookLM labels the telemetry-based AI Productivity Score Productivity/Satisfaction. No satisfaction measure; the full text only claims 'higher user satisfaction' and less frustration in the discussion."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Edits per minute, save-to-edit ratio, commit cadence, file switching, read vs. write time, idle/active time."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "Both tag commit cadence / error fix time / task completions as 'Delivery', but under the definitions these are Activity, Quality and Productivity; no deployment or lead-time metric."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Focus streak and file switching are labelled 'DevEx' by both, but the DevEx framework is not cited ('DevEx' does not occur in the full text)."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Development methodology not specified; no sprint/process metrics."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Semi-structured interviews and 1–5 user ratings of accuracy, personalization and clarity."}
+  },
+  "evidence": [
+    {"field": "research_method, context, data_window, cat_survey", "quote": "a multi-phase study was conducted involving 12 professional developers over a three to four-week period. The evaluation incorporated real-world usage monitoring, synthetic trace modeling, and semi-structured interviews.", "loc": "PDF p. 5 (IV. Results and Discussion)"},
+    {"field": "research_method, data_window", "quote": "The forecasting service showed high predictive accuracy using 90-day developer activity traces.", "loc": "PDF p. 5"},
+    {"field": "context", "quote": "The evaluation was conducted primarily with individual developers on personal projects", "loc": "PDF p. 6 (limitations)"},
+    {"field": "ai_discussed", "quote": "This paper presents an integrated Visual Studio Code extension that seamlessly monitors developer behaviors within the Integrated Development Environment and uses artificial intelligence to deliver actionable productivity insights and enhancements.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "ai_discussed, cat_quality", "quote": "The collected metrics are transmitted to the Gemini API, an external large language model serving as the risk assessment engine.", "loc": "PDF p. 4"},
+    {"field": "cat_activity, cat_productivity, cat_quality", "quote": "Weekly commits increased by 32%, from 8.5 to 11.2 on average, and issue task completions rose by 24%. Defect density in code reviews decreased by 31%", "loc": "PDF p. 5 (IV. Results and Discussion)"},
+    {"field": "cat_activity, cat_quality", "quote": "The system captures a comprehensive set of developer activity metrics directly from the editor including focus duration, diagnostic density, editing cadence, commit rate and error fix time.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "cat_productivity", "quote": "Error fix time improved by 35%, decreasing from an average of 7.0 minutes to 4.5 minutes.", "loc": "PDF p. 5"},
+    {"field": "cat_survey", "quote": "User feedback was positive: average scores ranged from 4.2 to 4.5 out of 5 for accuracy, personalization, and clarity.", "loc": "PDF p. 6"}
+  ]
+}

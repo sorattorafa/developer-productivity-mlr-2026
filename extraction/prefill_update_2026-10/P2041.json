@@ -1,0 +1,34 @@
+{
+  "id": "P2041",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Repository mining (GitHub API mining with panel regression; new metric proposed)", "nlm": "Repository mining (quantitative, longitudinal panel regression)", "value": "Repository mining", "note": ""},
+    "research_method": {"claude": "Repository mining via GitHub REST and GraphQL APIs; new metric Convergence Entropy (JSD-based, monthly); random-effects panel regression (Swamy-Amemiya, R plm) against SPACE-based productivity proxies", "nlm": "Quantitative repository mining; Convergence Entropy (JSD-based) metric proposed; longitudinal panel regression (random effects) of new bugs, new commits and issue resolution time", "value": "Repository mining (GitHub REST and GraphQL APIs) with a proposed information-theoretic metric (Convergence Entropy, Jensen-Shannon divergence of original vs. merged commits across forks, computed monthly); random-effects panel regression against SPACE-based project productivity proxies (new bugs, new commits, issue resolution time) with moderating control variables", "note": "Swamy-Amemiya estimator and R plm mentioned only by Claude (not contradicted)."},
+    "context": {"claude": "OSS; 8 GitHub projects (4 enterprise-driven, 4 community-driven), 12,720 forks, 39,300,748 commits", "nlm": "OSS; 8 GitHub repositories (4 corporate-driven, 4 community-driven), 12,720 forks, 39,300,748 commits", "value": "OSS; 8 large GitHub projects (4 enterprise-driven: facebook/docusaurus, microsoft/playwright, alibaba/nacos, google/googletest; 4 community-driven: fastapi/fastapi, vuejs/vue, rustdesk/rustdesk, ohmyzsh/ohmyzsh); 12,720 forks and 39,300,748 commits", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "space_applied": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "SPACE used to select the productivity metrics (Performance: new bugs; Activity: new commits; Efficiency & Flow: issue resolution time)."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: both give work mode 'not specified (distributed OSS collaboration)'; 'distributed' refers to fork-based contribution integration, not remote/hybrid work arrangements."},
+    "data_window": {"claude": "monthly data from each project's creation to May 2025", "nlm": "no basis", "value": null, "note": "Only Claude states a period (project creation to May 2025); NotebookLM gives none."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Metrics are framed as SPACE productivity proxies but map to Quality (new bugs), Activity (new commits; NotebookLM labels it 'Productivity / Activity') and issue resolution time; neither labels issue resolution time Productivity."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "New bugs per project-month (SPACE Performance)."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Convergence Entropy measures integration of distributed fork contributions (crowd collaboration); computed from commit distributions, not raw commit counts."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE Satisfaction & well-being explicitly excluded."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "New commits per project-month (SPACE Activity)."},
+    "cat_delivery": {"claude": "no basis", "nlm": "Yes", "value": null, "note": "Issue resolution time: NotebookLM labels it 'Delivery / Efficiency & Flow'; Claude labels it only 'Efficiency & Flow (SPACE)'."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "DevEx only referenced."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "No", "nlm": "No", "value": "No", "note": "Repository data only."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, context", "quote": "We collected data on forks, commits, and all related events for each project through the GitHub REST API and GraphQL API.", "loc": "PDF p. 8"},
+    {"field": "research_method", "quote": "To construct our linear models, we employ panel regression analysis, a robust econometric technique well-suited for our dataset, which is inherently unbalanced panel data.", "loc": "PDF p. 8"},
+    {"field": "context", "quote": "In total, we collected 12,720 forks and 39,300,748 commits across these eight repositories.", "loc": "PDF p. 8"},
+    {"field": "context", "quote": "Acknowledging the trend of increasing corporate involvement in open source, the sample comprises both enterprise-driven and community-driven projects.", "loc": "PDF p. 8"},
+    {"field": "space_applied, cat_quality, cat_activity", "quote": "commit activities according to the SPACE framework guidelines, spanning three dimensions: Performance, Activity, and Efficiency & Flow. These metrics are new bugs, new commits, and issue resolution time", "loc": "PDF p. 7"},
+    {"field": "cat_quality", "quote": "We set up a list of bug-related keywords, i.e., defect, error, bug, issue, mistake, incorrect, fault, and flaw, and then search for these words in both the issue tags and issue titles.", "loc": "PDF p. 7"},
+    {"field": "cat_activity", "quote": "Similarly, as the productivity data, we compute the number of new commits in every project-month.", "loc": "PDF p. 7"},
+    {"field": "cat_collaboration", "quote": "A key underexplored aspect is the integration effectiveness-the degree to which distributed original commits across forks are effectively integrated back into the main repository.", "loc": "PDF p. 1 (Abstract)"}
+  ]
+}

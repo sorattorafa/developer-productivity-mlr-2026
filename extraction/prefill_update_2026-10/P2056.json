@@ -1,0 +1,41 @@
+{
+  "id": "P2056",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Includes a literature mapping step, but the main contribution is a metric catalog evaluated with practitioners."},
+    "study_type": {"claude": "Mixed methods (mapping study, metric catalog, survey and structured interviews)", "nlm": "Mixed methods (literature mapping, survey, structured interviews)", "value": "Mixed methods", "note": ""},
+    "research_method": {"claude": "Mapping study (241 papers, 178 after duplicates, 65 analysed, 99 factors); 12-metric catalog built with expert categorisation; evaluation via survey (4-point Likert plus open questions, 47 developers) and structured interviews (22); Grounded Theory open/axial coding plus descriptive statistics", "nlm": "Mixed methods: systematic literature mapping (178 papers, 65 relevant), survey of 47 developers, structured interviews with 22; 12-metric catalog with conceptual causal model", "value": "Mixed methods: literature mapping (241 papers retrieved, 178 after de-duplication, 65 analysed; 99 factors) to build a 12-metric catalog of mental health and productivity metrics with formulas; evaluation by survey (Likert and open questions, 47 developers) and structured interviews (22 of them), analysed with Grounded Theory open/axial coding and descriptive statistics", "note": "241 retrieved papers and Likert/coding details reported only by Claude (not contradicted)."},
+    "context": {"claude": "Industry; practitioners mostly from Brazil, companies from <9 to >500 employees; private sector 36, NGO 5, startup 3, public 2; 47 survey respondents, 22 interviewed", "nlm": "Industry; private 36, non-profit 5, startups 3, public 2, company sizes <9 to 500+; 47 survey respondents, 22 interviewed; networks in Brazil", "value": "industry; software practitioners recruited via professional networks (survey asks region of Brazil), mostly private sector (36; non-profit 5, startups 3, public 2), company sizes from <10 to >500 employees; 47 survey respondents, 22 also interviewed", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "The QSI metric proposes AI sentiment/emotion analysis of developer communications as the measurement instrument; developers' doubts about AI reliability and surveillance are a finding."},
+    "remote_covid": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: both report the participants' work model (in-person 22, hybrid 26, fully remote 16); the paper also links distributed/hybrid work to resource loss and weaker team interaction, but does not analyse results by work model."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either; no survey/interview dates found."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Work Capacity (completed vs. assigned story points), Number of Resolved Issues, Missed Tasks, plus perceived productivity (SVI, TVI)."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "No quality metric in the catalog; quality appears only in developers' definitions of productivity."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Quality of Social Interactions (negative interactions in communications) and Team Vision (peer rating of productivity and collaboration)."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Individual/team mental health metrics (WVI, WEC, TOV, QSI, ABS, MOT)."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Number of Commits (development activity); LOC used as an example item in the survey."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "Both label WCA (and NotebookLM also NRI) 'Productivity / Delivery', but completed story points and resolved issues are Productivity metrics."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Both use 'DevEx' as a loose label for some metrics; the DevEx framework is not used."},
+    "cat_agile": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Metrics operationalized for agile settings (story points, sprint retrospectives, Scrum Masters, sprint-cycle cadence), with non-agile alternatives; borderline since the catalog is declared workflow-agnostic."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Self-rated (SVI) and peer-rated (TVI) daily surveys in the catalog; Likert survey and interviews for evaluation."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, context", "quote": "To capture these insights, we employed a mixed-methods approach, combining survey data (47 participants) with qualitative interviews (22 participants).", "loc": "PDF p. 21"},
+    {"field": "research_method", "quote": "The initial search returned a total of 241 papers. After the first filtering step, which involved removing duplicates, 178 articles remained.", "loc": "PDF p. 8"},
+    {"field": "research_method", "quote": "Then, we employed procedures of the Grounded Theory by performing open and axial coding (Corbin and Strauss 2014) to deepen the understanding of the analyzed data.", "loc": "PDF p. 28"},
+    {"field": "context", "quote": "Regarding the type of company in which participants were employed, most worked in the private sector (n = 36). Others were employed by non-profit organizations (n = 5), startups (n = 3), and the public sector (n = 2).", "loc": "PDF p. 29"},
+    {"field": "context", "quote": "In which region of Brazil do you currently reside?", "loc": "PDF p. 25 (survey questions)"},
+    {"field": "remote_covid", "quote": "As for the work model, participants reported working in-person (n = 22), under a hybrid model (n = 26), or fully remotely (n = 16).", "loc": "PDF p. 30"},
+    {"field": "remote_covid", "quote": "This vulnerability is amplified in distributed and hybrid work contexts, where communication overhead increases, social support becomes fragmented, and the boundaries between work and personal life erode (Wells et al. 2023).", "loc": "PDF p. 6"},
+    {"field": "ai_discussed, cat_collaboration", "quote": "Negative interactions are identified using automated sentiment or emotion analysis applied to developer communication artefacts.", "loc": "PDF p. 16 (QSI)"},
+    {"field": "ai_discussed", "quote": "While turnover may offer a broad overview of well-being trends, other methods, such as AI-driven sentiment analysis, face substantial resistance.", "loc": "PDF p. 39"},
+    {"field": "cat_productivity, cat_agile", "quote": "Percentage of Completed Story Points (PCSP): Compute the ratio of completed story points (CSP) versus assigned story points (ASP) within a given period", "loc": "PDF p. 14 (WCA)"},
+    {"field": "cat_productivity, cat_activity", "quote": "Metrics such as Work Capacity (WCA), Number of Commits (NOC) and Number of Resolved Issues (NRI) represent measurable outputs of both individual and collective effort.", "loc": "PDF p. 20"},
+    {"field": "cat_activity", "quote": "This metric captures development activity by quantifying code updates within a version control system such as Git, Bitbucket, or GitLab.", "loc": "PDF p. 18 (NOC)"},
+    {"field": "cat_collaboration, cat_survey", "quote": "Team Vision (TVI). This metric assesses team members' perceptions of each other's productivity and peers' collaboration using daily surveys.", "loc": "PDF p. 13"},
+    {"field": "cat_satisfaction", "quote": "Next, four domain experts categorized these factors into four key categories: Individual Mental Health (IMH), Team Mental Health (TMH), Individual Productivity (IP), and Team Productivity (TP).", "loc": "PDF p. 9"},
+    {"field": "cat_agile", "quote": "Sprint Retrospectives: Metrics such as Motivation, Missed Tasks, and Work Capacity can be reviewed at the end of each sprint.", "loc": "PDF p. 46"}
+  ]
+}

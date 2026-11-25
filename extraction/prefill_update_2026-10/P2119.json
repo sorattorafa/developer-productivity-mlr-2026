@@ -1,0 +1,34 @@
+{
+  "id": "P2119",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Own interviews and questionnaire data."},
+    "study_type": {"claude": "Mixed methods (literature review, interviews, questionnaire, qualitative system dynamics)", "nlm": "Mixed methods (literature review, semi-structured interviews, questionnaire, qualitative system dynamics/CLD)", "value": "Mixed methods", "note": ""},
+    "research_method": {"claude": "Literature review plus semi-structured interviews (12 key members, 4 companies) plus questionnaire on perceived factor strength (high/medium/low → 3/2/1, mean scores, Cronbach's α = .867 for 19 factors; 17 of 25 companies) plus qualitative system dynamics (influence diagram, CLD)", "nlm": "Literature review, semi-structured interviews (12 members, 4 companies), questionnaire (17 respondents, 1 per company, of 25 invited), qualitative system dynamics / causal loop diagram", "value": "Mixed methods: literature review to identify 38 factors; semi-structured interviews and face-to-face discussions with 12 key project members from 4 companies; questionnaire rating perceived influence strength (high/medium/low scored 3/2/1, mean-based selection of 19 factors, Cronbach's alpha) answered by 17 of 25 invited companies (one respondent each); qualitative system dynamics modelling (influence diagram and causal loop diagram)", "note": "Cronbach's α = .867 and the 38/19 factor counts reported by Claude only (not contradicted)."},
+    "context": {"claude": "Industry; Bangladeshi software companies using agile (100% Scrum) for at least 1 year, offshore and local markets; 12 interviewees, 17 questionnaire respondents", "nlm": "Industry; software companies in Bangladesh (offshore and local markets), 100% Scrum; 12 interviewees, 17 survey respondents", "value": "industry; Bangladeshi software companies using agile (all Scrum) for at least one year, serving offshore and local markets; 12 interviewees from 4 companies and 17 questionnaire respondents (one per company)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Both: work mode not specified; offshore clients and time-zone differences mentioned only in one interview remark."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either. Full text reports data collected January–March 2017 (PDF p. 2)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "No", "value": null, "note": "Claude tags the CLD 'actual team productivity' concept (not measured) and SLOC/function points (introduction, criticized) as Productivity. NotebookLM has no Productivity-tagged metric (output quantity tagged Activity). Productivity itself is only measured perceptually."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Quality is a management criterion for assessing team productivity; work quality and rework are CLD variables."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Communication (top-rated, 2.82), mutual trust and coordination appear as rated influence factors and 'communication & coordination overhead' as a CLD variable; neither extractor lists a collaboration measure. Author may wish to review."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "Both tag customer satisfaction (a management criterion) as Satisfaction, which is not developer satisfaction; developer motivation and exhaustion appear only as influence factors/CLD variables. Author may wish to review."},
+    "cat_activity": {"claude": "No", "nlm": "Yes", "value": null, "note": "NotebookLM tags output quantity (SLOC/function points, a management criterion) and software reuse level as Activity; Claude has no activity metric. In the text, SLOC/FP appear only in the introduction."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Timeliness as a management criterion for assessing productivity."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM's DevEx tag on staff turnover is generic; no DevEx framework."},
+    "cat_agile": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Agile (Scrum) teams; adoption of agile practices/ceremonies (daily stand-up, retrospectives, release planning) reported from the survey."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Questionnaire on perceived influence strength of factors plus interviews on perceptions."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, context", "quote": "A set of semistructured interviews and face-to-face discussions were also conducted with 12 key project members from 4 software companies including project managers, scrum masters, developers, project owners", "loc": "PDF p. 2"},
+    {"field": "study_type, research_method, context", "quote": "a questionnaire [26] was developed and distributed to a total of 25 software companies in Bangladesh. Only 17 companies (1 from each) responded to the questionnaire.", "loc": "PDF p. 2"},
+    {"field": "research_method, cat_survey", "quote": "The agile team members were asked to fill in the form to indicate the strength (high, medium or low) of the factors that they perceived influenced their productivity [25].", "loc": "PDF p. 2"},
+    {"field": "research_method", "quote": "Cronbach's alpha coefficient for internal consistency reliability [21] was calculated for the selected factors", "loc": "PDF p. 3"},
+    {"field": "study_type, research_method", "quote": "The complex interrelated structure of different factors affecting agile teamwork productivity is modeled using influence diagram and Causal Loop Diagram (CLD) for qualitative analysis.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "context", "quote": "companies using agile methods for at least 1 year and top listed companies developing software for both offshore and local market.", "loc": "PDF p. 2"},
+    {"field": "cat_quality, cat_delivery", "quote": "Although at the end of the project, the management assessed their productivity on the basis of timeliness and quality.", "loc": "PDF p. 3"},
+    {"field": "cat_agile", "quote": "Fig. 1 presents the agile practices adopted by the participating software companies and it shows daily stand up meeting mostly used by all of them.", "loc": "PDF p. 3 (Survey Results)"}
+  ]
+}

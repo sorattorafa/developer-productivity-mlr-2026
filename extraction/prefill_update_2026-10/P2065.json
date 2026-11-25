@@ -1,0 +1,36 @@
+{
+  "id": "P2065",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Secondary", "nlm": "Secondary", "value": "Secondary", "note": "Systematic mapping study."},
+    "study_type": {"claude": "Review-Secondary (systematic mapping study)", "nlm": "Review-Secondary (systematic mapping study)", "value": "Review-Secondary", "note": ""},
+    "research_method": {"claude": "Systematic mapping study (Petersen et al.); database search plus backward snowballing and forward-citation check; axial coding and open card sorting; 1,643 raw records, 1,151 unique, 131 after screening plus 29 via snowballing = 160 studies; 146 interventions; Fleiss' kappa 0.79", "nlm": "Systematic mapping study following Petersen et al. and Kitchenham et al.; 160 primary studies selected from 1,643 raw records and validated via snowballing; 146 interventions mapped to 5 facets and 8 KPIs", "value": "Systematic mapping study (Petersen et al. guidelines, Kitchenham-style screening); 1,643 raw records, snowballing, 160 primary studies included; 146 interventions coded into an Intervention → Dev-X facet → software outcome → business KPI taxonomy (5 facets, 8 KPIs, 5 relationship types)", "note": "Screening counts and kappa reported only by Claude (not contradicted)."},
+    "context": {"claude": "Mixed (primary studies from industry, OSS and academia); secondary review of 160 studies", "nlm": "Industrial, OSS, academic and mixed settings across 160 primary studies", "value": "academic (secondary/review); 160 primary studies (industry, OSS and academic settings)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Claude: not cited; NotebookLM: referenced only. 'DORA' does not occur in the full text."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Claude: not cited; NotebookLM: referenced only. 'SPACE' does not occur in the full text."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "AI-assisted/LLM/GenAI interventions mapped (S81, S90, S63, S112) and reported as an emerging 2021-2024 trend."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Claude: work mode not reported (one COVID-19 primary study). NotebookLM: not specified, only settings of some primary studies. Full text has one sentence on pandemic-era well-being studies (Section 5.3)."},
+    "data_window": {"claude": "review coverage 2006–2024", "nlm": "review coverage October 2006–October 2024", "value": "review coverage 2006–2024 (October 2006–October 2024)", "note": ""},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Productivity KPI (55 instances, 34.4%)."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Quality KPI is the most frequent (67 instances, 41.9%)."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Team Dynamics KPI (trust, cohesion, coordination; 27 instances)."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Emotional States facet and Developer Well-being KPI."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: commits appear only as an example indicator of the Productivity KPI, and the commit ratio (DCR) comes from one primary study; activity is not a synthesized category."},
+    "cat_delivery": {"claude": "Yes", "nlm": "no basis", "value": null, "note": "Claude: Process Efficiency KPI with lead/cycle time indicators (15 instances). NotebookLM names Process Efficiency without indicators and gives no delivery metric."},
+    "cat_devex": {"claude": "No", "nlm": "Yes", "value": null, "note": "Claude: facets built on Fagerholm & Münch, Greiler/Storey/Noda only referenced. NotebookLM: Greiler et al./Storey et al. dimensions applied. Cognitive Load (facet) and Flow (KPI) are synthesized; Noda/Storey/Forsgren 2023 not found in text."},
+    "cat_agile": {"claude": "Yes", "nlm": "No", "value": null, "note": "Claude: Process Efficiency KPI (WIP, adherence to process, lean flow efficiency). NotebookLM: Agile/Scrum/XP only as interventions, no process metric."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Perceptual instruments (NASA-TLX, PANAS/affect grids, motivation scales, survey ratings, perceived productivity) used to code facets and KPIs."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, context, data_window", "quote": "We conducted a systematic mapping study of 160 empirical articles published between 2006 and 2024.", "loc": "Abstract (Method)"},
+    {"field": "research_method", "quote": "We aggregated results from all databases into a unified corpus, resulting in 1,643 raw records.", "loc": "3.3. Article search and selection"},
+    {"field": "data_window", "quote": "We selected October 2006 as the lower bound to capture early empirical studies on developer cognition, affect, and values", "loc": "3.3. Article search and selection (Time Window Justification)"},
+    {"field": "ai_discussed", "quote": "In parallel, intervention designs increasingly include AI-assisted [S148] [S42] and no/low-code and GenAI-specific constructs [S112] (trust, zero-shot emotion analysis).", "loc": "5.3. Longitudinal shifts in Dev-X intervention design and KPI focus"},
+    {"field": "cat_productivity, cat_quality, cat_collaboration", "quote": "The most frequently reported KPI was Quality Outcomes (67), followed by Productivity (55), Team Dynamics and Culture (27), and Project Success (19).", "loc": "4.1. RQ1: Mapping Dev-X facets, relationship types, and business KPIs"},
+    {"field": "cat_productivity, cat_survey", "quote": "Productivity Effective output per unit time; perceived productivity; throughput/velocity. Indicators: commits, tasks completed, cycle time, survey ratings.", "loc": "Table 3 (Business KPIs)"},
+    {"field": "cat_quality", "quote": "Quality Internal/external quality: defects, smells, readability, review rework, static warnings. Lower defect density; improved readability; less rework.", "loc": "Table 3 (Business KPIs)"},
+    {"field": "cat_collaboration", "quote": "Team Dynamics Trust, cohesion, coordination, conflict, retention risk, culture. Higher trust/cohesion; fewer conflicts; better coordination.", "loc": "Table 3 (Business KPIs)"},
+    {"field": "cat_satisfaction", "quote": "Developer Well-being Burnout, stress, recovery, psychosocial risk and satisfaction. Lower burnout/stress; improved well-being scores.", "loc": "Table 3 (Business KPIs)"},
+    {"field": "cat_survey, cat_satisfaction", "quote": "Emotional States Valence-Arousal-Dominance and discrete emotions; cues: affect grids/PANAS, sentiment/lexicons, mood induction, physiological proxies.", "loc": "Table 2 (Dev-X Facets)"}
+  ]
+}

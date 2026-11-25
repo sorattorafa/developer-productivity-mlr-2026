@@ -1,0 +1,37 @@
+{
+  "id": "P2030",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Mixed methods (concurrent embedded design: survey, PLS-SEM, OLS, qualitative analysis)", "nlm": "Mixed methods (concurrent embedded design: survey, PLS-SEM, OLS, qualitative analysis)", "value": "Mixed methods", "note": "Survey-based concurrent embedded design (quantitative modelling plus open-ended responses)."},
+    "research_method": {"claude": "Concurrent embedded mixed methods: survey with 5-point Likert items; EFA (JASP); PLS-SEM (SmartPLS 4) for RQ1; OLS with Benjamini-Hochberg correction for RQ2; qualitative coding of open-ended answers (Jaccard IRR); 688 responses, 442 valid; G*Power minimum 119", "nlm": "Concurrent embedded mixed methods: survey (N=442), PLS-SEM, OLS regression with Benjamini-Hochberg adjustment, qualitative coding (IRR >= 90%), power analysis", "value": "Concurrent embedded mixed-methods survey grounded in the JD–R model; 5-point Likert constructs; EFA and PLS-SEM (SmartPLS 4) for RQ1; OLS regression with Benjamini–Hochberg adjustment for RQ2; qualitative coding of open-ended responses; 688 responses, 442 valid", "note": "EFA and the 688 raw responses reported only by Claude (not contradicted)."},
+    "context": {"claude": "Industry/Mixed; professional developers recruited from 56 OSS communities (organizational repositories of Microsoft, Google, Netflix, Red Hat, IBM; Kubernetes, Hugging Face, Python, TensorFlow) and professional groups; N = 442", "nlm": "Mixed (industry and OSS communities, incl. Microsoft, Google, Netflix, Red Hat, IBM repositories and Kubernetes, Hugging Face, TensorFlow); N = 442 professional developers", "value": "mixed; professional developers recruited via 56 OSS communities (organizational repositories such as Microsoft, Google, Netflix, Red Hat, IBM; Kubernetes, Hugging Face, Python, TensorFlow) and professional groups; 442 valid survey respondents", "note": "Claude writes 'Industry/Mixed'; treated as the same category as NotebookLM's 'Mixed'."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "DORA 2024 report only cited in background (both)."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE only cited via Houck et al. (both)."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "GenAI adoption is the study's object (JD–R model of burnout)."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not reported by either; COVID-19 appears only in the source of adapted workload items."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either; full text says only that the survey was available for two weeks, without dates."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Productivity not measured; NotebookLM lists task speed-up only from cited literature."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "Code quality only from the cited DORA report (NotebookLM)."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: no collaboration metric measured; both report the 'hidden collaboration costs' finding (review burden of AI output) and the recommendation that KPIs include review effort."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Burnout construct (4 Likert items adapted from Trinkenreich et al.) is the dependent variable."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Claude tags self-reported AI-use frequency and NotebookLM tags perceived workload as Activity; neither is repository activity."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "Delivery performance only from cited literature (DORA 2024)."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Both tag some JD–R constructs 'DevEx', but the DevEx framework is not used."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "All constructs measured by 5-point Likert survey items."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, context", "quote": "We employed a concurrent embedded mixedmethods research design, integrating quantitative and qualitative evidence. We first surveyed 442 developers across diverse organizations, roles, and levels of experience.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "research_method", "quote": "We first leveraged Partial Least Squares-Structural Equation Modeling (PLS-SEM) [87] to analyze the survey data to evaluate hypotheses H1 to H3", "loc": "PDF p. 4"},
+    {"field": "research_method", "quote": "We first used ordinary least squares (OLS) regression models [37] to assess the relationship between developer characteristics and job demands, resources, and burnout.", "loc": "PDF p. 7"},
+    {"field": "research_method, context", "quote": "We received 688 responses. After excluding invalid responses, the final dataset comprised 442 participants.", "loc": "PDF p. 4"},
+    {"field": "context", "quote": "we recruited software developers from 56 Open Source Software (OSS) communities spanning diverse domains, including organizational repositories (e.g., Microsoft, Google, Netflix, Red Hat, IBM)", "loc": "PDF p. 4"},
+    {"field": "context", "quote": "We also reached out to data science-oriented communities (e.g., Python, TensorFlow) and professional groups.", "loc": "PDF p. 4"},
+    {"field": "ai_discussed", "quote": "In this paper, we investigate the relationship between the adoption of GenAI and developers' burnout.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "cat_satisfaction, cat_survey", "quote": "The last survey section measured burnout through participants' perceptions through a set of 4 statements which participants rated on a 5-point Likert scale", "loc": "PDF p. 4"},
+    {"field": "cat_survey", "quote": "We measured organizational pressure by asking participants to rate 4 statements on a 5-point Likert scale (1 = strongly disagree, 5 = strongly agree; N/A if not applicable).", "loc": "PDF p. 3"},
+    {"field": "cat_collaboration", "quote": "Shift 3: From productivity gains to hidden collaboration costs.", "loc": "PDF p. 10"},
+    {"field": "cat_collaboration", "quote": "improve workload equity by rotating reviewer responsibilities and updating KPIs to include these efforts.", "loc": "PDF p. 10"}
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "P2014",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Industrial tool development and evaluation at Bloomberg."},
+    "study_type": {"claude": "Mixed methods (tool development; Claude also labels it an industrial experience report)", "nlm": "Mixed methods", "value": "Mixed methods", "note": "The paper says 'we report on our experience at Bloomberg' and calls its evaluation mixed-methods; Experience report would also be defensible."},
+    "research_method": {"claude": "Tool development + mixed methods: Bayesian Network modelling (literature + expert survey + HC/PC structure learning with bootstrap and BIC), performance benchmarking (Hyperfine, Locust), focus groups with post-session questionnaire", "nlm": "Mixed methods: literature review, expert survey, structure learning algorithms, performance benchmarking, focus groups", "value": "Industrial tool development and mixed-methods evaluation: two Bayesian Networks built from a DORA-based DAG, refined by an expert survey (n=8, weighted scores) and validated with Hill-Climbing/Peter-Clark structure learning (bootstrap, BIC), CPTs estimated from survey data; latency benchmarking (Hyperfine, Locust); 7 focus groups with post-session questionnaire", "note": "Tool names and number of focus-group sessions reported only by Claude (not contradicted)."},
+    "context": {"claude": "Industry; Bloomberg DevX team with UCL; internal survey (20 questions, >2,000 responses), 8 experts, 7 focus groups with 28 senior participants (24 respondents)", "nlm": "Industry; Bloomberg; internal survey (>2,000 responses, 20 questions), 8 DevX experts, 28 focus-group participants (24 completed questionnaire)", "value": "industry; Bloomberg (DevX team, with UCL); internal quarterly engineering survey (20 questions, >2,000 responses), 8 DevX experts, 28 senior practitioners in focus groups (24 questionnaire respondents)", "note": ""},
+    "dora_applied": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "DORA metrics form the foundational DAG and core nodes of the software delivery BN. Claude says the DORA nodes come from survey questions; NotebookLM says from CI/CD pipeline data (the paper builds the BNs from internal survey data)."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE only referenced (aspects covered by the internal survey)."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: only in the sense that the proposed analysis instrument is Bayesian Networks with structure learning (HC, PC); the text never uses 'AI' or 'machine learning' outside the references, and no AI coding tools are discussed."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not specified by either."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either (quarterly survey, no period given; early access since 1 Oct 2025 refers to deployment, not data)."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: both label 'time lost to obstacles' DevEx/Productivity, but it is a self-reported survey item (counted under survey); DORA throughput counted under delivery."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Change failure rate and failed deployment recovery time (stability), plus tech-debt impact survey item."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "No", "value": null, "note": "Claude lists 'quality of peer feedback' as a survey metric; NotebookLM has no collaboration metric. In the full text peer feedback appears once, as an intro description of survey topics, not as a BN node."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Developer happiness and meaningful work are DevEx BN nodes; DevEx defined as satisfaction and engagement."},
+    "cat_activity": {"claude": "Yes", "nlm": "No", "value": null, "note": "Claude lists 'contribution metrics' (internal dashboards); NotebookLM has none (its 'Activity' label is on focus without distraction). Full text mentions contribution metrics once in the intro."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Change lead time and deployment frequency in the software delivery BN."},
+    "cat_devex": {"claude": "No", "nlm": "Yes", "value": null, "note": "Claude: DevEx is the modelled domain, defined generically. NotebookLM: 'DevEx Framework' applied. Full text defines DevEx as 'satisfaction and engagement of engineers' and does not cite Noda/Storey/Forsgren; 'focus without distraction' is a survey node."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "DevOps/CI/CD context only; no sprint or process metrics."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "BNs built from Likert-scale internal engineering survey; tool evaluated with a post-session questionnaire."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "We conducted a mixed-methods evaluation of BayesInsights that combines quantitative performance benchmarking with qualitative feedback collected through a post-session survey following focus group sessions with 28 senior Bloomberg practitioners (24 of whom responded).", "loc": "PDF p. 1"},
+    {"field": "research_method, ai_discussed", "quote": "To further refine the DAG structures, we applied the Hill-Climbing (HC) and Peter-Clark (PC) structure-learning algorithms", "loc": "PDF p. 3"},
+    {"field": "context, cat_survey", "quote": "We use data from one internal engineering survey (20 questions, >2,000 responses) as the source for our BNs, in which each question is represented as a graph node", "loc": "PDF p. 1"},
+    {"field": "context, research_method", "quote": "Participants were purposely selected from Bloomberg's DevX team (n = 8) for their domain expertise and organisation-wide contextual understanding", "loc": "PDF p. 3"},
+    {"field": "context, research_method", "quote": "We conducted seven sessions, each with 3-5 participants. In total, 28 attended the sessions, and 24 completed the questionnaire.", "loc": "PDF p. 4"},
+    {"field": "dora_applied", "quote": "We began with a foundational DAG based on the DORA metrics [10] and their established causal links.", "loc": "PDF p. 2"},
+    {"field": "dora_applied, cat_delivery, cat_quality", "quote": "Throughput is modelled using change lead time, deployment frequency, and failed deployment recovery time, while stability is represented by change failure rate.", "loc": "PDF p. 2"},
+    {"field": "cat_satisfaction", "quote": "both time lost to obstacles and meaningful work contribute directly to developer happiness", "loc": "PDF p. 1"},
+    {"field": "cat_satisfaction", "quote": "In this context, DevEx refers to the satisfaction and engagement of engineers within their work environment.", "loc": "PDF p. 2 (footnote 1)"},
+    {"field": "cat_survey", "quote": "The survey comprises Likert-scale questions capturing engineers' perceptions of their work environment, including satisfaction and engagement", "loc": "PDF p. 1"}
+  ]
+}

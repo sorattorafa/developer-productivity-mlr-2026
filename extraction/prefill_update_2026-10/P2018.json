@@ -1,0 +1,38 @@
+{
+  "id": "P2018",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Case study (qualitative descriptive case study)", "nlm": "Case study (descriptive case study)", "value": "Case study", "note": "Qualitative descriptive case study (Yin) based on interviews and an open questionnaire."},
+    "research_method": {"claude": "Qualitative descriptive case study (Yin): 6 semi-structured interviews with professors and an open questionnaire to students; thematic analysis (Braun & Clarke), inductive then compared with SPACE", "nlm": "Descriptive case study: semi-structured interviews, questionnaires, thematic analysis; findings compared/categorized against SPACE", "value": "Qualitative descriptive case study (Yin): 6 semi-structured interviews with supervising professors and an open-ended student questionnaire in two rounds (32 responses); thematic analysis (Braun & Clarke), inductive coding by researcher pairs, themes then compared with the SPACE dimensions", "note": ""},
+    "context": {"claude": "Academic; two-semester SE capstone program (SEN) with real external clients in a Brazilian undergraduate SE course; 6 professors, 32 students", "nlm": "Academic; SEN capstone program with real external clients at UFMS, Brazil; 6 professors, 32 students", "value": "academic; two-semester software engineering capstone program (SEN) with real clients in a Brazilian undergraduate SE course (authors at UFMS); 6 supervising professors interviewed, 32 student questionnaire responses (of 46 invited per round)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "DORA not mentioned."},
+    "space_applied": {"claude": "No (themes compared with SPACE)", "nlm": "Yes (used to categorize perceptions)", "value": null, "note": "Both call SPACE 'APPLIED', but Claude describes it as a lens against which inductive themes were compared, NotebookLM as the baseline to categorize perceptions. Paper: themes derived first, then 'compared our results to SPACE'; professors' theme map is labelled with SPACE dimension names."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": "AI only as transcription tools (Riverside, TurboScribe) and one related-work mention of Copilot studies."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "On-site work (attendance tracked on in-person days)."},
+    "data_window": {"claude": "2024.2 and 2025.1 semesters", "nlm": "no basis (two rounds, no dates)", "value": null, "note": "Claude: questionnaire rounds after the 2024.2 and 2025.1 semesters; NotebookLM gives only two rounds/semesters without dates."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Perceived signs, not measured: artifact/task deliveries, cards, story points delivered (both extractors label these Activity)."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Deliverable quality and bugs/fixes discussed as a Performance sign, 'hard to measure'."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Communication & collaboration signs: team dynamics, peer feedback, engagement with the client."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Satisfaction & well-being signs (team tension, student frustration) in professors' map; work-life balance as contextual factor."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Volume and distribution of commits checked occasionally by professors; work hours and attendance."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "Claude labels deliveries/delays 'Delivery' and self-reported task start-to-finish time 'lead time', but these are task-level (productivity/planning), not delivery-pipeline metrics."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_agile": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Estimate accuracy and delays within sprints observed in Scrum ceremonies (dailies, sprint reviews)."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Interviews and questionnaire on perceptions of productivity; self-perceived productivity item."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "To answer them, we conducted a descriptive case study [37] in SEN.", "loc": "PDF p. 3 (3 Methodology)"},
+    {"field": "research_method, cat_survey", "quote": "We conducted six semi-structured interviews with professors and administered a questionnaire to students. We used thematic analysis to understand their perspectives.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "research_method", "quote": "After deriving the subthemes and themes, we compared our results to SPACE [9], to consider to which extent professors and students matched the framework dimensions.", "loc": "PDF p. 4 (Data analysis)"},
+    {"field": "context", "quote": "Finalyear students enroll in SEN for two semesters to participate in capstone projects with real clients.", "loc": "PDF p. 3 (3.1 Case description)"},
+    {"field": "context", "quote": "We also sent the questionnaire to a total of 46 students, and got 26 responses. Altogether, we obtained 32 responses.", "loc": "PDF p. 4 (3.2 Data collection)"},
+    {"field": "cat_productivity", "quote": "Productivity was measured by the number of cards, resolutions, bugs, and story points delivered.", "loc": "PDF p. 7 (student S5)"},
+    {"field": "cat_activity", "quote": "that can include metrics like the number of commits, basically what they're submitting.", "loc": "PDF p. 5 (professor P2)"},
+    {"field": "cat_quality", "quote": "One of its subtheme states that quality is important to software delivery, while another acknowledges that quality is related to productivity, but hard to measure", "loc": "PDF p. 5 (Performance signs)"},
+    {"field": "cat_collaboration, cat_productivity, cat_activity", "quote": "Both professors and students report signs on performance, activity, communication and collaboration (the PAC of SPACE).", "loc": "PDF p. 9 (5 Discussion)"},
+    {"field": "cat_satisfaction", "quote": "For supervisors, some satisfaction and well-being signs are key to understanding students' productivity. Two relevant subthemes regarding this are the existence of team tension and of student frustration", "loc": "PDF p. 5 (4.1.1)"},
+    {"field": "cat_agile", "quote": "Finally, professors also consider delays as a pattern of underdelivery, leading students to deliver less in the available time. It has implications for their estimates.", "loc": "PDF p. 5"},
+    {"field": "cat_agile", "quote": "This can be noticed when they fail to complete their task within the estimated time.", "loc": "PDF p. 8 (student S2)"}
+  ]
+}

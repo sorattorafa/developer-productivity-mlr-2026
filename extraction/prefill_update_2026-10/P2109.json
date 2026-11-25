@@ -1,0 +1,32 @@
+{
+  "id": "P2109",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Tool proposal with its own preliminary evaluation on collected sessions."},
+    "study_type": {"claude": "Other (tool proposal with preliminary qualitative evaluation)", "nlm": "Other (design science: tool development with preliminary case-study evaluation)", "value": "Other (tool paper with preliminary evaluation)", "note": "NotebookLM's raw label is 'Mixed methods / Design science'; the design it describes is a tool paper with a preliminary evaluation, which maps to Other."},
+    "research_method": {"claude": "Tool proposal (Ferax) plus preliminary qualitative evaluation on real sessions (interaction data and visual analytics); interpretations confirmed with the developers; 20 sessions, 12 analysed, 3 reported", "nlm": "Tool development and preliminary case-study evaluation; 20 sessions collected, 12 analysed, 3 presented in detail", "value": "Tool proposal (Ferax visual analytics platform combining in-IDE and outside-IDE interaction data) with preliminary qualitative evaluation on real development sessions; 20 sessions collected, 12 analysed, 3 reported in detail; interpretations confirmed with the developers (anecdotal evidence)", "note": "Confirmation of interpretations with developers stated only by Claude (not contradicted)."},
+    "context": {"claude": "Mixed: USI master students and CodeLounge professional developers; normal work, VS Code/macOS/Chrome; 6 volunteers", "nlm": "Mixed: USI master students and USI CodeLounge professional developers; 6 participants", "value": "mixed; USI master students (Software and Data Engineering) and CodeLounge professional developers (USI R&D centre), normal work in VS Code/macOS/Chrome; 6 volunteers (4 master students, 2 professional developers)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": "Both: no AI/ML; deterministic event tracking."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Both: work mode not specified."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Edit ratio (edits over total IDE events) used as productivity proxy (Sanchez et al.)."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Collaboration appears only as an application category (time in Slack/Teams), not as a collaboration metric."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Chunks, switches, switches per hour, save events, edited documents, visited websites."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels website visits and switches 'Activity / DevEx', but no DevEx framework (Noda/Storey/Forsgren) is used."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "No", "nlm": "No", "value": "No", "note": "No perceptual instrument; developers only confirmed the authors' interpretation of sessions."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, context", "quote": "As a preliminary evaluation of Ferax we have collected and analyzed real development sessions from a set of master students and two professional developers.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "research_method", "quote": "We collected a total of 20 sessions, and then we filtered out the ones with fewer events happening outside the IDE. We analyzed the remaining 12 sessions, and for space reasons, we only report 3 of them in detail.", "loc": "PDF p. 8 (V-A Methodology)"},
+    {"field": "research_method", "quote": "We explained our interpretation to the developer, and he confirmed that while the edit ratio was relatively low, this was a productive session", "loc": "PDF p. 9"},
+    {"field": "context", "quote": "Students of the Master in Software and Data Engineering at USI 13 Professional developers with at least 3 years of experience from CodeLounge, a center for software R&D, part of the Software Institute at USI.", "loc": "PDF p. 8 (footnotes 12-13)"},
+    {"field": "cat_productivity", "quote": "Sanchez et al. leveraged the edit ratio [3], i.e., the ratio of the number of edits over the total number of events, as an indicator of productivity.", "loc": "PDF p. 7"},
+    {"field": "cat_activity", "quote": "The summary table lists basic statistics like the sum of all session durations, the number of save events in the IDE, the number of switches between applications and average of switches per hour, the number of edited documents and number of visited websites.", "loc": "PDF p. 5"}
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "P2008",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Own production deployment and before/after measurement."},
+    "study_type": {"claude": "Case study (industrial case study / experience report with pre/post observational evaluation)", "nlm": "Case study (empirical case study / longitudinal pre-post observational study)", "value": "Case study", "note": "Claude also frames it as an industrial experience report (single author, practitioner blueprint)."},
+    "research_method": {"claude": "Industrial case study / experience report of a production deployment; observational pre- vs. post-adoption comparison (~12 months) with DORA and quality metrics; qualitative developer survey; two illustrative cases (cross-service rollout, LLM bug triage)", "nlm": "Empirical case study with longitudinal pre-post observational comparison over 12 months; DORA-grounded evaluation; telemetry, CI/CD, VCS/PR, issue tracker data; qualitative developer surveys", "value": "Single-organization industrial case study of a governance-first AI-augmented SDLC blueprint deployed in production; observational pre- vs. post-adoption comparison over two adjacent periods (~12 months) using DORA, quality and throughput metrics from CI/CD logs, VCS/PR analytics, test infrastructure, issue tracker and observability; two illustrative cases (cross-service attribute rollout, LLM bug triage); qualitative developer survey; no randomization or statistical tests", "note": "Number of developers and survey respondents not reported."},
+    "context": {"claude": "Industry: global e-commerce platform 'RetailCo' (pseudonym), hundreds of microservices, polyglot codebases, CI/CD; multiple teams; number of developers not reported", "nlm": "Industry: global e-commerce platform 'RetailCo' (eBay Inc.), hundreds of microservices, polyglot codebases; 1 organization", "value": "industry; single global e-commerce company ('RetailCo', anonymized) with hundreds of microservices and polyglot codebases, multiple teams; number of developers not reported", "note": "NotebookLM equates RetailCo with eBay (author's affiliation); the paper only says 'RetailCo, anonymized'."},
+    "dora_applied": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "DORA metrics are the basis of the before/after evaluation framework."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Claude: not mentioned; NotebookLM: referenced only. 'SPACE' does not occur in the full text."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "LLM assistants across the SDLC (IDE copilot, PR reviewer, test generation, AIOps, bug triage)."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM's 'distributed multi-team environment' refers to microservice teams, not remote work."},
+    "data_window": {"claude": "~12 months (two adjacent pre/post periods; no dates)", "nlm": "12 months (no dates)", "value": "~12 months across two adjacent pre-/post-adoption periods (calendar dates not stated)", "note": "Duration only."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Task execution time (-40%), story points per sprint per developer (+10–15%), manual bug triage hours, capacity uplift."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Change failure rate, MTTR, defect density per KLOC, automated test coverage."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin: code-review metric (first-round PR approvals 85% → 92%); Claude labels it Quality/Collaboration, NotebookLM Quality/Process."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "Both label perceived productivity/focus as DevEx/Satisfaction, but it is perceived productivity (cat_survey); no satisfaction or well-being measure."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "PRs merged per team per week (+12%); AI suggestion acceptance telemetry."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Deployment frequency (1 → 20/week), lead time for changes, feature delivery cycle, dev-to-merge cycle time."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM says DevEx referenced; only generic 'developer experience' in the text."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: story points per sprint is counted as a productivity/throughput metric by both; no ceremony or process metric."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Developer survey: >80% perceived productivity gains; ~95% affirm need for human code review."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, data_window", "quote": "We compared metrics across two adjacent periods totaling ∼ 12 months (pre-adoption vs. postadoption), covering multiple teams and services.", "loc": "PDF p. 6 (D. Measurement Methodology and Validity)"},
+    {"field": "research_method", "quote": "Data sources included CI/CD logs (deploy frequency, lead time), VCS/PR analytics (cycle time, approvals), test infrastructure (coverage)", "loc": "PDF p. 6 (D. Measurement Methodology and Validity)"},
+    {"field": "research_method, cat_survey", "quote": "We evaluate outcomes using both quantitative productivity and reliability metrics and qualitative developer feedback.", "loc": "PDF p. 2 (Introduction)"},
+    {"field": "context, ai_discussed", "quote": "We deployed this blueprint at a global e-commerce company (\"RetailCo\") and achieved a 20× increase in deployment frequency without any loss of reliability.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "dora_applied", "quote": "We provide a quantitative before/after evaluation framework based on DORA metrics to measure AI's impact on productivity and reliability.", "loc": "PDF p. 2 (contributions)"},
+    {"field": "cat_delivery, cat_quality", "quote": "the organization's deployment frequency increased from 1 to 20 per week (≈ 20×), and lead times for changes shrank from multiple weeks to under one week, all while post-release failure rates decreased.", "loc": "PDF p. 2 (Introduction)"},
+    {"field": "cat_quality", "quote": "Change Failure Rate (%) MTTR (hours) Defect Density (per KLOC) Automated Test Coverage (%)", "loc": "PDF p. 6 (Table I)"},
+    {"field": "cat_productivity", "quote": "Task execution time decreased by ≈ 40% with AI assistance", "loc": "PDF p. 6"},
+    {"field": "cat_productivity, cat_activity, cat_collaboration", "quote": "Completed story points per sprint per developer rose ∼ 10-15% (with guidance to avoid point inflation). PRs merged per team per week increased ∼ 12%. First-round approvals improved (∼ 85% →∼ 92%), as AI pre-flagged minor issues", "loc": "PDF p. 6 (Throughput)"},
+    {"field": "cat_survey", "quote": "Survey feedback indicated > 80% perceived produc", "loc": "PDF p. 6 (C. Developer Experience (Qualitative); two-column extraction splits 'productivity')"},
+    {"field": "cat_survey", "quote": "∼ 95% affirmed the continued necessity of human code review, consistent with human-in-the-loop guardrails.", "loc": "PDF p. 6 (C. Developer Experience (Qualitative))"}
+  ]
+}

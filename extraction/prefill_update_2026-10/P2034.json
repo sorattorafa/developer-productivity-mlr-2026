@@ -1,0 +1,37 @@
+{
+  "id": "P2034",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Survey (questionnaire; qualitative analysis of two open-ended questions)", "nlm": "Survey (labelled 'Qualitative': open-ended survey answers analysed with STGT procedures)", "value": "Survey", "note": "NotebookLM labels the method 'Qualitative', but the design it describes is a survey with qualitative analysis of open answers (no interviews)."},
+    "research_method": {"claude": "Online questionnaire (closed and open questions); this paper analyses two optional open-ended questions by open coding, constant comparison and memoing (Hoda's socio-technical grounded theory), supported by Quirkos; convenience and snowball sampling; 163 responses, 100 analysed", "nlm": "Survey with qualitative analysis of open-ended answers (open coding, constant comparison, memoing following Socio-technical Grounded Theory; Quirkos); convenience and snowball sampling; 163 respondents, 100 in the qualitative subsample", "value": "Online questionnaire survey (Finnish and English; convenience and snowball sampling); qualitative analysis of two optional open-ended questions using open coding, constant comparison and memoing (socio-technical grounded theory procedures), managed in Quirkos; 163 responses, 100 respondents analysed", "note": ""},
+    "context": {"claude": "Industry; software professionals in any role working mainly in Finland (employees, freelancers, entrepreneurs); 163 responses, 100 analysed", "nlm": "Industry; software professionals working in Finland (developers, architects, managers, freelancers, entrepreneurs); 163 respondents, 100 analysed", "value": "industry; software professionals in any role working primarily in Finland (employees, freelancers, entrepreneurs); 163 survey respondents, 100 analysed (open-ended answers)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned (both)."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned (both)."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Future role of generative AI in professional software development is the topic."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not reported by either."},
+    "data_window": {"claude": "8 December 2025–8 February 2026", "nlm": "December 2025–February 2026", "value": "December 2025–February 2026 (8 December 2025–8 February 2026)", "note": ""},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: only perceived productivity from open answers (Benefits 23×, Productivity illusion 8×, pseudo-productivity), which the ficha assigns to Survey; no productivity metric."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Codebase quality risks (19×): maintainability, reliability, information security, bugs (perceived)."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: perceived code review burden and superficialisation; division of labour shifting toward code review."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: Frustration (15×) and Impact on work satisfaction (2×) concepts from open answers."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM tags code review load 'Activity / DevEx'; it is a perceived burden, not repository activity."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Planning appears only as an impacted activity."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Questionnaire; all findings are self-reported perceptions."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, context, data_window, ai_discussed", "quote": "163 survey responses were collected during two months, from December 2025 to February 2026. In this paper, we report a qualitative analysis of 100 respondents' perspectives on the future role of generative AI in professional software development", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "data_window", "quote": "two months, from December 8, 2025, until February 8, 2026.", "loc": "PDF p. 2"},
+    {"field": "research_method", "quote": "To analyse open responses, open coding, constant comparison, and memoing were used as data analysis procedures, following [5].", "loc": "PDF p. 2"},
+    {"field": "research_method", "quote": "we used a combination of convenience and snowball sampling, recruiting participants through personal and professional social networks, LinkedIn advertising, and various email lists and chat groups", "loc": "PDF p. 2"},
+    {"field": "context", "quote": "population was formed of all software professionals in any role (e.g., programmers, designers, project managers) who worked primarily in Finland. This included people employed in organisations and companies, as well as freelancers and entrepreneurs.", "loc": "PDF p. 2"},
+    {"field": "cat_quality", "quote": "Several respondents mentioned codebase quality and maintainability in their responses, and interestingly, the majority of these mentions were related to quality concerns", "loc": "PDF p. 6 (4.4.4)"},
+    {"field": "cat_collaboration, cat_quality", "quote": "It can reduce code quality when large changes are delivered as blocks, as teams tend to review them superficially over time.", "loc": "PDF p. 5 (4.4.1)"},
+    {"field": "cat_collaboration", "quote": "One respondent expected that developers' roles are shifting from coding toward code review and automation supervision.", "loc": "PDF p. 5 (4.3.4)"},
+    {"field": "cat_satisfaction", "quote": "4.2.6 Frustration (15×). Frustration was a recurring sentiment among respondents.", "loc": "PDF p. 4"},
+    {"field": "cat_satisfaction", "quote": "One respondent expressed their frustration about how this has reduced their job satisfaction in code reviews", "loc": "PDF p. 6"},
+    {"field": "study_type, cat_survey", "quote": "we conducted a survey targeting software professionals working in Finland.", "loc": "PDF p. 1 (Abstract)"}
+  ]
+}

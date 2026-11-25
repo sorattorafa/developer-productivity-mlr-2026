@@ -1,0 +1,32 @@
+{
+  "id": "P2081",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Survey (quantitative, ex post facto)", "nlm": "Survey (quantitative, ex post facto)", "value": "Survey", "note": ""},
+    "research_method": {"claude": "Quantitative ex post facto survey; closed-ended online questionnaire (5-point Likert, 26 items); validity, reliability and classical assumption tests; multiple linear regression", "nlm": "Quantitative survey, ex post facto design; digital closed-ended questionnaire (4 items per usability dimension, 6 for productivity, 5-point Likert); multiple linear regression", "value": "Quantitative cross-sectional survey with ex post facto design; closed-ended online questionnaire (26 items, 5-point Likert: four per Nielsen usability dimension, six for programming productivity); validity, reliability (Cronbach's alpha) and classical assumption tests; multiple linear regression (partial and simultaneous effects)", "note": ""},
+    "context": {"claude": "Academic; Informatics programs at unnamed higher education institutions (authors in Indonesia), final-project phase; 200 students, purposive sampling", "nlm": "Academic; Informatics study programs in higher education; 200 students (7th semester or above, final project, VS Code users), purposive sampling", "value": "academic; Informatics study programs at unnamed higher education institutions, students in the final-project phase using VS Code; 200 students (7th semester or above) selected by purposive sampling", "note": "Country only implied by author affiliation (Indonesia, per Claude); not stated as the setting."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either; 'DORA' does not occur in the full text."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE referenced only in the discussion (NAU efficiency/satisfaction aligned with SPACE dimensions); NAU is the instrument."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": "Only IntelliSense/autocomplete and one cited study; AI not analysed."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not reported by either."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either."},
+    "cat_productivity": {"claude": "No (perceived productivity only)", "nlm": "No (perceived productivity only)", "value": "No", "note": "Borderline: both label programming productivity (Y) as Productivity, but it is measured only by a 6-item self-report Likert scale (perceived productivity, which the definition routes to cat_survey). Author to confirm."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": null, "note": "Agreed Yes (both label the Errors dimension X4 as Quality) but not confirmed in the full text: X4 measures perceived operational errors in using VS Code and ease of resolving them (usability), not software quality."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Satisfaction (X5): comfort and satisfaction with VS Code (tool satisfaction), 4 Likert items."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM tags the usability dimensions 'DevEx', and the paper calls usability 'a predictor of developer experience', but the Noda/Storey/Forsgren DevEx framework is not used."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "All variables measured by a self-report Likert questionnaire."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "This study employed a quantitative approach using a survey method to measure the influence of VS Code usability dimensions on students' programming productivity. The research applied an ex post facto design", "loc": "PDF p. 3"},
+    {"field": "research_method, cat_survey", "quote": "The research instrument consisted of a closed-ended questionnaire using a 5-point Likert scale with a total of 26 statement items: four items for each independent variable and six items for the dependent variable.", "loc": "PDF p. 4"},
+    {"field": "research_method", "quote": "Data analysis employed multiple linear regression to examine both partial and simultaneous effects.", "loc": "PDF p. 4"},
+    {"field": "context", "quote": "This study was conducted in Informatics study programs at higher education institutions whose students used Visual Studio Code as the primary programming tool during the preparation of their final projects.", "loc": "PDF p. 3"},
+    {"field": "context", "quote": "The sample comprised 200 students selected through purposive sampling techniques, with criteria including active Informatics students in the seventh semester or above", "loc": "PDF p. 3"},
+    {"field": "cat_satisfaction", "quote": "and satisfaction (X5), which measured users' comfort and satisfaction with VS Code.", "loc": "PDF p. 4"}
+  ]
+}

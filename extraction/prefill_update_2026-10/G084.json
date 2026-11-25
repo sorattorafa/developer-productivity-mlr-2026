@@ -1,0 +1,32 @@
+{
+  "id": "G084",
+  "kind": "grey",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Both describe the author's own survey (100 developers) and 10 interviews."},
+    "gl_type": {"claude": "Thesis (Bachelor's thesis, Jamk University of Applied Sciences)", "nlm": "Thesis (Bachelor's thesis)", "value": "Thesis", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Both state DORA is not mentioned."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Both state SPACE is not mentioned."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Study of AI code assistants (GitHub Copilot, Tabnine, Codeium) and developer productivity."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Neither mentions remote work or COVID-19."},
+    "data_window": {"claude": "Survey 19 March–5 April 2025", "nlm": "no basis", "value": null, "note": "Only Claude states the survey period; NotebookLM gives no data period."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Task completion time, tasks per session/throughput as productivity indicators (mostly Likert-rated); objective task-time measure described but not reported."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Code correctness, error rates and manual corrections as productivity indicators."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Satisfaction with productivity is a Likert item of the dependent variable; morale discussed as a productivity dimension."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "LOC and commits appear only as criticized metrics."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "Time-to-deployment appears only as a cited literature result."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Cognitive Load Theory and flow theory discussed, but not the DevEx framework."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Sprint velocity only in a related-work sentence (PDF p. 10)."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "25-item 5-point Likert survey plus semi-structured interviews on perceptions."}
+  },
+  "evidence": [
+    {"field": "gl_type", "quote": "Bachelor's thesis May 2025", "loc": "PDF p. 1"},
+    {"field": "ai_discussed", "quote": "AI-based coding assistants, such as GitHub Copilot, Tabnine, and Codeium, support developers by generating code and providing contextual recommendations in real time.", "loc": "PDF p. 2"},
+    {"field": "cat_survey", "quote": "From the survey which included demographic questions and 25 Likert scale items tied with the operationalized variables, 100 complete responses were collected", "loc": "PDF p. 17"},
+    {"field": "cat_productivity, cat_quality", "quote": "participants were all given the same coding problems and their performance was assessed for time taken, task success rate, and number of manual corrections needed to be done.", "loc": "PDF p. 18"},
+    {"field": "cat_productivity, cat_quality, cat_satisfaction", "quote": "Current notions of developer productivity encompass efficiency, effectiveness, satisfaction, and morale, while measuring accuracy of the code, debugging time, task completion speed, and ability to maintain \"flow\"", "loc": "PDF p. 25"},
+    {"field": "cat_productivity", "quote": "12. I can complete more tasks per session when using AI-generated suggestions.", "loc": "PDF p. 55 (Appendix 1 questionnaire)"},
+    {"field": "cat_satisfaction, cat_survey", "quote": "I feel more satisfied with my productivity when using an", "loc": "PDF p. 55 (Appendix 1 questionnaire, item 13)"},
+    {"field": "cat_quality", "quote": "Have you noticed any changes in your error rates, code quality, or time spent on debugging since using AI tools?", "loc": "PDF p. 58 (interview guide)"}
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "P2020",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Own survey, interviews and observation."},
+    "study_type": {"claude": "Mixed methods", "nlm": "Mixed methods", "value": "Mixed methods", "note": ""},
+    "research_method": {"claude": "Mixed methods: survey (multiple-choice, Likert, open-text; ~7 min; 3,500 invited, 530 responses, 15%) plus qualitative insights from interviews (10 developers, 20 engineering leads, a handful of Microsoft engineers) and observation of 23 Java developers using GitHub Copilot; focus groups mentioned in the methodology", "nlm": "Mixed methods: survey (530 of 3,500), qualitative interviews (10 developers, 20 engineering leads), focus groups, observational study of 23 Java developers; cross-sectional; also lists a controlled study with 8 developers", "value": "Mixed-methods study: cross-sectional online survey structured by the SPACE dimensions (multiple-choice, Likert-scale and open-text items; 3,500 invited, 530 responses, 15% response rate), plus interviews with 10 professional developers and 20 engineering leads, observation of 23 experienced Java developers on accelerator and exploratory tasks with GitHub Copilot, and interviews with a handful of Microsoft engineers; focus groups mentioned in the methodology", "note": "NotebookLM counts the controlled study of 8 developers in the sample; Claude notes it is research by Sara Chizari at Microsoft, cited and not the authors' data, so it is omitted. Analysis is descriptive (percentages, mean agreement)."},
+    "context": {"claude": "Industry; Microsoft sample from a randomized pool of U.S. individual contributors plus an external sample from 15+ companies; 530 survey responses (>80% Microsoft)", "nlm": "'Mixed' (>80% Microsoft developers; external participants from 15+ companies, e.g. Airbnb, Atlassian, DoorDash, Meta, Netflix, Reddit, Yelp); internal sample restricted to the U.S.", "value": "industry; Microsoft (>80% of survey participants, randomized pool of U.S. individual contributors) plus developers from at least 15 other companies (e.g., Airbnb, Atlassian, Charles Schwab, DoorDash, JetBrains, Meta, Netflix, Reddit, Yelp); 530 survey respondents, 10 developers and 20 engineering leads interviewed, 23 Java developers observed", "note": "NotebookLM's 'Mixed' label refers to Microsoft plus external companies; all participants are from industry."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Claude: not mentioned; NotebookLM: referenced only. DORA does not appear in the full text."},
+    "space_applied": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "The five SPACE dimensions structure the core survey items and the analysis of perceived AI impact."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Developers' use and perceived impact of AI tools is the object of study."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not reported by either."},
+    "data_window": {"claude": "August 2024 (survey)", "nlm": "August 2024 (survey)", "value": "August 2024 (survey; interview and observation dates not reported)", "note": ""},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: both list SPACE Performance/Activity/Efficiency and 'more productive' items, but all are Likert self-reports, i.e. perceived productivity (counted under survey); coding-speed results are cited from other studies."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "No quality metric."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Survey item on ability to collaborate with teammates (48% agree) plus interview findings on fewer interruptions and higher-value team conversations."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "SPACE Satisfaction item (62% say AI enhances job satisfaction)."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Both tag the SPACE Activity item (perceived task throughput) and self-reported AI-use frequency as Activity; neither is repository activity."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM tags perceived customer value (SPACE Performance) 'Delivery / Performance'; it is a Likert item, not a delivery metric."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "DevEx framework not used; NotebookLM's 'DevEx' tags are generic."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Likert/multiple-choice/open-text survey plus interviews."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "we conducted a mixed-methods research study combining survey data with qualitative insights derived from interviews and focus groups.", "loc": "PDF p. 2 (Methodology)"},
+    {"field": "research_method, space_applied, cat_survey", "quote": "The survey consisted of a mix of multiple-choice questions, Likert-scale ratings, and open-text prompts. The core questions aimed to assess how AI tools impact developers’ experiences across the SPACE dimensions.", "loc": "PDF p. 2 (Survey Design)"},
+    {"field": "research_method, context", "quote": "The survey was distributed to 3,500 individuals; 530 responses were received, yielding a response rate of 15 percent", "loc": "PDF p. 2 (Survey Participants)"},
+    {"field": "research_method, context", "quote": "we interviewed 10 professional developers and 20 engineering leads about the impact LLMs were having on their software development teams and observed 23 experienced Java developers", "loc": "PDF p. 3 (Customer Interviews and Observational Studies)"},
+    {"field": "context", "quote": "More than 80 percent of the study participants were from Microsoft, but developers from at least 15 other companies were represented", "loc": "PDF p. 2 (Survey Participants)"},
+    {"field": "context", "quote": "The Microsoft sample was drawn from a randomized pool of developers within Microsoft, filtered to include individual contributors in the U.S., excluding those in finance, legal, or HR.", "loc": "PDF p. 2 (Survey Participants)"},
+    {"field": "ai_discussed, space_applied", "quote": "This article presents findings from a mixed-methods study examining how developers perceive AI’s influence across the dimensions of the SPACE framework: Satisfaction, Performance, Activity, Collaboration, and Efficiency.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "data_window", "quote": "The survey was conducted in August 2024, using Microsoft Forms.", "loc": "PDF p. 3 (Survey Execution)"},
+    {"field": "cat_collaboration", "quote": "fewer than half of AI adopters (48 percent) agreed that AI has improved their ability to collaborate with teammates.", "loc": "PDF p. 5"},
+    {"field": "cat_satisfaction", "quote": "71 percent of AI adopters believe these tools help them deliver customer value, and 62 percent say AI enhances their job satisfaction.", "loc": "PDF p. 5"}
+  ]
+}

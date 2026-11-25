@@ -1,0 +1,30 @@
+{
+  "id": "G090",
+  "kind": "grey",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Both describe the authors' own commit mining, survey and 13 interviews at NAV IT."},
+    "gl_type": {"claude": "Article (arXiv pre-print of a research paper)", "nlm": "Article (empirical research paper)", "value": "Article", "note": "arXiv pre-print (arXiv:2509.20353v2), not peer reviewed."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Neither reports DORA in the source."},
+    "space_applied": {"claude": "No (reference only)", "nlm": "No (reference only)", "value": "No (reference only)", "note": "SPACE cited in the Discussion for its emphasis on satisfaction, flow and collaboration; not the measurement instrument."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "GitHub Copilot adoption is the object of study."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Neither mentions remote work or COVID-19."},
+    "data_window": {"claude": "Commits over 105 weeks (two years, no dates); interviews November–December 2023; survey March–April 2024", "nlm": "Two-year period (105 weeks), no dates", "value": null, "note": "Both give only a two-year (105-week) commit window without dates; interview and survey dates come from Claude only."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Productivity is only perceived (survey item); task-speed figures are cited from other studies."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Structural code quality metrics (function complexity, average module size)."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Collaboration only via the SPACE remark in the Discussion."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin basis: interview findings on enjoyment/fun and reduced frustration; recommendation framed as investment in developer satisfaction and retention."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Weekly commits, lines added/deleted, net lines changed (six commit-based activity metrics)."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Flow and cognitive load discussed, but not the DevEx framework."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Agile organization is context only; no process metrics."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Perceived productivity change on a 5-point scale (-2 to +2); interviews."}
+  },
+  "evidence": [
+    {"field": "gl_type", "quote": "arXiv:2509.20353v2 [cs.SE] 28 Jan 2026", "loc": "PDF p. 1"},
+    {"field": "ai_discussed", "quote": "This study investigates the real-world impact of the generative AI (GenAI) tool GitHub Copilot on developer activity and perceived productivity.", "loc": "PDF p. 1"},
+    {"field": "cat_activity", "quote": "We analyzed 26,317 unique non-merge commits from 703 of NAV IT's GitHub repositories over a two-year period, focusing on commit-based activity metrics from 25 Copilot users and 14 non-users.", "loc": "PDF p. 1"},
+    {"field": "cat_survey", "quote": "Your own productivity (from \"Major decrease\" (-2) to \"Major increase\" (+2)), which we have used in this case study.", "loc": "PDF p. 4"},
+    {"field": "cat_quality", "quote": "The structural metrics (e.g., function complexity, average module size) remained virtually unchanged and showed no significant differences between users and non-users.", "loc": "PDF p. 16"},
+    {"field": "cat_satisfaction", "quote": "the interviewees stated that using the tool sometimes made the work more enjoyable, even fun, which may have also contributed to developers feeling more productive.", "loc": "PDF p. 21"}
+  ]
+}

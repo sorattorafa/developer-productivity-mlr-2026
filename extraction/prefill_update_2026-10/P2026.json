@@ -1,0 +1,35 @@
+{
+  "id": "P2026",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Other (quantitative framework proposal with empirical validation; artifact mining)", "nlm": "Mixed methods", "value": null, "note": "Claude: quantitative framework proposal evaluated by regression and benchmarking on mined artifacts; NotebookLM: Mixed methods (counts the LLM text scoring as the qualitative strand). No human-subject qualitative data in the paper."},
+    "research_method": {"claude": "Framework proposal (entropy-weighted indicator system + LLM semantic scoring + learnable fusion) evaluated by regression with industry fixed effects, benchmarking against baselines and heterogeneity analysis on mined development texts", "nlm": "Quantitative multi-dimensional indicator system with empirical regression/benchmarking plus LLM-based semantic scoring of textual artifacts", "value": "Framework proposal (LLM-EMM) with quantitative validation: entropy-weighted delivery/quality/collaboration indicator system fused with semantic scores from a fine-tuned LLaMA-3-8B (LoRA) over 380,412 textual artifacts; regressions of outcome variables on the fused scores, benchmarking against DORA, FPA, COCOMO II and expert scoring, sensitivity (fusion coefficient) and heterogeneity analyses by transformation stage and firm size", "note": "Industry fixed effects and robust s.e. reported only by Claude (not contradicted)."},
+    "context": {"claude": "Industry; 47 digitally transforming Chinese enterprises (fintech 18, smart manufacturing 15, e-commerce 14), 2021–2024; 380,412 artifacts (commit messages, code review comments, sprint retrospectives, incident reports)", "nlm": "Industry; 47 digitally transforming enterprises in China (fintech 18, smart manufacturing 15, e-commerce 14); 380,412 textual artifacts", "value": "industry; 47 digitally transforming enterprises in China (fintech 18, smart manufacturing 15, e-commerce 14); 380,412 textual development artifacts (commit messages, code review comments, sprint retrospectives, incident reports)", "note": ""},
+    "dora_applied": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "DORA used as structural scaffold of the delivery/quality sub-indicators ('DORA-derived sub-indicator groups') and also as a comparison baseline."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE not mentioned."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "LLM (fine-tuned LLaMA-3-8B) is the proposed measurement instrument; AI impact on developers is not evaluated."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Only a passing mention of 'geographically distributed team collaboration' in the introduction."},
+    "data_window": {"claude": "2021–2024", "nlm": "no basis", "value": null, "note": "Claude: 2021–2024 (confirmed in text, Section 4); NotebookLM gives no period."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Composite organizational efficiency index; FPA and COCOMO II effort as baselines."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Quality dimension (defect escape rate, defect density), post-release defect rate per KLOC."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Collaboration dimension of the indicator system; code review comments scored semantically."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "Only Customer Satisfaction Index (normalized NPS), i.e. customer satisfaction, not developer satisfaction."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Commit messages are scored for semantic content, not counted; NotebookLM's 'Activity' label on velocity stability does not fit the definition."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Delivery dimension (deployment frequency) and release cycle compression outcome."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_agile": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Team velocity stability (coefficient of variation of sprint velocity); sprint retrospectives among scored artifacts."},
+    "cat_survey": {"claude": "No", "nlm": "No", "value": "No", "note": "No developer perceptual instrument; NPS is a customer measure and expert scoring is only a weighting baseline."}
+  },
+  "evidence": [
+    {"field": "research_method", "quote": "We conduct comprehensive empirical analysis on 47 digitally transforming enterprises across three industries, demonstrating consistent superiority over DORA, FPA, COCOMO, and expert scoring", "loc": "PDF p. 2 (contributions)"},
+    {"field": "research_method", "quote": "we regress four organizational development outcome variables on the fused dimensional scores", "loc": "PDF p. 4"},
+    {"field": "context", "quote": "The dataset comprises 47 digitally transforming enterprises in China (2021-2024) spanning fintech, smart manufacturing, and e-commerce sectors. A total of 380,412 unstructured textual artifacts were collected.", "loc": "PDF p. 4"},
+    {"field": "dora_applied", "quote": "Inspired by the DORA framework and process-oriented quality models , we construct a hierarchical indicator system F that decomposes organizational efficiency into measurable atomic units.", "loc": "PDF p. 3 (3.1)"},
+    {"field": "dora_applied", "quote": "directly corresponding to the three DORA-derived sub-indicator groups in Eq. (2).", "loc": "PDF p. 4"},
+    {"field": "ai_discussed, research_method", "quote": "In our implementation, L is instantiated as a fine-tuned LLaMA-3-8B (8 billion parameters, context window 8,192 tokens).", "loc": "PDF p. 3 (3.2)"},
+    {"field": "cat_delivery, cat_quality, cat_collaboration", "quote": "Let F = {D, Q, C} denote the three primary dimensions of our efficiency indicator space, where D represents the delivery dimension, Q the quality dimension, and C the collaboration dimension.", "loc": "PDF p. 3 (3.1)"},
+    {"field": "cat_productivity", "quote": "fusing structured and unstructured evidence into a unified composite efficiency index", "loc": "PDF p. 1"},
+    {"field": "cat_delivery, cat_quality, cat_agile", "quote": "Release Cycle Compression (Δτ, percentage reduction in average release cycle), Post-Release Defect Rate (ρ, defects per KLOC within 30 days), Team Velocity Stability (ζ , coefficient of variation of sprint velocity), and Customer Satisfaction Index (γ, normalized NPS).", "loc": "PDF p. 4"}
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "P2078",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Survey (Likert, multiple-choice and open questions; mixed analysis)", "nlm": "Survey (quantitative statistical and qualitative thematic analysis)", "value": "Survey", "note": ""},
+    "research_method": {"claude": "Online questionnaire (49 questions: Likert, multiple-choice, open) following Kitchenham and Pfleeger; pilot with 1 participant; descriptive statistics in Python and thematic analysis (Cruzes and Dybå) in Atlas.ti, 68 codes / 412 coded quotations; 20 valid of 22 responses", "nlm": "Survey with quantitative statistical and qualitative thematic analysis; Google Forms; 20 valid of 22 responses (1 pilot, 1 corrupted excluded); second-researcher review of coding", "value": "Online questionnaire survey (Google Forms; 49 Likert, multiple-choice and open-ended questions; Kitchenham and Pfleeger stages; pilot with one participant); 22 responses collected, 20 valid; descriptive statistics (Python) for closed questions and thematic analysis (Atlas.ti; 68 codes, 412 coded quotations) for 20 open questions, reviewed by a second researcher", "note": "Question count and coding figures reported only by Claude (not contradicted)."},
+    "context": {"claude": "Industry, Brazil; software project leaders evaluating teams that use Gen-AI; startups 20%, medium 30%, large 35%, public institutions 15%; 20 respondents (Project Leaders 40%, Technical Leaders 25%, ...)", "nlm": "Industry and public institutions in Brazil (large 35%, medium 30%, startups 20%, public 15%); 20 project leaders", "value": "industry; Brazilian software leaders (project, technical, QA leaders, coordinators, managers) who evaluate developers in teams using Gen-AI, from startups (20%), medium-sized (30%) and large companies (35%) and public institutions (15%); 20 valid respondents", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE only referenced in background (Section 2.2)."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Gen-AI-assisted development is the object of study (RQ1)."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work arrangement reported only as sample demographics (hybrid 45%, fully remote 40%, on-site 15%); not analysed."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either. Full text: questionnaire distributed between January and February 2026 (p. 3)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Quantity of delivered tasks (66.7% of leaders) among adopted evaluation metrics; NotebookLM labels it Activity."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Technical quality (95.2%), client-perceived quality (76.2%); perceived impact on code quality and rework."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Collaborative behavior (66.7%); perceived effects on communication, mentoring, knowledge sharing."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Likert items on motivation/proactivity and emotional stability (cognitive aspects, Figure 2)."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Framing only: LOC, commits and pull requests are critiqued as less reliable proxies (introduction, background, conclusion); not measured."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Delivery speed (71.4%), delivery consistency, Gen-AI influence on team deliveries."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "DevEx framework not used; Claude's 'DevEx' label on cognitive items is generic."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "No agile/process metric (NotebookLM's 'sprint tracking' is its own guess at collection)."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Likert, multiple-choice and open-ended perception questionnaire."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, cat_survey", "quote": "The instrument was implemented using Google Forms and contained 49 questions distributed across thematic sections, as summarized in Table 1. The questionnaire combined Likert-scale, multiplechoice, and open-ended questions", "loc": "PDF p. 3 (3 Research Method, Questionnaire Design)"},
+    {"field": "research_method", "quote": "The study design followed the main stages of questionnairebased research discussed by Kitchenham and Pfleeger [8]", "loc": "PDF p. 2"},
+    {"field": "research_method, context", "quote": "A total of 22 responses were collected. Two responses were excluded from the analysis, one corresponding to the pilot study and another due to corrupted data. The final dataset consisted of 20 valid responses.", "loc": "PDF p. 3 (Data Collection)"},
+    {"field": "research_method", "quote": "For closed-ended questions, statistical analysis was performed using Python to identify distributions and general trends in participants' responses. For open-ended questions, a thematic analysis [3] was conducted using Atlas.ti.", "loc": "PDF p. 3 (Data Analysis)"},
+    {"field": "context", "quote": "Participants occupied different leadership positions, including Project Leaders (40%), Technical Leaders (25%), QA Leaders (10%), Technical Coordinators (10%), Project Managers (10%), and Engineering Managers (5%).", "loc": "PDF p. 3 (4.1)"},
+    {"field": "context", "quote": "Participants also reported working in startups (20%), mediumsized companies (30%), large enterprises (35%), and public institutions (15%).", "loc": "PDF p. 3 (4.1)"},
+    {"field": "ai_discussed", "quote": "How is the adoption of Gen-AI tools modifying the notion of productivity according to software project leaders' perceptions?", "loc": "PDF p. 1 (Introduction, RQ)"},
+    {"field": "cat_quality, cat_delivery, cat_productivity, cat_collaboration", "quote": "The most frequently adopted metrics include technical quality (95.2%), clientperceived quality (76.2%), delivery speed (71.4%), quantity of delivered tasks (66.7%), and collaborative behavior (66.7%).", "loc": "PDF p. 5"},
+    {"field": "cat_quality, cat_delivery", "quote": "Impact on delivery speed, code quality, rework, documentation, learning, and effort", "loc": "PDF p. 3 (Table 1)"},
+    {"field": "cat_collaboration", "quote": "Effects on communication, mentoring, collaboration, and knowledge sharing", "loc": "PDF p. 3 (Table 1)"},
+    {"field": "cat_satisfaction", "quote": "Effects on focus, autonomy, confidence, learning ability, and motivation", "loc": "PDF p. 3 (Table 1)"},
+    {"field": "cat_satisfaction", "quote": "In contrast, focus, learning ability, and emotional stability presented greater variability, indicating that cognitive impacts may differ depending on individual experience levels and team contexts.", "loc": "PDF p. 4"},
+    {"field": "cat_activity", "quote": "Historically, productivity has been inferred from observable artifacts such as lines of code, commits, pull requests, and delivery speed [6].", "loc": "PDF p. 2"},
+    {"field": "cat_activity", "quote": "From the perspective of those responsible for evaluating developer performance, productivity extends beyond observable outputs such as code volume, commits, or delivery speed.", "loc": "PDF p. 6 (6 Conclusion and Future Work)"}
+  ]
+}

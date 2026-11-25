@@ -1,0 +1,28 @@
+{
+  "id": "G106",
+  "kind": "grey",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Both: vendor CEO's own analysis and guidance (three delivery modes, expectations for metrics), drawing on customer experience; Gartner report only as hook."},
+    "gl_type": {"claude": "Blog (vendor corporate blog post)", "nlm": "Blog (blog post)", "value": "Blog", "note": ""},
+    "dora_applied": {"claude": "No (reference only)", "nlm": "No (reference only)", "value": "No (reference only)", "note": "DORA named as a basis of the Swarmia platform and 'a starting point, not a destination'; no measurement or how-to guidance."},
+    "space_applied": {"claude": "No (reference only)", "nlm": "No (reference only)", "value": "No (reference only)", "note": "Same single mention as DORA."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "AI tools and agents changing delivery and what metrics should capture."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Neither mentions remote work or COVID-19."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either (opinion post, no dataset)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Value throughput (stories and epics reaching customers) proposed as the key AI-impact measure; widening productivity spread between engineers."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "Maintenance load and CI costs discussed as cost/maintenance concerns, not as quality metrics."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "Developer experience surveys only named once as a basis of the platform."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Lines of code and PR count mentioned only as insufficient."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin basis: end-to-end flow 'how fast value moves through the system' (customer wait time in bug-report example); NotebookLM also lists DORA delivery metrics, which the text does not itemize."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Sprint velocity only mentioned as a breaking old pattern; roadmap/campfire/stream are delivery modes, not metrics."},
+    "cat_survey": {"claude": "No", "nlm": "No", "value": "No", "note": "Developer experience surveys only named once, not used or discussed."}
+  },
+  "evidence": [
+    {"field": "gl_type", "quote": "New modes of delivering software, a new Gartner® Magic Quadrant™, and a lot of open questions Otto Hilska, Founder & CEO · May 12, 2026", "loc": "text source (header; URL under swarmia.com/blog)"},
+    {"field": "ai_discussed", "quote": "AI tools are making it possible for individual engineers to move much faster — but at the organizational level, the gains are still surprisingly modest for most.", "loc": "text source (Optimizing the whole, not just the code)"},
+    {"field": "cat_productivity", "quote": "Value throughput should be going up — a lot. And I don’t just mean lines of code or PR count, but rather, something closer to how many stories and epics are moving through the system and reaching customers.", "loc": "text source (The old metrics are a starting point, not a destination)"},
+    {"field": "cat_delivery", "quote": "Most companies are still measuring how fast people type, when they should be measuring how fast value moves through the system.", "loc": "text source (Optimizing the whole, not just the code)"}
+  ]
+}

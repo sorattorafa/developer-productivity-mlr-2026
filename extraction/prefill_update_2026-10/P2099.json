@@ -1,0 +1,37 @@
+{
+  "id": "P2099",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Practitioner-researcher column on Google's own measurement approach; not a synthesis of other studies."},
+    "study_type": {"claude": "Experience report (experience report / position paper)", "nlm": "Experience report (experience report / mixed methods)", "value": "Experience report", "note": "Claude adds 'position paper'; NotebookLM's 'mixed methods' describes Google's measurement practice (logs, diary studies, surveys), not the article's own design."},
+    "research_method": {"claude": "Experience report / position column (version of a September 2024 keynote) on how Google's Engineering Productivity Research team measures productivity; no own empirical study", "nlm": "Experience report describing Google's logs-based metrics, diary studies and longitudinal quarterly surveys; invited column, no empirical tables or statistical testing", "value": "Experience report / invited IEEE Software column (version of a September 2024 keynote) describing Google's Engineering Productivity Research measurement approach: speed-ease-quality model, logs-based metrics validated against diary studies, longitudinal quarterly engineering survey; no new empirical data or analysis reported", "note": ""},
+    "context": {"claude": "Industry; Google (mostly in-house developer tools); sample not reported (logs for approximately every engineer, quarterly survey, no numbers); also discusses small and medium organizations", "nlm": "Industry; Google; software engineers at Google (logs for approximately every engineer plus quarterly survey respondents)", "value": "industry; Google (Engineering Productivity Research team, mostly in-house developer tools); no sample size reported (logs cover approximately every engineer, plus quarterly survey)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "DORA not mentioned."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE only referenced: Google's approach is 'similar to using frameworks like SPACE'."},
+    "ai_discussed": {"claude": "No", "nlm": "No (marks Yes, but its only basis is one sentence on adjusting the survey for AI)", "value": "No", "note": "Single passing mention that the survey is being adjusted 'given how AI is changing developer experience and productivity'."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Both report work mode not specified; COVID-19 appears only as an example of always-on logs and survey agility (two bullet points)."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either (column, no analysed dataset)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Speed outcome of the speed-ease-quality model (code delivered over time, iteration speed, self-reported velocity)."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Quality outcome; test flakiness, technical debt (survey)."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Code review appears only as a tradeoff example ('get rid of code review'), not as a metric."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Overall role satisfaction and satisfaction with own velocity measured by survey."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Logs-based time usage and activity metrics, active coding time; LOC and changes submitted discussed critically."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin basis: 'code delivered to production over time' as a speed measure and build latency, both labelled Delivery by the two extractors."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Flow (and NotebookLM's flow/focus/friction) is labelled DevEx by both, but cites Google's own flow work, not the Noda/Storey/Forsgren DevEx framework."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Longitudinal quarterly engineering satisfaction survey, self-reported productivity, diary studies."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "IN SEPTEMBER 2024, we gave a keynote address at the Developer Productivity Engineering Summit, in San Francisco, CA, USA. This article is a version of that talk.", "loc": "PDF p. 1"},
+    {"field": "context", "quote": "At Google, most of our developer tools have been developed in-house, and most developers use the same set of tools.", "loc": "PDF p. 3 (Use Logs and Survey Data Together)"},
+    {"field": "research_method", "quote": "We validate our logs-based metrics against self-reported data collected in diary studies with developers", "loc": "PDF p. 3 (Use Logs and Survey Data Together)"},
+    {"field": "cat_productivity, cat_quality", "quote": "We typically think of productivity as a balance among speed, ease, and quality.", "loc": "PDF p. 3 (Measure Speed, Ease, and Quality)"},
+    {"field": "cat_productivity, cat_delivery", "quote": "in addition to measuring speed in terms of how much code is delivered to production over time, or how quickly developers are able to execute a single iteration of coding", "loc": "PDF p. 3"},
+    {"field": "cat_quality, cat_activity, cat_delivery", "quote": "Specifically, parsimony is an important consideration when one is designing a specific metric: “build latency,” “active coding time,” or “test flakiness.”", "loc": "PDF p. 2 (Set Parsimony Aside)"},
+    {"field": "cat_activity", "quote": "We use these logs to create metrics that measure developers’ time usage and activity.", "loc": "PDF p. 3"},
+    {"field": "cat_activity", "quote": "when measuring engineering speed, some metrics (lines of code, changes submitted) emphasize the production of code specifically.", "loc": "PDF p. 3"},
+    {"field": "cat_survey, cat_satisfaction", "quote": "Our longitudinal quarterly engineering satisfaction survey asks engineers about a wide variety of topics related to developer productivity and satisfaction.", "loc": "PDF p. 4"},
+    {"field": "cat_satisfaction", "quote": "For example, we ask respondents about their overall satisfaction in their role", "loc": "PDF p. 4"},
+    {"field": "cat_quality, cat_survey", "quote": "We ask about topics one might eventually measure objectively (“flow,” technical debt) in service of developing objective measures and getting some signal in the interim.", "loc": "PDF p. 4"}
+  ]
+}

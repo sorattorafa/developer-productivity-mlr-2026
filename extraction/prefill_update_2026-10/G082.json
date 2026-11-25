@@ -1,0 +1,30 @@
+{
+  "id": "G082",
+  "kind": "grey",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Both describe the author's own pilot RCT with new data."},
+    "gl_type": {"claude": "Thesis (Master's thesis, MSc in Economics, Aalto University)", "nlm": "Thesis (Master's thesis, academic grey literature)", "value": "Thesis", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Claude states DORA not reported; NotebookLM does not mention it."},
+    "space_applied": {"claude": "Yes (empirical)", "nlm": "Yes (empirical)", "value": "Yes (empirical)", "note": "Both: SPACE 'activity' mapped to task time and 'performance' to code quality (two of five dimensions)."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "RCT on GenAI tools (GitHub Copilot, ChatGPT, Claude)."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Neither mentions remote work or COVID-19."},
+    "data_window": {"claude": "July–September 2024", "nlm": "July–September 2024", "value": "July–September 2024", "note": ""},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Task completion time is a primary outcome."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Expert-rated code quality score (0-20) is a primary outcome."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Code review only appears as a practitioner recommendation."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "PRs, commits and LOC appear only as metrics cited or criticized from the literature."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Both: task time is self-reported and perceived task difficulty was collected on a 5-point scale."}
+  },
+  "evidence": [
+    {"field": "gl_type", "quote": "Petteri Häkkinen Master's thesis 2025", "loc": "PDF p. 1"},
+    {"field": "ai_discussed", "quote": "This thesis examines the causal impact of generative AI tools on software developer productivity through a pilot randomized field experiment.", "loc": "PDF p. 3"},
+    {"field": "data_window", "quote": "The experiment was conducted between July and September 2024 at a Finnish technology consulting company that specializes in software development and digital transformation services.", "loc": "PDF p. 24"},
+    {"field": "space_applied", "quote": "In my study, I map \"activity\" onto development speed and \"performance\" onto code quality, recognizing that commit counts or cycle times alone can mislead if they sacrifice maintainability or introduce defects.", "loc": "PDF p. 21"},
+    {"field": "cat_productivity, cat_survey", "quote": "Task completion time served as the efficiency measure and was recorded through participant self-reporting at the completion of each task.", "loc": "PDF p. 25"},
+    {"field": "cat_quality", "quote": "Code quality assessment served as the second primary outcome and employed expert evaluation by a senior developer with over 20 years of professional software development experience.", "loc": "PDF p. 25"}
+  ]
+}

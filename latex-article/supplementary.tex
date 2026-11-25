@@ -1,0 +1,84 @@
+\documentclass[preprint,number]{elsarticle}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\biboptions{numbers,sort&compress}
+\setlength{\emergencystretch}{2em}
+
+% Same identifiers as in the article: gray sources are GL1..GL75
+\newcounter{study}
+\renewcommand{\thestudy}{GL\arabic{study}}
+\newcommand{\refG}[1]{\ref{s:#1}}
+\renewcommand{\thetable}{S\arabic{table}}
+
+\journal{Information and Software Technology}
+
+\begin{document}
+
+\begin{frontmatter}
+\title{Supplementary Material for ``Past, Present, and Future of Developer Productivity Measurement: A Multivocal Literature Review''}
+\author{Rafael Rampin Soratto}
+\author{Getúlio Coimbra}
+\author{Jorge Melegati}
+\author{Igor Steinmacher}
+\author{Igor Wiese}
+\end{frontmatter}
+
+This document lists the sources included in the review and the concrete metrics extracted from them. Table~\ref{tab:academic_sources} lists the 153 included academic sources, Table~\ref{tab:gl_sources} lists the 75 included gray literature sources with the GL identifiers used in the article, and Table~\ref{tab:metric_inventory_full} lists the 62 canonical metrics by category with the sources that report each one. In this document, academic sources are cited with the numbered references at the end, and gray sources with their GL identifiers. The full extraction data are in the replication package.
+
+\begingroup
+\scriptsize
+\setlength{\LTpre}{4pt}
+\setlength{\LTpost}{4pt}
+\setlength{\tabcolsep}{3pt}
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{1.1cm} >{\raggedright\arraybackslash}p{3.4cm} >{\centering\arraybackslash}p{0.7cm} >{\raggedright\arraybackslash}p{5.6cm}}
+\caption{Included academic sources ($n$\,=\,153).} \label{tab:academic_sources} \\
+\toprule
+\textbf{Ref.} & \textbf{Author(s)} & \textbf{Year} & \textbf{Title} \\
+\midrule
+\endfirsthead
+\multicolumn{4}{l}{\textit{Table~\ref{tab:academic_sources} continued from previous page}} \\
+\toprule
+\textbf{Ref.} & \textbf{Author(s)} & \textbf{Year} & \textbf{Title} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{4}{r}{\textit{Continued on next page}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+\input{appendix_academic.tex}
+\end{longtable}
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{1.1cm} >{\raggedright\arraybackslash}p{3.4cm} >{\centering\arraybackslash}p{0.7cm} >{\raggedright\arraybackslash}p{5.6cm}}
+\caption{Included gray literature sources ($n$\,=\,75).} \label{tab:gl_sources} \\
+\toprule
+\textbf{ID} & \textbf{Author(s)} & \textbf{Year} & \textbf{Title} \\
+\midrule
+\endfirsthead
+\multicolumn{4}{l}{\textit{Table~\ref{tab:gl_sources} continued from previous page}} \\
+\toprule
+\textbf{ID} & \textbf{Author(s)} & \textbf{Year} & \textbf{Title} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{4}{r}{\textit{Continued on next page}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+\input{appendix_gl.tex}
+\end{longtable}
+
+\input{appendix_metrics.tex}
+\endgroup
+
+\bibliographystyle{elsarticle-num}
+\bibliography{references}
+
+\end{document}

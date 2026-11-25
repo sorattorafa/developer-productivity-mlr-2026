@@ -1,0 +1,34 @@
+{
+  "id": "P2011",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Framework proposal demonstrated with own survey data."},
+    "study_type": {"claude": "Case study (structured survey + CFA + DirectLiNGAM + k-means)", "nlm": "Case study (quantitative survey + causal inference + clustering)", "value": "Case study", "note": "Two-page short paper; the case study is a single-organization survey analysed with causal discovery and clustering."},
+    "research_method": {"claude": "Framework demonstrated in a case study: structured survey of 74 five-point Likert items in 6 categories (from review of 31 studies, refined with practitioners); CFA; DirectLiNGAM causal discovery with total effects; k-means clustering (elbow method, k = 2–9)", "nlm": "Case study: 74-item 5-point Likert survey in 6 categories (from 31 prior studies, refined with practitioners), CFA; DirectLiNGAM causal inference and total effects; k-means clustering with elbow method (k = 2–9)", "value": "Organization-adaptive framework demonstrated in a single-organization case study: survey of 74 five-point Likert items in six categories (distilled from 31 prior studies, refined with practitioners), CFA for construct validity, DirectLiNGAM causal discovery with total effects, k-means clustering (elbow method, k = 2–9, five clusters); 42 developers; cross-sectional", "note": ""},
+    "context": {"claude": "Industry: Panasonic Automotive Systems Co., Ltd. (large Japanese automotive software organization); 42 developers", "nlm": "Industry: Panasonic Automotive Systems Co., Ltd. (PAS), Japan; 42 software developers", "value": "industry; Panasonic Automotive Systems Co., Ltd., a large Japanese automotive software organization; 42 developers surveyed", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: both note ML-type analysis methods (DirectLiNGAM, k-means) but explicitly no AI development tools; AI is not a topic of the paper."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Not reported."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either; no collection period in the full text."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Both label the self-reported productivity factor (job_productivity) as Productivity, but it is a Likert item, i.e. perceived productivity (cat_survey under the definitions)."},
+    "cat_quality": {"claude": "no basis", "nlm": "Yes", "value": null, "note": "NotebookLM lists Likert items code_maintainability, code_comprehensibility, code_identifiability (Quality); Claude lists no quality item. These variables are not in the extracted text (possibly in Fig. 2)."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Team category drivers: feedback quality and intra-team support (Claude labels Team/Collaboration, NotebookLM Team)."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Developer satisfaction is the outcome variable."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "No repository data; linking to quantitative development metrics is future work."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "DevEx (Forsgren et al. 'DevEx in action') only cited; 'reduced cognitive load' appears only as an interpretive conclusion."},
+    "cat_agile": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: Process category items (explicit test rules, explicit dev-process rules) measured by Likert survey; no sprint or ceremony metrics."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "74-item five-point Likert survey."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, cat_satisfaction", "quote": "This paper presents an organization-adaptive framework combining a structured survey, causal inference, and clustering to uncover actionable drivers of developer satisfaction.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "research_method, cat_survey", "quote": "The final instrument comprised 74 five-point Likert-scale items spanning these six categories. Confirmatory factor analysis (CFA) was applied to the collected responses to assess construct validity prior to causal modeling.", "loc": "PDF p. 1 (II. Framework)"},
+    {"field": "research_method", "quote": "Second, we estimate the directed relationships among these factors using the direct linear non-Gaussian acyclic model (DirectLiNGAM).", "loc": "PDF p. 1 (II. Framework)"},
+    {"field": "research_method", "quote": "The number of clusters was determined using the elbow method on within-cluster sum of squared errors across k = 2–9, yielding five clusters.", "loc": "PDF p. 2 (III. Case Study)"},
+    {"field": "study_type, context", "quote": "As a case study, we applied the framework to Panasonic Automotive Systems Co., Ltd. (PAS), a large Japanese automotive software organization. The survey targeted 42 developers", "loc": "PDF p. 2 (III. Case Study)"},
+    {"field": "cat_satisfaction", "quote": "Across all categories, productivity exerted the strongest direct effect on satisfaction, whereas creativity exerted a strong indirect effect through productivity.", "loc": "PDF p. 2 (III. Case Study)"},
+    {"field": "cat_agile, cat_survey", "quote": "The first stage measures developer satisfaction through a survey organized around six categories: Product, Process, Environment, Team, Individual, and Project.", "loc": "PDF p. 1 (II. Framework)"},
+    {"field": "cat_collaboration, cat_agile", "quote": "explicit test rules explicit dev-process rules documentation searchability tool usability feedback quality intra-team support", "loc": "PDF p. 2 (Table I, Driver column)"}
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "P2042",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Qualitative-Interviews (22 semi-structured interviews, STGT)", "nlm": "Qualitative-Interviews (STGT on semi-structured interviews)", "value": "Qualitative-Interviews", "note": "Short paper; a preliminary framework derived from the interviews."},
+    "research_method": {"claude": "22 semi-structured interviews in three rounds analysed with socio-technical grounded theory (open coding, constant comparison, memoing); pre-interview questionnaire; framework derived from analysis and author brainstorming", "nlm": "Qualitative socio-technical grounded theory on 22 semi-structured interviews in 3 rounds; pre-interview questionnaires; preliminary two-dimensional framework", "value": "Qualitative study: 22 semi-structured interviews in three rounds, analysed with socio-technical grounded theory (open coding, constant comparison, memoing), plus a pre-interview questionnaire (demographics, attitude towards AI); yields a preliminary two-dimensional Reliance-Control Framework", "note": "Coding procedures (open coding, constant comparison, memoing) reported only by Claude (not contradicted)."},
+    "context": {"claude": "Industry; software practitioners using LLMs (Claude, ChatGPT) for coding/debugging, from Asia, Europe, North America, South America, Oceania; 22 interviewees", "nlm": "Industry; software practitioners across Asia, Europe, North America, South America and Oceania using LLM tools; 22 practitioners", "value": "industry; software practitioners using LLM tools for development tasks, from Asia, Europe, North America, South America and Oceania; 22 interviewees", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "DORA 2025 AI report only cited in the introduction."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE only cited via Weber et al. in the introduction."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Developers' reliance on and control over LLM tools is the topic."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not reported by either."},
+    "data_window": {"claude": "October 2024 – September 2025", "nlm": "October 2024 – September 2025", "value": "October 2024–September 2025 (three interview rounds)", "note": ""},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "No productivity metric used; NotebookLM lists productivity gains only as cited from Weber et al."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "Only a cited industry statistic on LLM suggestion errors (Qodo AI)."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "'Reliance on colleagues' is a framework level and reduced team communication is cited from prior work; no collaboration metric."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Click rate only cited from Collins et al. (NotebookLM)."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Both use 'DevEx' as a loose label (control/reliance; cited cognitive load); DevEx framework not used."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "TDD, pair programming and retrospectives appear only as examples or implications."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Interviews about practitioners' experiences plus a pre-interview attitude-towards-AI questionnaire (results not reported). NotebookLM notes the paper measures no developer metrics directly."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, context, ai_discussed", "quote": "We conducted twenty-two semi-structured interviews with software practitioners, in three rounds, focused on collecting their experiences of using LLM tools for software development.", "loc": "PDF p. 2"},
+    {"field": "research_method", "quote": "We employed socio-technical grounded theory (STGT) [8] for data analysis.", "loc": "PDF p. 2"},
+    {"field": "research_method", "quote": "The first author performed open coding, constant comparison, and memoing.", "loc": "PDF p. 3"},
+    {"field": "data_window, context", "quote": "The data analysis and collection took place over three rounds between October (2024) and September (2025), involving interview participants from Asian, Europe, North America, South America, and Oceania.", "loc": "PDF p. 2"},
+    {"field": "cat_survey", "quote": "Participants filled out a pre-interview questionnaire with their demographics and", "loc": "PDF p. 2 (continues 'attitudes towards AI [18]' on p. 3)"},
+    {"field": "cat_survey, ai_discussed", "quote": "During the interview, we discussed participants' experiences using LLMs. Participants used LLMs (e.g., Claude, ChatGPT) for several development tasks, such as coding and debugging.", "loc": "PDF p. 3"}
+  ]
+}

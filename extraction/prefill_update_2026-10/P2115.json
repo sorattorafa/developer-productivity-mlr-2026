@@ -1,0 +1,38 @@
+{
+  "id": "P2115",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Secondary", "nlm": "Secondary", "value": "Secondary", "note": "Systematic literature review."},
+    "study_type": {"claude": "Review-Secondary (SLR)", "nlm": "Review-Secondary (SLR)", "value": "Review-Secondary", "note": ""},
+    "research_method": {"claude": "SLR following Biolchini et al. and Kitchenham & Charters with quality assessment (QA1–QA4, 75% threshold); 5 databases; 1,223 results, first 100 per database = 484, 434 after duplicates, 85 selected, 35 above threshold", "nlm": "SLR; 35 primary studies out of 1,223 raw results, 434 unique papers screened, 85 candidates", "value": "Systematic literature review (Kitchenham & Charters; Biolchini et al. process) over 5 databases (IEEE Xplore, SpringerLink, ScienceDirect, ACM DL, Scopus); 1,223 results, first 100 per database by relevance (484), 434 after duplicate removal, 85 selected, 35 retained above a 75% quality threshold; factors classified into four dimensions (Team, Individual, Organizational, Process) adapted from Chow & Cao", "note": "First-100-per-database rule and QA details reported only by Claude (not contradicted)."},
+    "context": {"claude": "Academic review on agile development teams; primary studies cover industry, distributed/global teams and OSS (GitHub)", "nlm": "Academic SLR on agile software development teams; studies cover collocated, remote, distributed and global virtual teams", "value": "academic (secondary/review); 35 primary studies on agile software development teams (industry, collocated and distributed/global teams, OSS on GitHub)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "remote_covid": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Geographic/temporal distance among the most influential factors; support for remote work; COVID-19 work intensification as motivation."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Productivity of agile teams is the synthesized outcome; indicators cited: tasks delivered on time, workload per developer ratio, team velocity."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Code quality/architecture, testability, rework and technical debt as factors and indicators."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Communication, interaction between members, psychological safety, teamwork quality and Kanban communication patterns are central findings."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "Motivation, morale and work environment appear only as influencing factors; neither extractor lists a satisfaction/well-being measure."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM tags tasks on time, workload ratio and tenure/turnover as Activity, but none is a repository activity metric."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin basis: both tag 'tasks delivered on time' (manager perspective, one primary study) as Delivery; Claude also tags team velocity as Delivery (velocity belongs to productivity per the definitions). No deploy/lead-time metric."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM's Quality/DevEx tag on technical debt is generic; no DevEx framework."},
+    "cat_agile": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Review of agile teams; RQ2 on adapting agile practices; iteration planning, sprint goals, Kanban, Scrum/XP practices mapped to factors."},
+    "cat_survey": {"claude": "No", "nlm": "Yes", "value": null, "note": "Claude: no perceptual instrument synthesized. NotebookLM: perception surveys/questionnaires listed as collection method of several primary-study metrics (manager perceptions, TWQ, morale)."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, context", "quote": "this paper presents the state of the art of socio-cultural factors that influence the way agile development teams work, analyzing their impact on their productivity through a systematic literature review (SLR) process [10].", "loc": "PDF p. 2 (Introduction)"},
+    {"field": "research_method", "quote": "1223 results were obtained by executing these queries. Only the first 100 results returned by each search engine were considered (for those that exceeded it), ordered by relevance, resulting in 484 articles", "loc": "PDF p. 4 (A. Search and Primary Selection)"},
+    {"field": "research_method, context", "quote": "Of the 85 studies initially considered as primary, 35 (41,18% of the studies) were found to have a quality score above the established threshold.", "loc": "PDF p. 4 (B. Quality Assessment Results)"},
+    {"field": "remote_covid", "quote": "A factor profoundly related to communication is the distance between team members, either geographically [27], [31], [41] or temporally [31].", "loc": "PDF p. 6"},
+    {"field": "remote_covid", "quote": "in [51] the importance of assistance for remote work is highlighted, for example providing the necessary tools or infrastructure for communication. Not taking these elements into account has a negative influence on productivity.", "loc": "PDF p. 6"},
+    {"field": "cat_productivity, cat_delivery", "quote": "in [52] they analyze productivity indicators from the project manager's perspective, including tasks delivered on time and outputs that meet stakeholder expectations.", "loc": "PDF p. 9"},
+    {"field": "cat_productivity", "quote": "a model is proposed based on two factors related to team building, the workload per developer ratio and the focus on quality over productivity and its influence on performance", "loc": "PDF p. 9"},
+    {"field": "cat_quality", "quote": "including high-quality code and architecture, adequate amount of documentation, and high testability of the codebase", "loc": "PDF p. 8"},
+    {"field": "cat_quality", "quote": "Finally, under this dimension, the influence of technical debt on team morale was included [46].", "loc": "PDF p. 7"},
+    {"field": "cat_collaboration", "quote": "Communication refers to communication among team members [25], [34], [36] as well as the one they have with customers [24], whether the communication is face to face through daily meetings [36] or remotely [51].", "loc": "PDF p. 6"},
+    {"field": "cat_collaboration, cat_agile", "quote": "At [48] they study the effects of communication patterns linked to performance and quality in agile practices, specifically the centralized pattern and the small-world pattern in Kanban, finding that the former has a negative effect and the latter a positive one.", "loc": "PDF p. 9"},
+    {"field": "cat_agile", "quote": "the agile practices of planning each iteration and iterative development are perceived by developers as beneficial for productivity, while continuous integration and testing are not.", "loc": "PDF p. 8"}
+  ]
+}

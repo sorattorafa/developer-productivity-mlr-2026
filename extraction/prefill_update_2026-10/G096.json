@@ -1,0 +1,30 @@
+{
+  "id": "G096",
+  "kind": "grey",
+  "fields": {
+    "primary_secondary": {"claude": "Secondary", "nlm": "Secondary", "value": "Secondary", "note": "Multivocal literature review of 59 sources (40 scientific, 19 grey) on developer experience."},
+    "gl_type": {"claude": "Thesis (Master's thesis, Aalto University)", "nlm": "Thesis (Master's thesis)", "value": "Thesis", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Both state DORA is not mentioned (2020 thesis)."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Both state SPACE is not mentioned."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": "Neither mentions AI tools."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Neither mentions it; full text has only a passing remark on remote work and flow (PDF p. 56)."},
+    "data_window": {"claude": "Searches incl. Google in September and November 2019; coverage years not stated", "nlm": "no basis", "value": null, "note": "No review coverage period stated by either; only Claude gives search dates."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Only cited: Nebeling et al. productivity ratio, 'Time to Hello World' and '0 to 200' API approachability measures."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin basis: collaboration and shared understanding synthesized as factors that improve DX; no collaboration metric."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Generic developer experience (feelings and perceptions about work), well-being and happiness are the synthesized topic."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Commits only mentioned as an exclusion-related criterion (NotebookLM)."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "DX here is Fagerholm's concept, not the Noda/Storey/Forsgren DevEx framework (which postdates the thesis)."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Performance Alignment Work in Lean/Agile settings discussed, without process metrics."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin basis: synthesizes research methods of DX studies (surveys, interviews, diary studies) and survey-based happiness measures."}
+  },
+  "evidence": [
+    {"field": "gl_type", "quote": "Thesis submitted for examination for the degree of Master of Science in Technology.", "loc": "PDF p. 1"},
+    {"field": "primary_secondary", "quote": "performed as multivocal literature review where articles written by both academics and practitioners were analyzed.", "loc": "PDF p. 3"},
+    {"field": "cat_satisfaction", "quote": "The results from the review indicate that developer experience can be seen as a way to understand the feelings and perceptions of the developers in a software development context.", "loc": "PDF p. 3"},
+    {"field": "cat_satisfaction", "quote": "Well-being of developers was discussed in multiple articles. Mainly this was a discussion topic of the group of researchers studying the happiness and unhappiness of developers", "loc": "PDF p. 27"},
+    {"field": "cat_survey", "quote": "Mostly the results of the studies were based on literature review and some qualitative methods like interviews, surveys, and diary studies.", "loc": "PDF p. 30"},
+    {"field": "cat_collaboration", "quote": "Collaboration and the benefits that are achieved from working together improves DX. Getting quick feedback from teammates, having agreed policies and roles but being flexible and agile all improve the experience developers have", "loc": "PDF p. 37"}
+  ]
+}

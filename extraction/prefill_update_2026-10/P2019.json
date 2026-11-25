@@ -1,0 +1,39 @@
+{
+  "id": "P2019",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Journal extension of the authors' ICSE-SEIP 2026 paper; RQ3 results summarized from it."},
+    "study_type": {"claude": "Mixed methods (field study)", "nlm": "Mixed methods (field study)", "value": "Mixed methods", "note": "Multimodal field study with controlled (A/B) sessions and an uncontrolled everyday-work period."},
+    "research_method": {"claude": "Mixed-methods multimodal field study: controlled sessions with A/B design plus uncontrolled real-work period; Likert/open questionnaires, annotated screen recordings, workday questionnaire; descriptive statistics, Kendall's tau, (G)LMMs, Mann-Whitney U, Cohen's d, qualitative content analysis", "nlm": "Mixed-methods 4-day field study combining controlled sessions with uncontrolled natural work periods; linear mixed-effects models, Cohen's d, Kendall's tau, qualitative content analysis; ~66 h screen recordings, 445 logged tasks", "value": "4-day mixed-methods field study: two controlled sessions (Java tasks, A/B design with/without GitHub Copilot, NASA-TLX after each task) around three days of uncontrolled everyday work (workday questionnaires, 445 tasks); pre/post questionnaires, ~66 h annotated screen recordings; (generalized) linear mixed-effects models, Kendall's tau, Cohen's d, qualitative content analysis (Mayring & Fenzl)", "note": "Mann-Whitney U reported only by Claude; HumanEval-X task selection only by NotebookLM (both not contradicted). Physiological/keyboard data collected but not analysed."},
+    "context": {"claude": "Industry; SAP, two California sites; 22 professional developers fluent in Java; GitHub Copilot (GPT-4o) in controlled sessions, free GenAI choice in everyday work", "nlm": "Industry; SAP Labs, California, USA; 22 professional software developers fluent in Java", "value": "industry; SAP (two sites in California, USA); 22 professional developers fluent in Java (12 developers, 8 senior developers, 1 senior quality specialist, 1 principal architect); GitHub Copilot in controlled sessions, any GenAI tool in everyday work", "note": "Role breakdown reported only by Claude (not contradicted)."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Claude: not mentioned; NotebookLM: referenced in background only."},
+    "space_applied": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Limited scope: the Copilot evaluation questionnaire is based on SPACE and adapted to Copilot."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "GenAI (GitHub Copilot, other GenAI tools) is the object of study."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not specified by either."},
+    "data_window": {"claude": "no basis (4-day study, no dates)", "nlm": "no basis (4-day study, no dates)", "value": null, "note": "Not stated by either; only the 4-day duration is reported."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Task duration (efficiency) and task completion from screen recordings; perceived productivity also rated (survey)."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: both label 'accuracy' Quality, but it is defined as task completion (success/fail), i.e. productivity; AI output quality appears only as perceived satisfaction aspects and concerns about defects."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Likert items on seeking feedback from GenAI vs team members (team dynamics); collaboration-heavy task category."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Satisfaction with GenAI (72.73% satisfied), work fulfilment, work satisfaction items."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: counts of Copilot in-code suggestions and chat prompts per task (annotated from screen recordings); no repository activity metrics."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels task duration/completion 'Delivery', but these are task-level productivity measures."},
+    "cat_devex": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Noda et al.'s DevEx framework used explicitly: cognitive load and feedback loop dimensions examined (NotebookLM marks it REFERENCED but 'analyzed via' these dimensions)."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "NASA-TLX, Likert-scale pre/post and workday questionnaires (cognitive load, perceived productivity), open questions."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, context", "quote": "Over a period of four days, we observed 22 developers in how they use GenAI tools in controlled and uncontrolled settings.", "loc": "PDF p. 2 (1 Introduction)"},
+    {"field": "research_method", "quote": "Half of the participants did not use Copilot during the tasks of the first controlled session, whilst the other half did (Figure 1, A/B study design).", "loc": "PDF p. 7 (4.1 Procedure)"},
+    {"field": "research_method", "quote": "To predict task completion, duration, and perceived workload during the controlled sessions, (generalized) linear mixed-effects models were used.", "loc": "PDF p. 10"},
+    {"field": "research_method, cat_productivity, cat_survey", "quote": "The 445 working tasks documented by the participants in the workday questionnaire (Figure 1) were categorized into three general categories: development-heavy, collaboration-heavy and other activities.", "loc": "PDF p. 9 (4.4.2 Data categorization)"},
+    {"field": "context", "quote": "The participant cohort consisted of twenty-two SAP employees from two firm sites in California, USA.", "loc": "PDF p. 7 (4.2 Participants)"},
+    {"field": "space_applied", "quote": "the Copilot evaluation questionnaire (based on the SPACE framework [14] and adapted to evaluate specifically Copilot) was filled in after the baseline tasks.", "loc": "PDF p. 7"},
+    {"field": "cat_devex", "quote": "The developer experience (DevEx) framework highlights three main factors that impact DevEx: cognitive load, flow state, and feedback loop [33].", "loc": "PDF p. 3"},
+    {"field": "cat_devex", "quote": "we examine the cognitive load aspect together with the feedback loop in this paper", "loc": "PDF p. 3"},
+    {"field": "ai_discussed, cat_productivity", "quote": "the impact of Copilot on task efficiency (task duration), accuracy (task completion) and perceived workload during the controlled sessions of the study was analyzed in detail based on the screen recordings and the NASA-TLX scores.", "loc": "PDF p. 15 (5.3)"},
+    {"field": "cat_activity", "quote": "interaction characteristics with Copilot (with or without Copilot use, number of in-code suggestions and number of chat prompts).", "loc": "PDF p. 9 (4.4.1 Data labeling)"},
+    {"field": "cat_satisfaction", "quote": "most participants reported being either satisfied (n=11) or very satisfied (n=5) (72.73%) with none expressing dissatisfaction.", "loc": "PDF p. 11 (5.1.3)"},
+    {"field": "cat_collaboration", "quote": "According to the median (Md=4), participants agree that they turn more quickly to GenAI tools for feedback than to fellow team members.", "loc": "PDF p. 22 (5.5.4 Impact of GenAI on team dynamics)"},
+    {"field": "cat_survey", "quote": "the participant evaluated the perceived workload of the workedon task by rating six 21-point Likert-scaled questions from the NASA-Task Load Index (NASATLX) [19]", "loc": "PDF p. 7"}
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "P2017",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Case study (with mixed methods)", "nlm": "Mixed methods (case study)", "value": null, "note": "Same design, different primary label: Claude leads with Case study, NotebookLM with Mixed methods. The paper says 'we conducted a case study' and 'We employed a mixed-methods approach'."},
+    "research_method": {"claude": "Case study with mixed methods: semi-structured leadership interview (plus pilot), quantitative analysis of monthly project metrics pre/post initiative (1,074 projects; 20 randomly selected for detailed analysis), developer survey (17 responses)", "nlm": "Mixed methods case study: semi-structured leadership interview, quantitative analysis of 1,074 projects, 20 in-depth project case studies, developer survey (17 responses)", "value": "Single-organisation case study with mixed methods: semi-structured interview with the senior lead of the initiative; quantitative analysis of monthly DORA-based metrics and medal rankings for 1,074 projects (adopters vs non-adopters of three standardisations; 20 randomly selected projects analysed individually); developer survey with closed and open questions (17 responses)", "note": "Pilot interview reported only by Claude (not contradicted)."},
+    "context": {"claude": "Industry; business area of a large multinational financial organisation (five-figure headcount; author affiliated with Barclays); 1,074 projects, ~4,900 engineers, 20 projects, 17 survey respondents, 1 interviewee", "nlm": "Industry; large multinational financial organisation (Barclays Bank); 1,074 projects (~4,900 engineers), 20 project case studies, 17 survey responses, 1 leadership interview", "value": "industry; one business area of a large multinational financial organisation (first author affiliated with Barclays); 1,074 projects supported by ~4,900 engineers, 20 projects analysed in depth, 1 leadership interview, 17 developer survey respondents", "note": "The paper does not name the organisation; NotebookLM identifies it as Barclays from the author affiliation."},
+    "dora_applied": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "DORA metrics adopted as the organisation's KPIs (medal rankings) and analysed as outcome measures; MSLT is an organisation-specific lead-time variant."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE not mentioned by either."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not reported; only that operations are spread across many campuses."},
+    "data_window": {"claude": "July 2023–July 2024", "nlm": "a 12-month period (no dates)", "value": null, "note": "Claude: July 2023 to July 2024; NotebookLM gives only 'a 12-month period' (and the January 2024 launch). Full text: 'one-year period (July 2023 to July 2024)'."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "No output/throughput metric beyond delivery metrics; MSLT (story In Progress to Done) counted under delivery."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Change failure rate, MTTR, major incidents by release (self-reported), new-code test coverage (80% target), SRF."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Survey asked about changes in collaboration/communication; only 18% felt collaboration improved."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "No", "value": null, "note": "Claude: survey covered job satisfaction/engagement. NotebookLM: no satisfaction measure. Full text: survey explored 'the impact on personal job satisfaction or engagement'; no separate result reported for it."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Release frequency counted under delivery; no commit/PR metrics."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Mean Story Lead Time, Release Frequency, Successful Release Frequency, deployment frequency, lead time for changes."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_agile": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: adoption of a standardised JIRA workflow (and release tooling) tracked as a process metric and compared adopters vs non-adopters; no sprint/scrum metrics."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Developer survey (closed and open questions) and leadership interview."}
+  },
+  "evidence": [
+    {"field": "research_method, context", "quote": "We employed a mixed-methods approach, combining a semi-structured interview with leadership, quantitative analysis of 1074 projects undergoing the adoption, and a survey of 17 developers capturing both attitudinal and behavioural insights.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "research_method", "quote": "To investigate the impact of DevOps metrics adoption, we conducted a case study within a business area of a large financial organisation.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "research_method", "quote": "More detailed analysis was performed on twenty randomly selected applications to provide additional context to the broader dataset.", "loc": "PDF p. 6"},
+    {"field": "context", "quote": "through a case study initiative in a large (five figure headcount) multi-national financial organisation that was adopting DevOps within a large business area.", "loc": "PDF p. 3 (3 Research Method)"},
+    {"field": "context", "quote": "analysis was performed on metrics collected monthly over a one-year period (July 2023 to July 2024) from over one thousand projects within the organisation, which are supported by approximately 4900 engineers.", "loc": "PDF p. 4"},
+    {"field": "dora_applied, cat_delivery, cat_quality", "quote": "Key metrics were chosen based on widely recognised industry standards, specifically the DORA metrics: Deployment Frequency, Mean Lead Time for Changes, Mean Time to Recovery (MTTR), and Change Failure Rate (CFR).", "loc": "PDF p. 4"},
+    {"field": "dora_applied, cat_delivery", "quote": "Average ratings for Mean Story Lead Time (MSLT), Mean Time to Recover (MTTR), Release Frequency (RF), and Successful Release Frequency (SRF) showed consistent upward trends starting around October 2023, correlating with the January 2024 formal launch.", "loc": "PDF p. 5"},
+    {"field": "cat_quality", "quote": "Therefore, a minimum new test code coverage of 80% for all projects was introduced prior to data gathering.", "loc": "PDF p. 5"},
+    {"field": "cat_collaboration, cat_survey", "quote": "In the survey, only 28% of respondents agreed that KPIs had contributed to more stable or faster releases, and just 18% felt the initiative improved team collaboration.", "loc": "PDF p. 9"},
+    {"field": "cat_collaboration, cat_survey", "quote": "explore changes in collaboration or communication resulting from KPI awareness within and across teams; challenges or barriers encountered due to KPI adherence; and the impact on personal job satisfaction or engagement.", "loc": "PDF p. 4 (Developer Survey)"},
+    {"field": "cat_agile", "quote": "This dataset included the DORA metrics as well as additional metrics such as the adoption of standardised practices.", "loc": "PDF p. 4"},
+    {"field": "cat_agile", "quote": "Adoption of a standardised workflow in the JIRA project management tool for consistent tracking and reporting (32 projects, December 2023).", "loc": "PDF p. 5"}
+  ]
+}

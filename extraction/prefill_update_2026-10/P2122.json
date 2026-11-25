@@ -1,0 +1,35 @@
+{
+  "id": "P2122",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Own analysis of mined JIRA data."},
+    "study_type": {"claude": "Repository mining (quantitative)", "nlm": "Repository mining (quantitative empirical study)", "value": "Repository mining", "note": ""},
+    "research_method": {"claude": "Mining of JIRA issues, change logs and iterations; SPC with I-MR charts and zone classification (D+, D-, N); descriptive statistics and Kruskal-Wallis H with post-hoc tests; log transformation when normality violated", "nlm": "Repository mining; SPC (I-MR charts, control zones D+/D-/N); non-parametric Kruskal-Wallis H tests", "value": "Repository mining of JIRA issue reports, change logs and iteration dates; statistical process control with I-MR charts classifying iterations into zones (D+, D-, N) for individual velocity and focus factor; Kruskal-Wallis H tests with post-hoc tests across zones (log transformation where normality was violated); 7 projects, 6,887 issues, 387 iterations", "note": ""},
+    "context": {"claude": "OSS; agile open-source projects managed in JIRA (dataset of Porru et al.); 7 projects, 198 unique developers", "nlm": "OSS using JIRA and agile practices (Appcelerator Studio, Apache Mesos, MuleSoft, NEXUS, Titanium, Spring XD); 198 unique developers", "value": "OSS; 7 open-source projects using agile practices and JIRA (APSTUD, MESOS, MULE, NEXUS, TIMOB, TISTUD, XD; from the Porru et al. dataset, DNN excluded); 198 unique developers (9 to 65 per project)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Both: work mode not specified."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either (Claude gives only the median project duration of 831 days)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Velocity (story points done), individual velocity, work capacity and focus factor as productivity proxies."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Both tag turnover of leavers/newcomers and the Team Stability Index as Collaboration/team dynamics. These are team-composition measures rather than communication/coordination; author may wish to review."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Both add 'Activity' as a secondary tag on work capacity (NotebookLM also on individual velocity), but these are story-point measures, which the definitions place under productivity; no commit/PR/LOC metric."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "Both tag velocity and focus factor as Productivity/Delivery, but velocity is productivity per the definitions; no deployment or lead-time metric."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_agile": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Scrum metrics (velocity, work capacity, focus factor per sprint/iteration) and iteration length as a process factor."},
+    "cat_survey": {"claude": "No", "nlm": "No", "value": "No", "note": ""}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, context", "quote": "The dataset consist of issues, their change log, and iteration dates extracted directly from the JIRA server instances of the projects.", "loc": "PDF p. 4 (E. Data Collection)"},
+    {"field": "research_method", "quote": "We test the projects for stability by using Individuals and Moving Range (I-MR) charts that establish the limits of variation of process performance.", "loc": "PDF p. 3"},
+    {"field": "research_method", "quote": "we supported our observations by conducting nonparametric statistical analysis based on Kruskal-Wallis H test, followed by post-hoc tests to determine what groups (zones) differ in their medians.", "loc": "PDF p. 4"},
+    {"field": "research_method, context", "quote": "After cleaning, our resulting dataset consists of 7 projects with 6887 issue reports and 387 iterations in total.", "loc": "PDF p. 4 (A. Study Population)"},
+    {"field": "context", "quote": "In total, there are 198 unique developers in the dataset, ranging from 9 to 65 unique developers per project.", "loc": "PDF p. 4 (A. Study Population)"},
+    {"field": "cat_productivity, cat_agile", "quote": "we study data from seven open-source projects and calculated both the individual velocity of developers and focus factor of teams per iteration.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "cat_productivity", "quote": "calculated as the sum of story points of all completed issues whose last status update was made within the iteration i.", "loc": "PDF p. 3 (Velocity)"},
+    {"field": "cat_agile", "quote": "Therefore, work capacity ensures the measurement of all the work reported during the sprint, whether it was marked as completed or not [11].", "loc": "PDF p. 3 (Work Capacity)"},
+    {"field": "cat_collaboration, cat_agile", "quote": "i.e., iteration length, turnover of developers who left, turnover of new developers, and team stability index. Our results suggest that high team stability and low turnover are strongly associated with iterations showing high velocity.", "loc": "PDF p. 1 (Abstract)"}
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "P2104",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Secondary", "nlm": "Secondary", "value": "Secondary", "note": "Systematic literature review."},
+    "study_type": {"claude": "Review-Secondary (systematic literature review, PRISMA)", "nlm": "Review-Secondary (systematic literature review, PRISMA)", "value": "Review-Secondary", "note": ""},
+    "research_method": {"claude": "SLR following PRISMA; 8 digital libraries searched November 2024 + 35 studies from prior review + 30 expert additions + backward snowballing; quality assessment (Reporting, Rigor, Credibility, Relevance); Elicit-assisted extraction; coding with the in-IDE HAX taxonomy; open coding of 250 future-work statements; 90 studies", "nlm": "SLR following PRISMA; 90 studies included from 257 identified / 223 screened; in-IDE HAX taxonomy (Impact, Design, Quality); Elicit-assisted extraction with human verification; research agenda of 17 topics x 10 methodology types", "value": "Systematic literature review following PRISMA; database search (November 2024) plus studies from the authors' prior review, expert-informed additions and backward snowballing; quality assessment; extraction supported by Elicit with manual verification; 90 primary studies coded with the in-IDE HAX taxonomy (Impact, Design, Quality); open coding of 250 future-work statements into a research agenda (17 topics, 10 methodology types)", "note": "Claude flags minor count inconsistencies in the paper (257 vs 256 identified; 19 vs 16 educational studies)."},
+    "context": {"claude": "Mixed; 90 primary studies, professional (71/90) and educational (19/90) contexts", "nlm": "Mixed; 90 studies, 71 professional and 19 educational", "value": "academic (secondary/review); 90 primary studies on AI assistance inside IDEs (71 professional, 19 educational contexts)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Human-AI experience with AI coding assistants in IDEs is the review topic (GitHub Copilot in 36/90 studies); Elicit also used for extraction."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not specified by either; 'remote' appears only for remote vs in-person study sample sizes."},
+    "data_window": {"claude": "review coverage January 2022–November 2024", "nlm": "review coverage January 2022–November 2024", "value": "review coverage January 2022–November 2024 (search run November 2024)", "note": ""},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Task completion speed and productivity gains synthesized (up to 55.8% faster; 26–35% gains); productivity is the largest future-work cluster (43)."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Quality dimension: correctness, security vulnerabilities, readability, maintainability of AI-generated code."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Trust is trust in the AI tool (classed under attitudes/satisfaction by both), not team collaboration."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin: perceived mental workload and self-efficacy of novices, trust/reliance (both extractors class these as satisfaction/well-being); no satisfaction measure as such."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin: suggestion acceptance rate (labelled Activity by both) and edits, recommended alongside time on task; no repository activity metrics."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "DevEx framework not used (Claude: not reported; NotebookLM: referenced); 'DevEx' labels on workload/trust are generic."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Waterfall model used only to categorize SDLC stages."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Synthesizes perceptual evidence (trust, perceived workload, self-efficacy) and survey-based studies (12/90)."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "It applies a formal Systematic Literature Review (SLR) process, following the Preferred Reporting Items for Systematic reviews and Meta-Analyses (PRISMA) framework (Moher et al., 2010).", "loc": "PDF p. 2"},
+    {"field": "research_method", "quote": "it includes 90 papers identified through a multi-step procedure that combines database search, backward snowballing, and expert-informed additions.", "loc": "PDF p. 2"},
+    {"field": "research_method, data_window", "quote": "In November 2024, after finishing the planning phase, we searched the aforementioned sources, using titles, keywords, and abstracts as the basis for our queries.", "loc": "PDF p. 6 (2.2 Identifying and Screening)"},
+    {"field": "data_window", "quote": "We included studies first available between January 2022 and November 2024, including preprints on arXiv.", "loc": "PDF p. 7"},
+    {"field": "research_method, ai_discussed", "quote": "This work was conducted manually by the first author, with support from an AI-based system called Elicit", "loc": "PDF p. 8"},
+    {"field": "research_method", "quote": "To address RQ3, we analyzed 250 future work statements extracted from the reviewed papers", "loc": "PDF p. 20 (3.6 Future Work)"},
+    {"field": "context", "quote": "The studies analyzed in this review represent two primary contexts for working with AI in software development: professional (71 out of 90) and educational (19/90)", "loc": "PDF p. 12 (3.1 Context of studies)"},
+    {"field": "ai_discussed, cat_productivity", "quote": "For instance, participants using GitHub Copilot completed implementation of an HTTP server in JavaScript up to 55.8% faster than control groups (Peng et al., 2023), while other investigators observed productivity gains ranging from 26% to 35% for complex tasks", "loc": "PDF p. 15 (3.2 Impact)"},
+    {"field": "cat_productivity", "quote": "When using AI tools, verifying suggestions, refining prompts, and reworking code generated by AI might take up to 50% of developers' time (Mozannar et al., 2024a).", "loc": "PDF p. 16"},
+    {"field": "cat_quality", "quote": "Across studies, quality is examined from multiple perspectives, including code correctness, security, and readability.", "loc": "PDF p. 19 (3.4 Quality)"},
+    {"field": "cat_satisfaction, cat_survey", "quote": "Time-pressured studies report lower mental workload and steady self-efficacy with assistance", "loc": "PDF p. 16"},
+    {"field": "cat_satisfaction", "quote": "Novices complete tasks more quickly and report lower workload when the use of in-IDE AI is structured, yet they are vulnerable to subtle errors and may overtrust suggestions", "loc": "PDF p. 25 (Discussion)"},
+    {"field": "cat_activity", "quote": "Evaluate the effect beyond time spent on the task by reporting acceptance, edits, and verification effort.", "loc": "PDF p. 27 (Takeaways)"},
+    {"field": "cat_survey", "quote": "Among 90 papers reviewed in this study, 12 employed a survey methodology, 32 followed an experimental design, and 38 utilized qualitative methods.", "loc": "PDF p. 20"}
+  ]
+}

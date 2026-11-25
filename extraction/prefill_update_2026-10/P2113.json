@@ -1,0 +1,31 @@
+{
+  "id": "P2113",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Own qualitative data from Google developers."},
+    "study_type": {"claude": "Qualitative-Interviews (diary study with photo elicitation plus structured interviews)", "nlm": "Qualitative-Interviews (diary study, photo elicitation, structured interviews)", "value": "Qualitative-Interviews", "note": "Diary study with feedback and photo elicitation followed by structured interviews."},
+    "research_method": {"claude": "Qualitative: one-week diary study with feedback and photo elicitation (screenshots), then structured interviews; grounded theory line-by-line coding", "nlm": "Qualitative: diary study with feedback and photo elicitation, structured interviews, grounded theory analysis", "value": "Qualitative study: week-long diary study with feedback and photo elicitation (screenshots of creative work), followed by structured interviews; grounded theory analysis with line-by-line coding; number of participants not reported", "note": ""},
+    "context": {"claude": "Industry; Google; sample of software developers, number not reported", "nlm": "Industry (Google); software developers, N not stated", "value": "industry; Google; a sample of software developers (number not reported)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not cited by either."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not cited by either."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Not studied empirically; dedicated 'Creativity and LLMs' subsection on AI developer tooling and an open research question on creative work with AI-based tools."},
+    "remote_covid": {"claude": "No", "nlm": "Yes", "value": null, "note": "Claude: work mode not specified (only 'new hybrid models' as motivation and one chat quote). NotebookLM: hybrid/distributed work mode, remote coordination challenges. Full text: intro mention plus one participant quote ('an ocean apart')."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Creativity versus productivity trade-off discussed, but no productivity metric."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "Both list 'number of new features compared to bugs' (Quality tag), but as a metric cited from prior literature in one related-work sentence."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Collaboration/brainstorming is a finding (fosters creativity), not a measured metric."},
+    "cat_satisfaction": {"claude": "No", "nlm": "Yes", "value": null, "note": "Claude tags self-reported creative moments as DevEx/Creativity; NotebookLM tags them DevEx/Satisfaction. No satisfaction or well-being measure named."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM tags the cited features-vs-bugs and library-reuse metrics as Activity, but both extractors note they are cited from prior literature only."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM's Activity/Delivery tag on 'novel reuse of libraries' refers to a literature-cited metric only."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Developer experience discussed conceptually; DevEx framework not used."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Self-reported diary entries and structured interviews on perceptions of creativity."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, cat_survey", "quote": "Concretely, we used a feedback and photo elicitation methodology,9,10 in the context of a diary study, followed by a structured interview.", "loc": "PDF p. 2"},
+    {"field": "research_method", "quote": "For analysis, we used a grounded theory approach, applying \"codes\" or descriptive labels to the week-long feedback and elicitation portion of the study and then to the interview transcripts line by line.", "loc": "PDF p. 2"},
+    {"field": "context", "quote": "In this column, we describe our approach and insights into understanding how a sample of software developers at Google defines creativity in their work.", "loc": "PDF p. 1"},
+    {"field": "ai_discussed", "quote": "There has been an influx of AI-based developer tooling aimed at improving productivity. The introduction of LLMs into developer tooling is starting to change the way developers think about writing code, with a focus on writing code faster and automating tasks.", "loc": "PDF p. 4 (Creativity and LLMs)"},
+    {"field": "ai_discussed", "quote": "Do software developers feel similarly? If so, how might we better support creative software engineering while interacting with AI-based tools?", "loc": "PDF p. 4 (Creativity and LLMs)"}
+  ]
+}

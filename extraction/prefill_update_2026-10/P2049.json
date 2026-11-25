@@ -1,0 +1,35 @@
+{
+  "id": "P2049",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Case study (description of the process of creating benchmark components)", "nlm": "Mixed methods (case study, literature review, cognitive testing, pilot, RCT, surveys)", "value": null, "note": "Claude: Case study; NotebookLM: Mixed methods. The paper calls itself a case study (CHI EA case-study track) describing instrument development; the RCT results are published elsewhere ([20], arXiv)."},
+    "research_method": {"claude": "Case study of a five-step benchmark-creation process: survey question drafting, literature review of AI-attitude questions, cognitive testing (9 and 8 engineers), pilot (8 sessions), between-subject RCT design", "nlm": "Case study, literature review, cognitive testing (2 rounds, 17 engineers), pilot testing (8 iterations), RCT protocol, surveys", "value": "Description of a five-step process to build DX benchmark components for genAI coding features: metric selection and survey drafting, literature review of AI-attitude questions, two rounds of cognitive (think-aloud) testing (9 and 8 Google engineers), 8 pilot sessions of an enterprise-grade C++ task, and a between-subject RCT protocol (with vs. without AI; velocity results reported in a separate paper)", "note": "Same design described by both; only the study_type label differs."},
+    "context": {"claude": "Industry; Google, AI for code features in internal IDE, enterprise-grade C++ task; 9 + 8 engineers in cognitive testing, 8 pilot sessions", "nlm": "Industry; Google, backend C++ development, internal IDE tools; 17 engineers in cognitive testing, 8 C++ developers in pilot", "value": "industry; Google, AI-for-code features in internal IDE, enterprise-grade C++ task; 17 software engineers in cognitive testing (9 + 8) and 8 pilot sessions with C++ developers", "note": "Final RCT sample not reported in this paper."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "space_applied": {"claude": "Yes", "nlm": "No", "value": null, "note": "Metrics selected from Google's internal DX metrics framework, 'a variant of the SPACE framework'. Claude: SPACE applied (via the variant); NotebookLM: SPACE referenced, internal framework applied."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Benchmarking the DX and velocity impact of genAI coding features."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not specified by either (self-administered, asynchronous activities; 'globally-distributed' engineers only motivates language testing)."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Velocity defined as time to complete an enterprise-grade task (logged), plus perceived productivity items."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Perceived code quality (quality of code suggestion; long-term impact on the code base), survey-based."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Overall satisfaction with AI feature (sentiment metrics)."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Claude labels self-reported AI usage frequency 'Activity'; NotebookLM labels goal importance 'Activity / Context'; neither is repository activity."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels time on task 'Productivity / Delivery'; it is task completion time (Productivity)."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "'Developer experience (DX)' is used generically; both use 'DevEx' as a loose label; the Noda/Storey/Forsgren framework is not used."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Demographics/attitude questionnaires, post-task and feature surveys (sentiment metrics)."}
+  },
+  "evidence": [
+    {"field": "research_method", "quote": "The first round of cognitive testing was focused on the task and feature questions, and was conducted with 9 full-time software engineers at Google.", "loc": "PDF p. 3"},
+    {"field": "research_method, context", "quote": "The second round of cognitive testing was conducted with 8 full-time software engineers at Google, and focused on demographic, current use of AI, and AI attitudes questions.", "loc": "PDF p. 4"},
+    {"field": "research_method, context", "quote": "We continued recruiting and iterating until the task was completed in under 1.5 hours and without researcher intervention three times in a row, which took eight sessions in total.", "loc": "PDF p. 4"},
+    {"field": "research_method", "quote": "A schematic overview of our between-subject human experimental design and its components can be found in Figure 1.", "loc": "PDF p. 4"},
+    {"field": "ai_discussed", "quote": "The main aim of this project was to support our team with high-quality data to evaluate the user experience of our AI for code features, including an estimate of the impact of AI-enhanced coding tools on developer velocity (see [20]).", "loc": "PDF p. 1"},
+    {"field": "cat_productivity", "quote": "We defined velocity as the time taken to complete an enterprise-grade engineering task, with or without AI, from the branching of code all the way through to testing and building the code.", "loc": "PDF p. 2 (footnote 1)"},
+    {"field": "cat_satisfaction, cat_quality, cat_productivity", "quote": "Sentiment Satisfaction Trust in accuracy Goal importance Helpfulness Feature completeness Productivity Perceived code quality Ease of use Perceived productivity Submetrics Overall satisfaction with AI feature", "loc": "PDF p. 4 (Table 1)"},
+    {"field": "cat_quality", "quote": "Quality of code suggestion Long-term impact on the code base", "loc": "PDF p. 4 (Table 1, submetrics of Perceived code quality)"},
+    {"field": "cat_survey", "quote": "The final activity, Activity 3, included a task survey (Box D) and up to three feature surveys, depending on participants' use of the features during Activity 2 (Box E).", "loc": "PDF p. 5"}
+  ]
+}

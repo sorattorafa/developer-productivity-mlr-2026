@@ -1,0 +1,35 @@
+{
+  "id": "P2070",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Case study (industrial, before-after evaluation)", "nlm": "Case study (framework implementation and empirical evaluation)", "value": "Case study", "note": "Industrial case study of a proposed platform-engineering framework."},
+    "research_method": {"claude": "Industrial case study; before-after comparison of operational metrics after deploying PlatFab; no control group or statistical tests", "nlm": "Case study / framework implementation and empirical evaluation; 5 budgeting service projects over 12 months", "value": "Industrial case study of a proposed platform-engineering framework (PlatFab: standardized Helm chart templates, Renovate bots, SDP base images for release pipelines, Blue-Green deployment); before-after comparison of operational metrics (build time, storage per service, vulnerability fix time, production downtime issues) on five budgeting service projects over 12 months; no control group or statistical tests", "note": "'No control group or statistical tests' stated only by Claude (not contradicted)."},
+    "context": {"claude": "Industry; Industrial Budgeting System in an IT/ITES organization (SAP Labs India co-authors), Kubernetes microservices; five projects, 1,244 services, 12-member team; no human subjects", "nlm": "Industry; IT/ITES organization, Industrial Budgeting System; 5 projects, 1,244 microservices, 100 developers, 12 team members", "value": "industry; IT/ITES organization (SAP Labs India co-authors), Industrial Budgeting System on Kubernetes microservices; five budgeting service projects, 1,244 services using the Helm chart, 12-member team for vulnerability data", "note": "NotebookLM's '100 developers' is the organization unit used in the authors' hours-saved extrapolation, not a measured sample; omitted."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": "Automation (CI/CD, Renovate bots), no AI/ML."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not reported."},
+    "data_window": {"claude": "12 months (five projects); downtime issues per quarter 2021–2024 (2024 only Q1)", "nlm": "12-month period; quarterly incident reports 2021–2024", "value": "12-month evaluation period (dates not stated); production downtime issues reported per quarter 2021–2024", "note": "Claude notes that 2024 has only Q1 reported."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin: developer hours saved, extrapolated from build-time and vulnerability-fix savings; the paper frames all operational metrics as productivity proxies."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Vulnerability response time / vulnerabilities fixed; production downtime issues."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels storage/CPU/memory utilization as Activity; these are infrastructure resource metrics, not repository activity."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "CI/CD pipeline build time (both label it Delivery); no DORA metrics."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "DevEx framework not referenced; NotebookLM's 'DevEx' labels are generic."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Agile only referenced (keywords/background)."},
+    "cat_survey": {"claude": "No", "nlm": "No", "value": "No", "note": "No perceptual instrument ('no human subjects')."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, context, data_window", "quote": "The evaluation dataset consists of real-world data from an industrial budgeting service of an IT industry. It encompasses data of five budgeting service projects with other projects over a 12-month period.", "loc": "PDF p. 8 (IV. Results)"},
+    {"field": "research_method", "quote": "The parameters were recorded before and after implementation of PlatFab in a particular division of the IT industry.", "loc": "PDF p. 11 (Conclusions)"},
+    {"field": "research_method, cat_quality, cat_delivery", "quote": "The increase in developer productivity was measured by monitoring the space occupied, build time taken, the number of vulnerabilities fixed, and downtime issues.", "loc": "PDF p. 8"},
+    {"field": "context", "quote": "PlatFab is a custom designed platform engineering framework developed specifically to enhance developer productivity in the context of Industrial Budgeting Services.", "loc": "PDF p. 3"},
+    {"field": "context", "quote": "1244 services are running in the organization unit using the Helm chart. Each service has space that occupies close to 2GB.", "loc": "PDF p. 8 (A. Resource Utilization)"},
+    {"field": "data_window", "quote": "TABLE 1 PRODUCTION DOWNTIME ISSUES FOR ALL QUARTERS OF YEAR 2021, 2022, 2023, 2024 AFTER THE USE OF PLATFAB", "loc": "PDF p. 10 (Table 1)"},
+    {"field": "cat_productivity", "quote": "If one service build runs 10 times in a day, the team is able to save 10 minutes of developer productivity each day, and for a year, it will be 60 hours saved.", "loc": "PDF p. 9"},
+    {"field": "cat_quality, context", "quote": "A team of 12 members working for budgeting services with five services. Each month the number of vulnerabilities to fix were close to 40. Before implementing PlatFab, the team used to take five days to fix the vulnerability.", "loc": "PDF p. 9"},
+    {"field": "cat_delivery, cat_quality", "quote": "Before the use of PlatFab, build time was five minutes, 2 GB was used for each service, and vulnerability handling required five days to resolve. Production downtime issues were 12 before PlatFab and were reduced to almost zero after integrating PlatFab.", "loc": "PDF p. 1 (Abstract)"}
+  ]
+}

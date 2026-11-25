@@ -1,0 +1,33 @@
+{
+  "id": "P2080",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Field study in one organization."},
+    "study_type": {"claude": "Mixed methods (mixed-methods case study)", "nlm": "Mixed methods (case study combining telemetry and thematic analysis)", "value": "Mixed methods", "note": "Both describe a mixed-methods case study; Case study would be the alternative label."},
+    "research_method": {"claude": "Three-month mixed-methods case study; GitHub Copilot telemetry (Copilot Metrics Viewer v2.0.2) plus deductive thematic analysis of participant observation and written reflections, coded by the three DevEx dimensions", "nlm": "Mixed-methods case study combining enterprise telemetry (Copilot Metrics Viewer v2.0.2) with qualitative participant observation and deductive thematic coding on flow state, feedback loops, cognitive load", "value": "Mixed-methods case study over three months; GitHub Copilot enterprise telemetry (Copilot Metrics Viewer v2.0.2: prompts, suggestions, acceptance rate by count and by line) plus deductive thematic analysis of participant observation and practitioner reflections (n = 9) coded by the three DevEx dimensions; Windsurf assessed qualitatively only", "note": ""},
+    "context": {"claude": "Industry; Brazilian fintech (digital lender founded 2015), 36-person technical unit of a 90-employee organization, 77 repositories; 21 active Copilot users, 2 Windsurf users, 9 reflections", "nlm": "Industry; Brazilian fintech (online digital lender founded 2015, 90 employees, 77 repositories); 36-person technical unit, 21 active Copilot users, 2 Windsurf users, 9 reflections", "value": "industry; Brazilian fintech (online digital lender founded 2015, about 90 employees, 77 repositories), 36-person technical unit; 21 active Copilot users in telemetry, 2 Windsurf users, 9 written reflections", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Claude: DORA not mentioned; NotebookLM lists only DevEx. 'DORA' does not occur in the full text."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Claude: SPACE not mentioned; NotebookLM lists only DevEx. 'SPACE' does not occur in the full text."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "GitHub Copilot and Windsurf adoption is the object of study."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not reported by either; no remote/hybrid/COVID mention found in the full text."},
+    "data_window": {"claude": "May–August 2025 (cumulative) plus the most recent 28 days of August 2025", "nlm": "three-month period (no dates; May–June 2025 mentioned only as early months with blocked raw telemetry)", "value": null, "note": "Only Claude states the dates; NotebookLM gives a duration only. Full text: 'cumulative period from May to August 2025' (PDF p. 4)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Both class the Copilot acceptance rates (24.23% by count, 16.36% by line) as productivity; other productivity gains are perceived."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels acceptance rate 'Productivity / Quality', but neither reports a defect or code-quality metric; one participant raised quality concerns."},
+    "cat_collaboration": {"claude": "No", "nlm": "Yes", "value": null, "note": "NotebookLM labels feedback-loop perceptions 'DevEx / Collaboration' (AI as collaborative partner). Claude gives no collaboration metric. Human-AI collaboration is the framing; code review appears only as a confounder."},
+    "cat_satisfaction": {"claude": "No", "nlm": "Yes", "value": null, "note": "NotebookLM labels flow-state perceptions 'DevEx / Satisfaction'. Claude gives no satisfaction measure. The paper only notes 'general satisfaction' in passing."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Number of prompts (47,336) and suggestions (98,797) from Copilot telemetry."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "Continuous delivery only as organizational context."},
+    "cat_devex": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "DevEx (Noda et al.; Forsgren et al. 'DevEx in action') dimensions structure the qualitative coding."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Agile only as organizational context; no process metric."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Perceptions from written practitioner reflections and participant observation, thematically coded (no questionnaire)."}
+  },
+  "evidence": [
+    {"field": "study_type, cat_productivity", "quote": "Using a mixed-methods case study in a fintech organization, we analyze productivity and developers' perceptions of their professional roles.", "loc": "PDF p. 2"},
+    {"field": "research_method, ai_discussed, cat_survey", "quote": "We conducted a mixedmethods study over a three-month period, combining quantitative usage telemetry with qualitative thematic analysis of practitioner reflections within a 36-person technical unit.", "loc": "PDF p. 1"},
+    {"field": "research_method, cat_devex", "quote": "Using deductive thematic coding aligned with the three DevEx dimensions (feedback loops, cognitive load, and flow state), we labeled each segment as positive, neutral, or negative.", "loc": "PDF p. 4"},
+    {"field": "context", "quote": "This study was conducted in a Brazilian fintech organization (a fully online digital lender founded in 2015 that operates in both business-to-consumer and business-to-business markets)", "loc": "PDF p. 3"},
+    {"field": "ai_discussed", "quote": "This study examines the impact of AIassisted coding tools through a Developer Experience (DevEx) lens, investigating GitHub Copilot and Windsurf adoption in a fintech organization over three months.", "loc": "PDF p. 1"},
+    {"field": "cat_activity, cat_productivity", "quote": "We extracted: 1) the number of prompts (total prompts submitted to GitHub Copilot), 2) the number of suggestions (total code suggestions returned), 3) the acceptance rate by count (accepted suggestions/total suggestions)", "loc": "PDF p. 4"},
+    {"field": "cat_survey, context", "quote": "Of the 36-person technical unit involved in the study, 26 participated in the meeting, and nine submitted in-depth reflections on their experiences with AI-assisted tools.", "loc": "PDF p. 6"}
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "P2079",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "New qualitative evidence from Reddit discussions."},
+    "study_type": {"claude": "Qualitative (reflexive thematic analysis of Reddit discussions) → Other", "nlm": "Qualitative (reflexive thematic analysis of Reddit comments) → Other", "value": "Other (qualitative thematic analysis of online community posts)", "note": "Both: qualitative reflexive TA of public Reddit data; no interviews or survey administered, so Qualitative-Interviews does not fit."},
+    "research_method": {"claude": "Reflexive thematic analysis (Braun and Clarke, six phases) of r/ADHD_Programmers discussions collected via PRAW; staged filtering 115 threads/1,441 comments → 25 threads/820 → 10 threads/241 comments; DevEx dimensions as sensitizing concepts; 362 codes, 33 sub-themes, 15 themes; Brown's executive functions as interpretive lens", "nlm": "Qualitative reflexive thematic analysis of 241 comments from 10 threads (from 115 threads and 1,441 comments) collected via PRAW with Score > 400 and lexical filters; 362 codes, 33 sub-themes, 15 themes; DevEx as sensitizing concept; Brown's EF clusters", "value": "Qualitative reflexive thematic analysis (Braun and Clarke six-phase) of public r/ADHD_Programmers discussions collected with PRAW; staged selection (115 threads / 1,441 comments → popularity Score > 400 and lexical filters → 10 threads / 241 comments); DevEx dimensions as sensitizing concepts with predominantly inductive coding (362 codes, 33 sub-themes, 15 themes); Brown's executive-function clusters as interpretive lens", "note": "Intermediate stage (25 threads / 820 comments) reported only by Claude."},
+    "context": {"claude": "Online community (Reddit) of self-reported ADHD programmers describing everyday software work (incl. industry, on-call, paid work); ≈82,000 members", "nlm": "Industry / mixed: self-identified ADHD developers reporting real work experiences in a public peer-support forum", "value": "mixed; public Reddit peer-support community r/ADHD_Programmers (≈82,000 members) of self-identified ADHD developers describing everyday software work; 241 comments from 10 threads", "note": "Claude calls the setting an online community, NotebookLM 'industry / mixed'; both describe the same source."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "'AI as feedback partner' is the densest feedback-loop theme (AI as executive-function scaffold and as source of friction)."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work from home appears only in a participant quote on flexible arrangements (p. 4); NotebookLM's 'mixed' work mode refers to modes mentioned in posts."},
+    "data_window": {"claude": "first half of 2025", "nlm": "six-month window, early 2025", "value": "first half of 2025 (six-month window of Reddit 'Top/All' posts)", "note": ""},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "No productivity measure; output metrics only critiqued as ignoring non-linear ADHD work patterns."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Team support/body doubling appear as themes, not as collaboration measures."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Qualitative themes, not measures: burnout and exhaustion, anxiety, motivation and meaning."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Commits appear only as 'memory anchors'; NotebookLM's 'Activity' label on Reddit thread Score is a sampling criterion."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "Feedback latency (CI, reviews) discussed only as a DevEx feedback-loop property."},
+    "cat_devex": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Noda et al. DevEx dimensions (flow state, cognitive load, feedback loops) structure the three RQs, the analysis and the results."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "User stories, Kanban and standups appear in participant accounts as strategies; authors state their data do not compare agile frameworks; no process metric."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: data are unsolicited self-reports of perceived experience (Reddit comments); no survey or interview instrument administered."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, cat_devex", "quote": "We applied reflexive TA following Braun and Clarke's six-phase framework [8, 9, 11], from a contextualist, experiential position. The DevEx dimensions served as sensitizing concepts orienting the initial reading", "loc": "PDF p. 3 (3.4 Qualitative Data Analysis)"},
+    {"field": "research_method", "quote": "The initial dataset, obtained via Reddit scraping, comprised 115 threads and 1,441 comments.", "loc": "PDF p. 3 (3.3 Data Selection)"},
+    {"field": "research_method, context", "quote": "This yielded a final sample of 241 comments from 10 threads.", "loc": "PDF p. 3 (3.3 Data Selection)"},
+    {"field": "research_method", "quote": "The analysis produced 362 codes, consolidated into 33 sub-themes and 15 themes across the 3 DevEx dimensions", "loc": "PDF p. 4 (Final Codebook)"},
+    {"field": "context", "quote": "We analyzed public discussions from r/ADHD_Programmers, the largest open forum dedicated to ADHD programmers (≈ 82, 000 members, ≈ 27, 000 weekly visitors as of August 2025), to understand the lived experiences of ADHD developers.", "loc": "PDF p. 3"},
+    {"field": "data_window", "quote": "From the \"Top/All\" listing for the first half of 2025, we retrieved each post's full thread (all comments and replies) using replace_more(limit=None) so that no responses were omitted", "loc": "PDF p. 3"},
+    {"field": "data_window", "quote": "the six-month sampling window", "loc": "PDF p. 9 (6 Threats to Validity)"},
+    {"field": "cat_devex", "quote": "Building on this subjective framing, Noda et al. [34] operationalized the concept through three dimensions: feedback loops, cognitive load, and flow state.", "loc": "PDF p. 1"},
+    {"field": "cat_devex", "quote": "To investigate how the core dimensions of Developer Experience [34] are perceived by developers with ADHD, we propose the following research questions (RQs)", "loc": "PDF p. 2 (3.1 Research Questions)"},
+    {"field": "ai_discussed", "quote": "AI as feedback partner emerged as the densest theme in this dimension, suggesting ADHD developers interpreted AI tools not only as coding assistants but as feedback partners with both enabling and disruptive effects.", "loc": "PDF p. 7 (RQ3 results)"},
+    {"field": "cat_satisfaction", "quote": "In Burnout & exhaustion, fatigue from repeatedly losing and rebuilding task context was summarized as \"I am so cooked\" (U65)", "loc": "PDF p. 5 (4.1 RQ1)"},
+    {"field": "cat_survey", "quote": "the subreddit is oriented toward peer support, where practitioners share opinions, feelings, and everyday challenges more openly, yielding rich, real-world evidence.", "loc": "PDF p. 3"}
+  ]
+}

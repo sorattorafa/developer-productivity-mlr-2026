@@ -1,0 +1,38 @@
+{
+  "id": "P2015",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Mixed methods (multi-stage single-company case study)", "nlm": "Mixed methods", "value": "Mixed methods", "note": "Claude also frames it as a single-company case study; NotebookLM calls it a single-company case study in its limitations."},
+    "research_method": {"claude": "Multi-stage mixed methods: online survey (33 closed items, 6-point verbal scale), SonarQube static code analysis of repositories, qualitative focus group (reversed brainstorming); Spearman correlations; triangulation", "nlm": "Mixed methods: quantitative online survey (33 items, 6-point scale), static code analysis (SonarQube), qualitative focus group workshop (5-step reversed brainstorming)", "value": "Multi-stage mixed-methods study: online survey (33 closed items on a 6-point scale, based on Greiler et al.'s DX framework; 47 respondents), automated SonarQube static code analysis of 38 repositories, and an online focus group (7 developers) using 5-step reversed brainstorming; results triangulated", "note": "Spearman correlation analysis reported only by Claude (not contradicted)."},
+    "context": {"claude": "Industry; anonymous German medium-sized company (~100 developers, no dedicated DX team); 47 survey respondents, 38 public GitHub repositories, 7 focus-group participants", "nlm": "Industry; German medium-sized corporation (~100 developers); 47 survey respondents, 38 repositories, 7 focus-group developers", "value": "industry; anonymous German medium-sized corporation (~100 developers, no dedicated DX team); 47 survey respondents, 38 public GitHub repositories, 7 focus-group participants", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "DORA not mentioned by either."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE only referenced in related work."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Internal AI documentation assistant used by developers; broadening its access is one of the five measures derived. Not used as a research method."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Only passing mentions (working from home inside the work-life-balance item; online focus group; 'distributed team structures' in intro)."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either (static analysis described as a cross-sectional snapshot, no dates)."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "No output/throughput metric; perceived efficiency appears only as a correlated survey item."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "SonarQube complexity, duplication, maintainability, reliability (bugs, defects per KLOC), security."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "'Collaboration and Culture' survey group (psychological safety, documentation/knowledge sharing) and code review presence."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Work-life balance and meaningfulness of tasks survey items."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: both list LOC/KLOC (Size) as Activity, but it is repository size used only to normalize SonarQube results, not developer activity."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "Only perceived local setup/CI-CD effort (greenfield vs legacy) survey items; no lead time, deployment or release metric."},
+    "cat_devex": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Survey built on Greiler, Storey & Noda's DX framework (applied); Noda/Forsgren/Storey/Greiler three dimensions (feedback loops, cognitive load, flow state) used to interpret findings. Strictly, the applied framework is Greiler et al.'s, not the 2023 DevEx paper."},
+    "cat_agile": {"claude": "Yes", "nlm": "No", "value": null, "note": "Claude: 'Product Management' survey group and realistic time planning item (process). NotebookLM: no process or planning metric."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Online survey with 6-option Likert-type items, plus focus group."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "The initial stage comprised a thorough, predominantly quantitative survey supplemented by project analyses. The second stage of the research involved the execution of a qualitative focus group workshop.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "context, research_method", "quote": "A total of 47 employees completed the survey in full, with no indication of systematic non-response bias. The focus group, comprising seven participants, was utilized to further explore the prevailing circumstances.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "context", "quote": "a medium-sized corporation with approximately one hundred developers, where establishing dedicated DX teams is not a viable option", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "context, research_method, cat_quality", "quote": "The static code analysis encompassed 38 repositories, thereby providing an objective perspective on the structural integrity of code across the organization.", "loc": "PDF p. 7 (4.2 Static Code Analysis)"},
+    {"field": "ai_discussed", "quote": "Furthermore, the focus group confirmed the relevance of an AIbased assistant, which is already in use within the organization to support developers accessing and summarizing documentation.", "loc": "PDF p. 8"},
+    {"field": "cat_quality", "quote": "Complexity (e.g., cyclomatic and cognitive complexity, nesting), where higher values indicate reduced understandability and elevated defect risk.", "loc": "PDF p. 4"},
+    {"field": "cat_collaboration, cat_survey", "quote": "Can you ask questions without fear of being judged or facing negative consequences, regardless of your level of experience or position?", "loc": "PDF p. 3 (3.1, Collaboration and Culture items)"},
+    {"field": "cat_collaboration", "quote": "indicating that the absence of review structures has a detrimental effect on feedback culture, knowledge transfer, and perceived quality assurance.", "loc": "PDF p. 7"},
+    {"field": "cat_satisfaction", "quote": "The aspects that were most highly rated by respondents include the professional and technical challenges associated with the work (1.53), the work-life balance (1.6), and the perceived meaningfulness of tasks (1.81).", "loc": "PDF p. 5"},
+    {"field": "cat_devex, research_method", "quote": "The questions are based mostly on the DX factors from Greilers DX-Framework [11]", "loc": "PDF p. 3"},
+    {"field": "cat_devex", "quote": "These factors directly shape the core DX dimensions of feedback loops, cognitive load, and flow state.", "loc": "PDF p. 7"},
+    {"field": "cat_survey", "quote": "Single-choice questions with a Likert scale and an even number of answer options (i.e. no middle option) were preferred where meaningful.", "loc": "PDF p. 3"}
+  ]
+}

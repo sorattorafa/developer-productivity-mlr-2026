@@ -1,0 +1,35 @@
+{
+  "id": "P2112",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Google's own survey program and data, not a synthesis of other studies."},
+    "study_type": {"claude": "Experience report", "nlm": "Mixed methods (longitudinal survey, logs-based metrics, interviews)", "value": null, "note": "Claude: experience report (magazine column) describing the EngSat survey program. NotebookLM: mixed methods."},
+    "research_method": {"claude": "Experience report on a longitudinal quarterly survey program (EngSat) combined with logs-based metrics", "nlm": "Longitudinal survey, logs-based quantitative metrics, qualitative interviews/user testing", "value": "Description of Google's longitudinal quarterly developer survey program (Engineering Satisfaction Survey, EngSat) run since 2018 (25 quarters); population split into three random cohorts surveyed in turn; survey data paired with logs-based metrics for validation; respondent numbers and response rates not reported", "note": "Both describe the same EngSat program; they differ only on the study-type label. Interviews/user testing mentioned only by NotebookLM."},
+    "context": {"claude": "Industry; Google developers surveyed quarterly since 2018 in three random cohorts; respondent numbers not reported", "nlm": "Industry (Google); developers in three random cohorts over 25+ quarters", "value": "industry; Google (company-wide developer population); quarterly survey of three random cohorts, number of respondents not reported", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Claude: not reported; NotebookLM: not mentioned."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Claude: not reported; NotebookLM: not mentioned."},
+    "ai_discussed": {"claude": "No", "nlm": "Yes", "value": null, "note": "Claude: AI only mentioned ('influx of AI in developer tools'; 'AI-Powered Tools' theme). NotebookLM: AI-powered tools measured as a survey theme. Full text has one sentence plus a Figure 2 label."},
+    "remote_covid": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Drop and rebound of self-reported productivity when developers worked from home during COVID-19."},
+    "data_window": {"claude": "Quarterly since 2018; 25 quarters (six+ years)", "nlm": "Since 2018; 25+ quarters (6+ years)", "value": "2018 onward, quarterly; six+ years (25 quarters) at time of writing (2024 article)", "note": ""},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Both tag 'Productivity' (and Speed/flow), but only as self-reported survey outcomes; perceived productivity goes to cat_survey per the definitions. No output metric."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Quality (Q) outcome, code quality and technical debt sentiment measured by survey."},
+    "cat_collaboration": {"claude": "No", "nlm": "Yes", "value": null, "note": "Claude lists Communication/Team Alignment only as driver themes without tagging Collaboration; NotebookLM tags Team Operations as Collaboration. In the full text these appear only in Figure 2."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Satisfaction is a key outcome of the Engineering Satisfaction Survey."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM tags the 'Tools, Infra., and Resources' theme as Activity, but no repository activity metric is used."},
+    "cat_delivery": {"claude": "No", "nlm": "Yes", "value": null, "note": "NotebookLM tags the self-reported Speed (S) outcome as Delivery; Claude treats it as a productivity/DevEx outcome. No deploy/lead-time metric in either."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Generic developer experience; Noda appears only as author of a DX blog post on Shopify's survey. NotebookLM's 'DevEx' labels refer to Google's own framework, not Noda/Storey/Forsgren."},
+    "cat_agile": {"claude": "No", "nlm": "Yes", "value": null, "note": "NotebookLM tags the Workflow & Execution theme (Process and Red Tape) as Process; Claude does not tag it. Only a Figure 2 theme label in the full text."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Quarterly EngSat survey is the measurement instrument."}
+  },
+  "evidence": [
+    {"field": "research_method, data_window, cat_survey", "quote": "We've run EngSat on the last two weeks of each quarter for the past six+ years (25 quarters), building, refining, and evolving the survey over time.", "loc": "PDF p. 2"},
+    {"field": "data_window", "quote": "Since 2018, EngSat has served as a foundation for our team's research and has had a significant impact.", "loc": "PDF p. 4 (The Evolution of EngSat)"},
+    {"field": "research_method, context", "quote": "we split the developer population into three random cohorts and only sequentially survey one group each quarter.", "loc": "PDF p. 4"},
+    {"field": "research_method", "quote": "this use case highlights the benefits of pairing survey data with logs-based measurements to tell a holistic story about the developer experience.", "loc": "PDF p. 4"},
+    {"field": "context", "quote": "At Google, one of the ways we do this is through surveys.", "loc": "PDF p. 1"},
+    {"field": "remote_covid", "quote": "we saw a notable decrease in self-reported productivity between Q1 2020 and Q2 2020 (as many people started working from home for the first time).", "loc": "PDF p. 3"},
+    {"field": "cat_quality, cat_satisfaction, cat_survey", "quote": "We also emphasized topics that are typically difficult to measure (for example, technical debt, flow, or code quality) or not reflected in our logs data (for example, satisfaction or hindrances to productivity)", "loc": "PDF p. 1"},
+    {"field": "cat_quality", "quote": "in 2019, we highlighted technical debt as a top hindrance to productivity, which motivated various efforts across Google aimed at reducing technical debt.", "loc": "PDF p. 4"},
+    {"field": "cat_satisfaction", "quote": "We call it the Engineering Satisfaction Survey—or EngSat for short.", "loc": "PDF p. 1"}
+  ]
+}

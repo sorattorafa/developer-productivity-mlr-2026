@@ -1,0 +1,37 @@
+{
+  "id": "P2131",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Experiment (controlled within-subjects user study)", "nlm": "Experiment (controlled within-subjects user study)", "value": "Experiment", "note": ""},
+    "research_method": {"claude": "Controlled within-subjects user study, 3 conditions (Copilot auto-complete, GPT-3 conversational, browser baseline), Latin square; objective interaction and code metrics plus AttrakDiff/Likert surveys and qualitative feedback; Friedman/Wilcoxon or RM-ANOVA/t-tests with Bonferroni; N=24", "nlm": "Controlled within-subjects experiment (N=24) comparing Copilot auto-complete, GPT-3 chat and browser-only baseline across SPACE dimensions; telemetry, unit tests, static analysis, surveys", "value": "Controlled within-subjects user study (N=24 of 29 recruited) with three conditions (GitHub Copilot auto-complete, GPT-3 conversational chat in VS Code, browser-only baseline), three 15-minute Python tasks counterbalanced by Latin square; SPACE-structured metrics from interaction logging, unit tests and static analysis plus AttrakDiff and Likert self-assessments and qualitative feedback; Friedman/Wilcoxon (or RM-ANOVA/t-tests) with Bonferroni correction", "note": "Test names and Latin square reported by Claude only (not contradicted)."},
+    "context": {"claude": "Academic; online lab (remote VM with VS Code and Chrome); participants from universities and industry", "nlm": "Mixed (academic and industry participants recruited via LMU Munich channels and professional networks); standardized remote-desktop VM", "value": "controlled online lab study (remote VM with VS Code), LMU Munich; 24 participants recruited via university and professional channels, 9 working as professional software developers", "note": "Setting label differs (Claude: academic; NotebookLM: mixed), so it is omitted; facts agree."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not cited."},
+    "space_applied": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "All five SPACE dimensions operationalized with objective and subjective metrics."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "GitHub Copilot and GPT-3 programming assistants are the experimental conditions."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM lists work mode 'Remote' only because the study ran on a remote-desktop VM; that is not remote work as a topic."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either (NotebookLM only mentions early-2024 model versions as a limitation)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Requirements implemented per minute (about 65% more with AI) and task completion time."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Correctness via unit tests, Maintainability Index, percentage of comments."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": null, "note": "Agreed Yes (SPACE Communication dimension) but not confirmed in the full text: participants worked alone and 'communication' is snippet retrieval/acceptance from AI or browser, not interpersonal collaboration."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "AttrakDiff (pragmatic, hedonic, attractiveness) and perceived satisfaction."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Characters of code output per minute and percentage of human-written vs AI-generated code (described as a finer-grained LoC)."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "DevEx not cited."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "AttrakDiff after each condition and final Likert self-assessment per SPACE dimension."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, ai_discussed", "quote": "we compare an AI-supported auto-complete interface using GitHub Copilot (Auto-complete) and a conversational system using GPT-3 (Conversational) against a baseline with only conventional support mechanisms.", "loc": "PDF p. 2 (1 Introduction)"},
+    {"field": "study_type, research_method", "quote": "In a within-subjects study (N=24 ), we determined how the support mechanisms affect developer productivity and satisfaction, and how much they rely on these support mechanisms in different scenarios.", "loc": "PDF p. 2"},
+    {"field": "research_method", "quote": "The sequence and combination of task and ToolEnvironment were systematically varied using the Latin Square method to reduce effects of order or by specific tasks.", "loc": "PDF p. 10"},
+    {"field": "context", "quote": "Nine participants answered that they were currently involved with software development in a professional capacity. The other participants had coding experience through their study program and personal projects.", "loc": "PDF p. 8"},
+    {"field": "space_applied", "quote": "To assess developer productivity, we use the five dimensions of the SPACE framework [17]. For each of its dimensions, we collected both data from the interactions directly and subjective feedback through the surveys.", "loc": "PDF p. 11 (3.5 Data)"},
+    {"field": "cat_satisfaction, cat_survey", "quote": "Participants completed the short AttrakDiff [16, 18, 19] after each test condition to quantify satisfaction.", "loc": "PDF p. 11 (3.5.1 Satisfaction)"},
+    {"field": "cat_quality", "quote": "Furthermore, we include the Maintainability Index [37, 38] as a metric, which combines multiple static code metrics, like Cyclomatic Complexity and Halstead Volume [37, 63].", "loc": "PDF p. 11 (3.5.2 Performance)"},
+    {"field": "cat_quality", "quote": "we test whether each implemented feature performs as expected using pre-defined unit tests.", "loc": "PDF p. 11 (3.5.2 Performance)"},
+    {"field": "cat_activity", "quote": "We therefore consider the percentage of code that was written by the human, as opposed to generated by the AI tool, an additional metric for the Activity category.", "loc": "PDF p. 12 (3.5.3 Activity)"},
+    {"field": "cat_productivity", "quote": "Since the time for our study was fixed, we recorded how many of the features and requirements each participant was able to implement in this timeframe.", "loc": "PDF p. 12 (3.5.5 Efficiency)"},
+    {"field": "cat_productivity", "quote": "developers implemented about 65% more requirements with either AI assistant", "loc": "PDF p. 21 (Discussion)"}
+  ]
+}

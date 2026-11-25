@@ -1,0 +1,3781 @@
+{
+ "G084": {
+  "id": "G084",
+  "kind": "grey",
+  "criteria": {
+   "authority": {
+    "score": 3,
+    "why": "Bachelor's thesis, Jamk University of Applied Sciences (May 2025); single student author, no supervisor or examiner named."
+   },
+   "rigor": {
+    "score": 3,
+    "why": "Survey (n=100, 25 Likert items, SPSS) and 10 interviews described, but interviews 'recorded' (p. 18) vs 'not made' (p. 20); task measures never reported."
+   },
+   "currency": {
+    "score": 6,
+    "why": "Published May 2025; survey 19 March-5 April 2025, interviews April 2025 (timeline, p. 19)."
+   },
+   "objectivity": {
+    "score": 4,
+    "why": "No commercial interest; but text says only suggestion quality is significant (p. 44) while Table 15 shows usability beta=-0.690, p=.001."
+   },
+   "references": {
+    "score": 3,
+    "why": "About 30 APA references, mostly recent; four different papers share one DOI (10.1145/3644815.3644949, pp. 50-51), so citations are unreliable."
+   },
+   "novelty": {
+    "score": 3,
+    "why": "Perception survey echoing prior literature; RQ2 tool comparison left unanswered; every respondent scores >=4.0 on every construct (Table 10, p. 35)."
+   }
+  },
+  "score": 3.67,
+  "anchors": [
+   "G082",
+   "G016"
+  ],
+  "flag": "internal inconsistencies: regression text vs Table 15; interviews recorded vs not recorded; objective task measures described but not reported; Table 10 minima all 4.0; duplicated DOIs"
+ },
+ "G086": {
+  "id": "G086",
+  "kind": "grey",
+  "criteria": {
+   "authority": {
+    "score": 5,
+    "why": "Master's thesis, University of Turku (June 2026), two named supervisors; same tier as master's thesis G082."
+   },
+   "rigor": {
+    "score": 4,
+    "why": "Detailed multi-method (3,945-commit mining, static analysis, 117 coded prompts), but N=1 self-experiment, LLM raters, retrospectively reconstructed metrics."
+   },
+   "currency": {
+    "score": 6,
+    "why": "Dated 9.6.2026; repository data May 2025-April 2026."
+   },
+   "objectivity": {
+    "score": 4,
+    "why": "No vendor interest, but author owns and solely built the studied product and is the only experiment subject (acknowledged, Sec. 6.9)."
+   },
+   "references": {
+    "score": 5,
+    "why": "About 56 references, mostly peer-reviewed SE and AI-assisted coding work (SPACE, SPACE of AI, vibe/agentic coding)."
+   },
+   "novelty": {
+    "score": 4,
+    "why": "Rare production data on an AI-authored repository (99.4% bot commits), but N=1 experiment and n=30 convenience survey; conclusions echo prior work."
+   }
+  },
+  "score": 4.67,
+  "anchors": [
+   "G082",
+   "G016"
+  ],
+  "flag": "internal inconsistencies: Cohen's kappa 0.72 (p. 28) vs 0.60 (p. 43); experience counts sum to 31 of N=30 and '<1 year 33.3%' vs 'all >=1 year' (pp. 35, 77); 'nine items mean 4.1' vs Table 5.5 (p. 80)"
+ },
+ "G087": {
+  "id": "G087",
+  "kind": "grey",
+  "criteria": {
+   "authority": {
+    "score": 4,
+    "why": "Bachelor's thesis, LUT University (2026), named examiner, Turnitin-checked; undergraduate tier, one below master's theses (G082)."
+   },
+   "rigor": {
+    "score": 4,
+    "why": "Six interviews, Braun & Clarke thematic analysis; guide, affinity map and 201-code codebook in appendices; single coder, 25-35 min interviews."
+   },
+   "currency": {
+    "score": 6,
+    "why": "Bachelor's thesis 2026; interviews December 2025-July 2026 (abstract, p. 2)."
+   },
+   "objectivity": {
+    "score": 5,
+    "why": "Academic, no commercial interest; Sec. 5.4 acknowledges N=6 and self-report limits; AI writing assistance declared."
+   },
+   "references": {
+    "score": 4,
+    "why": "About 34 references, relevant peer-reviewed studies (Peng, Becker/METR, Cui, SPACE); modest base."
+   },
+   "novelty": {
+    "score": 4,
+    "why": "Useful four-condition explanation of conflicting AI-productivity results, but drawn from six self-reports in Northern Europe."
+   }
+  },
+  "score": 4.5,
+  "anchors": [
+   "G082",
+   "G016"
+  ],
+  "flag": ""
+ },
+ "G090": {
+  "id": "G090",
+  "kind": "grey",
+  "criteria": {
+   "authority": {
+    "score": 6,
+    "why": "Stray, Moe et al. (University of Oslo, SINTEF), established empirical SE researchers; Research Council of Norway funding."
+   },
+   "rigor": {
+    "score": 5,
+    "why": "Mining, cleaning, Mann-Whitney and Spearman with Bonferroni described, scripts public; no threats-to-validity section, caveats scattered (pp. 16, 22)."
+   },
+   "currency": {
+    "score": 6,
+    "why": "arXiv 2509.20353v2, January 2026; two-year (105-week) commit window before and after the September 2023 Copilot rollout."
+   },
+   "objectivity": {
+    "score": 6,
+    "why": "Academic, no vendor ties; reports null results and a self-selection effect against naive Copilot gains."
+   },
+   "references": {
+    "score": 6,
+    "why": "Full reference list of peer-reviewed and industry evidence (Peng, Cui, Brynjolfsson, Murphy-Hill, SPACE)."
+   },
+   "novelty": {
+    "score": 5,
+    "why": "New longitudinal before/after commit analysis (39 devs, 4,095 weeks); survey and interview data partly reported earlier (p. 7)."
+   }
+  },
+  "score": 5.67,
+  "anchors": [
+   "G071",
+   "G014"
+  ],
+  "flag": ""
+ },
+ "G091": {
+  "id": "G091",
+  "kind": "grey",
+  "criteria": {
+   "authority": {
+    "score": 4,
+    "why": "Single author, University of East London; not a framework owner or recognized expert in this field; arXiv, not peer reviewed."
+   },
+   "rigor": {
+    "score": 5,
+    "why": "MLR per Garousi: databases, search terms, PRISMA flow 312 to 67, source tiers, threats Sec. 10; single reviewer, pilot only approximate ranges."
+   },
+   "currency": {
+    "score": 6,
+    "why": "arXiv 2605.01160, 1 May 2026; sources January 2022-April 2026."
+   },
+   "objectivity": {
+    "score": 5,
+    "why": "No commercial interest, flags vendor-funded evidence; but advocates the author's own SGM via an uncontrolled Spec Kit pilot."
+   },
+   "references": {
+    "score": 5,
+    "why": "67 tiered sources with full list; Table 1 gives Paradkar's Google RCT the ~4,867 pooled sample of another study (p. 8)."
+   },
+   "novelty": {
+    "score": 5,
+    "why": "New constructs (PRP, AAMT, SGM) from a documented MLR, so not a pure unevaluated proposal; pilot only illustrative."
+   }
+  },
+  "score": 5.0,
+  "anchors": [
+   "G058",
+   "G068"
+  ],
+  "flag": ""
+ },
+ "G092": {
+  "id": "G092",
+  "kind": "grey",
+  "criteria": {
+   "authority": {
+    "score": 6,
+    "why": "Vella and Blincoe, University of Auckland; manuscript submitted to ACM; Blincoe is an established empirical SE researcher."
+   },
+   "rigor": {
+    "score": 6,
+    "why": "Two-wave design, eligibility and attrition analysis, Wilcoxon with Holm-Bonferroni, reflexive TA, ethics approval, replication package; threats Sec. 5.4."
+   },
+   "currency": {
+    "score": 6,
+    "why": "arXiv 2605.23135, 22 May 2026; waves October 2024 and April 2025."
+   },
+   "objectivity": {
+    "score": 6,
+    "why": "Academic; partial Westpac support and practitioner-author bias declared and managed (p. 23); reports worsening DevEx."
+   },
+   "references": {
+    "score": 6,
+    "why": "53 references, recent peer-reviewed and industry studies (DevEx, METR, DORA 2025, SPACE of AI)."
+   },
+   "novelty": {
+    "score": 6,
+    "why": "Longitudinal matched cohort (n=95); new constructs: supervisory engineering work and the productivity-experience paradox."
+   }
+  },
+  "score": 6.0,
+  "anchors": [
+   "G071",
+   "G014"
+  ],
+  "flag": ""
+ },
+ "G093": {
+  "id": "G093",
+  "kind": "grey",
+  "criteria": {
+   "authority": {
+    "score": 4,
+    "why": "Single practitioner author at Yahoo, views his own; not a recognized framework owner; arXiv preprint, not peer reviewed."
+   },
+   "rigor": {
+    "score": 5,
+    "why": "Survey method detailed (anonymous, 1-15 May 2026, CIs, Cohen's d, bootstrap NPS); specific threats Sec. 8.8; single-arm self-report."
+   },
+   "currency": {
+    "score": 6,
+    "why": "arXiv 2603.14805v2, revised 4 June 2026; deployment and survey in 2026."
+   },
+   "objectivity": {
+    "score": 4,
+    "why": "No product sold, but author led the evaluated deployment and designed the survey (disclosed, p. 48); strong advocacy claims."
+   },
+   "references": {
+    "score": 5,
+    "why": "About 88 academic and industry references; many are recent preprints, which the author acknowledges."
+   },
+   "novelty": {
+    "score": 5,
+    "why": "New framework (Knowledge Activation, AKU schema) with enterprise deployment data (87 skills, n=67); evaluation is perception-only."
+   }
+  },
+  "score": 4.83,
+  "anchors": [
+   "G016",
+   "G068"
+  ],
+  "flag": ""
+ },
+ "G096": {
+  "id": "G096",
+  "kind": "grey",
+  "criteria": {
+   "authority": {
+    "score": 5,
+    "why": "Master's thesis, Aalto University (February 2020), advised by Fabian Fagerholm, originator of the DX concept; same tier as G082."
+   },
+   "rigor": {
+    "score": 4,
+    "why": "MLR per Garousi: four databases, one search string, one snowballing round, two Google pages; no quality assessment (p. 23)."
+   },
+   "currency": {
+    "score": 4,
+    "why": "February 2020, literature to November 2019; predates SPACE, DevEx and AI assistants; old like G060 (4)."
+   },
+   "objectivity": {
+    "score": 5,
+    "why": "Academic, Reaktor support acknowledged, no commercial bias; Sec. 5.2 discusses search-strategy validity limits."
+   },
+   "references": {
+    "score": 5,
+    "why": "59 included sources (40 scientific, 19 grey) listed in Appendix A, plus full reference list."
+   },
+   "novelty": {
+    "score": 4,
+    "why": "Early MLR mapping DX definitions and factors; exploratory, no own definition, later superseded by DX/DevEx work."
+   }
+  },
+  "score": 4.5,
+  "anchors": [
+   "G060",
+   "G082"
+  ],
+  "flag": "internal inconsistencies (minor): Table 4 reports 19 included grey sources, Appendix Table A2 lists 18 (pp. 26, 70-72)"
+ },
+ "G097": {
+  "id": "G097",
+  "kind": "grey",
+  "criteria": {
+   "authority": {
+    "score": 5,
+    "why": "Master's thesis, Chalmers (June 2024), academic supervisor plus industrial supervisor at Zenseact; same tier as G082."
+   },
+   "rigor": {
+    "score": 4,
+    "why": "Single case, 27 interviews (Table 3.1), snowball/purposive sampling, Braun & Clarke in NVivo, trustworthiness Sec. 3.6; 10 of 27 under 25 min."
+   },
+   "currency": {
+    "score": 5,
+    "why": "June 2024; data period not stated; predates agentic coding tools."
+   },
+   "objectivity": {
+    "score": 5,
+    "why": "Academic, no vendor interest; thesis hosted by the case company, recommendations addressed to Zenseact."
+   },
+   "references": {
+    "score": 5,
+    "why": "Extensive academic and industry list (SPACE, DevEx, UTAUT, TOE, Peng, Minelli)."
+   },
+   "novelty": {
+    "score": 4,
+    "why": "New perception data from a safety-critical firm; UTAUT/SPACE survey framework is tentative and unpiloted (Ch. 6)."
+   }
+  },
+  "score": 4.67,
+  "anchors": [
+   "G082",
+   "G016"
+  ],
+  "flag": ""
+ },
+ "G098": {
+  "id": "G098",
+  "kind": "grey",
+  "criteria": {
+   "authority": {
+    "score": 6,
+    "why": "DORA (dora.dev) insight article by Nathen Harvey and Jessica Baolin; framework-owner organization."
+   },
+   "rigor": {
+    "score": 5,
+    "why": "Methodology paragraph: thematic analysis of 1,110 open-ended responses, Google engineers, Q3 2025, priming caveat; no coding procedure."
+   },
+   "currency": {
+    "score": 6,
+    "why": "Published March 10, 2026; data from Q3 2025."
+   },
+   "objectivity": {
+    "score": 4,
+    "why": "Non-commercial, balanced on downsides; but Google-only data, Google-hosted program, promotes Google's SEQ (as DORA guides: 4)."
+   },
+   "references": {
+    "score": 4,
+    "why": "Cites 2025 DORA report and one informal paper (Kam, Miller et al., 2025); names SPACE, HEART, VSM; no reference list."
+   },
+   "novelty": {
+    "score": 5,
+    "why": "New qualitative data and three-tensions synthesis (verification tax, expertise paradox, workflow gap); partly echoes DORA 2025."
+   }
+  },
+  "score": 5.0,
+  "anchors": [
+   "G001",
+   "G049"
+  ],
+  "flag": ""
+ },
+ "G099": {
+  "id": "G099",
+  "kind": "grey",
+  "criteria": {
+   "authority": {
+    "score": 4,
+    "why": "Justin Reock, Deputy CTO of DX (Core 4 owner), in DX's newsletter; as DX vendor blogs G023-G026 (authority 4)."
+   },
+   "rigor": {
+    "score": 3,
+    "why": "Method in two sentences: quarterly analysis of 400+ companies, '40% more data points'; no n, measures undefined; PRs vs 'code' conflated."
+   },
+   "currency": {
+    "score": 6,
+    "why": "Last updated April 15, 2026; Q1 2026 benchmarks compared with Q4 2025."
+   },
+   "objectivity": {
+    "score": 2,
+    "why": "Vendor teaser for DX's own Q1 2026 report ('read the full report here'); strong commercial interest despite caution on averages."
+   },
+   "references": {
+    "score": 2,
+    "why": "No external references; only links to DX's own Q4 2025 and Q1 2026 impact reports."
+   },
+   "novelty": {
+    "score": 3,
+    "why": "New benchmark figures (EMs 4x code; juniors 4.9 vs Staff+ 4.8 h/week), but only two previews; rest in full report."
+   }
+  },
+  "score": 3.33,
+  "anchors": [
+   "G025",
+   "G023"
+  ],
+  "flag": ""
+ },
+ "G100": {
+  "id": "G100",
+  "kind": "grey",
+  "criteria": {
+   "authority": {
+    "score": 4,
+    "why": "Taylor Bruneaux, DX analyst; DX owns Core 4 and the AI Measurement Framework; DX sources scored 4 (G022, G023)."
+   },
+   "rigor": {
+    "score": 3,
+    "why": "Framework structure clear (utilization/impact/cost, direct vs indirect); Q1 2026 report and longitudinal study cited without method."
+   },
+   "currency": {
+    "score": 6,
+    "why": "Last updated May 20, 2026; figures from DX Q1 2026 report."
+   },
+   "objectivity": {
+    "score": 2,
+    "why": "Promotes DX framework, AI ROI calculator and customer cases (Booking.com, Intercom); no limitations of own data."
+   },
+   "references": {
+    "score": 3,
+    "why": "Links only to DX's own research (Core 4, longitudinal study, Q1 report); DORA named; no external studies."
+   },
+   "novelty": {
+    "score": 3,
+    "why": "Restates DX AI Measurement Framework with updated benchmarks (93%, 3.9 h/week, 27.4%, 2.4 vs 1.5 PRs) and agent metrics."
+   }
+  },
+  "score": 3.5,
+  "anchors": [
+   "G026",
+   "G022"
+  ],
+  "flag": ""
+ },
+ "G106": {
+  "id": "G106",
+  "kind": "grey",
+  "criteria": {
+   "authority": {
+    "score": 4,
+    "why": "Otto Hilska, Swarmia founder & CEO (Gartner MQ Leader vendor; ex-CPO Smartly.io); Swarmia already in corpus (G040)."
+   },
+   "rigor": {
+    "score": 2,
+    "why": "No method; claims rest on unspecified observation of 'how our customers work in 2026' and talks with leaders."
+   },
+   "currency": {
+    "score": 6,
+    "why": "Published May 12, 2026; cites Gartner Magic Quadrant of 5 May 2026."
+   },
+   "objectivity": {
+    "score": 2,
+    "why": "Announces Swarmia's Gartner 'Leader' placement; vendor CEO, trial/demo calls to action; strong commercial interest (as G023-G026)."
+   },
+   "references": {
+    "score": 3,
+    "why": "One formal citation (Gartner MQ, subscribers only); Steve Yegge piece named without link; no data sources."
+   },
+   "novelty": {
+    "score": 3,
+    "why": "Opinion: three delivery modes (roadmap, campfire, stream) and four expectations for AI-era metrics; no data."
+   }
+  },
+  "score": 3.33,
+  "anchors": [
+   "G023",
+   "G053"
+  ],
+  "flag": ""
+ },
+ "G107": {
+  "id": "G107",
+  "kind": "grey",
+  "criteria": {
+   "authority": {
+    "score": 3,
+    "why": "InfoQ news by contributor Craig Risi (software architect, book author); as InfoQ news items G034-G036 (3)."
+   },
+   "rigor": {
+    "score": 3,
+    "why": "Restates DORA sample (~5,000 survey respondents, 100+ interview hours); no method of its own or analysis detail."
+   },
+   "currency": {
+    "score": 6,
+    "why": "Published March 17, 2026; summarizes the 2025 DORA report."
+   },
+   "objectivity": {
+    "score": 4,
+    "why": "Editorial, non-commercial summary of non-vendor research; covers risks; uncritical restatement, sponsored content on page."
+   },
+   "references": {
+    "score": 3,
+    "why": "Names one source precisely (2025 DORA report); no link or reference list in extracted text."
+   },
+   "novelty": {
+    "score": 2,
+    "why": "Purely secondary: no new data or analysis; duplicates G009 (2025 DORA report) and G115 (AI Capabilities Model)."
+   }
+  },
+  "score": 3.5,
+  "anchors": [
+   "G036",
+   "G035"
+  ],
+  "flag": ""
+ },
+ "G108": {
+  "id": "G108",
+  "kind": "grey",
+  "criteria": {
+   "authority": {
+    "score": 3,
+    "why": "LeadDev Managing Editor (technology journalist); named sources at Plaid, LinkedIn (VP Eng) and Multitudes (CEO); as G054 (3)."
+   },
+   "rigor": {
+    "score": 3,
+    "why": "Survey figures from Multitudes (700+ professionals) and LeadDev AI Impact Report 2025; no sampling, timing or question details."
+   },
+   "currency": {
+    "score": 6,
+    "why": "Published March 25, 2026."
+   },
+   "objectivity": {
+    "score": 3,
+    "why": "Several voices, but core data and four-bucket advice come from Multitudes, an engineering-analytics vendor; LDX3 promotion."
+   },
+   "references": {
+    "score": 3,
+    "why": "Names Multitudes report and LeadDev AI Impact Report 2025; no links or formal references in extracted text."
+   },
+   "novelty": {
+    "score": 4,
+    "why": "Recent survey data plus original interviews; practical four metric buckets (AI usage, customer value, customer pain, human impact)."
+   }
+  },
+  "score": 3.67,
+  "anchors": [
+   "G033",
+   "G054"
+  ],
+  "flag": ""
+ },
+ "G109": {
+  "id": "G109",
+  "kind": "grey",
+  "criteria": {
+   "authority": {
+    "score": 3,
+    "why": "Freelance journalist Chris Stokel-Walker on LeadDev; study attributed to MIT/Wharton researchers, authors unnamed."
+   },
+   "rigor": {
+    "score": 3,
+    "why": "Gives n (100,000+ GitHub developers), tool generations and metrics (commits, LOC, PRs, releases); no design or attribution method."
+   },
+   "currency": {
+    "score": 6,
+    "why": "Published June 11, 2026."
+   },
+   "objectivity": {
+    "score": 4,
+    "why": "No commercial interest; quotes AI-firm practitioners (Nearform, &above); headline 'not more productive' overstates +20% releases."
+   },
+   "references": {
+    "score": 2,
+    "why": "Study cited without title, authors, venue or link; no other sources; weaker than anchor news items."
+   },
+   "novelty": {
+    "score": 3,
+    "why": "Secondary report of a new study (741% LOC vs +65% PRs, +20% releases; weak-link hypothesis) plus two quotes."
+   }
+  },
+  "score": 3.5,
+  "anchors": [
+   "G035",
+   "G054"
+  ],
+  "flag": ""
+ },
+ "G112": {
+  "id": "G112",
+  "kind": "grey",
+  "criteria": {
+   "authority": {
+    "score": 3,
+    "why": "McKinsey senior partners; excerpt of McKinsey book 'Rewired' (Wiley, 2026); as G046 McKinsey (authority 3)."
+   },
+   "rigor": {
+    "score": 2,
+    "why": "'Nearly 300 publicly traded companies' analysis without method (footnote 2 absent); productivity undefined; cases anecdotal."
+   },
+   "currency": {
+    "score": 6,
+    "why": "Published April 1, 2026 (book excerpt, copyright 2026)."
+   },
+   "objectivity": {
+    "score": 3,
+    "why": "Consultancy promoting its book; hype ('staggering', 10x/20x) beyond its 16-30% data; admits success cases are 'few and far between'."
+   },
+   "references": {
+    "score": 2,
+    "why": "No references; footnotes 1-2 not reproduced; G-SIB bank and financial-services cases unnamed (as G046: 2)."
+   },
+   "novelty": {
+    "score": 3,
+    "why": "Four-level AI support model and two-shift 'agent factory'; top-quintile figures (16-30%, 31-45%) new but unverifiable."
+   }
+  },
+  "score": 3.17,
+  "anchors": [
+   "G046"
+  ],
+  "flag": ""
+ },
+ "G115": {
+  "id": "G115",
+  "kind": "grey",
+  "criteria": {
+   "authority": {
+    "score": 6,
+    "why": "DORA researchers Kevin M. Storer (Ph.D.) and Derek DeBellis; framework-owner research team (as G001, G098)."
+   },
+   "rigor": {
+    "score": 5,
+    "why": "Three phases: 78 interviews + literature + SMEs, validated survey items, ~5,000-respondent survey; no statistics or effect sizes."
+   },
+   "currency": {
+    "score": 6,
+    "why": "Published September 23, 2025, alongside the 2025 DORA report."
+   },
+   "objectivity": {
+    "score": 4,
+    "why": "Non-commercial research, but on Google Cloud Blog with Gemini Enterprise promotion (as DORA guides: 4)."
+   },
+   "references": {
+    "score": 4,
+    "why": "Points to DORA website and full 2025 report; 'existing literature' mentioned without citations; no reference list."
+   },
+   "novelty": {
+    "score": 5,
+    "why": "First-hand introduction of the DORA AI Capabilities Model (seven capabilities linked to outcomes); content also in G009."
+   }
+  },
+  "score": 5.0,
+  "anchors": [
+   "G098",
+   "G001"
+  ],
+  "flag": ""
+ },
+ "P2002": {
+  "id": "P2002",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 4,
+    "why": "Aim explicit (Sec. I.D: propose governance-oriented SPACE-based framework) but no RQs; abstract and Sec. IV claim unsupported 'findings'."
+   },
+   "method": {
+    "score": 3,
+    "why": "Conceptual design only (Sec. III, Figs. 1-3, Tables I-II); authors state 'conceptual ... rather than empirical' (p. 3); no evaluation procedure."
+   },
+   "sample": {
+    "score": 2,
+    "why": "No dataset or participants; 'stakeholders reviewing the outputs' (p. 4) never described (number, roles, setting)."
+   },
+   "threats": {
+    "score": 3,
+    "why": "Sec. V.E 'Limitations' is four generic sentences (p. 6); omits lack of validation and funding by co-author's company (BloomPath)."
+   },
+   "evidence": {
+    "score": 2,
+    "why": "Only illustrative scores (Table IV) and author-judged comparison (Table III); stakeholder feedback and 'later iterations' (p. 4) lack data."
+   },
+   "contribution": {
+    "score": 3,
+    "why": "Normative governance safeguards layered on SPACE; plausible for practice but unvalidated and largely restating existing principles (EU AI Act, OECD)."
+   }
+  },
+  "score": 2.83,
+  "anchors": [
+   "P0011",
+   "P0129"
+  ],
+  "flag": "below FT-EC3 threshold (<3.0); not empirical; internal inconsistencies: comparison 'summarized in Table IV' is Table III (p. 5), Discussion intro repeats Results intro, in-text citation numbers offset from reference list (e.g., 'Kellogg et al. [17]' is Christin)"
+ },
+ "P2003": {
+  "id": "P2003",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Four explicit RQs on productivity/quality, challenges, usability perception and comparison with traditional Scrum (p. 1)."
+   },
+   "method": {
+    "score": 3,
+    "why": "Comparative case study of two teams; how time, defects, coverage and the 'traditional Scrum' benchmark were measured is never described."
+   },
+   "sample": {
+    "score": 3,
+    "why": "Two teams (6 professionals, 11 students), roles/experience in Table II; respondent count conflicts (n=19 vs 17 members vs 6/7+5/5)."
+   },
+   "threats": {
+    "score": 3,
+    "why": "Three limitations in the conclusion (n=19 framed as purposeful, free tools, Libya); omits missing baseline and self-report bias (p. 5)."
+   },
+   "evidence": {
+    "score": 2,
+    "why": "Below 3: no described baseline for RQ4 claims; sprint velocity and factor analysis never reported; gains 10-20% (Sec. VI) vs 30-45%."
+   },
+   "contribution": {
+    "score": 3,
+    "why": "Low-cost AI-in-Scrum mapping for resource-constrained teams; plausible but unvalidated and claimed 'proven' from two teams."
+   }
+  },
+  "score": 3.17,
+  "anchors": [
+   "P1297",
+   "P0529"
+  ],
+  "flag": "internal inconsistencies: respondents n=19 vs 6+11 team members vs Table II 6/7 and 5/5; headline gain 10-20% vs 30-45% per phase; 'Bali et al. [6]' but [6] is Wang; 'Rubin & Babbie' absent from references; several cited venues look unverifiable (e.g., 'Business AI Bulletin', 'TechCase Reports') - worth checking"
+ },
+ "P2004": {
+  "id": "P2004",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 4,
+    "why": "Aim explicit as presenting the VS Code assistant and its contributions; no RQs, evaluation goals stated only in Sec. IV."
+   },
+   "method": {
+    "score": 3,
+    "why": "System design detailed; evaluation is uncontrolled pre/post over 3-4 weeks plus undefined 'synthetic trace modeling'; no statistical tests."
+   },
+   "sample": {
+    "score": 3,
+    "why": "12 professional developers (junior/mid/senior) on personal projects; recruitment, per-level counts and setting details missing."
+   },
+   "threats": {
+    "score": 3,
+    "why": "Limitations paragraph at end of Sec. IV (individual projects, team generalization, stationarity); omits no-control, novelty, synthetic data."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Point estimates without variance; MAE 1.4% (abstract) vs 0.10 h, R2 0.990 vs 0.58-0.72; error-fix -35% vs bug resolution -15%."
+   },
+   "contribution": {
+    "score": 3,
+    "why": "Integrates known techniques (activity tracking, XGBoost, LLM prompts) in one IDE tool; individual-level, preliminary, limited novelty."
+   }
+  },
+  "score": 3.17,
+  "anchors": [
+   "P0030",
+   "P0011"
+  ],
+  "flag": "internal inconsistencies: abstract MAE 1.4% vs MAE 0.10 h / R2 0.990 (p. 5) vs R2 0.58-0.72; forecasts on 90-day traces within a 3-4-week study; error fix time -35% vs bug resolution -15%; results paragraph misplaced in Sec. III.E; duplicated references ([12]/[33], [14]/[31])"
+ },
+ "P2005": {
+  "id": "P2005",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Five RQs and five hypotheses (pp. 1, 3); note RQ1 (AI->scalability) does not match H3 (AI->productivity)."
+   },
+   "method": {
+    "score": 4,
+    "why": "PLS-SEM with measurement model (loadings, alpha, AVE, Fornell-Larcker, VIF) and 5,000 bootstraps; items not listed, single-source self-report."
+   },
+   "sample": {
+    "score": 4,
+    "why": "104 respondents via snowball sampling; roles, experience, education, gender in Tables I-II; number of companies not given."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Sec. V Limitations: perceived vs objective measures, snowball sampling, common method bias, Sri Lanka only; short but specific."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Tables reported, but H1 t=0.592 with p=0.000; Table XI betas differ from Table IX; H3 path mislabelled (AI->S vs TU)."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Links onboarding practices to perceived productivity and scalability in an under-studied context; useful but incremental, perception-only."
+   }
+  },
+  "score": 4.0,
+  "anchors": [
+   "P0208",
+   "P0001"
+  ],
+  "flag": "internal inconsistencies: Table XI H1 t-statistic 0.592 with p=0.000; Table XI path coefficients (0.507, 0.450, 0.233...) differ from Table IX bootstrap betas (0.299, 0.620, 0.203...); H3 defined as AI->DP but model tests AI->S and text attributes beta=0.233 to TU"
+ },
+ "P2006": {
+  "id": "P2006",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Explicit aim and contributions; hypotheses H1-H4 on cloud adoption vs four DORA metrics (Secs. I, III.E)."
+   },
+   "method": {
+    "score": 3,
+    "why": "Cross-sectional OLS/ANOVA, team size the only control; self-reported (normally bucketed) DORA answers treated as continuous team values."
+   },
+   "sample": {
+    "score": 3,
+    "why": "N=1,200 of 1,487 teams with group sizes (Table II), but also described as '26,415 user sessions' after bot filtering (p. 2)."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Sec. III.F names cross-sectional design/reverse causality, self-report bias, coarse ordinal measure, sector/region skew; omits confounders, provenance."
+   },
+   "evidence": {
+    "score": 2,
+    "why": "Below 3: residue of an unrelated UX/loyalty study (p. 4); abstract DF 2.3x, LT -65% contradict Table II (3.54x, -82%)."
+   },
+   "contribution": {
+    "score": 3,
+    "why": "Associational evidence that cloud adoption tracks DORA metrics plus a composite CAEI index; limited by doubtful data provenance."
+   }
+  },
+  "score": 3.33,
+  "anchors": [
+   "P0591",
+   "P0208"
+  ],
+  "flag": "possible exclusion: data provenance/integrity - residue of an unrelated e-commerce UX study ('26,415 user sessions', bot filtering, Wasilewski protocol [ref. to a UX dataset], 'All UX dimensions... correlated with Loyalty', pp. 2, 4); internal inconsistencies: abstract/conclusion effects (DF 2.3x, LT -65%, MTTR -82%) contradict Table II and Fig. 1 (3.54x, -82%, -90%); CFR column missing in Table II; CAEI formula garbled"
+ },
+ "P2007": {
+  "id": "P2007",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Four explicit RQs on AI tool characteristics, UX/DX variables, main findings and limitations (Sec. III.A)."
+   },
+   "method": {
+    "score": 4,
+    "why": "Kitchenham-based SLR: search string, six databases, 2020-2025, inclusion/exclusion, 8-item QA (cut-off 5); no snowballing or inter-rater check."
+   },
+   "sample": {
+    "score": 4,
+    "why": "77 primary studies with year, venue and source distributions (Figs. 3-5, venue table); screening counts only in Fig. 2."
+   },
+   "threats": {
+    "score": 3,
+    "why": "Two sentences in the Conclusion (English-only, no grey literature, heterogeneity); no threats section for the review process."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Narrative synthesis; RQ3 findings stated without citations or counts; no per-study extraction table."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Useful map of UX/DX/HAX variables and limitations in AI-tool studies; incremental, conference-length review."
+   }
+  },
+  "score": 3.83,
+  "anchors": [
+   "P1345",
+   "P1286"
+  ],
+  "flag": ""
+ },
+ "P2008": {
+  "id": "P2008",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Explicit aim and four contributions, including a DORA-based before/after evaluation (Sec. I)."
+   },
+   "method": {
+    "score": 4,
+    "why": "Pre/post comparison of two adjacent periods (~12 months) from CI/CD, VCS, test, tracker and observability data; no statistical tests (Sec. V.D)."
+   },
+   "sample": {
+    "score": 3,
+    "why": "One anonymized e-commerce company with hundreds of microservices; number of teams, developers and survey respondents not reported."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Sec. V.D names observational bias and parallel process improvements, with controls; short, omits confounding of 'service-level autonomy'."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Table I before/after values without variance; lead time -40% (abstract) vs -64% (Table I); rollout 30% faster vs 'half the time'."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Practical governance template and SDLC integration pattern with DORA-based evaluation at enterprise scale; single-case experience report."
+   }
+  },
+  "score": 3.83,
+  "anchors": [
+   "P1261",
+   "P0549"
+  ],
+  "flag": "internal inconsistencies: lead time ~40% shorter (abstract) vs 14->5 days/-64% (Table I) vs '2-3 weeks to <1 week'; CFR 8% (Table I) vs '7-8%'; cross-service rollout ~30% faster (Sec. IV.B) vs 'about half the time' (Sec. VII); single author affiliated with eBay, studied company anonymized"
+ },
+ "P2010": {
+  "id": "P2010",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Four explicit contributions; cohorts and outcomes (TTC, retention, AI-blackout, senior productivity) clearly defined (Secs. I, VI.A)."
+   },
+   "method": {
+    "score": 4,
+    "why": "Non-randomized three-cohort quasi-experiment; Welch/Fisher with Holm, covariate OLS, sensitivity; baseline cohort scored retrospectively (Sec. V.A)."
+   },
+   "sample": {
+    "score": 4,
+    "why": "200-engineer org; cohort sizes 35/22/45, 147 engineers, preceptor selection described; organization and domain anonymized."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Sec. VIII.C: specific internal threats (org learning, cohort/hiring, Hawthorne, selection), external, construct validity and power."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Rich statistics, but key outcomes inconsistent: baseline blackout N/A (Table 4) vs 57.1% (Table 4d); 23.1%/61.4% impossible with n=22/45."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "PLA preceptorship framework, AI Boost/Drag multiplier and maturity model; relevant, but single-org preliminary evidence, PMM 4-5 unvalidated."
+   }
+  },
+  "score": 4.17,
+  "anchors": [
+   "P1261",
+   "P0603"
+  ],
+  "flag": "internal inconsistencies: Pre-AI AI-blackout rate 'N/A' (Table 4) vs 57.1% (Table 4d, alpha on n=102); composite pass rates 23.1% and 61.4% not attainable with n=22 and n=45 (per-task rates are) and equal 100% minus the 77%/39% failure rates cited from [11]; AI-Unstructured retention 65.2% and OR 5.48 imply n=23, not 22; baseline retention 78.3% not attainable with n=35; ethics paragraph duplicated"
+ },
+ "P2011": {
+  "id": "P2011",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Three explicit practical questions: what to improve, why it matters, for whom (Sec. I)."
+   },
+   "method": {
+    "score": 3,
+    "why": "Survey->CFA->DirectLiNGAM->k-means is reasonable, but 74 items with n=42; CFA fit and LiNGAM stability not reported."
+   },
+   "sample": {
+    "score": 3,
+    "why": "42 developers at Panasonic Automotive Systems; response rate, roles, experience and recruitment not described."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Short limitations paragraph naming single org, n=42, no interventional validation, untested LiNGAM assumptions (p. 2)."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Only total effects (Table I) and the Product-category graph (Fig. 2); cluster sizes and other categories unreported."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Actionable, organization-adaptive way to prioritize satisfaction drivers combining causal discovery and clustering; 2-page preliminary."
+   }
+  },
+  "score": 3.67,
+  "anchors": [
+   "P1345",
+   "P1303"
+  ],
+  "flag": ""
+ },
+ "P2012": {
+  "id": "P2012",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 4,
+    "why": "Explicit RQ and two sub-questions on drafting/verification/refinement trade-offs (Sec. III); above the 3 of P0011/P0013."
+   },
+   "method": {
+    "score": 3,
+    "why": "Three-stage framework plus pilot design (two tasks, two conditions, four measures); implementer, AI tool and procedure unspecified."
+   },
+   "sample": {
+    "score": 3,
+    "why": "No participants, tool or setting reported for the pilot; same level as P0011's proof-of-concept."
+   },
+   "threats": {
+    "score": 3,
+    "why": "Sec. IX lists generic limitations (small task set, pilot not generalizable); no validity discussion of the pilot."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Pilot measures recorded but no numbers reported; Table I is 'expected' patterns; 'initial support' claimed beyond the data (p. 3)."
+   },
+   "contribution": {
+    "score": 3,
+    "why": "Rework-aware productivity framing for AI-assisted frontend work; sensible but largely restates known verification-cost arguments."
+   }
+  },
+  "score": 3.17,
+  "anchors": [
+   "P0011",
+   "P0013"
+  ],
+  "flag": "not empirical: pilot results (times, issue counts, refinement cycles) recorded but not reported"
+ },
+ "P2013": {
+  "id": "P2013",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Two explicit research questions plus directional hypotheses on Lead Time, CFR and MTTR (Sec. I)."
+   },
+   "method": {
+    "score": 4,
+    "why": "Retrospective before/after case study; DORA metrics computed from Azure DevOps run logs and 39 incident meetings with formulas; descriptive only."
+   },
+   "sample": {
+    "score": 4,
+    "why": "30 of ~300 microservices (only those migrated) in an unnamed enterprise; stack described; teams/developers and phase lengths partly unclear."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Sec. IV.C: lead time limited to pipeline duration, meetings as MTTR proxy; omits selection, unequal periods, deployment freeze."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Three means without dispersion or tests; MTTR 3.0->5.0 h reported as +63.0%; dates and migration direction misstated (p. 5)."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Practical IDP reference architecture with DORA evidence and the MTTR trade-off; public dataset; single case."
+   }
+  },
+  "score": 4.0,
+  "anchors": [
+   "P0470",
+   "P0611"
+  ],
+  "flag": "internal inconsistencies: 'migration from centralized to decentralized' (reversed, p. 5); deployment freeze dated Dec 2026-Jan 2027, after the Apr 2025-Feb 2026 window; MTTR 3.0->5.0 h reported as +63.0% (66.7% from shown values)"
+ },
+ "P2014": {
+  "id": "P2014",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Explicit aim: build BayesInsights and evaluate it via performance benchmarking and a user study (Secs. 1, 4)."
+   },
+   "method": {
+    "score": 4,
+    "why": "Hybrid BN construction (DORA DAG, 8-expert weighted survey, HC/PC with bootstrap and BIC, BDeu CPTs); brief 45-min focus-group evaluation."
+   },
+   "sample": {
+    "score": 4,
+    "why": "Survey >2,000 responses, 8 DevX experts, 28 attendees/24 respondents with roles and experience; survey population not described."
+   },
+   "threats": {
+    "score": 3,
+    "why": "No threats or limitations section; only passing remarks on small expert sample and survey bias (Secs. 2, 2.2)."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Questionnaire percentages consistent with n=24; BIC values, expert scores and CPTs withheld; 'effectiveness' rests on perceptions."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Novel causal-modelling tool linking DORA and DevEx at a large company; industrially relevant proof of concept."
+   }
+  },
+  "score": 4.0,
+  "anchors": [
+   "P1299",
+   "P1402"
+  ],
+  "flag": ""
+ },
+ "P2015": {
+  "id": "P2015",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Explicit goal and three RQs on assessing DX, influential factors and feasible measures (p. 2)."
+   },
+   "method": {
+    "score": 4,
+    "why": "Triangulated design: piloted 33-item survey (Greiler DX framework), SonarQube on 38 repos, 7-person reversed-brainstorming focus group."
+   },
+   "sample": {
+    "score": 4,
+    "why": "~100 developers invited, 47 complete, partially randomized focus group; respondent roles/experience and company domain not given."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Sec. 5.1 on transferability/validity is short and mostly external; method-specific caveats scattered in Secs. 3.1-3.2."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Descriptive means/distributions; Spearman correlations claimed 'significant' without coefficients; 'measures successful' yet no post-measurement."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Practical, low-effort DX assessment approach and measures for SMEs without DX teams; single-company, unvalidated."
+   }
+  },
+  "score": 4.0,
+  "anchors": [
+   "P0541",
+   "P0521"
+  ],
+  "flag": ""
+ },
+ "P2017": {
+  "id": "P2017",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Three explicit research questions on KPI-ranking impact, developer perceptions and sustainability of gains (pp. 1-2)."
+   },
+   "method": {
+    "score": 4,
+    "why": "Interview + pre/post metrics of 1,074 projects + 20 random projects + survey; analysis descriptive (medal averages), no tests or coding procedure."
+   },
+   "sample": {
+    "score": 4,
+    "why": "1,074 projects, ~4,900 engineers, bank business area described (pp. 3-4); survey recruitment, response rate and roles of 17 respondents unreported."
+   },
+   "threats": {
+    "score": 4,
+    "why": "'Limitations' (p. 10): single business area, selection bias, missing/manual metrics, n=17, snapshot; insider (Barclays) author bias not discussed."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Trends only as charts; 'significant' gains without tests (ART n=2 projects); survey gives two percentages plus quotes; collaboration claims conflict (pp. 6, 9)."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Large-scale industrial evidence on DORA-as-KPI gaming and standardisation as maturity marker; single organisation, practical recommendations."
+   }
+  },
+  "score": 4.0,
+  "anchors": [
+   "P0480",
+   "P0665"
+  ],
+  "flag": "internal inconsistencies (minor): inter-team collaboration responses 'unanimously affirmative' (p. 6) vs only 18% felt collaboration improved (p. 9); 28% is not a whole share of 17 responses; 'significant' improvements claimed without statistical tests"
+ },
+ "P2018": {
+  "id": "P2018",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Two explicit RQs on aspects of productivity perceived by professors and by students in the SEN capstone (p. 3)."
+   },
+   "method": {
+    "score": 4,
+    "why": "Descriptive case study (Yin): semi-structured interviews + open questionnaire; thematic analysis, dual independent coding, codebook review (Sec. 3.3)."
+   },
+   "sample": {
+    "score": 4,
+    "why": "SEN context detailed and compared with SLR (Table 1); 6 professors (Table 2); 32 students of 2x46 invited (6+26), thin student demographics (p. 4)."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Short Limitations, reflexivity and transferability paragraphs with mitigations (p. 10); low response rate and possible repeat respondents across rounds not discussed."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Themes and subthemes tabulated with supporting quotes; no frequencies; SPACE-extension claims rest on 6 interviews and short open answers."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Maps capstone productivity signs onto SPACE, adds learning and behavioural-cue themes; useful for education, exploratory, single university."
+   }
+  },
+  "score": 4.17,
+  "anchors": [
+   "P1402",
+   "P0536"
+  ],
+  "flag": ""
+ },
+ "P2019": {
+  "id": "P2019",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Six explicit RQs (pp. 2-3) plus stated contributions; RQ3 explicitly flagged as covered in prior paper [8]."
+   },
+   "method": {
+    "score": 5,
+    "why": "4-day field study: controlled A/B sessions, NASA-TLX, annotated screen recordings, workday diaries; LMMs, Cohen's d, content analysis (Sec. 4)."
+   },
+   "sample": {
+    "score": 5,
+    "why": "22 SAP developers, two California sites, roles, experience, Java requirement, ethics approval (Sec. 4.2, pp. 7-8); recruitment channel unstated."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Sec. 7 covers construct/internal/external validity (p. 29) but briefly; ignores n=22 self-selection and study reactivity (RQ6)."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "RQ4 fully reported (F, EMMs, p, d, ICC); RQ3 only summarized from [8]; '120 tasks (27.4%)' vs 122 implied by percentages (p. 17)."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Practical rule-of-thumb for Copilot interaction type; cognitive-load vs perceived-productivity finding; extension of ICSE-SEIP paper, one company."
+   }
+  },
+  "score": 4.5,
+  "anchors": [
+   "P0510",
+   "P0178"
+  ],
+  "flag": "internal inconsistencies (minor): AI-task count 120 vs 122 implied by percentages (p. 17); mis-numbered citations ('Vaithilingam et al. [38]', 'McRae et al. [20]')"
+ },
+ "P2023": {
+  "id": "P2023",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Five explicit RQs on how AI tools affect productivity, code quality, editing, reuse and context switching (p. 2)."
+   },
+   "method": {
+    "score": 5,
+    "why": "Two-year IDE telemetry (151.9M events) analysed with mixed linear models; expert-reviewed, piloted survey; 5 follow-up interviews (Sec. 3)."
+   },
+   "sample": {
+    "score": 5,
+    "why": "800 devices with explicit inclusion criteria (p. 5); survey 1,231 invited, 67 complete, 62 valid, roles/experience/tools reported (p. 4)."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Sec. 6 specific: construct (proxies, perception vs logs), internal (self-selection, activity levels), external (single vendor/assistant) (pp. 10-11)."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Trends and p-values reported, full statistical outputs only in supplement; indirect proxies; survey and telemetry samples are different populations."
+   },
+   "contribution": {
+    "score": 5,
+    "why": "First longitudinal telemetry-plus-perception study of in-IDE AI use; perception-behaviour gap broadly relevant to AI productivity measurement."
+   }
+  },
+  "score": 4.83,
+  "anchors": [
+   "P0178",
+   "P0492"
+  ],
+  "flag": ""
+ },
+ "P2024": {
+  "id": "P2024",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Two explicit RQs on quantifiable business impact and organisational/human-AI collaboration factors (pp. 2-3)."
+   },
+   "method": {
+    "score": 3,
+    "why": "Chronological 25-month experience report; production counts without described analysis procedure or comparison group; RQ2 observations anecdotal."
+   },
+   "sample": {
+    "score": 4,
+    "why": "WhatsApp/Meta setting, codebases, languages and lint types detailed; number of engineers/reviewers involved not reported; use cases chosen by business need."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Sec. 9 names construct, temporal, selection-bias and external validity, one or two sentences each (p. 10)."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Per-lint counts (Table 1), but 60/40 collaboration split and 'equivalent bug rates' unsupported; triage precision 86% vs 90%; era totals inconsistent."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Rare large-scale industrial account of GenAI deployment with organisational lessons (review ownership, collaboration modes); single company, self-reported."
+   }
+  },
+  "score": 3.83,
+  "anchors": [
+   "P0480",
+   "P0208"
+  ],
+  "flag": "internal inconsistencies: bug-triage precision 86% (abstract, Table 3) vs 90% (Sec. 5.1.5, p. 7); agentless-era changes '900+' (Table 2) vs 1,278 closed diffs summed from Table 1 (p. 4); 60%/40% collaboration split not derivable from reported counts (e.g., 108/290 and 252/564 one-click)"
+ },
+ "P2025": {
+  "id": "P2025",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Three explicit RQs comparing agents and copilots on productivity, user experience and interaction patterns (p. 4)."
+   },
+   "method": {
+    "score": 5,
+    "why": "Within-participant study, randomized tool order, test-based correctness, linear model with problem fixed effects, Wilcoxon tests, prompt annotation (Sec. 3)."
+   },
+   "sample": {
+    "score": 4,
+    "why": "20 students via university mailing lists, regular Copilot users, experience and Python proficiency reported; small, student-only, novice agent users (Sec. 3.1)."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Dedicated Limitations (pp. 10-11): single tool instances, uncontrolled Copilot LLM, novice students, timing realism, predefined tasks, study period."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Means, SEs, p-values reported; correctness means listed in reversed order (p. 7), C1/C2 swapped vs Table 2; effort compared only on correct subsets."
+   },
+   "contribution": {
+    "score": 5,
+    "why": "First controlled copilot-vs-agent comparison: higher correctness and lower user effort but no satisfaction gain; design desiderata; broadly relevant."
+   }
+  },
+  "score": 4.67,
+  "anchors": [
+   "P0510",
+   "P0603"
+  ],
+  "flag": "internal inconsistencies (minor): correctness given as 'agents vs copilots (25% vs 60%)' though 60% is the agent (p. 7); C1/C2 labels in text swapped vs Table 2 (pp. 7-8); template running header 'Trovato et al.'; note: co-author from All Hands AI (OpenHands developer), not discussed"
+ },
+ "P2026": {
+  "id": "P2026",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 4,
+    "why": "Aim explicit (propose and validate LLM-EMM against three stated limitations, p. 1) but no RQs; experiment questions implicit."
+   },
+   "method": {
+    "score": 3,
+    "why": "Pipeline technically detailed, but data acquisition, training labels, outcome measurement and baseline implementation undescribed; regressions on N=47."
+   },
+   "sample": {
+    "score": 3,
+    "why": "47 anonymised Chinese firms with sector and artifact counts (p. 4); how firms were recruited and data obtained is not stated."
+   },
+   "threats": {
+    "score": 3,
+    "why": "No limitations or threats section; only future work (causal DiD, open source, lightweight LLMs) in the Conclusion."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Tables with SEs/CIs, but Model 5 Adj. R2 0.612 exceeds the 'highest' 0.601; p<0.05 called 'marginally significant'; R2=0.93 called correlation."
+   },
+   "contribution": {
+    "score": 3,
+    "why": "LLM-based composite efficiency index claimed to beat DORA/FPA/COCOMO; opaque and not replicable, limited practical value."
+   }
+  },
+  "score": 3.17,
+  "anchors": [
+   "P1275",
+   "P0129"
+  ],
+  "flag": "internal inconsistencies: Model (6) Adj. R2 0.601 called the highest though Model (5) reports 0.612 (Table 1, pp. 4-5); p<0.05 described as 'marginally significant' (p. 5); R2=0.93 (Fig. 1f) reported as 'predictive correlation of 0.93' (Conclusion); data provenance and labelling unverifiable"
+ },
+ "P2027": {
+  "id": "P2027",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Three RQs with sub-RQs on HLI features, prompting best practices and error taxonomy (Sec. 4.1, p. 7)."
+   },
+   "method": {
+    "score": 4,
+    "why": "Controlled user study, test-based TPR, Elastic Net/debiased Lasso/bootstrap screening; allocation not purely random, 9 per pattern, 15 features on n=36."
+   },
+   "sample": {
+    "score": 5,
+    "why": "36 participants via Upwork/flyers/LinkedIn, >2 years Python; status, gender, age, regions and allocation summarised (pp. 8-9)."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Sec. 5.5 specific internal, external, construct and conclusion validity: missing recordings, Task-2 gate, low power, no IRR matrix (pp. 24-25)."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Coefficients, CIs, p, bootstrap, Cliff's delta, power reported; error counts consistent (791=420+255+116); no inter-rater agreement; subgroups underpowered."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Prompting/time-allocation guidelines, two project-level benchmarks and 29-category error taxonomy; useful, tied to ChatGPT web UI."
+   }
+  },
+  "score": 4.5,
+  "anchors": [
+   "P0510",
+   "P0603"
+  ],
+  "flag": "internal inconsistencies (minor): error labelling by 'three of the four authors' though five authors are listed (p. 20)"
+ },
+ "P2028": {
+  "id": "P2028",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Two explicit RQs on engagement with/perception of GenAI suggestions and effect of suggestion characteristics (p. 1)."
+   },
+   "method": {
+    "score": 5,
+    "why": "Eye tracking (2000 Hz, calibrated) synchronised with suggestion and keystroke logging; justified 250 ms threshold; non-linear regression, tests (Sec. 3)."
+   },
+   "sample": {
+    "score": 5,
+    "why": "35 recruited (17 professionals from three unaffiliated companies, 18 students), demographics, eligibility; 2 excluded with reason (pp. 3-4, 6)."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Limitations section (p. 10) with specific external, internal and construct validity: gaze mapping, throttler, highlighting change, self-report bias."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Counts, SEs and p-values consistent (Table 1 sums to 35); Paas mental-effort and difficulty ratings collected but not reported."
+   },
+   "contribution": {
+    "score": 5,
+    "why": "First eye-tracking study of Copilot suggestions; micro-interruption cost and acceptance-rate-as-proxy critique; open tooling and data."
+   }
+  },
+  "score": 4.83,
+  "anchors": [
+   "P0178",
+   "P0510"
+  ],
+  "flag": ""
+ },
+ "P2029": {
+  "id": "P2029",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 4,
+    "why": "Aim stated as narrative ('discuss Google's journey', abstract); no RQs or explicit study questions."
+   },
+   "method": {
+    "score": 4,
+    "why": "Randomised A/B tests plus staggered DiD (Callaway-Sant'Anna) with placebo and robustness checks (p. 5); A/B and UX-study procedures thinly described."
+   },
+   "sample": {
+    "score": 4,
+    "why": "Google engineers; A/B groups 2.5K+ and 10K+ per arm, DiD 36K adopters vs 18K controls; roles, dates and control selection partly unreported."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Short 'Caveats and Sensitivity' paragraph (p. 6): unobserved confounders, novelty effect; covers only the DiD analysis."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "DiD effects with 95% CIs (+17.5% CLT); A/B results reported only as relative percentages without baselines, CIs or p-values."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Industrial lessons on latency, discoverability and proxy vs. log-based productivity metrics; large-scale causal estimate, workshop-length report."
+   }
+  },
+  "score": 4.0,
+  "anchors": [
+   "P1402",
+   "P0549"
+  ],
+  "flag": ""
+ },
+ "P2030": {
+  "id": "P2030",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Two explicit RQs plus hypotheses H1-H4e grounded in the JD-R model (pp. 1-3)."
+   },
+   "method": {
+    "score": 5,
+    "why": "Piloted theory-driven survey; EFA, PLS-SEM with reliability/validity checks, OLS with Benjamini-Hochberg, open responses coded with IRR (Secs. 3-5)."
+   },
+   "sample": {
+    "score": 5,
+    "why": "688 responses, 442 valid; recruitment via 56 OSS communities and professional groups, roles, org size, experience (Table 1), power analysis; exclusion criteria unstated."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Specific Limitations (p. 9): JD-R scope, cross-sectional associations, response bias, unmeasured confounders, PLS-SEM choice, sample representativeness."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Path coefficients with CIs, R2, Q2 reported; Table 5 caption says six categories but lists seven, percentages sum to ~108%."
+   },
+   "contribution": {
+    "score": 5,
+    "why": "Extends JD-R to GenAI adoption: demands raise and resources/positive AI perception buffer burnout; clear theory and practice implications."
+   }
+  },
+  "score": 4.83,
+  "anchors": [
+   "P1356",
+   "P0112"
+  ],
+  "flag": "internal inconsistencies (minor): Table 5 caption and text say six learning-resource categories but seven are listed, shares sum to ~108% of 361 responses (pp. 8-9); 'self-study' defined as outside working hours but illustrated with 'during work time'"
+ },
+ "P2031": {
+  "id": "P2031",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Three explicit RQs on liked/disliked activities, influencing factors and enjoyment-time correlation (p. 1)."
+   },
+   "method": {
+    "score": 4,
+    "why": "Four-phase sequential design with validation questionnaire and focus groups; but pooled Spearman treats 2,599 within-person pairs as independent."
+   },
+   "sample": {
+    "score": 5,
+    "why": "173 practitioners: 158 questionnaire (roles, company size, Table 2), 11 Polish interviewees, 15 focus-group members of one Brazilian firm."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Sec. 6 (Runeson categories, p. 10): phase priming, self-reported time, recall bias, unknown population and sample skew, coding reliability."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Medians/IQRs and correlation tables complete (pairs sum to 2,599); phase counts inconsistent: 82 vs 81 and 75 vs 77 (pp. 3-4)."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Ranked task-enjoyment and factor lists, maintenance avoidance signal; useful for practice, incremental."
+   }
+  },
+  "score": 4.5,
+  "anchors": [
+   "P0551",
+   "P0541"
+  ],
+  "flag": "internal inconsistencies (minor): first questionnaire 82 responses in text vs 81 in Fig. 1, second 75 vs 77 (pp. 3-4); 82+75=157 vs 158 reported"
+ },
+ "P2032": {
+  "id": "P2032",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Explicit RQ on Cursor adoption's effect on project-level velocity and code quality (p. 2)."
+   },
+   "method": {
+    "score": 5,
+    "why": "Staggered DiD (Borusyak) on propensity-matched controls, dynamic panel GMM with Sargan/AR(2) tests, several robustness checks (Secs. 3-4)."
+   },
+   "sample": {
+    "score": 5,
+    "why": "806 Cursor-adopting repos (config files, >=10 stars) plus 1,380 PSM controls; Table 1 descriptives; monthly panel Jan 2024-Aug 2025."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Sec. 3.5 specific: config-file selection bias, ITT usage, model heterogeneity, imperfect matching, tool contamination, external validity (p. 7)."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Estimates with SEs and pre-trend tests; but complexity +41.6% (Table 2) cited as 25.1%/25% (pp. 10-11); *** on non-significant Table 2 rows."
+   },
+   "contribution": {
+    "score": 5,
+    "why": "First large-scale causal evidence: transient velocity gains, persistent warnings/complexity that slow later velocity; strong, broadly relevant."
+   }
+  },
+  "score": 4.83,
+  "anchors": [
+   "P0492",
+   "P0481"
+  ],
+  "flag": "internal inconsistencies: code-complexity increase reported as 41.64% (Table 2, Sec. 4.1.2) but 25.1% and 25% in Sec. 5; Table 2 stars contradict text on commits/duplication; Appendix only in arXiv version"
+ },
+ "P2033": {
+  "id": "P2033",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Five explicit research questions on challenges, SDLC use, enablement, abandonment and adoption processes (p. 2)."
+   },
+   "method": {
+    "score": 3,
+    "why": "Survey items mapped to UTAUT2 after collection; PLS-SEM on an unspecified unlicensed subset; interview analysis procedure not described."
+   },
+   "sample": {
+    "score": 4,
+    "why": "1,029 responses, 699 complete, at a bank's global capability centre; 19 interviewees by role (Table 2); subset sizes and demographics thin."
+   },
+   "threats": {
+    "score": 3,
+    "why": "No threats/limitations section; only passing mentions (PII removal blocked productivity measurement, low R2, few participants over 45)."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "PLS-SEM loadings mostly <0.70 (one negative), R2=0.184, no path significance; productivity gains of 15-40% are 'heuristic observations'."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Industrial evidence on Copilot adoption in a compliance-heavy financial setting; practical but largely generic recommendations."
+   }
+  },
+  "score": 3.67,
+  "anchors": [
+   "P0208",
+   "P1303"
+  ],
+  "flag": ""
+ },
+ "P2034": {
+  "id": "P2034",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Explicit RQ on Finnish professionals' predictions and concerns about AI's future role (p. 1)."
+   },
+   "method": {
+    "score": 4,
+    "why": "Open coding, constant comparison, memoing per Hoda STGT, Fig. 1 example (p. 2-3); single coder, supervised, no reliability check."
+   },
+   "sample": {
+    "score": 4,
+    "why": "163 responses, 100 analysed; Table 1 roles/experience; convenience+snowball channels, Dec 2025-Feb 2026; no organisation/domain data."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Sec. 5.1 specific: single time point, frequencies not prevalence, non-representative sampling, two-stage self-selection, single coder, sparsity (pp. 7-8)."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Categories with respondent counts and many quotes; codebook on Zenodo; authors note many concepts rest on few data points."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Practitioner-centred taxonomy of AI-related concerns; workshop paper, largely consistent with Gurgul et al. (p. 2), so incremental."
+   }
+  },
+  "score": 4.33,
+  "anchors": [
+   "P1402",
+   "P0551"
+  ],
+  "flag": ""
+ },
+ "P2035": {
+  "id": "P2035",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 3,
+    "why": "Aim explicit (position paper, propose framework, p. 1-2) but no RQs; scored on the conceptual 3-pattern of P0013."
+   },
+   "method": {
+    "score": 3,
+    "why": "Literature-based argument; framework combines Ambidexterity, ISO/IEC 25019, JD-R (Sec. 4, p. 3) without stated selection method; as P0013."
+   },
+   "sample": {
+    "score": 3,
+    "why": "No primary data or participants; sample sizes cited belong to other studies. Not worse than P0011/P0013 (also none)."
+   },
+   "threats": {
+    "score": 3,
+    "why": "No limitations or threats discussion; same as the conceptual anchors, so not lowered."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Claims rest on cited studies and news items (e.g., refs [6], [20]); operationalization only suggested (p. 4); no evaluation."
+   },
+   "contribution": {
+    "score": 3,
+    "why": "Research agenda and theoretical lens for developer well-being; plausible but unvalidated, 5-page FSE Companion paper."
+   }
+  },
+  "score": 3.0,
+  "anchors": [
+   "P0013",
+   "P0011"
+  ],
+  "flag": "not empirical (position paper, framework without evaluation)"
+ },
+ "P2036": {
+  "id": "P2036",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Three explicit RQs on velocity, quality and prior AI-IDE exposure (p. 2)."
+   },
+   "method": {
+    "score": 5,
+    "why": "Staggered DiD with Borusyak imputation estimator, propensity matching (AUC 0.92-0.99), event study, repo-clustered SEs, replication package (Sec. 3)."
+   },
+   "sample": {
+    "score": 5,
+    "why": "AIDev v3 repos with >=10 stars and >=10 agentic PRs; 401 AF+606 controls, 117 IF+73 controls; Table 1; Jan 2024-Nov 2025."
+   },
+   "threats": {
+    "score": 3,
+    "why": "No threats section; only in-text notes on ITT, attribution noise, pre-treatment coefficients (pp. 3-4); external validity not discussed."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Table 2 gives beta, SE, % change; Fig. 2 dynamics; but IF warnings effect non-significant yet reported as rising 'across both' (p. 4)."
+   },
+   "contribution": {
+    "score": 5,
+    "why": "First repository-level causal evidence contrasting agent-first vs IDE-first adoption; velocity gains fade while complexity persists; highly relevant."
+   }
+  },
+  "score": 4.5,
+  "anchors": [
+   "P0003",
+   "P0481"
+  ],
+  "flag": "internal inconsistencies (minor): Fig. 1 caption says most adoptions May-July 2025, text says April-June 2025 (p. 3); abstract and p. 4 claim warnings rise ~18% across both groups, but IF effect is non-significant (Table 2); comment density reported but not listed among outcomes in Sec. 3.2"
+ },
+ "P2037": {
+  "id": "P2037",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Two explicit RQs on BLVSPs' perception/use of GenAI and impact on work and careers (p. 1)."
+   },
+   "method": {
+    "score": 4,
+    "why": "Reflexive TA (Braun & Clarke), justified no IRR (p. 4); but 30/39 interviews from prior DIY-tools study, 34 transcripts single-coded."
+   },
+   "sample": {
+    "score": 5,
+    "why": "39 BLVSPs: recruitment channels with counts, vision level, region, experience, gender, roles, company sizes, interview dates (p. 3)."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Sec. 6 credibility/reliability/transferability: no triangulation, tools not probed, gender and US skew, tool updates (p. 11)."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Rich quotes, Tables 1-2 of themes/tasks; but usage split 62.5% (n=25) + 37.5% (n=15) = 40 vs 39 participants (p. 5)."
+   },
+   "contribution": {
+    "score": 5,
+    "why": "First study of blind/low-vision professionals' GenAI use at work; 'verification catch-22'; implications for tool makers, employers (ICSE)."
+   }
+  },
+  "score": 4.67,
+  "anchors": [
+   "P0473",
+   "P0181"
+  ],
+  "flag": "internal inconsistencies (minor): GenAI usage frequency 25 daily + 15 occasional = 40 for 39 participants (p. 5); 'majority resided in the USA' vs '67% North America' (pp. 3, 12)"
+ },
+ "P2038": {
+  "id": "P2038",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Five explicit RQs on frequency/acceptance, perceived productivity, patterns, decision factors, challenges (pp. 2-3)."
+   },
+   "method": {
+    "score": 4,
+    "why": "Logs, video, survey, interviews, negotiated-agreement coding; but 'counterbalancing' claimed (p. 10) while all did Task A (AI) before Task B."
+   },
+   "sample": {
+    "score": 4,
+    "why": "27 CS students, Table 3 demographics, screening, ethics, compensation (pp. 10-12); small, one university, 3 per condition."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Sec. 6 internal/external/construct validity specific: task equivalence, tool familiarity, memory bias, leakage, high-interaction sampling, observer effect (pp. 39-41)."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Detailed counts (Table 4, Table 5) but descriptive only; CodeGeeX row 379/755 sums to 775, 117/230 shown as 47% (p. 17)."
+   },
+   "contribution": {
+    "score": 5,
+    "why": "Five-layer interaction behaviour model, SPACE-based perceived productivity, reusable platform and dataset (TOSEM)."
+   }
+  },
+  "score": 4.5,
+  "anchors": [
+   "P0510",
+   "P0478"
+  ],
+  "flag": "internal inconsistencies: Table 4 CodeGeeX total 379/755 but row denominators sum to 775, and 117/230 is 51% not 47% (p. 17); counterbalancing claimed (p. 10) but every participant did Task A with AI before Task B without (pp. 14-15); Table 3 (as extracted) shows Stu19 (TAB_ADS) with Tabnine proficiency 2, contradicting 'only Stu18 and Stu22 below 3' (p. 12); 'a majority (nearly 37%)' (p. 21)"
+ },
+ "P2039": {
+  "id": "P2039",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Two explicit RQs: factors associated with trust/adoption and factors to prioritise (p. 5)."
+   },
+   "method": {
+    "score": 5,
+    "why": "Kitchenham-based survey with validated instruments, CFA/EFA refinement of PICSE, PLS-SEM with bootstrapping, CMB test, IPMA, reflexive TA (Secs. 3-5)."
+   },
+   "sample": {
+    "score": 5,
+    "why": "343 responses to 238 valid with exclusion reasons; Table 2 demographics; team-lead cascade at GitHub/Microsoft, Feb-Mar 2024 (pp. 6-7)."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Sec. 6.3 construct/internal/external specific: single-item construct, cross-sectional, self-selection, early-adopter companies, no follow-up (pp. 31-32)."
+   },
+   "evidence": {
+    "score": 5,
+    "why": "Loadings, B, p, f2, R2/Q2, SRMR and IPMA scores fully reported; counts consistent (238 = 343-105); qualitative tables triangulate."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Validated trust/adoption model and design priorities; extension of the authors' ICSE 2025 paper on the same N=238 data (p. 2)."
+   }
+  },
+  "score": 4.83,
+  "anchors": [
+   "P1356",
+   "P0001"
+  ],
+  "flag": "possible exclusion: extends ICSE 2025 paper [30] ('What Guides Our Choices?') reusing the same N=238 survey; keep only one if [30] is also in the corpus"
+ },
+ "P2040": {
+  "id": "P2040",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Three explicit RQs on productivity, cognitive processes and creativity/memory/mood, plus stated hypotheses (p. 3)."
+   },
+   "method": {
+    "score": 5,
+    "why": "Covert between-subjects odor manipulation, minimization, pilot, randomized task order, eye tracking, standardized measures, appropriate tests with effect sizes (Secs. 3-4)."
+   },
+   "sample": {
+    "score": 4,
+    "why": "30 Vanderbilt CS students, recruitment channels, inclusion criteria, Table 1 by group (pp. 5-6); 10 per group, students only."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Sec. 7 specific: power only for large effects, no multiplicity correction, students, single odors, olfactory adaptation, ecological validity, exam period (pp. 21-22)."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Means, SDs, F/H, t/U, d and g reported; many uncorrected tests, n=10/group; abstract gives p=0.1 to Lemon-Neutral, text to Fish-Neutral."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "First SE experiment on environmental odor; exploratory findings with workplace implications, but narrow and needing replication with professionals."
+   }
+  },
+  "score": 4.5,
+  "anchors": [
+   "P0510",
+   "P0603"
+  ],
+  "flag": "internal inconsistencies (minor): abstract/intro attribute p=0.1 to the Lemon vs Neutral duration difference, but p=0.1 in Sec. 5.1 is Fish vs Neutral (pp. 1, 13); minimization variables given as age, C++ experience, GPA (p. 6) vs age, gender, C++ experience (p. 22)"
+ },
+ "P2041": {
+  "id": "P2041",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Three explicit RQs linking convergence entropy to new bugs, new commits, issue resolution time (pp. 2-3)."
+   },
+   "method": {
+    "score": 4,
+    "why": "New JSD-based metric, random-effects panel regression with interactions and diagnostics; but 4 projects per subsample, broad bug keywords (incl. 'issue')."
+   },
+   "sample": {
+    "score": 4,
+    "why": "8 named projects with selection criteria from top-1,000 (p. 7); how 8 were chosen from 261 candidates is not explained."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Sec. 6.4 present; internal validity discussed specifically, but construct and external validity dismissed as 'no significant threat' (p. 15)."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Full coefficient tables with SEs, R2, Wald; RQ2 summary says files weaken C1 effect, Table 3 shows +12.651 (n.s.)."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Novel integration-effectiveness metric with SPACE-based project productivity proxies; correlational, eight projects, metric not externally validated."
+   }
+  },
+  "score": 4.17,
+  "anchors": [
+   "P0481",
+   "P0486"
+  ],
+  "flag": "internal inconsistencies (minor): RQ2 summary (pp. 3, 11) says the non-company correlation weakens with more files, but Table 3 Model C1 Hconv:NumFiles is +12.651 (n.s.) and the text calls it positive (p. 10); several moderator claims rest on non-significant terms"
+ },
+ "P2042": {
+  "id": "P2042",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 4,
+    "why": "Aim and three contributions explicit (p. 2), no RQs; above the conceptual 3 because an interview study is reported."
+   },
+   "method": {
+    "score": 3,
+    "why": "STGT coding by first author after two jointly coded interviews; framework from 'collaborative brainstorming among the authors' (p. 3); thin."
+   },
+   "sample": {
+    "score": 3,
+    "why": "22 practitioners, three rounds Oct 2024-Sep 2025, continents only; no roles, experience, recruitment or pre-questionnaire results (p. 3)."
+   },
+   "threats": {
+    "score": 3,
+    "why": "One sentence on research bias and limited sample (p. 5); passing mention."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "No quotes, counts or participant data; examples 'merely illustrative'; point 6 of Fig. 1 never described; not below conceptual anchors."
+   },
+   "contribution": {
+    "score": 3,
+    "why": "Preliminary reliance-control framework with practice/education implications; unvalidated, 5-page FSE Companion paper."
+   }
+  },
+  "score": 3.17,
+  "anchors": [
+   "P0013",
+   "P1297"
+  ],
+  "flag": "preliminary framework without evaluation; interview findings not reported (no participant profile, quotes or counts)"
+ },
+ "P2043": {
+  "id": "P2043",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Three explicit RQs in Table 1 on capability-metric-process interplay, strategic initiatives, emergent outcomes (p. 3)."
+   },
+   "method": {
+    "score": 5,
+    "why": "Single-case study (Yin, Runeson & Host), hybrid thematic analysis, triangulation of interviews/documents/focus group, kappa 0.86, member checking (Sec. 3)."
+   },
+   "sample": {
+    "score": 5,
+    "why": "28 interviewees by role, region and DevOps experience, invitation letter, company profile, 9 documents, 7-expert focus group (pp. 9-10)."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Sec. 3.5 construct/internal/external/reliability plus Sec. 6.1 single case, confounders, author employed by case company, recall bias (pp. 13-14, 22)."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Coded quotes and DORA series (Table 7) support themes; but 'consistent improvement' though IT performance fell 56 to 55; no statistics."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Refined sociotechnical DevOps framework with three propositions and practical guidance; single case, propositions untested."
+   }
+  },
+  "score": 4.67,
+  "anchors": [
+   "P0470",
+   "P0492"
+  ],
+  "flag": "internal inconsistencies (minor): Table 7 is presented as company-wide DORA results, yet its 2023 values (IT performance 59%, burnout 30%) are attributed to the Drupal BU in the text, and Marketing Cloud BU figures are not tabulated (p. 15); one author is employed by the case organisation (acknowledged, p. 22)"
+ },
+ "P2049": {
+  "id": "P2049",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 4,
+    "why": "Guiding 'how might we' question and contributions explicit (pp. 1-2), no RQs; above conceptual 3 for clarity."
+   },
+   "method": {
+    "score": 3,
+    "why": "Five-step instrument-development process (cognitive testing, pilot) described narratively; no analysis of testing data; RCT results only in [20]."
+   },
+   "sample": {
+    "score": 3,
+    "why": "9 + 8 Google engineers for cognitive testing and 8 pilot sessions; little profile data; final RCT sample not reported (pp. 3-4)."
+   },
+   "threats": {
+    "score": 3,
+    "why": "No limitations section; only adoption considerations (cost, >100 participants, logging maturity) (p. 6)."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Changes from cognitive testing summarized as counts (p. 4); ROI and comparison impacts claimed without data; not below conceptual anchors."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Reusable, cognitively tested DX survey items, enterprise task and RCT protocol in appendices; useful for benchmarking AI coding tools."
+   }
+  },
+  "score": 3.33,
+  "anchors": [
+   "P0030",
+   "P0011"
+  ],
+  "flag": "instrument-development case study; RCT results reported in a separate paper ([20], arXiv 2410.12944), check whether that paper is in the corpus"
+ },
+ "P2050": {
+  "id": "P2050",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Three explicit RQs and parameterized null hypotheses, aim to validate the baseline experiment (pp. 4-6)."
+   },
+   "method": {
+    "score": 4,
+    "why": "Randomized 2x2 factorial replication following Carver guidelines, ATS and Cliff's delta; no power analysis, 12 DVs uncorrected, training cut to two assignments."
+   },
+   "sample": {
+    "score": 4,
+    "why": "59 second-year Bari undergraduates, voluntary with bonus points, group sizes, background (p. 9); no demographics, students only."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Sec. 7 by Wohlin categories with study-specific mitigations: mono-method bias, treatment fidelity, selection, BSK/MRA setting (pp. 14-15)."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "ATS p-values for all DVs (Table 3), stacked plots, raw data online; Table 1 labels TESPLS outcome 'H0IMPPLS rejected' (p. 7)."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Non-confirmation of baseline TDD affect findings; useful replication evidence but narrow scope and speculative explanation."
+   }
+  },
+  "score": 4.33,
+  "anchors": [
+   "P0510",
+   "P0664"
+  ],
+  "flag": "internal inconsistencies (minor): Table 1 labels the TESPLS outcome as 'H0IMPPLS rejected in favor of YW' (p. 7)"
+ },
+ "P2056": {
+  "id": "P2056",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Three explicit RQs (definitions of mental health/productivity; perception of catalog; support for managers), stated p. 21."
+   },
+   "method": {
+    "score": 4,
+    "why": "Mapping study (241->178->65 papers), expert categorization, piloted survey + structured interviews, GT open/axial coding; evaluation perception-only, descriptive."
+   },
+   "sample": {
+    "score": 4,
+    "why": "47 respondents/22 interviewed, Table 5 roles, company type/size, work model; mostly <3 yrs experience; recruitment via networks only."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Sec. 6.4 (pp. 43-45) specific internal/construct/external/conclusion threats: interviewer influence, social desirability, survey anchoring, agile bias, low power."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Approval percentages and coded findings with quotes, no statistics (acknowledged); Table 5 categories sum to 46 vs n=47 (p. 29)."
+   },
+   "contribution": {
+    "score": 5,
+    "why": "New 12-metric catalog with formulas, causal model, hypotheses H1-H8 and application roadmap; broadly useful for well-being-aware measurement."
+   }
+  },
+  "score": 4.5,
+  "anchors": [
+   "P1306",
+   "P0482"
+  ],
+  "flag": "internal inconsistencies (minor): Table 5 category counts sum to 46 vs 47 respondents (p. 29); 'eight introduce novel insights' lists nine metrics (p. 11)"
+ },
+ "P2059": {
+  "id": "P2059",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Two explicit RQs (efficiency, quality of evolving AI-co-developed code) with four null hypotheses; GQM goal (Sec. 3, p. 9)."
+   },
+   "method": {
+    "score": 5,
+    "why": "Preregistered two-phase design, Phase 2 RCT; frequentist tests plus Bayesian causal analysis, CodeScene/PMD, qualitative coding (Sec. 3)."
+   },
+   "sample": {
+    "score": 5,
+    "why": "449 pre-screened, 151 valid (76 Phase 1, 75 Phase 2), recruitment channels, demographics, dropouts and exclusions reported (Sec. 4.1)."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Sec. 6 by Empirical Standards: construct, internal, external, conclusion; protocol violations, power shortfall, 95% male sample (pp. 58-61)."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Medians, CIs, p, Cliff's delta, Bayesian posteriors; but Phase 2 n=75 vs 128 target (low power); alpha 0.82 (p. 18) vs >0.85 (p. 61)."
+   },
+   "contribution": {
+    "score": 5,
+    "why": "First preregistered RCT on downstream maintainability of AI-assisted code; no code-level penalty, warns of cognitive debt; broadly relevant."
+   }
+  },
+  "score": 4.83,
+  "anchors": [
+   "P1298",
+   "P0603"
+  ],
+  "flag": "internal inconsistencies (minor): Cronbach's alpha 0.82 (p. 18) vs '>0.85' (p. 61); share of professionals 95% (abstract) vs 92% (p. 60)"
+ },
+ "P2060": {
+  "id": "P2060",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Explicit replication RQ (predict interruptibility with biometric sensors) plus AQ1-AQ5 carried from the original study."
+   },
+   "method": {
+    "score": 4,
+    "why": "Close replication per Carver guidelines, 50 deviations tracked, nested CV; but EDA dropped (wrong electrodes), AQ5 lost (wrong questionnaire)."
+   },
+   "sample": {
+    "score": 4,
+    "why": "10 participants, recruitment (contacts, talent pool), roles, age and experience given (Sec. 5.1); small, mostly students; 82 samples."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Sec. 7 specific: small sample, ad hoc two-state split, class imbalance, dropped EDA, construct under-representation, single replication (pp. 19-20)."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Accuracies with SD vs baseline, r/rho with p, nested-CV deltas; negative result well supported but only 82 data points."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Negative replication exposing baseline/imbalance issues of a CHI study, plus public lab package; useful but incremental."
+   }
+  },
+  "score": 4.33,
+  "anchors": [
+   "P0510",
+   "P0497"
+  ],
+  "flag": ""
+ },
+ "P2065": {
+  "id": "P2065",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Two explicit RQs (facets->KPIs; interventions->outcomes->KPIs) with extraction triplets/chains defined (Sec. 1, 3)."
+   },
+   "method": {
+    "score": 5,
+    "why": "Systematic mapping per Petersen: 8 databases, double screening, snowballing with stopping rule, axial coding/card sorting, coverage analysis."
+   },
+   "sample": {
+    "score": 5,
+    "why": "160 primary studies 2006-2024 (1,643 raw, 1,151 unique, 131 + 29 snowballing); venues and years characterized (Sec. 3.5)."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Sec. 6 per Ampatzoglou: selection, data (coding subjectivity, publication bias, KPI inference) and research validity, with residual risks."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Counts consistent and fully tabulated, kappa 0.79; but KPI link inferred by authors for 121/160 studies (Sec. 4.2), driving headline claim."
+   },
+   "contribution": {
+    "score": 5,
+    "why": "Dev-X intervention-outcome-KPI taxonomy plus open Ready-Reckoner tool; quality-over-productivity finding broadly useful."
+   }
+  },
+  "score": 4.83,
+  "anchors": [
+   "P0604",
+   "P0476"
+  ],
+  "flag": ""
+ },
+ "P2067": {
+  "id": "P2067",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 4,
+    "why": "Aim explicit (Sec. I, PDF p. 2: review approaches, tools, data, metrics and their limitations) but no RQs."
+   },
+   "method": {
+    "score": 2,
+    "why": "Below anchors: self-described 'systematic review' with no search, selection or synthesis procedure; narrative argument only."
+   },
+   "sample": {
+    "score": 2,
+    "why": "Below anchors: no defined corpus; 8 references, unselected (cf. P1345: 11 papers via documented snowballing, scored 3)."
+   },
+   "threats": {
+    "score": 3,
+    "why": "No limitations of the review itself; per author's rubric, nothing = 3."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Claims rest on 8 citations (e.g., Meluso 'about half invisible', Peng 55.8%); behavior-distortion claim uncited (Sec. 5.4)."
+   },
+   "contribution": {
+    "score": 3,
+    "why": "Restates known limitations (SPACE, invisible work, metric gaming); no new synthesis or framework; limited."
+   }
+  },
+  "score": 2.83,
+  "anchors": [
+   "P1275",
+   "P0013"
+  ],
+  "flag": "below FT-EC3 threshold (<3.0); not empirical; self-described 'systematic review' without any review protocol (8 references)"
+ },
+ "P2068": {
+  "id": "P2068",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Three explicit RQs: perceived productivity, how measured in coding/review/docs, expected GenAI impact (Sec. 3.1)."
+   },
+   "method": {
+    "score": 4,
+    "why": "Two online focus groups, Whisper transcripts, inductive content analysis by two coders, member-check questionnaire; SPACE mapping post hoc."
+   },
+   "sample": {
+    "score": 4,
+    "why": "16 developers (FGs of 7 and 9), purposive via PMs, Table 2 seniority/experience/GenAI use; single RTO, units undisclosed."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Sec. 6 'Trustworthiness' (SIGSOFT) covers credibility, 6-month recall bias, scope, reflexivity, N=16; short, partly defensive."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Findings with mention counts (e.g., progress 23) and quotes, conceptual map (Fig. 2); descriptive, qualitative."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Context-specific conceptual map of productivity factors/indicators and GenAI expectations in a Brazilian RTO; useful, incremental."
+   }
+  },
+  "score": 4.17,
+  "anchors": [
+   "P0521",
+   "P1402"
+  ],
+  "flag": ""
+ },
+ "P2070": {
+  "id": "P2070",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 4,
+    "why": "Aims stated in abstract (reduce effort, lower TCO, standardize, cut incidents) but several loose objectives, no RQs."
+   },
+   "method": {
+    "score": 3,
+    "why": "Before-after comparison of operational metrics, no control, no statistics; productivity inferred from build/storage/downtime (Sec. IV)."
+   },
+   "sample": {
+    "score": 3,
+    "why": "'Five budgeting service projects with other projects' over 12 months, 12-member team, 1,244 services; dates and selection vague."
+   },
+   "threats": {
+    "score": 3,
+    "why": "No threats/limitations section; one passing remark on workload-dependent resource efficiency (Sec. V)."
+   },
+   "evidence": {
+    "score": 2,
+    "why": "Below anchors: figures contradict across sections (60 vs 6,000 vs 42 h; downtime zero from Q1-2024 only; '3%' unsupported)."
+   },
+   "contribution": {
+    "score": 3,
+    "why": "Practitioner report of a domain-specific platform-engineering setup; limited generalizable insight."
+   }
+  },
+  "score": 3.0,
+  "anchors": [
+   "P0030",
+   "P0011"
+  ],
+  "flag": "internal inconsistencies: build-time saving 1 min vs 30 s-1 min; hours saved 60/yr vs 6,000/yr vs ~42/developer; downtime '12 to 7', 'almost zero' and 'complete elimination' (2024 = Q1 only, Table 1); 60 MB per service vs 'for 1244 services around 60 MB'; Table 1 titled 'after PlatFab' includes 2021-2022"
+ },
+ "P2073": {
+  "id": "P2073",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Three explicit RQs mapped to DevEx dimensions (feedback loops, cognitive load, flow) (p. 1)."
+   },
+   "method": {
+    "score": 3,
+    "why": "Ongoing before-after quarter comparison; claims 'statistical analyses' but only percentage changes; RQ3 answered from prior study [6]."
+   },
+   "sample": {
+    "score": 4,
+    "why": "78 repos, 27 developers active in both quarters, 33 for Copilot telemetry, single fintech; n=9 qualitative from [6]."
+   },
+   "threats": {
+    "score": 3,
+    "why": "No threats or limitations section; confounders between quarters (team, project mix) not discussed."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Table 1 gives only percentage changes, no absolute values or tests; causal reading ('AI tools improved...') beyond before-after data."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "System-level industrial view of AI-assistant effects ('productivity paradox'); useful but preliminary short paper."
+   }
+  },
+  "score": 3.67,
+  "anchors": [
+   "P0549",
+   "P0591"
+  ],
+  "flag": "internal inconsistencies (minor): Sec. 3 says the study adds 'statistical analyses', but only percentage changes are reported; ongoing study, RQ3 relies entirely on prior paper [6]"
+ },
+ "P2074": {
+  "id": "P2074",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Explicit RQ on enhancing DX of setting up development environments; ADR aims and DEaC artefact defined."
+   },
+   "method": {
+    "score": 4,
+    "why": "ADR (Sein et al.) with BIE cycles, focus group, field notes, interviews, thematic analysis via Fagerholm DX; benefits self-reported."
+   },
+   "sample": {
+    "score": 3,
+    "why": "Very small: 2 representatives, focus group of 3, 4 interviewees, 6 external raters; roles and tenure given; single company."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Sec. 5.5 'Limitations' covers external, construct, reliability, internal validity briefly; omits small n and 4-point scale."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Rich quotes and DX themes; DP ratings with means/medians and Kendall's W=0.48; setup-time gains reported, not measured."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "DEaC concept and design principles for local environment setup; useful, but external raters saw limited novelty (50%)."
+   }
+  },
+  "score": 4.0,
+  "anchors": [
+   "P0536",
+   "P0521"
+  ],
+  "flag": ""
+ },
+ "P2077": {
+  "id": "P2077",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Two explicit RQs: limits of productivity metrics for women; additional factors to include (Sec. 4, p. 5)."
+   },
+   "method": {
+    "score": 3,
+    "why": "Online survey, descriptive statistics and thematic analysis; instrument unvalidated; 'correlations' claimed without any test."
+   },
+   "sample": {
+    "score": 4,
+    "why": "85 valid responses, dates, recruitment channels, age/experience/leadership shares; non-probabilistic, mostly junior/young."
+   },
+   "threats": {
+    "score": 3,
+    "why": "One sentence on limitations (self-report, few seniors) in the conclusion (p. 10)."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Descriptive only; same constructs differ: 68% vs 38.5% less recognized, 74% vs 41.2% interrupted (p. 6); 'strongly correlates' untested."
+   },
+   "contribution": {
+    "score": 3,
+    "why": "Gender lens on metrics is relevant, but preliminary guideline list (Table 3) without validation; limited."
+   }
+  },
+  "score": 3.5,
+  "anchors": [
+   "P0208",
+   "P0529"
+  ],
+  "flag": "internal inconsistencies: recognition 68% (Sec. 4.2) vs 38.5% (Sec. 4.2.2, p. 6), interruptions ~74% vs 41.2%, domestic impact ~82% vs double workload 54.1%; 38.5% and 59.7% not attainable with n=85; Table 2 'correlations' without statistical tests"
+ },
+ "P2078": {
+  "id": "P2078",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Explicit RQ1 on how Gen-AI adoption modifies the notion of productivity per project leaders (Sec. 1)."
+   },
+   "method": {
+    "score": 4,
+    "why": "49-question survey per Kitchenham/Pfleeger, one-person pilot, descriptive stats plus thematic analysis (68 codes, 412 quotations)."
+   },
+   "sample": {
+    "score": 4,
+    "why": "20 valid of 22 responses, roles, org types, experience, work model; convenience recruitment via LinkedIn/contacts."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Sec. 5 covers construct, internal, external (pro-AI self-selection), conclusion validity; concise and partly generic."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Mostly descriptive Likert charts; metric percentages (95.2%, 76.2%, 52.4%) imply n=21, not the 20 valid responses (p. 5)."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Leader perspective on Gen-AI productivity shift 'from production to mediation'; useful, exploratory."
+   }
+  },
+  "score": 4.0,
+  "anchors": [
+   "P0664",
+   "P0665"
+  ],
+  "flag": "internal inconsistencies (minor): evaluation-metric percentages are multiples of 1/21 (e.g., 95.2%, 14.3%) while n = 20 valid responses (p. 5)"
+ },
+ "P2079": {
+  "id": "P2079",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Three explicit RQs on flow, cognitive load and feedback loops for ADHD developers (Sec. 1)."
+   },
+   "method": {
+    "score": 4,
+    "why": "Reflexive TA (Braun and Clarke) of Reddit data with staged, two-reviewer selection; sound, but purposive 10 threads, no interaction."
+   },
+   "sample": {
+    "score": 3,
+    "why": "241 comments from 10 threads, funnel 115/1,441 -> 25/820 clear; number of distinct users, roles, experience unknown; ADHD unverified."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Sec. 6 specific: self-reported ADHD, Score>400 bias, no clinical expertise, English-speaking self-selection, six-month window."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Analytic narrative with extracts per theme, 362 codes/33 sub-themes/15 themes, codebook public; qualitative only."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Extends DevEx to neurodivergent developers (structure holds, content shifts); novel but exploratory, one community."
+   }
+  },
+  "score": 4.17,
+  "anchors": [
+   "P0591",
+   "P0473"
+  ],
+  "flag": ""
+ },
+ "P2080": {
+  "id": "P2080",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Aim explicit (p. 2): how Copilot/Windsurf are integrated, how devs handle responsibility/trust, effect on three DevEx dimensions; no formal RQs."
+   },
+   "method": {
+    "score": 4,
+    "why": "Mixed-methods case study: dashboard telemetry (descriptive only) plus deductive DevEx coding by one researcher with peer debriefing, audit trail, replication package (pp. 4-5)."
+   },
+   "sample": {
+    "score": 4,
+    "why": "36-person unit of 90-employee Brazilian fintech, teams, roles, stack described (pp. 3-4); qualitative n=9 self-selected reflections, recruitment and roles only partly reported."
+   },
+   "threats": {
+    "score": 3,
+    "why": "No dedicated section; one paragraph in 'Insights From the Field' names selection bias, single org, few Windsurf users, short telemetry (p. 8)."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Aggregate counts and themes mentioned by 1-3 of 9; Q1-2025 meeting predates Windsurf (May 2025) yet underpins 'persists after 10 months' claims (pp. 5-6, 8)."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Field evidence of a productivity-validation tension through DevEx lens; useful for practice but single-organization and incremental."
+   }
+  },
+  "score": 3.83,
+  "anchors": [
+   "P0521",
+   "P1303"
+  ],
+  "flag": "internal inconsistencies: qualitative data from a Q1-2025 meeting (p. 6) although Windsurf was introduced in May 2025 (p. 5) and Windsurf users are quoted; 'three-month' study vs May-August 2025 window"
+ },
+ "P2081": {
+  "id": "P2081",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Explicit aim (end of Introduction, p. 3): partial and simultaneous effects of five NAU usability dimensions on students' programming productivity."
+   },
+   "method": {
+    "score": 4,
+    "why": "Cross-sectional ex post facto survey, 26 Likert items, validity/reliability and assumption tests, multiple regression (p. 3); items not shown, causal wording."
+   },
+   "sample": {
+    "score": 4,
+    "why": "n=200 by purposive criteria, gender and semester given (p. 3); institutions and country unnamed, distribution channel and response rate unstated."
+   },
+   "threats": {
+    "score": 3,
+    "why": "Three sentences in Conclusion: self-report perceptions, students only, usability-only model (p. 8); no common-method or sampling-bias discussion."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Full descriptives, alphas, VIF, B/SE/t, R2=0.605, F reported and arithmetically consistent (Tables 1-2); all self-reported perceived productivity."
+   },
+   "contribution": {
+    "score": 3,
+    "why": "Confirms IDE usability relates to perceived productivity in a student sample; limited novelty and transfer to professional measurement."
+   }
+  },
+  "score": 3.83,
+  "anchors": [
+   "P0208",
+   "P0665"
+  ],
+  "flag": ""
+ },
+ "P2083": {
+  "id": "P2083",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "GQM goal, main RQ and three sub-RQs (A.1-A.3) each with rationale (Sec. III-A, p. 3)."
+   },
+   "method": {
+    "score": 4,
+    "why": "MLR protocol: Kitchenham SLR with QGS, PICO string, snowballing; Garousi GLR on Dev.to; Cruzes-Dyba thematic synthesis (pp. 3-7); QA results not reported."
+   },
+   "sample": {
+    "score": 4,
+    "why": "11 studies (815 hits, 6 + 5 snowballed, Table III) and 15 Dev.to posts (100/59 screened); per-stage exclusions absent, several studies only tangential."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Sec. VII 'Threats to validity' exists but short: few studies, little grey material, practitioner bias left unmitigated (p. 10)."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Synthesis traced to S/D/E sources with quotes; many claims rest on single studies; S9 described as race/remote-work study (p. 7); GLR data withheld."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "First MLR on DX of LGBTQIA+ agile developers; recommendations by DX dimension and horizon; useful but small, niche corpus."
+   }
+  },
+  "score": 4.17,
+  "anchors": [
+   "P1286",
+   "P1345"
+  ],
+  "flag": "internal inconsistencies (minor): S9 (code-review criticism) described as remote-work/racial study and cited for remote work (pp. 6-7); 'five articles included' vs six (p. 4)"
+ },
+ "P2085": {
+  "id": "P2085",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 4,
+    "why": "Four stated contributions (trajectories, factor classification, what works, open problems; p. 2); no RQs, aims loose."
+   },
+   "method": {
+    "score": 3,
+    "why": "Ad hoc single-author review: Google Scholar keywords, venue/award prioritisation, papers discarded for feasibility, no string or counts (Sec. IV, pp. 3-4); abstract claims 'systematic'."
+   },
+   "sample": {
+    "score": 3,
+    "why": "23 sources listed with venue, year, citations, tools, participants (Tables I-II, p. 3); initial pool and exclusions not reported."
+   },
+   "threats": {
+    "score": 3,
+    "why": "No threats/limitations section; only notes papers dropped for single-author feasibility and own interpretations mixed in (p. 4)."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Narrative synthesis by taxonomy category, few figures; findings blended with 'our own insights and interpretations' (Sec. VI, p. 4)."
+   },
+   "contribution": {
+    "score": 3,
+    "why": "11-category / 53-subcategory taxonomy (overstated as 'novel evaluation metric') and 12 open problems; limited, unvalidated."
+   }
+  },
+  "score": 3.17,
+  "anchors": [
+   "P1275",
+   "P0013"
+  ],
+  "flag": ""
+ },
+ "P2086": {
+  "id": "P2086",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Explicit aim: criteria for building an individual productivity metric, illustrated by a work-schedule consistency metric (p. 1)."
+   },
+   "method": {
+    "score": 4,
+    "why": "13 candidate metrics screened via mutation testing, seasonality, human ratings, negative cases, discriminant correlations (pp. 3-4); procedures only sketched (column format)."
+   },
+   "sample": {
+    "score": 3,
+    "why": "'Tens of thousands' of Google engineers, 50 schedules rated by eight team members (pp. 3-4); no data period, selection or CL-throughput sample details."
+   },
+   "threats": {
+    "score": 3,
+    "why": "Single sentence acknowledging undiscovered anomalies (p. 4); no limitations discussion of confounders in the CL-throughput comparison."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Only PSE ~0.42 quantified; correlations and 'indistinguishable' CL throughput reported without coefficients, tests or n (pp. 3-4)."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Practical four-criterion checklist mapped to face/convergent/discriminant/criterion validity plus a novel metric; useful for practice, not a full study."
+   }
+  },
+  "score": 3.67,
+  "anchors": [
+   "P0030",
+   "P0011"
+  ],
+  "flag": ""
+ },
+ "P2093": {
+  "id": "P2093",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Main RQ plus five FS-Qs, each with rationale, mapped to framework components (Sec. 1, Sec. 3)."
+   },
+   "method": {
+    "score": 5,
+    "why": "Field study: piloted semi-structured interviews, VAS pain ratings, GT-style coding by two researchers with consensus, senior verification, saturation analysis (Sec. 3)."
+   },
+   "sample": {
+    "score": 4,
+    "why": "21 women, roles, experience, age, org size, convenience recruitment via authors' network (Table 2); sector counts 16+3+3+2=24 exceed 21."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Sec. 6 'Threats to credibility and reliability': internal/external credibility, intersectionality, saturation, no framework evaluation or proof of concept."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Rich quotes, barrier counts, VAS distributions (Fig. 5); but conclusion says four motivations/six coping mechanisms vs five (Table 3)/seven listed."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "PSECO-GDI framework with two new PSECO-specific barriers and Ask-Plan-Act use; practical but unevaluated and narrow to women in Brazilian PSECOs."
+   }
+  },
+  "score": 4.5,
+  "anchors": [
+   "P0473",
+   "P0181"
+  ],
+  "flag": "internal inconsistencies (minor): conclusion 'four motivations'/'six coping mechanisms' vs five motivations (Table 3) and seven consequences; saturation 'last three' (Sec. 3) vs 'last two' (Sec. 6); sector counts sum to 24 for 21 participants"
+ },
+ "P2094": {
+  "id": "P2094",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Explicit RQ ('What factors affect productivity when coding parallel applications?') plus complementary question and three GQM goals (Secs. 1, 3.1)."
+   },
+   "method": {
+    "score": 4,
+    "why": "GQM-planned online survey, expert-reviewed and piloted (8); descriptive stats, chi-square tests, GT open/axial coding by one researcher reviewed by two (Sec. 3)."
+   },
+   "sample": {
+    "score": 5,
+    "why": "713 invited via conferences, boards, profiles; 131 responses (18.4%), 26 countries, degrees, affiliations, experience reported (Secs. 3.2, 4.1); mostly academic."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Sec. 6 covers internal, construct, external, conclusion validity, but briefly; conclusion-validity paragraph dismisses sample-size concern without argument."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Factor frequencies, PPI tables, chi-square values with p (e.g., chi2=9.17, p=0.010); minor slips: '130 participants' vs 131, 'November 31st, 2022'."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Empirical map of productivity barriers and PPI recommendations for HPC parallel programming plus conceptual model; useful but domain-specific and incremental."
+   }
+  },
+  "score": 4.33,
+  "anchors": [
+   "P0477",
+   "P0534"
+  ],
+  "flag": "internal inconsistencies (minor): IDs generated for '130 participants' vs 131 responses (Sec. 3.3); survey end date 'November 31st, 2022' (Sec. 3.2)"
+ },
+ "P2096": {
+  "id": "P2096",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Single explicit RQ on joint prediction of perceived team productivity by Big Five and Collective Self-Esteem (Sec. 1)."
+   },
+   "method": {
+    "score": 4,
+    "why": "Established scales (Mini-IPIP, CSE) with regression and assumption checks (Sec. 3); ad hoc 3-item outcome, backward elimination at alpha=.10 on n=71."
+   },
+   "sample": {
+    "score": 4,
+    "why": "71 OSS contributors via five named mailing lists, role mix given (Sec. 3.1); no response rate, survey period, experience or country."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Sec. 5.2 specific: common-method bias, social desirability, individual- vs team-level construct, convenience OSS sample, no multilevel modelling."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Final model fully reported (B, SE, beta, t, p, adj. R2, VIF, DW; Table 1) and consistent; no sample reliabilities, initial-model coefficients omitted."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "First model combining personality and social identity for perceived team productivity; useful but exploratory short communication on self-report outcome."
+   }
+  },
+  "score": 4.33,
+  "anchors": [
+   "P0665",
+   "P0477"
+  ],
+  "flag": ""
+ },
+ "P2097": {
+  "id": "P2097",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 4,
+    "why": "Aim and one hypothesis stated (Secs. I, III: automate lifecycle phases, reduce errors); no RQs, evaluation goals loose."
+   },
+   "method": {
+    "score": 2,
+    "why": "Below P0011: claims A/B test but 'baseline' equals DORA-report benchmarks (Tables I, III), no participants, DORA collection on ~30 tasks undescribed (p. 3)."
+   },
+   "sample": {
+    "score": 3,
+    "why": "'Around 30' tasks in two domains (HMS, e-commerce) and 7 LLMs (Sec. VI-A); tasks, cohorts and testbed not characterised."
+   },
+   "threats": {
+    "score": 3,
+    "why": "No threats or limitations section; only Windows/Semgrep integration friction and need for human oversight noted (Sec. VII)."
+   },
+   "evidence": {
+    "score": 2,
+    "why": "Below P0011: Table III gives ranges without data or statistics; ablation results absent; abstract's 55.8%/75% are cited literature figures (p. 1)."
+   },
+   "contribution": {
+    "score": 3,
+    "why": "MetaGPT-in-Scrum integration architecture and LLM accuracy comparison; plausible for practice but unvalidated and largely descriptive."
+   }
+  },
+  "score": 2.83,
+  "anchors": [
+   "P0011",
+   "P0129"
+  ],
+  "flag": "below FT-EC3 threshold (<3.0); internal inconsistencies: abstract 'findings' (55.8% faster coding, 75% defects) are literature figures from Sec. II-C; baseline described as historical cohort data (Sec. VI-A) but identical to Table I values attributed to DORA 2023, which has no defects/KLOC metric; ablation results not reported"
+ },
+ "P2098": {
+  "id": "P2098",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 4,
+    "why": "Aim explicit (Jira+GitHub framework to predict burnout, p. 1); RQs only in Fig. 1 mapping, not stated in text."
+   },
+   "method": {
+    "score": 2,
+    "why": "Circular design: label Bd is a weighted formula of the same activity dimensions used as features (Eqs. 2-3, p. 3); no burnout ground truth."
+   },
+   "sample": {
+    "score": 3,
+    "why": "20-MAD dataset, Apache Hadoop/HDFS/Zookeeper named (Sec. III-A); developer, issue, commit counts, period and window w not reported."
+   },
+   "threats": {
+    "score": 3,
+    "why": "One sentence on limited external validity (open-source data, Sec. V) and weights called 'transparent modeling assumptions' (p. 3)."
+   },
+   "evidence": {
+    "score": 2,
+    "why": "98.48% accuracy re-learns a formula; ROC-AUC promised but absent; Spearman rho without n or p; Jira+GitHub superiority claimed untested."
+   },
+   "contribution": {
+    "score": 3,
+    "why": "Idea of combining issue-tracker and commit signals for burnout monitoring plus dashboard prototype; proxy unvalidated, limited value."
+   }
+  },
+  "score": 2.83,
+  "anchors": [
+   "P0129",
+   "P0591"
+  ],
+  "flag": "below FT-EC3 threshold (<3.0); possible exclusion: burnout label is a deterministic proxy of the predictor features (no validated burnout measure); claims of better multimodal performance not tested"
+ },
+ "P2099": {
+  "id": "P2099",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 4,
+    "why": "Purpose stated (p. 2): describe how Google's team measures productivity so models are not wrong in problematic ways; column, no RQs."
+   },
+   "method": {
+    "score": 3,
+    "why": "Keynote-based position/experience column; no study design or data collection of its own (pp. 1-5); same level as P0013."
+   },
+   "sample": {
+    "score": 3,
+    "why": "Google context described qualitatively (in-house tools, logs for ~every engineer, quarterly survey); no numbers or period (p. 4)."
+   },
+   "threats": {
+    "score": 3,
+    "why": "No limitations section; notes survey biases, diary studies not ongoing and limited transfer to smaller organisations (pp. 4-5)."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Argument by example and references to Google's prior studies (logs validated by diary studies, refs. 7-10); no data presented."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Practical triangulation principles (multiple outcomes, multiple methods, Goodhart incentives, scale-dependent advice) from Google EPR; useful, not seminal."
+   }
+  },
+  "score": 3.33,
+  "anchors": [
+   "P0013",
+   "P0011"
+  ],
+  "flag": "not empirical"
+ },
+ "P2100": {
+  "id": "P2100",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Three explicit RQs on metric alignment, broader AI productivity metrics and workflow impact (Sec. 3, pp. 2-3)."
+   },
+   "method": {
+    "score": 4,
+    "why": "Sequential exploratory mixed methods: two DX survey items with Pearson correlation, then 11 interviews with inductive coding (Sec. 3); coder number and agreement unstated."
+   },
+   "sample": {
+    "score": 4,
+    "why": "BNY Mellon, ~8000 surveyed, purposive+snowball interviewees by seniority/role/department (Table 1); respondents 2989 (Sec. 3.1) vs 2898 (Sec. 4.1); no dates."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Sec. 5.3 short: single company, Copilot only, factors possibly incomplete; omits self-report bias, opt-in answering, single interviewer."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Response distributions and cross-tab (Fig. 1, N=2754, r=0.34, p<.0001) plus quotes per factor; quantitative part limited to two items."
+   },
+   "contribution": {
+    "score": 5,
+    "why": "Six-factor AI-productivity framework with survey questions and SPACE/DORA gap analysis (Tables 2-3); long-term expertise and ownership factors are new and broadly useful."
+   }
+  },
+  "score": 4.33,
+  "anchors": [
+   "P1299",
+   "P0178"
+  ],
+  "flag": "internal inconsistencies (minor): survey respondents given as 2989 (abstract, Sec. 3.1, Fig. 1) and 2898 (Sec. 4.1)"
+ },
+ "P2101": {
+  "id": "P2101",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Aim and three contributions explicit (pp. 1-2): propose DAT and use it for rigorous productivity experiments; no formal RQs."
+   },
+   "method": {
+    "score": 5,
+    "why": "Four-step DAT validation (Sec. 3.3); stratified two-tailed Welch t-tests on ~10,000 diffs; mixed-effects model; counterfactual estimation (Secs. 4-6)."
+   },
+   "sample": {
+    "score": 4,
+    "why": "Meta DevInfra setting clear; only approximate diff counts (~20, 968, ~10,000, >>10,000, ~50,000); developer numbers, roles, recruitment absent."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Sec. 7 construct/internal/external validity (p. 9) but brief and partly promotional; omits self-selected diff groups and Meta-specific setting."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Table 1 complete (% saved, group ratio, p); React result only '33%', no coefficients/CIs; code sharing 'thousands of hours'."
+   },
+   "contribution": {
+    "score": 5,
+    "why": "New validated telemetry metric enabling diff-level experiments; first large industrial experiment showing productivity benefit of static types."
+   }
+  },
+  "score": 4.5,
+  "anchors": [
+   "P0492",
+   "P0480"
+  ],
+  "flag": ""
+ },
+ "P2103": {
+  "id": "P2103",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Two explicit RQs: effect of process factors on cycle time and size of between/within-person variation (p. 2)."
+   },
+   "method": {
+    "score": 5,
+    "why": "Bayesian hierarchical Weibull model (brms/Stan), within/between-person disaggregation, org/user random effects, posterior checks; code public (Sec. 3)."
+   },
+   "sample": {
+    "score": 4,
+    "why": "55,619 user-months, 11,398 users, 216 orgs, size distribution (pp. 8-9); non-random tool adopters, job roles unknown, industries via pilot surveys."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Sec. 5 specific: construct, external, internal and statistical-conclusion validity (ticket practices, non-random orgs, team size, model assumptions, pp. 29-31)."
+   },
+   "evidence": {
+    "score": 5,
+    "why": "Tables 2-3 give posterior medians, 95% HDIs and sign probabilities; heterogeneity and posterior predictive checks shown (Figs. 8-10)."
+   },
+   "contribution": {
+    "score": 5,
+    "why": "Largest longitudinal cycle-time analysis; small precise effects against large individual noise; strong caution against individual-level metric use."
+   }
+  },
+  "score": 4.83,
+  "anchors": [
+   "P0556",
+   "P0473"
+  ],
+  "flag": ""
+ },
+ "P2104": {
+  "id": "P2104",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Three explicit RQs: studied/under-explored areas, key findings, future directions of in-IDE HAX (Sec. 2, p. 4)."
+   },
+   "method": {
+    "score": 5,
+    "why": "PRISMA SLR: 8 libraries (Nov 2024), snowballing, dual independent quality assessment, two-coder codebook; 65 non-search additions; Elicit-assisted extraction."
+   },
+   "sample": {
+    "score": 5,
+    "why": "90 studies (Jan 2022-Nov 2024), PRISMA flow (Fig. 1), full list (Table 1), 71 professional / 19 educational contexts; data public."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Sec. 4.1 covers sampling, temporal, source-reliability and interpretation bias (pp. 27-28); omits single-author AI-assisted extraction, JetBrains funding."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Counts per dimension and topic reported; but 257 (p. 3) vs 256 records (p. 12); educational 19/90 vs 16 (p. 13)."
+   },
+   "contribution": {
+    "score": 5,
+    "why": "First SLR on human-AI experience inside IDEs; taxonomy-based synthesis plus 17-topic research agenda; broadly useful for AI-productivity research."
+   }
+  },
+  "score": 4.67,
+  "anchors": [
+   "P0604",
+   "P1306"
+  ],
+  "flag": "internal inconsistencies (minor): 257 vs 256 records identified (pp. 3, 12); educational studies 19/90 but SDLC breakdown 6+1+13 of 16 (p. 13); professional SDLC counts sum to 72 of 71; text is arXiv v3, EMSE venue from batch metadata"
+ },
+ "P2106": {
+  "id": "P2106",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 3,
+    "why": "Framing question explicit ('Why is it so difficult to measure developer productivity?') but no research aim or RQs; inaugural opinion column."
+   },
+   "method": {
+    "score": 3,
+    "why": "No research method; argument from authors' experience leading Google's productivity research team. Not worse than vision paper P0013."
+   },
+   "sample": {
+    "score": 3,
+    "why": "No empirical sample (conceptual); only Google context named. Same situation as P0011/P0013, so not lowered."
+   },
+   "threats": {
+    "score": 3,
+    "why": "No limitations discussion; same as the conceptual anchors P0011/P0013."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Claims backed by literature (Taylor, Conway, SPACE) and anecdote ('we see evidence' on build speed), no data."
+   },
+   "contribution": {
+    "score": 3,
+    "why": "Clear human-centered case against single throughput metrics; restates known positions (SPACE, Jaspan & Sadowski); no new framework."
+   }
+  },
+  "score": 3.0,
+  "anchors": [
+   "P0013",
+   "P0011"
+  ],
+  "flag": "not empirical (IEEE Software opinion column); score at FT-EC3 threshold (3.00)"
+ },
+ "P2107": {
+  "id": "P2107",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "RQ1-RQ3 with sub-questions on factors, challenges and the satisfaction-perceived productivity relationship (p. 2)."
+   },
+   "method": {
+    "score": 5,
+    "why": "Survey refined through pilots after site visit; Bonferroni-corrected correlations, composite factors, stepwise regression with VIF, PAM clustering; theory building."
+   },
+   "sample": {
+    "score": 5,
+    "why": "5,000 sampled at random across product groups/locations; 640 responses (13%), 465 developers; gender, experience, region, office type reported (Sec. 3)."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Sec. 9 specific: single case, non-response/self-selection, self-reported hours, own single-item measures, mood confound, theory transferability (pp. 15-16)."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Regression tables with coefficients, adjusted R2; but correlations 'positive above 0.75' (p. 5) vs 'negative' (p. 8); clusters sum 408/465."
+   },
+   "contribution": {
+    "score": 5,
+    "why": "Theory of bidirectional satisfaction-perceived productivity link with reusable instrument; shows one cannot proxy the other; widely cited."
+   }
+  },
+  "score": 4.83,
+  "anchors": [
+   "P0321",
+   "P1503"
+  ],
+  "flag": "internal inconsistencies (minor): significant correlations described as 'positive above 0.75' (p. 5) but 'negative' in results (p. 8); cluster sizes 169+191+48=408 and junior+senior 144+313=457 vs 465 analysed, unexplained"
+ },
+ "P2108": {
+  "id": "P2108",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 4,
+    "why": "Aim explicit: present Google's human-centered flow/focus and friction metrics (p. 1); no RQs (IEEE Software column)."
+   },
+   "method": {
+    "score": 3,
+    "why": "Three phases (diary, interviews, daily surveys; word2vec focus time; threshold search) only sketched; details deferred to other papers."
+   },
+   "sample": {
+    "score": 3,
+    "why": "'A sample of developers' at Google; number, recruitment, roles and study period not reported."
+   },
+   "threats": {
+    "score": 3,
+    "why": "No limitations section; passing notes only (focus vs flow not separable, partial workflow coverage, early stage)."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Validation claims ('high agreement', 'positive correlate', 'negligible or small relationships') without statistics; only the 77% friction-days figure."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Transferable metric-design principles: aggregate to developer, perception-based thresholds, task-independent focus; useful but not demonstrated."
+   }
+  },
+  "score": 3.33,
+  "anchors": [
+   "P0529",
+   "P1275"
+  ],
+  "flag": "not a research paper (IEEE Software column); sample sizes and statistics not reported"
+ },
+ "P2109": {
+  "id": "P2109",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 4,
+    "why": "Two contributions stated (approach joining in/out-of-IDE interaction data; Ferax visual analytics, p. 1); no RQs."
+   },
+   "method": {
+    "score": 3,
+    "why": "Tool design plus preliminary evaluation by inspecting sessions and confirming interpretations with developers; no protocol or criteria."
+   },
+   "sample": {
+    "score": 3,
+    "why": "6 volunteers (4 master students, 2 professionals); 20 sessions, 12 analysed, 3 reported (Sec. V-A); small convenience sample."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Sec. V-C lists tool limitations (website list, static classification, no idle detection, macOS/Chrome only); ignores evaluation threats."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Three illustrative sessions with charts, no aggregate data; authors state 'only anecdotal evidence' (p. 10)."
+   },
+   "contribution": {
+    "score": 3,
+    "why": "Shows edit ratio misclassifies productive out-of-IDE work; prototype tool, preliminary and limited."
+   }
+  },
+  "score": 3.33,
+  "anchors": [
+   "P0011",
+   "P0030"
+  ],
+  "flag": ""
+ },
+ "P2112": {
+  "id": "P2112",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 4,
+    "why": "Aim explicit: describe how Google runs the EngSat survey, key learnings and its evolution (p. 1); experience report, no RQs."
+   },
+   "method": {
+    "score": 3,
+    "why": "Survey programme process documented (staffing, six phases, automation, Fig. 1), but no research method behind the reported findings."
+   },
+   "sample": {
+    "score": 3,
+    "why": "Google developers in three random cohorts, quarterly since 2018; respondent counts and response rates never reported."
+   },
+   "threats": {
+    "score": 3,
+    "why": "No limitations section; only common criticisms of surveys and falling response rates mentioned."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Findings (COVID productivity drop, technical-debt sentiment gains, metric validation) stated without numbers or statistics."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Practical recommendations for longitudinal DevEx surveys and EngSat outcome/theme structure (Fig. 2); useful for practice."
+   }
+  },
+  "score": 3.33,
+  "anchors": [
+   "P0529",
+   "P0013"
+  ],
+  "flag": "not a research paper (IEEE Software column / experience report); no respondent numbers or data reported"
+ },
+ "P2113": {
+  "id": "P2113",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 4,
+    "why": "Aim explicit: build a developer-based definition of creativity in software engineering (p. 1); no RQs, open questions listed."
+   },
+   "method": {
+    "score": 3,
+    "why": "Week-long diary with feedback/photo elicitation plus structured interviews; grounded-theory coding described in one paragraph (p. 2)."
+   },
+   "sample": {
+    "score": 3,
+    "why": "'A sample of software developers at Google'; number, recruitment and roles not reported."
+   },
+   "threats": {
+    "score": 3,
+    "why": "No limitations section; self-report recall problems mentioned only to justify the method."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Three themes illustrated with a few quotes; no counts of participants, diary entries or codes."
+   },
+   "contribution": {
+    "score": 3,
+    "why": "Creativity as 'clever reuse' plus agenda on creativity vs productivity; limited relevance to productivity measurement."
+   }
+  },
+  "score": 3.17,
+  "anchors": [
+   "P0529",
+   "P1297"
+  ],
+  "flag": "not a research paper (IEEE Software column); sample size not reported"
+ },
+ "P2114": {
+  "id": "P2114",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 4,
+    "why": "Five hypotheses (H1-H5) explicit, but aim loose: KWP equated with 'quality of KW'; abstract claims business-success effects not measured."
+   },
+   "method": {
+    "score": 3,
+    "why": "PLS-SEM with pilot (n=30) and expert content validity; items not shown; common-method check via correlations <0.9 inadequate."
+   },
+   "sample": {
+    "score": 3,
+    "why": "150 valid of 200 emailed; 70 of 100 Malaysian SMEs; respondents per firm, roles and demographics of main sample missing."
+   },
+   "threats": {
+    "score": 3,
+    "why": "No threats or limitations section."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Loadings/AVE/CR given, but collaboration beta -0.280, p>0.05 (Sec. 4.2) vs 0.280, p=0.002 (Fig. 2, Table B2); p-values mismatch t."
+   },
+   "contribution": {
+    "score": 3,
+    "why": "Incremental extension of Davis & Naumann KWP model with perceptual constructs; limited to Malaysian SMEs."
+   }
+  },
+  "score": 3.17,
+  "anchors": [
+   "P0208",
+   "P0529"
+  ],
+  "flag": "internal inconsistencies: collaboration beta sign/significance differ between Sec. 4.2 and Fig. 2/Table B2; innovation 'p>0.05' vs p=0.002; Table B2 p-values inconsistent with t-values (e.g., t=0.697 -> p=0.888, t=2.376 -> p=0.048); Sec. 5 calls effectiveness strongest and efficiency influential, contradicting results and Conclusion; '68 items' vs 35 in Table A1"
+ },
+ "P2115": {
+  "id": "P2115",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Main objective and two explicit RQs on socio-cultural factors and adaptation of agile practices (p. 3)."
+   },
+   "method": {
+    "score": 4,
+    "why": "SLR per Kitchenham/Biolchini, 5 databases, QA1-QA4 with 75% threshold; first-100-per-database cap, no snowballing, reviewer procedure not described."
+   },
+   "sample": {
+    "score": 4,
+    "why": "Funnel 1,223/484/434/85/35 consistent (p. 4); studies listed in Table 1; no search time window stated."
+   },
+   "threats": {
+    "score": 3,
+    "why": "No threats/limitations section although Conclusion refers to 'the limitations' (p. 9); scope restrictions only scattered."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Narrative synthesis without counts per factor; citation errors ([58] duplicates [55]; GitHub study cited [58] is [54]; technical debt [46] is [45])."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Catalogue of factors in four dimensions mapped to agile practices; useful but incremental, practice mapping unvalidated."
+   }
+  },
+  "score": 3.83,
+  "anchors": [
+   "P1345",
+   "P1286"
+  ],
+  "flag": "internal inconsistencies: reference numbering errors ([58] duplicates [55]; studies cited as [58] and [46] are [54] and [45]); Conclusion refers to a limitations section that does not exist"
+ },
+ "P2116": {
+  "id": "P2116",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Aim and six explicit hypotheses (H1-H6) on metrics use, visibility, thriving and perceived productivity (p. 3)."
+   },
+   "method": {
+    "score": 4,
+    "why": "Cross-sectional survey, serial mediation with covariates; single-item productivity, 2-item HMU without reliability, no factor analysis, missing data unaddressed."
+   },
+   "sample": {
+    "score": 4,
+    "why": "1,409 recruited, 1,282 retained via snowball sampling; rich demographics, but ~40% missing firmographics and DTS answered by only 562."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Limitations: response/social-desirability bias, snowball sampling, no factor analysis, trait measures, no temporal precedence (p. 8); omits common-method bias."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Table 7 correlations and Table 8 path coefficients with p-values; analytic n of mediation model not reported; 'DSS' mislabel (p. 7)."
+   },
+   "contribution": {
+    "score": 5,
+    "why": "Developer Thriving framework and scale; links healthy metrics use and visibility of work to perceived productivity; broadly useful."
+   }
+  },
+  "score": 4.33,
+  "anchors": [
+   "P1299",
+   "P0665"
+  ],
+  "flag": ""
+ },
+ "P2119": {
+  "id": "P2119",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Aim explicit in abstract and Sec. I: identify agile teamwork productivity factors and model them with system dynamics; no RQs."
+   },
+   "method": {
+    "score": 3,
+    "why": "Thin: high/medium/low ratings averaged per factor, Cronbach's alpha with n=17, CLD unvalidated and without feedbacks/delays (Secs. III, VI)."
+   },
+   "sample": {
+    "score": 3,
+    "why": "17 respondents (one per company, self-selected by employer) plus 12 interviewees from 4 firms; Table II roles; small preliminary sample (p. 2)."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Sec. VI 'Limitations' is short: sample size, self-reported perceptions, incomplete CLD; selection of respondents by employers not discussed."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Only factor means (Table I); figures without data; abstract's top four factors (team effectiveness, customer satisfaction) absent from Table I."
+   },
+   "contribution": {
+    "score": 3,
+    "why": "Preliminary, local factor list and qualitative CLD; model validation and quantitative SD model left to future work (Sec. VII)."
+   }
+  },
+  "score": 3.5,
+  "anchors": [
+   "P1297",
+   "P1345"
+  ],
+  "flag": "internal inconsistencies: abstract's four most-perceived factors not among Table I items; refs [23]-[26] cited but missing from list; 8/17 shown as 47.8% (Table II)"
+ },
+ "P2120": {
+  "id": "P2120",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Four explicit RQs (definition, impacts, causes, actions) stated in Sec. 1 (p. 2)."
+   },
+   "method": {
+    "score": 4,
+    "why": "Literature-guided survey plus thematic analysis of 38 StackOverflow threads; Likert means and ranks only, no tests for subgroup differences."
+   },
+   "sample": {
+    "score": 4,
+    "why": "170 respondents recruited via Twitter, LinkedIn and Sheffield Digital; experience and languages reported; no roles, organizations or response rate."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Sec. 2.4 'Threats to Validity' covers replicability, construct, internal (unverifiable developers) and external validity with mitigations (p. 4)."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Table 2 gives means, ranks and distributions per subgroup; themes with quotes; no inferential statistics; SQ4 scale labels misprinted (p. 4)."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Actionable recommendations (Table 3) and survey-vs-repository contrast on causes; useful but narrow, incremental to Eck et al.'s survey."
+   }
+  },
+  "score": 4.33,
+  "anchors": [
+   "P0477",
+   "P0541"
+  ],
+  "flag": "internal inconsistencies (minor): SQ4 agreement scale listed as 'Strongly disagree, Agree, Disagree, or Strongly disagree' (p. 4)"
+ },
+ "P2122": {
+  "id": "P2122",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Explicit research objective and two RQs on contextual factors of out-of-control velocity and focus factor (Sec. III-A, p. 2)."
+   },
+   "method": {
+    "score": 4,
+    "why": "SPC I-MR charts with zone classification plus Kruskal-Wallis and post-hoc tests; sound, but story-point proxies and no effect sizes."
+   },
+   "sample": {
+    "score": 5,
+    "why": "7 JIRA OSS projects from the Porru et al. dataset; cleaning steps detailed; Table I gives devs, issues, iterations and dates (p. 4)."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Sec. V-B 'Limitations': no causality, construct validity of measures and turnover formulas, degree of agility, normality, generalizability (pp. 7-8)."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "p-values per comparison and control charts; descriptives in external appendix; RQ2 mostly non-significant, p = 0.10 called 'significantly longer' (p. 6)."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Links turnover and team stability to velocity in agile OSS and proposes the Team Stability Index; useful but small project set."
+   }
+  },
+  "score": 4.5,
+  "anchors": [
+   "P0481",
+   "P0556"
+  ],
+  "flag": "internal inconsistencies (minor): iteration-length difference for focus factor reported as significant at H = 4.57, p = 0.10 (p. 6)"
+ },
+ "P2125": {
+  "id": "P2125",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 4,
+    "why": "Column aim stated loosely (pandemic lessons for hybrid work, p. 1); no RQs or study-level objectives."
+   },
+   "method": {
+    "score": 3,
+    "why": "Describes Google's sources (EngSat, cross-tool logs, diary studies, interviews) but not how findings were derived; 'more guidelines than anything'."
+   },
+   "sample": {
+    "score": 3,
+    "why": "EngSat ~5,000 responses per quarter; diary-study and interview sizes, periods and selection not reported; Google engineers only."
+   },
+   "threats": {
+    "score": 3,
+    "why": "Passing caveats only: pandemic 'far from a controlled experiment'; confounders (age, parenthood, health) could not be analysed (p. 1)."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Few figures without statistics (ramp-up 3-6 weeks slower, workload satisfaction down >10%, requirements item +6%); mostly narrative claims."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Practical recommendations for individuals, managers and leaders drawn from a large measurement programme; clear practitioner value."
+   }
+  },
+  "score": 3.33,
+  "anchors": [
+   "P1402",
+   "P1275"
+  ],
+  "flag": "experience report (IEEE Software column): underlying Google studies summarized without method or data; author may check eligibility as primary study"
+ },
+ "P2126": {
+  "id": "P2126",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Five explicit RQs with motivations: overall sentiment, team size, change type, contribution size, evolution (pp. 2-3)."
+   },
+   "method": {
+    "score": 3,
+    "why": "SentiStrength-SE on commit subject lines, not validated on this data; RQ3/RQ5 visual only; RQ4 correlates per-contributor shares over top 10 only."
+   },
+   "sample": {
+    "score": 4,
+    "why": "Seven OSS projects with selection criteria and Table 2 (LOC, stars, commits, devs, dates); 86,515 analysed messages vs 232,919 commits unexplained."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Sec. 6 lists subject-line-only analysis, unresolved aliases, Git-only selection, top-10 restriction, few factors; omits sentiment-tool accuracy (p. 19)."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Percentages and Pearson table (Table 5), but causal claims ('high commit activity causes negative sentiments', p. 15) from correlations; date inconsistencies."
+   },
+   "contribution": {
+    "score": 3,
+    "why": "Descriptive commit-sentiment patterns largely confirming Sinha et al.; link to productivity only asserted; generic advice."
+   }
+  },
+  "score": 3.67,
+  "anchors": [
+   "P0486",
+   "P0591"
+  ],
+  "flag": "internal inconsistencies: 86,515 messages analysed vs 232,919 commits in Table 2 (unexplained); 'creation dates from 1972' and glibc 'prior to 1990' vs Table 2 start dates 1992-2007"
+ },
+ "P2128": {
+  "id": "P2128",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Structured abstract states the objective explicitly: what PSM changes compared with linear regression in productivity analysis (p. 1)."
+   },
+   "method": {
+    "score": 4,
+    "why": "PSM vs three regression formulations on two datasets; appropriate, but no balance checks beyond c-statistic and no CIs or tests (short paper)."
+   },
+   "sample": {
+    "score": 4,
+    "why": "ISBSG R9 filtered (rating A/B, list-wise deletion, <5% categories) to 610; Finnish 407 to 400; final-sample descriptives missing."
+   },
+   "threats": {
+    "score": 3,
+    "why": "No threats section; one Discussion paragraph admits PSM results unconfirmed without field investigation (p. 5); minority-category removal noted."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Coefficients, effect sizes and c-statistics tabulated without SEs or p-values; Tables V-VI repeat Tables I-II values; category labels inconsistent."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Useful methodological point (confounding; PSM as triangulation tool) for productivity-factor analysis; limited scope."
+   }
+  },
+  "score": 3.83,
+  "anchors": [
+   "P0208",
+   "P0481"
+  ],
+  "flag": "internal inconsistencies: Finnish Tables V-VI identical to ISBSG Tables I-II; categories B/I/M labelled business/platform differently in Sec. IV vs tables; Discussion refers to 'Section VI' for Sec. IV"
+ },
+ "P2129": {
+  "id": "P2129",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Explicit RQ (benefits for Copilot users vs a control group) and nine one-sided hypotheses listed in Table 1 (pp. 2-4)."
+   },
+   "method": {
+    "score": 4,
+    "why": "Natural quasi-experiment survey; Mann-Whitney with RBC/CLES and Bonferroni; non-randomized groups, adapted and translated items not validated."
+   },
+   "sample": {
+    "score": 4,
+    "why": "NAV public-sector IT (~1000 staff), 115 responses (67 users); gender and in-house share; no roles, experience, survey date or response rate."
+   },
+   "threats": {
+    "score": 3,
+    "why": "No limitations section; brief mentions of non-random groups, self-selection, expectancy effect and vaguer items (pp. 3-5)."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Table 1 gives N, U, p, RBC and CLES per item plus T2B plot; respondent count 114 vs 115 (pp. 2-3); team implications speculative."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Practical warning on reduced reliance on colleagues in agile teams; short workshop paper, single organization."
+   }
+  },
+  "score": 4.0,
+  "anchors": [
+   "P0665",
+   "P0664"
+  ],
+  "flag": "internal inconsistencies (minor): 114 respondents (67 users/47 non-users) in Method vs 115 (67/48) in Results"
+ },
+ "P2130": {
+  "id": "P2130",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Explicit objective and seven RQs mapped to questionnaire items (Table 2, pp. 3-4)."
+   },
+   "method": {
+    "score": 4,
+    "why": "Guideline-based online survey (Molleri et al.), pilot, GT open/axial coding of open answers; mostly descriptive frequencies, no inferential analysis."
+   },
+   "sample": {
+    "score": 4,
+    "why": "58 valid of 61 via IT lists and groups, 12-31 May 2020; roles, experience, team size, regions reported; convenience sample."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Sec. 5 follows Wohlin categories but is brief; omits self-selection; pilot described differently than in Sec. 3.3 (p. 9)."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Counts, percentages and category frequencies with quotes; several numbers do not add up (Q6 23/41 = '60.5%'; Q12 counts sum to 62)."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Practical recommendations on remote-work productivity factors for Brazilian teams in the pandemic; useful but context-bound."
+   }
+  },
+  "score": 4.0,
+  "anchors": [
+   "P0665",
+   "P1306"
+  ],
+  "flag": "internal inconsistencies: Q6 23/41 reported as 60.5%; Q12 counts 38+14+7+3 = 62 of 58; Q17 9/58 reported as 14.5%; pilot and coder descriptions differ between Secs. 3.3-3.4 and 5"
+ },
+ "P2131": {
+  "id": "P2131",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Aim explicit: how AI support mechanisms and their interaction design affect productivity and satisfaction (Sec. 1, p. 2); no numbered RQs."
+   },
+   "method": {
+    "score": 5,
+    "why": "Within-subjects (N=24) with browser baseline, Latin square, SPACE-structured objective and subjective metrics, normality-based tests, Bonferroni, effect sizes."
+   },
+   "sample": {
+    "score": 4,
+    "why": "24 of 29 participants, recruitment channels, gender, age, education, 9 professionals (Sec. 3.1); small, young, mostly students."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Sec. 5.4 covers young sample, expertise, task scope and decomposition, model differences, snapshot; little on metric construct validity."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "Tests with p and effect sizes (Table 2); headline '65% more requirements' not traceable to reported values; efficiency omnibus W = 0.137."
+   },
+   "contribution": {
+    "score": 5,
+    "why": "Operationalizes all five SPACE dimensions in a controlled study of AI assistants; distinct interaction patterns; broadly relevant."
+   }
+  },
+  "score": 4.5,
+  "anchors": [
+   "P0510",
+   "P0603"
+  ],
+  "flag": "internal inconsistencies (minor): Limitations report no expertise effect, but p. 19 reports one on completion time (F = 7.029, p = 0.01); 65% figure not backed by reported means"
+ },
+ "P2132": {
+  "id": "P2132",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Four explicit RQs (productivity change, benefits, challenges, recommendations), each answered in its own section (Secs. 4-7)."
+   },
+   "method": {
+    "score": 5,
+    "why": "Exploratory open-coded survey (81.9% agreement) then quantitative survey with BH-corrected tests and Lasso-logit; pull-request mining for triangulation."
+   },
+   "sample": {
+    "score": 5,
+    "why": "Invitations to 5,000 (random daily samples) and 9,000 Microsoft engineers, response rates 27%/25%, roles, timeline March-May 2020 (Sec. 3)."
+   },
+   "threats": {
+    "score": 5,
+    "why": "Sec. 3.3 covers external, construct (single-item productivity), internal (researcher bias, wording) and conclusion validity specifically (pp. 9-10)."
+   },
+   "evidence": {
+    "score": 5,
+    "why": "Prevalence results, BH-adjusted productivity deltas, Lasso marginal effects with SEs (Table 5); only the PR triangulation is descriptive."
+   },
+   "contribution": {
+    "score": 5,
+    "why": "Strong finding: dichotomous WFH experiences behind stable company-level output, plus actionable recommendations; TOSEM."
+   }
+  },
+  "score": 5.0,
+  "anchors": [
+   "P1503",
+   "P1298"
+  ],
+  "flag": "possible data overlap with P1503 (ICSE'21 Microsoft study also based on a 2,265-response survey; same research group) - check for double counting"
+ },
+ "P2133": {
+  "id": "P2133",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Three explicit questions on pre-suggestion activities, mental processes and time costs (Sec. 1, p. 2)."
+   },
+   "method": {
+    "score": 4,
+    "why": "Telemetry plus retrospective self-labeling with CUPS and state-machine analysis; taxonomy from pilots and authors' experience, no label reliability, no baseline."
+   },
+   "sample": {
+    "score": 4,
+    "why": "21 programmers from one organization via internal email lists; experience, Copilot use, roles, languages (Sec. 5.2); small, mostly Python."
+   },
+   "threats": {
+    "score": 4,
+    "why": "Sec. 7.1 is short: researcher-set tasks, Python focus, one-state-per-segment assumption, no long-term costs; self-labeling inconsistency noted in Sec. 5.1."
+   },
+   "evidence": {
+    "score": 4,
+    "why": "State dwell times with SDs, transition probabilities, chi-square and t-tests; suggestion count 1,096 (p. 2) vs 1,024 (p. 7)."
+   },
+   "contribution": {
+    "score": 5,
+    "why": "CUPS taxonomy and critique of acceptance-rate and time-to-accept metrics; new interaction metrics and design implications; CHI."
+   }
+  },
+  "score": 4.33,
+  "anchors": [
+   "P0178",
+   "P0510"
+  ],
+  "flag": "internal inconsistencies (minor): 1,096 suggestions in Introduction (p. 2) vs 1,024 in Sec. 5.2 (p. 7)"
+ },
+ "P2134": {
+  "id": "P2134",
+  "kind": "academic",
+  "criteria": {
+   "objectives": {
+    "score": 5,
+    "why": "Aim explicit (early real-world Copilot experiences beyond the hype), with one guiding question per study (Table 1, p. 3)."
+   },
+   "method": {
+    "score": 3,
+    "why": "Three studies summarized briefly: forum analysis without coding procedure, 5-person think-aloud, survey details deferred to Ziegler et al."
+   },
+   "sample": {
+    "score": 4,
+    "why": "279 forum posts, 5 external Python developers, 2,047 of 17,420 opt-in preview users with dates; no respondent demographics."
+   },
+   "threats": {
+    "score": 3,
+    "why": "No threats section; only caveats on fast-changing technology (current as of January 2022) and a legal disclaimer (pp. 3, 5)."
+   },
+   "evidence": {
+    "score": 3,
+    "why": "Mostly qualitative highlights and quotes; one statistic (acceptance rate r = 0.24); 'productivity improvements' reported without data."
+   },
+   "contribution": {
+    "score": 4,
+    "why": "Useful early insights (more reviewing than writing, acceptance-rate signal, provenance agenda); largely summarizes studies published elsewhere."
+   }
+  },
+  "score": 3.67,
+  "anchors": [
+   "P1297",
+   "P1816"
+  ],
+  "flag": "possible overlap with G014 (survey study reported in full by Ziegler et al., CACM); CACM practice article summarizing three studies"
+ }
+}

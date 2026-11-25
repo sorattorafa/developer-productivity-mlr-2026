@@ -1,0 +1,35 @@
+{
+  "id": "P2033",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Mixed methods (survey with UTAUT2/PLS-SEM plus 19 semi-structured interviews)", "nlm": "Mixed methods (quantitative survey plus semi-structured interviews)", "value": "Mixed methods", "note": ""},
+    "research_method": {"claude": "Multi-phase 'two-fold funnel' mixed methods: even-numbered Likert survey with items mapped to UTAUT2, PLS-SEM (non-licensed users); 19 semi-structured interviews; 1029 respondents, 999 consented, 699 complete", "nlm": "Mixed methods: Likert survey analysed with PLS-SEM on UTAUT2 constructs; 19 semi-structured interviews; 1,029 participants, 999 consented, 699 complete (505 licensed, 194 non-licensed)", "value": "Multi-phase 'two-fold funnel' mixed methods: even-numbered Likert survey mapped to UTAUT2 constructs with PLS-SEM (non-licensed users), followed by 19 semi-structured interviews; 1,029 survey respondents, 999 consented, 699 complete responses", "note": "NotebookLM's 505 licensed / 194 non-licensed split not found in the full text; omitted."},
+    "context": {"claude": "Industry; global capability center of the technology development arm of a large multinational financial and investment organization (HSBC Software Development India authors); 699 complete surveys, 19 interviewees", "nlm": "Industry; global capability center / technology development arm of a large multinational financial organization (HSBC Software Development India); 699 complete surveys, 19 interviewees across 7 roles", "value": "industry; technology development arm (global capability center) of a large multinational financial and investment organization (authors affiliated with HSBC Software Development India); 699 complete survey responses and 19 interviewees across 7 role categories", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned (both)."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned (both); UTAUT2 is the applied model."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "GitHub Copilot adoption is the object of study."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not reported by either."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either; full text gives no survey/interview dates (training sessions counted 'by Feb 2025')."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Perceived productivity gain 15–40% (heuristic) plus team measures via JIRA story points and time to task completion; documentation time savings 20–30%."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: self-reported accuracy of Copilot suggestions (60–100%) and test-case generation (70–80%); error detection mentioned as a team-observed gain."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Social influence is a UTAUT2 adoption construct; 'Collaboration' appears only as a survey activity category."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "Claude tags UTAUT2 constructs 'Adoption / Satisfaction' (NotebookLM 'DevEx / Adoption'); they are technology-acceptance constructs, and hedonic motivation is not among the PLS-SEM paths reported."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Claude's 'activity counts' are survey counts of tasks Copilot is used for; NotebookLM's PR completion rate is cited from prior studies (introduction)."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM tags story points/velocity 'Delivery', but these are productivity measures; no deployment or lead-time metric."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM tags UTAUT2 constructs 'DevEx'; the DevEx framework is not used."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "JIRA story points mentioned once as a team productivity measure; no sprint/process metric."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Likert survey (UTAUT2) and interviews; productivity gains are perceived/heuristic."}
+  },
+  "evidence": [
+    {"field": "study_type, context", "quote": "In this paper we detail our experiences in adopting Microsoft GitHub Copilot, an AI based Coding Assistant which acts as a pair programmer, by a large technology development arm of a large multinational financial and investment organization, through a multi-phase mixed-method study.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "research_method", "quote": "We studied the technology adoption using a two-fold funnel approach to capture a broader understanding of the technology. Initially, we used a quantitative approach through a survey.", "loc": "PDF p. 2 (2 Research methodology)"},
+    {"field": "research_method, context", "quote": "The quantitative survey consisting of over a thousand software engineers followed by 19 qualitative interviews", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "research_method, context", "quote": "1029 participants responded to the survey, of which 999 provided consent, however only 699 completed the full survey.", "loc": "PDF p. 3"},
+    {"field": "ai_discussed", "quote": "In this paper we detail our experiences in adopting Microsoft GitHub Copilot, an AI based Coding Assistant which acts as a pair programmer", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "cat_productivity, cat_survey", "quote": "The perceived productivity of the participants has increased, ranging from 15-40% as a heuristic observation.", "loc": "PDF p. 8 (5.4.1)"},
+    {"field": "cat_productivity", "quote": "Objectively, teams have primarily experienced increased productivity in terms of speed, time to task completion, error detection, and documentation. To measure these, teams used JIRA story points and heuristic observations within their teams compared to preadoption.", "loc": "PDF p. 8 (5.4.1)"},
+    {"field": "cat_quality", "quote": "The suggestions' accuracy ranges between 60-100% based on the use cases according to the experiences stated by the participants.", "loc": "PDF p. 7 (5.1.1)"},
+    {"field": "cat_survey", "quote": "The survey uses an even numbered Likert scale [13] to avoid the participants selecting neutral options, ensuring actionable results.", "loc": "PDF p. 3"}
+  ]
+}

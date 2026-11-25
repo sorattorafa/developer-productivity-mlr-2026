@@ -1,0 +1,32 @@
+{
+  "id": "P2093",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Field study building on the authors' earlier MLR."},
+    "study_type": {"claude": "Qualitative-Interviews (field study with semi-structured interviews)", "nlm": "Qualitative-Interviews (qualitative field study, semi-structured interviews)", "value": "Qualitative-Interviews", "note": ""},
+    "research_method": {"claude": "Qualitative field study; semi-structured interviews (unguided impressions, guided impressions with a 0–10 Visual Analogue Scale per barrier, demographics); coding after initial Grounded Theory steps; input from a prior MLR; framework structured after Greiler et al. (2022); 21 women; pilot with 2", "nlm": "Qualitative field study with semi-structured interviews and Grounded Theory-based thematic coding, building on a prior MLR; VAS pain ratings; saturation tracking; 21 women", "value": "Qualitative field study (Singer et al.; Stol and Fitzgerald); semi-structured interviews with 21 women (unguided impressions, guided impressions rating each MLR barrier on a 0–10 Visual Analogue Scale of pain, demographics); thematic coding inspired by initial Grounded Theory steps, saturation check; results organized into the PSECO-GDI framework modelled on Greiler et al. (2022)", "note": "Pilot interviews mentioned only by Claude."},
+    "context": {"claude": "Industry; keystone organizations of proprietary software ecosystems in Brazil, all large (>100 employees); financial, insurance, oil and gas, services; 21 women (9 managers, 5 senior developers, 4 coordinators, 3 analysts)", "nlm": "Industry; PSECO keystone organizations in Brazil (financial, insurance, oil and gas, services; >100 employees); 21 women (9 managers, 5 senior developers, 4 coordinators, 3 analysts)", "value": "industry; keystone organizations of proprietary software ecosystems in Brazil (large, >100 employees; financial, insurance, oil and gas, services sectors); 21 women in development teams (9 software engineering managers, 5 senior developers, 4 coordinators, 3 business/IT analysts)", "note": "Claude notes the sector counts (16 + 3 + 3 + 2) exceed 21."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned by either."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not reported; only the interviews were virtual (Microsoft Teams). 'Hybrid' in the text refers to ecosystem type."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Interview period not stated by either."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Productivity appears only as a stated benefit of gender diversity."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM tags its 'Data Saturation Index' as Activity/Quality; this is a methodological check, not a quality metric."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "no basis", "value": null, "note": "Claude labels barrier origin/actors (manager, peers, teammates, clients, suppliers) as Collaboration/Inclusion. NotebookLM gives no collaboration metric, only barriers BA06 (lack of collaboration between business partners) and BA10 (non-inclusive communication) as factors."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "VAS 'pain' per gender barrier (VAS justified via occupational-stress assessment); satisfaction with the resolution of reported barriers; imposter syndrome, work-life imbalance."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM's 'Activity' tag on the saturation index is not code activity."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Greiler, Storey and Noda (2022) actionable DX framework adapted as structure and interview guide, but no feedback loops / cognitive load / flow dimensions; Claude says it is not used as a measurement instrument."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Self-rated VAS pain scale within interviews about perceptions of barriers."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, context", "quote": "we conducted a field study, following the qualitative research principles outlined by Singer et al. (2008) and Stol and Fitzgerald (2018). This method allowed us to examine the phenomenon in a real-world setting through semi-structured interviews with 21 women working in keystone organizations.", "loc": "3. Research method (3.1 Step 1)"},
+    {"field": "research_method", "quote": "The interview guide included unguided and guided impressions stage questions, and the responses were analyzed using thematic coding inspired by the initial steps of Grounded Theory", "loc": "3. Research method (3.1 Step 1)"},
+    {"field": "research_method, primary_secondary", "quote": "Using the findings from that MLR as input, we conducted semi-structured interviews with 21 women who are part of different development teams within organizations classified as keystone organizations", "loc": "Abstract (Method)"},
+    {"field": "context", "quote": "Our respondents came from different sectors of the industry, with 16 out of the 21 operating in the financial market, three in the insurance market, three in the oil and gas market, and two in the services market.", "loc": "4. PSECO-GDI framework (participant profile)"},
+    {"field": "cat_satisfaction, cat_survey", "quote": "Thus, in the second part of the interview, the interviewee was asked to evaluate the barrier, on a scale of 0 to 10, how much pain each barrier represents for her, with 0: no pain and 10: unbearable pain.", "loc": "3.1.2. Semi-structured interviews"},
+    {"field": "cat_satisfaction", "quote": "Lesage and Berjot (2011) performed a study in which VAS scale was used to occupational stress assessment.", "loc": "3.1.2. Semi-structured interviews"}
+  ]
+}

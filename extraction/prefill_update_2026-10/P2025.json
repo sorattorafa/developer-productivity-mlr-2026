@@ -1,0 +1,33 @@
+{
+  "id": "P2025",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Experiment (controlled within-participant user study, with mixed methods)", "nlm": "Mixed methods (controlled within-subjects user study)", "value": null, "note": "Same design, different primary label: Claude leads with controlled experiment, NotebookLM with Mixed methods. Paper: within-participant setup with randomized tool order, plus Likert and qualitative responses."},
+    "research_method": {"claude": "Controlled within-participant user study (randomized order; task types randomized between subjects): task correctness by test cases (linear model), user time from screen recordings/telemetry, post-study Likert (Wilcoxon signed-rank vs neutral), qualitative responses, exploratory trajectory analysis (153 annotated prompts)", "nlm": "Controlled within-subjects user study: task correctness and user effort measurements, 5-point Likert survey, qualitative trajectory and prompt analysis", "value": "Controlled within-participant user study comparing GitHub Copilot (copilot) and OpenHands (agent), tool order randomized, task types randomized between subjects (GAIA data analysis, SWE-Bench fix issue/add feature); task correctness via test cases, user effort time (screen recordings, event-stream telemetry), post-task 5-point Likert ratings, qualitative responses and interaction-trajectory analysis", "note": "Statistical tests (linear model, Wilcoxon signed-rank) and 153 annotated prompts reported only by Claude (not contradicted)."},
+    "context": {"claude": "Academic/lab; asynchronous study, 20 university-recruited students (regular Copilot users, no agent experience), realistic tasks in real OSS repositories (scikit-learn, astropy, matplotlib) and GAIA; April–May 2025", "nlm": "Academic/university; 20 students (regular Copilot users, novice agent users); realistic Python tasks in OSS repositories (matplotlib, scikit-learn) and GAIA data-analysis problems", "value": "academic; asynchronous user study with 20 university-recruited students (regular GitHub Copilot users, novice agent users; mostly 3–5 years programming experience) solving Python tasks from real OSS repositories (e.g., matplotlib, scikit-learn) and GAIA", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "DORA not mentioned."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Claude: not mentioned; NotebookLM: referenced in related work."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "AI copilot vs autonomous coding agent is the object of study."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Both list work mode 'Remote' only because participants did the study asynchronously in their own time (one sentence on logistics); remote work is not a topic."},
+    "data_window": {"claude": "April–May 2025", "nlm": "no basis", "value": null, "note": "Claude: study conducted April–May 2025 (confirmed in text, 3.4 Procedure); NotebookLM gives no period."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "RQ1 productivity: task correctness rate and user effort (time); perceived speed also rated."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: NotebookLM labels task correctness 'Quality', but the paper defines it (task fully solved per test cases) as a productivity axis; no defect or code-quality metric."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Only human-AI interaction patterns; no human collaboration metric."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Likert item on satisfaction (C5) comparing agent and copilot."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Claude tags interaction patterns 'Activity', but this is qualitative coding of prompts by workflow phase, not activity counts."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Cognitive load and flow rated as Likert items, but the DevEx framework is not cited or used."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Post-task 5-point Likert survey (cognitive load, new tasks, speed, flow, satisfaction, understanding) and open responses."}
+  },
+  "evidence": [
+    {"field": "research_method", "quote": "We adopt a within-participant setup, where each participant interacts with both OpenHands and GitHub Copilot. We randomize the order in which participants interact with either.", "loc": "PDF p. 6 (3.4 Procedure)"},
+    {"field": "research_method, context", "quote": "For (2) and (3), we select tasks from SWE-Bench [23], which require users to fix issues by editing existing code files in a larger, real-world repository (e.g., matplotlib and scikit-learn).", "loc": "PDF p. 6 (3.3 Task Types)"},
+    {"field": "context", "quote": "We recruited a total of 20 students via university mailing lists.", "loc": "PDF p. 4 (3.1 Participants)"},
+    {"field": "cat_productivity, research_method", "quote": "we evaluate productivity along two complementary axes: task correctness, which captures whether the code satisfies all task specifications, and user effort, which reflects the amount of work a user puts in to achieve the correct solution.", "loc": "PDF p. 7 (4.1 RQ1)"},
+    {"field": "ai_discussed, cat_productivity", "quote": "we observe a 35% increase in task correctness when users have access to agents as compared to copilots", "loc": "PDF p. 7"},
+    {"field": "cat_satisfaction", "quote": "Interestingly, despite on average being able to solve more tasks correctly, participants were not necessarily more satisfied with agents.", "loc": "PDF p. 8"},
+    {"field": "cat_survey, research_method", "quote": "In the post-task survey, we ask participants to rate their interactions with both the copilot and agent on a 5-point Likert scale from \"strongly agree\" to \"strongly disagree\".", "loc": "PDF p. 6 (3.5 Measurements)"}
+  ]
+}

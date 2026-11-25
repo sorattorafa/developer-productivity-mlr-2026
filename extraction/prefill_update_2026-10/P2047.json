@@ -1,0 +1,36 @@
+{
+  "id": "P2047",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Own simulation model; no review."},
+    "study_type": {"claude": "Other (simulation / computational modelling)", "nlm": "Other (quantitative Bayesian causal modelling on synthetic simulation data)", "value": "Other (simulation; Bayesian structural causal model on synthetic data)", "note": ""},
+    "research_method": {"claude": "Simulation: Bayesian structural causal model (DAG + Bayesian network) estimated on synthetic data (Bayesian and frequentist learning, MCMC, EM), do-operator intervention analysis, scenario modelling, comparison with linear regression and random forest", "nlm": "Quantitative Bayesian structural causal modelling on a synthetic dataset; DAG, Bayesian network, do-calculus interventions; fit metrics (log-likelihood, AIC, BIC, CV-10, MAE, RMSE); comparison with linear regression and random forest baselines", "value": "Simulation: Bayesian structural causal model (DAG/Bayesian network) linking five DX variables and two controls to release cycle duration, estimated on a synthetic dataset; do-operator intervention scenarios on P(RCD > 14 days); fit via log-likelihood, AIC/BIC, 10-fold CV, MAE/RMSE; comparison with linear regression and random forest baselines", "note": "Synthetic dataset size not reported by either."},
+    "context": {"claude": "simulated; prototypical cloud CI/CD infrastructure (microservices or serverless); no real organization, team or project", "nlm": "simulated; cloud / full-stack web development environment with CI/CD microservices and serverless architectures", "value": "not reported (simulated; prototypical cloud CI/CD environment with microservices or serverless architecture; synthetic data, no real teams)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "DORA cited as industry benchmark and criticized as correlational."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE not mentioned by either."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: both extractors list 'uses AI/ML: Yes' only for the Bayesian network / causal-ML libraries used as the statistical analysis method; ChatGPT used only for language editing; MLOps only as future work. AI is not a topic of the study."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "data_window": {"claude": "no basis (synthetic data, no period)", "nlm": "no basis (synthetic data, no period)", "value": null, "note": "Not stated by either (synthetic data)."},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "No output/throughput metric; target is release cycle duration (delivery)."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: both tag Documentation Quality (K) partly as Quality (NLM also code-review feedback), but these are DX input ratings, not defect/stability/maintainability metrics."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Communication Quality (C) and Feedback from Code Review (F) modelled as variables (synthetic values)."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Developer Tooling Satisfaction (B); Claude also reports a Developer Satisfaction Index in the results."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "NLM tags CI/CD automation, team size and feature complexity as Activity, but none is a repository activity count."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Release Cycle Duration (first commit to deployment) is the target variable."},
+    "cat_devex": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Cognitive load (context switching) and feedback modelled as DX metrics, grounded in the DX framework of Greiler, Storey and Noda (2022: flow, cognitive load, feedback loops), not the 2023 Noda/Storey/Forsgren paper; variables are author-defined."},
+    "cat_agile": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Feature scope in story points as scenario variable; 14-day threshold based on two-week sprints."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Subjective ordinal (1-5) ratings defined as survey-based (e.g., B obtained from a survey), but values are synthetic; no survey administered."}
+  },
+  "evidence": [
+    {"field": "study_type, context", "quote": "A simulation model was developed for this analysis, embodying a prototypical CI/CD infrastructure characterized by either a microservices or serverless architecture within a cloud framework.", "loc": "PDF p. 1"},
+    {"field": "research_method, context", "quote": "Synthetic data was generated to simulate a typical DevOps development cycle under controlled experimental conditions.", "loc": "PDF p. 4"},
+    {"field": "research_method", "quote": "Two baseline models were implemented: linear regression and random forest regression.", "loc": "PDF p. 9"},
+    {"field": "cat_delivery", "quote": "RCD (Release Cycle Duration) - the duration of the release cycle, defined as the time interval between the first commit of a feature and its successful deployment.", "loc": "PDF p. 5"},
+    {"field": "cat_satisfaction, cat_survey", "quote": "B (Developer Tooling Satisfaction) - a subjective assessment of satisfaction with engineering tools (IDE, CI/CD services, build, etc.); obtained from a survey.", "loc": "PDF p. 5"},
+    {"field": "cat_collaboration", "quote": "C (Communication Quality) - an assessment of the effectiveness of intra-team communication during the release.", "loc": "PDF p. 5"},
+    {"field": "cat_collaboration", "quote": "F (Feedback from Code Review) - a feedback indicator: timeliness, quality, and usefulness of reviews from other developers.", "loc": "PDF p. 5"},
+    {"field": "cat_devex", "quote": "The DX model proposed in [17] focuses on three key components: flow, cognitive load, and feedback loops.", "loc": "PDF p. 3"},
+    {"field": "cat_devex", "quote": "H1. Increased cognitive load, poor quality engineering tools, and reduced feedback lead to a statistically significant increase in release cycle length.", "loc": "PDF p. 3"},
+    {"field": "cat_agile", "quote": "Adapting Agile practices, in particular iterative development with a small volume of tasks in each sprint, allows to reduce the probability of delay by 42 percentage points", "loc": "PDF p. 8"}
+  ]
+}

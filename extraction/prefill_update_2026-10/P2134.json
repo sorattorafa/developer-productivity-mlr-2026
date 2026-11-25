@@ -1,0 +1,34 @@
+{
+  "id": "P2134",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Practitioner (CACM practice) article summarizing the authors' own three studies."},
+    "study_type": {"claude": "Mixed methods (forum analysis, think-aloud case study, survey with telemetry)", "nlm": "Mixed methods (forum discussion analysis, think-aloud case study, large-scale survey)", "value": "Mixed methods", "note": ""},
+    "research_method": {"claude": "Three studies: qualitative analysis of 279 GitHub Discussions posts (Oct/Nov 2021); think-aloud case study with 5 experienced Python developers (Dec/Jan 2022) with reflective interview and 1-5 ratings; survey of 2,047 Copilot users (of 17,420 sent; Feb/Mar 2022) correlated with usage telemetry", "nlm": "Mixed methods: forum discussion analysis (279 posts), think-aloud case study (5 expert Python developers), large-scale SPACE-based survey (2,047 responses) correlated with telemetry usage metrics", "value": "Three studies summarized in a practitioner article: qualitative analysis of 279 GitHub Discussions forum posts; think-aloud case study with 5 professional Python developers new to Copilot, with post-study reflective interview; survey of 2,047 Copilot technical-preview users (of 17,420 invited) with SPACE-based perceived-productivity items, correlated with 11 telemetry usage metrics", "note": "Study dates reported by Claude only (see data_window)."},
+    "context": {"claude": "Industry; GitHub Copilot technical-preview users, professional developers; authors from Microsoft Research and GitHub", "nlm": "Industry / open-source developers using the GitHub Copilot technical preview", "value": "industry; GitHub Copilot technical-preview users: 279 forum posts, 5 external professional Python developers, 2,047 survey respondents", "note": "NotebookLM also mentions open-source developers."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not cited."},
+    "space_applied": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Survey questions follow several SPACE dimensions (details in Ziegler et al.)."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "GitHub Copilot as AI pair programmer is the object of study."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Case study run over Microsoft Teams; work mode not a topic."},
+    "data_window": {"claude": "Oct/Nov 2021 (forum), Dec/Jan 2022 (case study), 10 Feb-12 Mar 2022 (survey)", "nlm": "no basis (only 'as of early 2022' as a limitation)", "value": null, "note": "Only Claude gives the study periods; the survey dates are in the full text (PDF p. 5)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: contribution speed (characters in accepted completions per hour), tagged Productivity by both; the productivity outcome itself is perceived (survey)."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: persistence rate of accepted completions; build breaks, test failures and post-release defects only raised as future questions."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Pair programming is only the metaphor for the AI tool."},
+    "cat_satisfaction": {"claude": "Yes (case-study 1-5 ratings: overall experience, likelihood to recommend, disappointment if discontinued)", "nlm": "No (no satisfaction metric listed)", "value": null, "note": "Only Claude lists the case-study rating scales as Satisfaction."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Telemetry: acceptance rate, volume of completions shown."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "Claude labels the future provenance questions 'Quality/Delivery', but they are defect and code-share questions, not delivery metrics."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "DevEx framework not cited; NotebookLM uses 'DevEx' as a label only."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Survey of perceived productivity and case-study rating scales."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "We conducted three studies to understand how developers use Copilot: 1. An analysis of forum discussions from early Copilot users. 2. A case study of Python developers using Copilot for the first time. 3. A large-scale survey of Copilot users to", "loc": "PDF p. 3"},
+    {"field": "research_method, context", "quote": "An analysis of all 279 posts available, which were devoted to general feedback and personal showcases, uncovered strengths and challenges of Copilot", "loc": "PDF p. 4 (Study 1)"},
+    {"field": "research_method, context", "quote": "we conducted an in-depth case study with five professional Python developers, strategically selected as external industry developers who had not interacted with Copilot before.", "loc": "PDF p. 5 (Study 2)"},
+    {"field": "context", "quote": "Survey participants were those users in the technical preview who opted in to receive communications.", "loc": "PDF p. 5 (Study 3)"},
+    {"field": "space_applied, cat_survey, research_method", "quote": "Of the 17,420 surveys sent, 2,047 responses were received between February 10, 2022, and March 12, 2022. The survey included questions along several dimensions of productivity based on the SPACE framework.", "loc": "PDF p. 5 (Study 3)"},
+    {"field": "cat_quality, cat_productivity, cat_activity, ai_discussed", "quote": "persistence rate (percentage of accepted completions that remained unchanged after various intervals); contribution speed (number of characters in accepted completions per hour); acceptance rate (percentage of shown completions accepted by the user); and volume (total number of completions shown to the user).", "loc": "PDF p. 5"},
+    {"field": "cat_activity, cat_survey", "quote": "Across all analyses, acceptance rate has the highest positive correlation to aggregate perceived productivity (r = 0.24, P < 0.0001)", "loc": "PDF p. 5"},
+    {"field": "cat_quality", "quote": "Does AI-generated code lead to fewer (or more?) build breaks, test failures, or even post-release defects?", "loc": "PDF p. 6 (Discussion)"}
+  ]
+}

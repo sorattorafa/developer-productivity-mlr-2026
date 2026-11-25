@@ -1,0 +1,34 @@
+{
+  "id": "P2059",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Experiment (preregistered two-phase controlled experiment; Phase 2 RCT)", "nlm": "Experiment (preregistered two-phase controlled experiment; Phase 2 RCT)", "value": "Experiment", "note": ""},
+    "research_method": {"claude": "Preregistered two-phase controlled experiment: Phase 1 feature implementation with/without AI (observational), Phase 2 RCT in which new developers evolve the code without AI (40 treatment, 35 control); frequentist and Bayesian causal analysis; qualitative free-text analysis; static analysis with CodeScene, PMD, RefactoringMiner", "nlm": "Preregistered two-phase controlled experiment with Phase 2 RCT; 151 valid participants (76 Phase 1, 75 Phase 2); frequentist tests and Bayesian analysis; CodeScene, PMD, JaCoCo in CI", "value": "Preregistered two-phase controlled experiment: Phase 1 participants add a feature to a Java/Spring Boot app with or without AI assistance (observational, 76 solutions); Phase 2 RCT in which 75 new participants evolve those solutions without AI; outcomes completion time, CodeHealth, test coverage, perceived productivity; frequentist tests (Wilcoxon, Cliff's delta) plus Bayesian causal analysis, static analysis (CodeScene, PMD) and qualitative coding of free-text answers", "note": "Phase 2 split (40 treatment, 35 control) and RefactoringMiner reported only by Claude (not contradicted)."},
+    "context": {"claude": "Industry/mixed; volunteers from many organizations and countries (95% professionals), Java/Spring Boot RecipeFinder system (2 KLoC); 449 pre-screened, 151 valid participants", "nlm": "Industry/mixed; professional developers from various international organizations and the Equal Experts community; 449 sign-ups, 151 valid participants (76 Phase 1, 75 Phase 2)", "value": "industry; volunteer developers from many organizations and countries (about 95% professionals), small Java/Spring Boot web app (RecipeFinder, ~2 KLoC); 449 pre-screened, 151 participants with valid tasks (76 in Phase 1, 75 in Phase 2)", "note": "Both label the setting 'Industry / Mixed' (cross-organization volunteer sample)."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM: DORA only referenced in background; Claude: not reported."},
+    "space_applied": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "SPACE frames productivity and structures the 10-item perceived productivity Likert scale (S, C, E items)."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "AI assistant use is the independent variable."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Both give work mode 'Remote' only because participants completed tasks remotely in their own environment; remote work is not a topic of the study."},
+    "data_window": {"claude": "late 2024", "nlm": "no basis", "value": null, "note": "Claude: study conducted in late 2024; NotebookLM states no period (only that it predates third-generation agents)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Completion time (RQ1) and perceived productivity."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "CodeHealth, test coverage (JaCoCo), code smells and PMD violations."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE 'C' items concern information seeking; team dynamics explicitly out of scope."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Satisfaction (S) items in the perceived productivity scale (fulfilled, frustrated)."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Git activity (commits, added/deleted lines, changed files) reported descriptively."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Both label perceived productivity partly 'DevEx', but the DevEx framework is not used."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Pre-screening and exit questionnaires (5-point Likert perceived productivity scale, Cronbach's alpha 0.82)."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, context", "quote": "We conducted a two-phase, preregistered controlled experiment involving 151 participants, 95% of whom were professional developers.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "research_method, ai_discussed", "quote": "In Phase 1, participants added a new feature to a Java web application, with or without AI assistance. In Phase 2, a randomized controlled trial, new participants evolved these solutions without AI assistance.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "space_applied, cat_survey", "quote": "Perceived Productivity (PP) is a subjective assessment based on the SPACE framework (see Section 2.1). We measured PP using a Likert scale", "loc": "PDF p. 13"},
+    {"field": "cat_productivity", "quote": "we consider the time it takes to implement changes a valid proxy for maintainability.", "loc": "PDF p. 13 (completion time)"},
+    {"field": "cat_quality", "quote": "CodeHealth (CH) was measured as a project-level weighted average over all files in the codebase, i.e., not only the files modified by the participant.", "loc": "PDF p. 13"},
+    {"field": "cat_quality", "quote": "the resulting coverage was measured using the Java code coverage library JaCoCo, integrated into the continuous integration pipeline via the same GitHub Action.", "loc": "PDF p. 13"},
+    {"field": "cat_satisfaction, cat_survey", "quote": "I felt fulfilled while completing the programming task. (S) d) I found myself frustrated while completing the programming task. (S)", "loc": "PDF p. 12 (exit questionnaire items)"},
+    {"field": "cat_activity", "quote": "Table 7 Descriptive statistics of git activity commits mean / std min / median / max added lines mean / std min / median / max deleted lines", "loc": "PDF p. 30 (Table 7)"}
+  ]
+}

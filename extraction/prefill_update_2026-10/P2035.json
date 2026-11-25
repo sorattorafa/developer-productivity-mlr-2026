@@ -1,0 +1,34 @@
+{
+  "id": "P2035",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Position/vision paper proposing a framework; NotebookLM also calls it a literature synthesis, but it is not a systematic review."},
+    "study_type": {"claude": "Other (conceptual position paper with theoretical framework proposal)", "nlm": "Other (conceptual/position paper; theoretical framework proposal and literature synthesis)", "value": "Other (position paper; theoretical framework proposal)", "note": ""},
+    "research_method": {"claude": "Conceptual position paper: literature-supported argument and theoretical framework proposal (Ambidexterity theory, ISO/IEC 25019:2023, JD-R); suggested operationalization (survey scales, NASA-TLX, context-switching frequency); no data collection", "nlm": "Conceptual/position paper: theoretical framework proposal (Ambidexterity theory, ISO/IEC 25019:2023, JD-R) and literature synthesis; no primary data", "value": "Position/vision paper (no empirical data): literature-supported argument and interdisciplinary theoretical framework integrating Ambidexterity theory, the ISO/IEC 25019:2023 quality-in-use model and the JD–R model; suggested operationalization via established survey scales, NASA-TLX or context-switching frequency; research agenda (call to action)", "note": "Operationalization details stated only by Claude (not contradicted)."},
+    "context": {"claude": "Not applicable (no primary data); GenAI in software development in general (industry)", "nlm": "Not applicable (position paper); SE and GenAI adoption (research agenda / industry software development)", "value": "not reported (conceptual; no empirical sample); GenAI adoption in software development (industry)", "note": "Sample sizes listed by both belong to cited studies."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned (both)."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned (both)."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "GenAI's cost to developer well-being is the topic."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not specified by either."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either (position paper, no data)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: productivity metrics (speed, time to complete tasks) are critiqued as narrow, not used; 'sustainable productivity' argued for."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: ISO/IEC 25019 quality in use of GenAI tools is a framework component; code quality only cited as the literature's focus (introduction)."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: erosion of collaboration, peer learning and mentorship discussed; turnover/mentoring effects proposed for future research; no collaboration metric operationalized."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Developer well-being (stress, burnout, job satisfaction, work–life balance) via established survey scales (proposed)."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM tags cognitive load (context-switching frequency) 'DevEx / Activity'; not repository activity."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM tags task completion time/coding speed 'Productivity / Delivery'; these are productivity measures from cited studies."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Cognitive load is proposed (NASA-TLX), but the DevEx framework is not cited (both)."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Proposed operationalization through established survey scales and NASA-TLX (not applied)."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, context, ai_discussed", "quote": "This position paper calls for a reorientation of the GenAI research agenda in software development and proposes a theoretical framework to move beyond narrow performance metrics toward investigations that also center on human experience, social context, and sustainable productivity.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "research_method", "quote": "Such an approach should integrate three key theoretical models to deliver value, as shown in Fig 1: Ambidexterity theory, ISO/IEC 25019:2023 quality in use model, and Job Demand-Resource (JD-R) Model.", "loc": "PDF p. 3 (4 Proposed Theoretical Framework)"},
+    {"field": "cat_satisfaction, cat_survey, research_method", "quote": "Developer well-being includes stress, burnout, job satisfaction, and work-life balance, which can be evaluated using established survey scales. Cognitive load may be measured using instruments such as NASA-TLX or context-switching frequency.", "loc": "PDF p. 4"},
+    {"field": "cat_productivity", "quote": "Current productivity metrics rarely account for the mental load and fragmented attention required to manage AI code contributions.", "loc": "PDF p. 2"},
+    {"field": "cat_quality", "quote": "To evaluate user experience and the perceived effectiveness of GenAI tools, the ISO/IEC 25019:2023 provide a good basis for understanding GenAI's quality in use.", "loc": "PDF p. 3"},
+    {"field": "cat_productivity, cat_quality", "quote": "most studies are focused on performance outcomes, such as speed, correctness, or code quality, and largely overlook human outcomes beyond usability and intent to adopt GenAI.", "loc": "PDF p. 1"},
+    {"field": "cat_collaboration", "quote": "This erosion of informal collaboration may be particularly detrimental for junior developers, who often learn through pair programming, asking questions", "loc": "PDF p. 3"},
+    {"field": "cat_collaboration", "quote": "research should explore how GenAI use affects staff-turnover and GenAI's positive and negative effects on mentoring and teams' tacit knowledge.", "loc": "PDF p. 4"}
+  ]
+}

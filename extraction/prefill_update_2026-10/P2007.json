@@ -1,0 +1,37 @@
+{
+  "id": "P2007",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Secondary", "nlm": "Secondary", "value": "Secondary", "note": "Systematic literature review."},
+    "study_type": {"claude": "Review-Secondary (SLR, Kitchenham guidelines)", "nlm": "Review-Secondary (SLR)", "value": "Review-Secondary", "note": ""},
+    "research_method": {"claude": "SLR following Kitchenham (planning, conducting, reporting); ACM DL, IEEE Xplore, SpringerLink, ScienceDirect, Taylor & Francis (Wiley dropped as duplicates); 2020–2025 journal/proceedings papers; 8-question quality assessment (Zhou et al., minimum 5 of 8); 77 primary studies", "nlm": "SLR following Kitchenham's protocol; automated database searches, manual extraction and quality screening; 4,524 initial papers screened to 77 primary studies (2020–2025)", "value": "Systematic literature review following Kitchenham's guidelines (planning, conducting, reporting); automatic search in ACM DL, IEEE Xplore, SpringerLink, ScienceDirect and Taylor & Francis (Wiley results dropped as duplicates); English journal and proceedings primary studies 2020–2025; 8-item quality assessment based on Zhou et al. (minimum 5 of 8); 77 primary studies included; qualitative synthesis by RQ", "note": "NotebookLM's 4,524 initial records is not in the extracted text (probably Fig. 2) and is omitted."},
+    "context": {"claude": "Academic (synthesis of published studies; industry vs. academia origin of primary studies not reported); 77 primary studies", "nlm": "Mixed (academic and industry literature on AI development tools and DX); 77 primary studies", "value": "academic (secondary/review); 77 primary studies on developer experience with AI-based development tools", "note": "Claude: origin of primary studies not reported; NotebookLM calls it mixed academic/industry literature."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "The review is about developer experience with AI tools (ChatGPT, GitHub Copilot, LLM prototypes)."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Not reported by either."},
+    "data_window": {"claude": "review coverage 2020–2025", "nlm": "review coverage 2020–2025", "value": "review coverage 2020–2025", "note": ""},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: productivity is listed as a variable some studies address and RQ3 reports mostly perceived productivity gains (novices vs. experienced); NotebookLM also maps usability 'efficiency' here."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin: quality of AI recommendations/generated code (experienced developers perceive lower code quality) and accessibility evaluations."},
+    "cat_collaboration": {"claude": "No", "nlm": "Yes", "value": null, "note": "Claude labels trust as HAX/Satisfaction; NotebookLM labels Trust & Transparency as DevEx/Collaboration. In the text, trust is developers' trust in AI tools (human–AI), not team trust."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "User satisfaction (within usability), enjoyment/hedonic motivation, well-being and stress."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels 'quantity of recommendations' as Activity (with IDE telemetry not found in the text); it is not repository activity."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "DX is based on Fagerholm & Münch (cognitive/affective/conative); Greiler, Storey & Noda (2022) only referenced; cognitive load and feedback appear only in a list of variables."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Synthesized UX/DX/HAX evaluations rest on developer perceptions; the instruments NotebookLM names (SUS, NASA-TLX, TAM) do not appear in the full text."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "To do so, we conducted a systematic literature review based on the guidelines proposed by [19].", "loc": "PDF p. 3 (III. Method; [19] = Kitchenham)"},
+    {"field": "research_method, data_window", "quote": "Time period - Studies published between 2020 and 2025 were considered", "loc": "PDF p. 4 (2) Selection Process)"},
+    {"field": "research_method", "quote": "Therefore, for this review, studies that met a minimum score of 5 were accepted, which represents a minimum compliance of 60% of these assessment.", "loc": "PDF p. 4 (Quality Assessment)"},
+    {"field": "research_method, context", "quote": "This is why the final total number of studies selected and included in this review is 77.", "loc": "PDF p. 4 (IV. Quantitative Results)"},
+    {"field": "ai_discussed", "quote": "The tools analyzed or evaluated in the selected studies range from well-known tools such as ChatGPT for generating user stories [21], or Gibthub Copilot for providing suggestions and code generation [22]", "loc": "PDF p. 5 (RQ1)"},
+    {"field": "cat_productivity, cat_satisfaction", "quote": "Some of the selected research papers also consider other aspects that impact these tools, such as productivity and even well-being (the relationship between improved productivity and reduced work time with reduced stress)", "loc": "PDF p. 7 (RQ2)"},
+    {"field": "cat_productivity, cat_survey", "quote": "Therefore, they do perceive an improvement in their productivity, especially those developers who do not have much programming knowledge.", "loc": "PDF p. 7 (RQ3)"},
+    {"field": "cat_quality", "quote": "They believe that the code generated by these tools does not maintain the same quality as the code they generate themselves, that they waste time correcting errors in the code", "loc": "PDF p. 7 (RQ3)"},
+    {"field": "cat_quality", "quote": "the quantity and quality of recommendations, and transparency", "loc": "PDF p. 7 (RQ2)"},
+    {"field": "cat_satisfaction", "quote": "A widely used variable to evaluate this developer experience is the usability (efficiency, effectiveness, and user satisfaction) of the tool", "loc": "PDF p. 7 (RQ2)"},
+    {"field": "cat_survey", "quote": "Regarding UX, DX, and HAX, it should be noted that these are complex concepts to assess, as they involve user perception, which is difficult to identify and, above all, to express precisely.", "loc": "PDF p. 8 (VI. Discussion)"}
+  ]
+}

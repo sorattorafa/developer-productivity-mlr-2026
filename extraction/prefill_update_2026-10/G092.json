@@ -1,0 +1,29 @@
+{
+  "id": "G092",
+  "kind": "grey",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Both describe the authors' own two-wave questionnaire study (158/101 eligible, matched cohort of 95)."},
+    "gl_type": {"claude": "Article (arXiv pre-print, manuscript submitted to ACM)", "nlm": "Article (academic pre-print, manuscript submitted to ACM)", "value": "Article", "note": "arXiv pre-print, not peer reviewed."},
+    "dora_applied": {"claude": "No (reference only)", "nlm": "No (reference only)", "value": "No (reference only)", "note": "DORA State of AI-assisted Software Development 2025 cited as an industry survey."},
+    "space_applied": {"claude": "No (reference only)", "nlm": "No (reference only)", "value": "No (reference only)", "note": "Only the cited paper 'The SPACE of AI' (Houck et al.); SPACE itself is not discussed."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Perceived effects of AI coding assistants are the topic."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Neither mentions remote work or COVID-19."},
+    "data_window": {"claude": "October 2024 (Q1) and April 2025 (Q2)", "nlm": "October 2024 and April 2025", "value": "October 2024–April 2025 (two questionnaire waves, October 2024 and April 2025)", "note": ""},
+    "cat_productivity": {"claude": "No", "nlm": "No", "value": "No", "note": "Productivity is only perceived (single Likert item, goes to survey); task completion time and completed tasks are cited from literature."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: only a ranking of concerns (quality, maintainability, security), not a quality measure."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: 'reviewing code' is a perceived task-time item framed as verification of AI output; full text also has a qualitative sub-theme on team trust and code review effort (p. 21)."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "Developer experience is measured with the DevEx framework (goes to cat_devex); attitudes toward AI tools are not satisfaction measures."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Commits and PRs only cited from other studies."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "PR cycle time only cited from literature."},
+    "cat_devex": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "DevEx dimensions (feedback loops, cognitive load, flow state) rated per participant at both waves."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Two Qualtrics questionnaires with Likert items and open-ended responses."}
+  },
+  "evidence": [
+    {"field": "gl_type", "quote": "arXiv:2605.23135v1 [cs.SE] 22 May 2026", "loc": "PDF p. 1"},
+    {"field": "ai_discussed", "quote": "Through a longitudinal mixed-methods investigation, we examined how professional software engineers perceive the effects of AI coding assistants in regard to task focus, developer experience, and", "loc": "PDF p. 1"},
+    {"field": "data_window", "quote": "The first questionnaire (Q1) was administered in October 2024 and the second (Q2) in April 2025, each open for four weeks.", "loc": "PDF p. 4"},
+    {"field": "cat_survey", "quote": "Both questionnaires were administered online through Qualtrics, enabling us to reach professional software engineers globally.", "loc": "PDF p. 4"},
+    {"field": "cat_devex, cat_survey", "quote": "Participants rated their perceived productivity change and the impact of AI coding assistants on each of the three DevEx dimensions [33]: cognitive load, feedback loops, and flow state.", "loc": "PDF p. 5"}
+  ]
+}

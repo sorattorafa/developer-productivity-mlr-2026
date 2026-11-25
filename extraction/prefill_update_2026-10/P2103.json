@@ -1,0 +1,39 @@
+{
+  "id": "P2103",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Repository mining (longitudinal git/ticketing data mining with Bayesian hierarchical modeling)", "nlm": "Repository mining (quantitative, longitudinal statistical analysis)", "value": "Repository mining", "note": ""},
+    "research_method": {"claude": "Quantitative longitudinal mining of git and ticketing data; Bayesian hierarchical Weibull models (brms/Stan) with within- vs between-person disaggregation; counterfactual simulations", "nlm": "Quantitative repository mining; longitudinal Bayesian hierarchical modeling with Weibull distributions separating within-person, between-person and organizational variation", "value": "Longitudinal mining of git and ticketing data collected by a software-metrics tool; Bayesian hierarchical Weibull models (brms/Stan) of monthly median cycle time with random effects for organization and user and within- vs between-person disaggregation of predictors (coding days, merged PRs, defect tickets, degree centrality, comments per PR); 55,619 user-month observations", "note": "Counterfactual simulations reported only by Claude (not contradicted)."},
+    "context": {"claude": "Industry; organizations of varied sizes and industries (Technology, Finance, Government, Insurance, Retail, others) using Pluralsight Flow; 11,398 users in 216 organizations", "nlm": "Industry; 216 commercial organizations across Technology, Finance, Government, Insurance, Retail and other sectors; 11,398 contributors", "value": "industry; 216 organizations of varied sizes and sectors (Technology, Finance, Government, Insurance, Retail, others) using a software-metrics tool (Pluralsight Flow, now Flow at Appfire); 11,398 developers, 55,619 user-month observations", "note": "Non-random sample of organizations that adopted the tool; authors were Pluralsight employees."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Referenced only: cycle time positioned as conceptually close to DORA lead time."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Referenced only (Claude: via practitioner critiques; NotebookLM: productivity frameworks discussion)."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": "No AI in data or analysis; AI only in related literature."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Work mode not reported by either; no remote/COVID terms in the full text."},
+    "data_window": {"claude": "12 months of 2022", "nlm": "12 months (2022)", "value": "12 months in 2022 (ticket closure observed until March 7, 2023)", "note": "Cutoff date reported only by Claude (not contradicted)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: cycle time (ticket creation to completion, i.e., task completion time) framed as a distal productivity/velocity indicator; Claude labels it Productivity/Delivery, NotebookLM Delivery/Speed."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Percent defect tickets (unplanned bug work) as predictor."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Degree centrality in the PR collaboration network and comments per PR."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "Well-being/surveillance concerns only discussed as risks of metric use; no satisfaction measure."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Coding days per week (days with at least one commit) and total merged PRs."},
+    "cat_delivery": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Cycle time is the dependent variable."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "DevEx only referenced (NotebookLM); Developer Thriving referenced (Claude)."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Within-quarter month is a business-calendar effect, not an agile/process metric."},
+    "cat_survey": {"claude": "No", "nlm": "No", "value": "No", "note": "No survey data analysed; self-report only recommended for future measurement."}
+  },
+  "evidence": [
+    {"field": "study_type, context, data_window", "quote": "This dataset includes 55,619 observations across 12 months in 2022 from 11,398 users in 216 organizations of varying sizes and industries.", "loc": "PDF p. 8"},
+    {"field": "research_method", "quote": "Through Bayesian hierarchical modeling that appropriately separates individual and organizational variation, we examine how coding time, task scoping, and collaboration patterns affect cycle time", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "research_method", "quote": "Specifically, we modeled cycle time as distributed Weibull with two parameters, λ (scale), and k (shape).", "loc": "PDF p. 13"},
+    {"field": "context", "quote": "professional software developer users from these organizations described their main industries as ranging from Technology, Finance, Government, Insurance, Retail, and others", "loc": "PDF p. 9"},
+    {"field": "context", "quote": "Formerly Pluralsight Flow, now Flow at Appfire.", "loc": "PDF p. 8 (footnote 3)"},
+    {"field": "data_window", "quote": "After computing the cycle time for each closed ticket in seconds, we found the median cycle time for each month for each user using all tickets opened in that", "loc": "PDF p. 10 (3.2.1 Cycle Time)"},
+    {"field": "cat_delivery, cat_productivity", "quote": "We analyze cycle time—a widely-used metric measuring time from ticket creation to completion—using a dataset of over 55,000 observations across 216 organizations.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "cat_productivity, cat_delivery", "quote": "Because lower cycle times are thought to indicate faster delivery times and more efficient software processes, cycle time has long been taken as a key indicator of team health, developer productivity, and team efficiency", "loc": "PDF p. 6 (2.3 Cycle Time)"},
+    {"field": "cat_activity", "quote": "Coding days was summarized as the average number of days per week that a developer made at least one commit.", "loc": "PDF p. 11 (3.2.5 Coding days)"},
+    {"field": "cat_activity", "quote": "To calculate this, we counted the number of merged pull requests for each user for each month.", "loc": "PDF p. 11 (3.2.6 Total Merged PRs)"},
+    {"field": "cat_quality", "quote": "To account for this possibility, for each user, for each month, we computed the percent of tickets that were defect tickets.", "loc": "PDF p. 12 (3.2.7 Percent Defect Tickets)"},
+    {"field": "cat_collaboration", "quote": "We measured collaboration by calculating degree centrality.", "loc": "PDF p. 12 (3.2.8 Degree centrality)"},
+    {"field": "cat_collaboration", "quote": "Another indicator of collaboration is the frequency of comments within PRs.", "loc": "PDF p. 12 (3.2.9 Comments per PR)"}
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "P2044",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Own interviews plus own ML datasets and classifiers."},
+    "study_type": {"claude": "Mixed methods (multi-method: qualitative interviews + applied ML research)", "nlm": "Mixed methods (qualitative interviews + applied ML research using CRISP-DM)", "value": "Mixed methods", "note": ""},
+    "research_method": {"claude": "Multi-method: semi-structured online interviews with software managers (thematic analysis, follow-up inquiries); applied ML research with CRISP-DM: transfer learning with four pre-trained CNNs for screenshots, grid search over SVC and six other TF-IDF classifiers for URL+text content; Figma design concept of a web application", "nlm": "Mixed methods: semi-structured interviews (thematic analysis) + applied ML research using CRISP-DM; EfficientNetV2B0, VGG16, InceptionV3, ResNet50V2 for screenshots; SVC best of 7 classifiers with GridSearchCV for URL text; Figma web application concept", "value": "Multi-method (mixed): semi-structured online interviews with 12 software managers, thematic analysis and follow-up inquiry; applied ML research following CRISP-DM: transfer learning with four pre-trained CNNs (EfficientNetV2B0, InceptionV3, ResNet50V2, VGG16) for screenshot classification and seven TF-IDF text classifiers with grid search (best SVC) for URL content; Figma design concept of a monitoring web application", "note": "The web application is a design concept only; no productivity outcome is validated."},
+    "context": {"claude": "industry; 6 private Indonesian software houses (Batam, Medan, Jakarta; ERP, industrial automation, delivery platforms), 12 managers; ML data from one cooperating software house (2,210 screenshots, 849 URLs) plus Kaggle URL dataset; 2,190 images and 3,563 text records after cleaning", "nlm": "industry; 6 private software companies in Indonesia (Batam, Medan, Jakarta; ERP, industrial automation, delivery platforms), 12 managers; 2,190 screenshots and 3,563 text/URL entries (partner company + Kaggle)", "value": "industry; six privately owned software houses in Indonesia (mainly Batam, Medan, Jakarta; ERP, industrial automation, delivery platforms), 12 software managers interviewed; ML datasets from one cooperating software house plus a Kaggle URL dataset (2,190 screenshots and 3,563 text records after cleaning)", "note": "Number of monitored developers not reported."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "DORA not mentioned by either."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE only cited as reference [2]."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "ML classifiers (CNN transfer learning, SVC) are the proposed instrument for measuring developer activity; Copilot studies also cited."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Interviews were held online; developers' work mode not reported by either."},
+    "data_window": {"claude": "Interviews March–July 2024; screenshot/URL data July–September 2024", "nlm": "no basis", "value": null, "note": "Only Claude states a period (interviews March–July 2024; ML data July–September 2024); NotebookLM gives none."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "On-time task completion, story points completed, and proportion of work-related entries as productivity estimate."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Weak: code quality appears only in managers' definitions and reported measurement practice (interviews)."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Monthly peer feedback meetings and anonymous internal peer-assessment survey reported by managers."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: only 'client feedback' as a manager indicator (Claude) and burnout/well-being as factor or future work; no developer satisfaction metric."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Git code-contribution tracking and real-time activity monitoring reported; effective working time from activity classification."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "Both extractors tag on-time task completion/story points as Delivery, but these are task-completion (productivity) measures; no deployment, lead-time or cycle-time metric."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "DevEx framework not used."},
+    "cat_agile": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Story points for planning (Organization D) and daily meetings to track progress (Organization E); all organizations use Scrum/XP."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Semi-structured interviews on managers' perceptions; anonymous internal peer survey reported."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method", "quote": "This study employed a multi-method approach, combining qualitative and applied research.", "loc": "PDF p. 2"},
+    {"field": "research_method", "quote": "The applied research section of this study used the Cross Industry Standard Process for Data Mining (CRISP-DM) framework", "loc": "PDF p. 2"},
+    {"field": "context, cat_survey", "quote": "Twelve managers from six privately owned software houses in Indonesia, primarily those based in Batam, Medan, and Jakarta, were separately interviewed online from March 2024 to July 2024.", "loc": "PDF p. 2"},
+    {"field": "context", "quote": "screenshots and accessed URLs from the work computers of developers in a cooperating software house were collected using recording programs to serve as primary data sources for the image and text datasets", "loc": "PDF p. 2"},
+    {"field": "ai_discussed", "quote": "machine learning models were developed to monitor developer activity by classifying screenshots captured during activity, along with the URL and text content scraped from accessed URLs.", "loc": "PDF p. 1"},
+    {"field": "cat_productivity", "quote": "by considering both effective working time and the total number of task story points completed.", "loc": "PDF p. 16"},
+    {"field": "cat_productivity, cat_quality", "quote": "All managers except p1 defined developer productivity as completing assigned tasks on time without compromising quality.", "loc": "PDF p. 6"},
+    {"field": "cat_quality", "quote": "Based on their output, code quality, time taken to complete tasks", "loc": "PDF p. 7"},
+    {"field": "cat_collaboration", "quote": "Organization E conducted monthly peer feedback meetings to gauge developers' impact on team dynamics beyond deliverables.", "loc": "PDF p. 7"},
+    {"field": "cat_activity", "quote": "Organization A tracked real-time activity, Organization B used Git for code contribution tracking, and Organization C identified productivity based on story points.", "loc": "PDF p. 7"},
+    {"field": "cat_agile", "quote": "Organization D used story points to help quantify productivity and aid in planning, prioritization, and goal alignment.", "loc": "PDF p. 7"},
+    {"field": "cat_agile", "quote": "Organization E held daily meetings to track progress and resolve roadblocks to maintain developer productivity.", "loc": "PDF p. 7"},
+    {"field": "cat_survey", "quote": "Semi-structured interviews were conducted to gain qualitative insights into software managers' perception of developer productivity", "loc": "PDF p. 1"}
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "P2027",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Experiment (controlled between-subjects user study)", "nlm": "Experiment (controlled experiment / empirical study)", "value": "Experiment", "note": "Claude notes allocation was approximately balanced and 'not purely randomized' (limitations), so Quasi-experiment could be argued."},
+    "research_method": {"claude": "Controlled between-subjects user study with exploratory quantitative analysis (Elastic Net, Debiased Lasso, bootstrap stability selection, Wilcoxon, Fisher, Cramer's V, Cliff's delta, Spearman) and qualitative analysis of screen recordings, GPT chat logs and survey; error taxonomy by independent review with adjudication", "nlm": "Controlled experiment with quantitative feature screening (ElasticNet, Debiased Lasso, bootstrap) and qualitative trace analysis; post-task survey; error taxonomy", "value": "Controlled user study (each participant in one prompt-pattern and one task-level condition; 70-minute sessions with ChatGPT WebUI) on function-level and project-level Python code-generation tasks; Test Passed Rate as primary measure; exploratory feature screening of 15 HLI features (Elastic Net, Debiased Lasso, bootstrap stability selection); qualitative analysis of screen recordings, chat logs and a post-task survey; taxonomy of 791 errors via independent review with adjudication", "note": "Additional tests (Wilcoxon, Fisher, Cramer's V, Cliff's delta, Spearman) reported only by Claude (not contradicted)."},
+    "context": {"claude": "Mixed; 36 participants recruited via Upwork/flyers/LinkedIn (18 undergraduates, 8 graduate students, 10 practitioners) from East/Southeast Asia, Europe, Oceania; controlled function-level and project-level tasks", "nlm": "Mixed (academic and industry backgrounds; East Asia, Southeast Asia, Europe, Oceania); 36 participants (18 undergraduates, 8 graduate students, 10 practitioners)", "value": "mixed; controlled code-generation tasks (5 function-level problems, 2 multi-class project-level tasks) solved with ChatGPT; 36 participants (18 undergraduate students, 8 graduate students, 10 practitioners) from East Asia, Southeast Asia, Europe and Oceania", "note": "Task counts reported only by Claude (not contradicted)."},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "DORA not mentioned."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "SPACE only referenced (productivity as multidimensional)."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Human-LLM interaction with ChatGPT (free and paid tiers) for code generation is the object of study."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM's 'Hybrid' refers only to experiment sessions run online and offline, not to remote/hybrid work."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either (no study dates given)."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Test Passed Rate within 70 minutes as primary productivity measure; time-to-completion when all tests pass."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Taxonomy of 791 runtime/logic errors with root causes; test-based correctness."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Only human-LLM interaction; no human collaboration metric."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: only subjective ratings of prompting strategies (subjective productivity, accuracy, efficiency, future usage preference), which the paper frames as 'subjective evaluations of development satisfaction'."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Borderline: counts of prompt requests per class/task (e.g., 5.4 vs 3.5 requests per class); no repository activity metrics."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM tags time-to-completion 'Delivery', but it is task-level productivity."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "DevEx framework only referenced."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: time allocation between initial generation and debugging is tagged 'Process' by both, but it is an individual task strategy, not an agile/process metric."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Post-task survey (30 multiple-choice and text-entry questions) with 0–100 subjective ratings."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, ai_discussed", "quote": "We conducted a user study with 36 participants from diverse backgrounds, asking them to solve the assigned tasks by interacting with the GPT assistant using specific prompting patterns.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "study_type, research_method", "quote": "Each participant worked under one prompt-pattern condition and one task-level condition.", "loc": "PDF p. 9 (Table 2)"},
+    {"field": "research_method", "quote": "We then applied one-standard-error Elastic Net regularization to identify candidate features, followed by debiased estimation of intervals and p-values for the selected features, and bootstrap-based stability selection across 200 resamples.", "loc": "PDF p. 14"},
+    {"field": "context", "quote": "our experiment consists of 18 undergraduate students, more than 2nd-year (3: Functionlevel/15: Project-level), 8 graduate students, including Master's and Ph.D. programs (6: Function/2: Project), and 10 practitioners (3: Function/7: Project).", "loc": "PDF p. 13"},
+    {"field": "cat_productivity", "quote": "In our experiment, we assessed the productivity of GPT code assistants by first applying the Test Case Passed Rate over 70 minutes and then using time-to-completion if all test cases were satisfied.", "loc": "PDF p. 11"},
+    {"field": "cat_quality, research_method", "quote": "In our user study, participants executed a total of 6,336 test cases. They encountered 791 errors, consisting of 420 runtime errors, 255 logic errors (i.e., failures), and 116 non-implementation errors.", "loc": "PDF p. 20 (5.4 RQ3)"},
+    {"field": "cat_activity", "quote": "In contrast, the other pattern groups had an average of 5.4 requests and a maximum of 7.3, requiring approximately 50% more requests.", "loc": "PDF p. 17"},
+    {"field": "cat_satisfaction", "quote": "Our study defined productivity by considering the accuracy of outcomes, task-solving efficiency, and subjective evaluations of development satisfaction.", "loc": "PDF p. 24 (Construct Validity)"},
+    {"field": "cat_survey", "quote": "The Survey aims to gather specified user background information and their subjective assessment of prompting strategies. We have designed 30 multiple-choice and text-entry questions", "loc": "PDF p. 9"}
+  ]
+}

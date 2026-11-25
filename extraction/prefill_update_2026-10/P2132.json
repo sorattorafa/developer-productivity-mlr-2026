@@ -1,0 +1,36 @@
+{
+  "id": "P2132",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Mixed methods (two surveys plus pull-request data mining)", "nlm": "Mixed methods (open coding, survey with Lasso logit, PR telemetry mining)", "value": "Mixed methods", "note": ""},
+    "research_method": {"claude": "Two surveys: exploratory Survey 1 (open questions, open coding into 32 codes/6 themes, 81.9% agreement on 100 responses) and quantitative Survey 2 (closed questions on benefits, challenges, improvements; Wilcoxon Mann-Whitney and Fisher exact with Benjamini-Hochberg; Lasso + logit marginal effects); triangulation with pull-request data from the engineering system", "nlm": "Mixed methods: qualitative open-coding thematic analysis, quantitative survey with Lasso logit regression, triangulating pull-request telemetry mining", "value": "Two sequential surveys: exploratory Survey 1 (open questions, open coding into 32 codes in 6 themes) and quantitative Survey 2 (prevalence and impact of benefits, challenges and improvements; group tests with Benjamini-Hochberg correction; Lasso logit with marginal effects on self-reported productivity change); triangulated with pull-request counts mined from the engineering system (March/April 2020 vs 2018 and 2019)", "note": "Inter-rater agreement and specific test names reported by Claude only (not contradicted)."},
+    "context": {"claude": "Industry; Microsoft (US) during the forced COVID-19 work-from-home transition; 3,634 responses (Survey 1: 1,369 in Washington State; Survey 2: 2,265 across the US)", "nlm": "Industry; Microsoft developers, program managers and data scientists in Washington State and across the US; 3,634 responses (1,369 + 2,265)", "value": "industry; Microsoft engineers (developers, program managers, data scientists) in pandemic work from home; 3,634 survey responses (Survey 1: 1,369 in Washington State; Survey 2: 2,265 across the US)", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Not mentioned."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": "Claude marks 'Partial' only because Lasso regression is used as a statistical technique; AI is not a topic."},
+    "remote_covid": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Forced work from home during COVID-19 is the study's subject."},
+    "data_window": {"claude": "March-May 2020 (PR data March/April 2020 vs 2018 and 2019)", "nlm": "relative only: Survey 1 about 2 weeks after the WFH directive, Survey 2 in weeks 7-9", "value": null, "note": "NotebookLM gives no calendar period. Full text states 'from March to May 2020'."},
+    "cat_productivity": {"claude": "Yes (pull requests per developer as a productivity proxy, plus productivity deltas)", "nlm": "No (perceived productivity only; pull requests labelled Activity/Delivery)", "value": null, "note": "Self-reported productivity change goes to Survey; the only output measure is pull requests per developer, which the paper reads as company-level productivity but which the definitions place under Activity."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Challenge items on communicating with colleagues, awareness of colleagues' work and missing social interactions, with Lasso marginal effects; Collaboration and Communication themes."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Well-being theme, work-life balance, motivation, commute and health-related benefits and challenges."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Pull requests opened and closed per developer."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM labels pull requests 'Activity/Delivery', but PR counts are activity, not a delivery metric."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Both use 'DevEx' as a label only; the DevEx framework is not used."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Two surveys; single-item self-reported productivity change."}
+  },
+  "evidence": [
+    {"field": "study_type, research_method, context", "quote": "The first survey was among employees working at Microsoft in Washington State (the location of the company's headquarters), consisted of 30 questions, and received 1,369 responses. The second survey was among Microsoft employees in the United States, consisted of 42 questions, and received 2,265 responses.", "loc": "PDF p. 2 (1 Introduction)"},
+    {"field": "research_method", "quote": "The final coding scheme contained 32 codes organized into the following six themes.", "loc": "PDF p. 6"},
+    {"field": "research_method", "quote": "we used a least absolute shrinkage and selection operator (Lasso) analysis [28].", "loc": "PDF p. 8"},
+    {"field": "context", "quote": "This survey was distributed to 9,000 engineers (consisting of developers, program managers and data scientists) across the entire U.S. over a period of three weeks", "loc": "PDF p. 8 (Survey 2 distribution)"},
+    {"field": "remote_covid, context", "quote": "We investigated the experiences of software engineers at Microsoft during the height of the COVID-19 pandemic in the United States using a set of online surveys.", "loc": "PDF p. 4 (3 Methodology)"},
+    {"field": "research_method, cat_activity", "quote": "We compared the pull request counts during the pandemic (March/April 2020) with prior historical values during comparable periods of the fiscal year (March/April 2018 and March/April 2019).", "loc": "PDF p. 26"},
+    {"field": "cat_activity", "quote": "The number of pull requests opened per developer during the pandemic increased compared to previous years: 4.4% compared to 2019 and +3.4% compared to 2018.", "loc": "PDF p. 26"},
+    {"field": "cat_collaboration, cat_survey", "quote": "difficult to communicate with colleagues (-13.1%), connectivity problems (-11.9%), missing social interactions (-11.2%)", "loc": "PDF p. 20 (Lasso results)"},
+    {"field": "cat_satisfaction", "quote": "Well-being - Responses related to the welfare of respondents, including changes to flexibility of schedule and location, and the effects of working from home on health (physical, mental, and emotional) and personal comfort.", "loc": "PDF p. 6 (coding themes)"},
+    {"field": "cat_satisfaction, cat_survey", "quote": "The benefits most frequently rated as important were better work life balance (95%, B11), better focus time (93%, B7), and more physical activity (91%, B15).", "loc": "PDF p. 14"}
+  ]
+}

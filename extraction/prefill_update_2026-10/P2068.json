@@ -1,0 +1,37 @@
+{
+  "id": "P2068",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": ""},
+    "study_type": {"claude": "Qualitative-Interviews (focus groups + confirmatory questionnaire)", "nlm": "Qualitative / Mixed methods (focus groups + confirmatory questionnaire)", "value": null, "note": "Claude: qualitative focus-group study. NotebookLM hedges 'Qualitative / Mixed methods'. Paper's keywords say 'Qualitative Study'; the questionnaire is a confirmatory member-check."},
+    "research_method": {"claude": "Exploratory study; two semi-structured online focus groups + confirmatory questionnaire; content analysis with inductive open coding (Strauss et al.); mapping to SPACE", "nlm": "Semi-structured focus groups and confirmatory questionnaire (6 months later); Whisper transcription and manual content analysis; SPACE mapping", "value": "Exploratory qualitative study: two semi-structured online focus groups (7 and 9 developers), transcribed with Whisper and analysed by content analysis with inductive open coding by two researchers; findings mapped to SPACE dimensions and a conceptual map; confirmatory questionnaire sent to all 16 participants about six months later", "note": ""},
+    "context": {"claude": "Industry; Atlântico Institute, large Brazilian Research and Technology Organization (>500 professionals, predominantly remote); 16 developers", "nlm": "Industry / Research and Technology Organization (Atlântico Institute, Brazil); 16 developers in 2 focus groups", "value": "industry; single Brazilian Research and Technology Organization (Atlântico Institute; >500 professionals, predominantly remote); 16 software developers in two focus groups", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "DORA not mentioned by either."},
+    "space_applied": {"claude": "No", "nlm": "Yes", "value": null, "note": "Claude: SPACE applied as analytic lens, not as measurement instrument. NotebookLM: 'referenced & applied' to map factors to the 5 dimensions. Full text: post-hoc mapping in Discussion (Section 5.2, Figure 1)."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "RQ3: expected GenAI benefits and drawbacks for developer productivity."},
+    "remote_covid": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Context only: the organization predominantly works remotely and focus groups were held online for that reason; remote work is not analysed as a factor."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Not stated by either (both only say the questionnaire followed ~6 months later). Full text: focus groups via Google Meet in November 2024."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Thin: participant-reported tracking of demands done within timeboxes and time spent per task; the rest are perceived-productivity factors (progress, expectations, time/deadline)."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Code reusability, readability, optimization, functionality; PR code quality; documentation writing quality as productivity indicators."},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Code review indicators (learning/knowledge sharing, quality of reviewed code)."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "Satisfaction appears only in the post-hoc SPACE mapping (reusable code and less manual effort foster it); no satisfaction measure."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": "Task completion rates and code volume only cited as insufficient traditional metrics; NotebookLM's 'Activity' labels are on progress/code attributes."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "Both label timebox completion and code-review 'speed in the process' as Delivery; no delivery-pipeline metric under the definition."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "DevEx framework not used; NotebookLM's 'DevEx' labels (efficiency, learning) are generic."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Sprints/timeboxes only appear in participant quotes."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Focus groups on perceived productivity plus confirmatory questionnaire."}
+  },
+  "evidence": [
+    {"field": "research_method, context", "quote": "In total, we had 16 participants, whom we divided into two focus groups (seven and nine members) to ensure better interaction.", "loc": "PDF p. 3"},
+    {"field": "research_method", "quote": "For the data analysis, we employed content analysis [21] following an open coding process inspired by Strauss et al. [35]. The process was designed to be inductive, ensuring no predefined codes imposed on the data.", "loc": "PDF p. 4 (3.3 Data Analysis)"},
+    {"field": "research_method", "quote": "The questionnaire was distributed to all 16 software developers who participated in the focus group sessions and distributed approximately six months after.", "loc": "PDF p. 5"},
+    {"field": "context", "quote": "The focus groups were conducted with software developers from the Atlântico Institute. It specializes in applied research, technological development, and innovation.", "loc": "PDF p. 3"},
+    {"field": "remote_covid, context", "quote": "Currently employing over five hundred professionals distributed nationwide, the organization predominantly operates under a remote work model.", "loc": "PDF p. 3"},
+    {"field": "remote_covid", "quote": "even when conducted remotely due to the Atlântico distributed work model", "loc": "PDF p. 4"},
+    {"field": "ai_discussed", "quote": "RQ3: How is GenAI expected to affect the productivity of software developers? Given the growing use of GenAI in software development tasks, this question seeks to identify the expected impact of GenAI on developer productivity.", "loc": "PDF p. 3"},
+    {"field": "cat_productivity", "quote": "\"We've got this really hands-on way to measure productivity - we track what demands get done within their timeboxes\" (P1-FG2)", "loc": "PDF p. 5"},
+    {"field": "cat_quality", "quote": "Finding #4: Participants considered source code attributes (such as code reusability, readability, optimization, and functionality) as key indicators when assessing their coding productivity.", "loc": "PDF p. 6"},
+    {"field": "cat_collaboration, cat_quality", "quote": "Finding #5: Although often perceived as unproductive, participants reported that code reviews can enhance their sense of productivity when the activity expands their knowledge, leads to high-quality code, and is easy and quick to analyze while meeting the expected requirements.", "loc": "PDF p. 7"},
+    {"field": "cat_survey", "quote": "We also administered a confirmatory questionnaire to support the verification of our findings. The collected data were analyzed using content analysis.", "loc": "PDF p. 1 (Abstract)"}
+  ]
+}

@@ -1,0 +1,152 @@
+[
+  {
+    "id": "P1308",
+    "type": "academic",
+    "title": "Rethinking Productivity in Software Engineering"
+  },
+  {
+    "id": "P0013",
+    "type": "academic",
+    "title": "Supporting the Developer Experience with Production Metrics"
+  },
+  {
+    "id": "P0093",
+    "type": "academic",
+    "title": "API Design and Development for Developer Payroll in Startups Based on Agile Productivity Factors"
+  },
+  {
+    "id": "P0485",
+    "type": "academic",
+    "title": "Technical debt cripples software developer productivity: a longitudinal study on developers' daily software development work"
+  },
+  {
+    "id": "P0145",
+    "type": "academic",
+    "title": "Sensing Developers\u2019 Emotions: The Design of a Replicated Experiment"
+  },
+  {
+    "id": "P1297",
+    "type": "academic",
+    "title": "Software Project Managers' Perceptions of Productivity Factors: Findings from a Qualitative Study"
+  },
+  {
+    "id": "P0133",
+    "type": "academic",
+    "title": "Framework to analyze the relationship between agile software engineers\u2019 emotions and their productivity"
+  },
+  {
+    "id": "P1345",
+    "type": "academic",
+    "title": "An Instrument for Measuring Perception about Social and Human Factors that Influence Software Development Productivity"
+  },
+  {
+    "id": "P0129",
+    "type": "academic",
+    "title": "Exploring the Efficiency of Self-Organizing Software Teams with Game Theory"
+  },
+  {
+    "id": "P1437",
+    "type": "academic",
+    "title": "Developer Productivity in the Age of Generative AI: A Psychological Perspective"
+  },
+  {
+    "id": "P0030",
+    "type": "academic",
+    "title": "Measuring AI Impact on Software Engineering Productivity and Quality"
+  },
+  {
+    "id": "P1420",
+    "type": "academic",
+    "title": "Beyond DevOps: Leveraging Platform Engineering to Surpass the Challenges of Traditional DevOps Practices"
+  },
+  {
+    "id": "P0181",
+    "type": "academic",
+    "title": "Code Today, Deadline Tomorrow: Procrastination Among Software Developers"
+  },
+  {
+    "id": "P0499",
+    "type": "academic",
+    "title": "Advancing HCI with Neuromorphic Technology: Guidelines for Designing User-Friendly Developer Tools for Neuromorphic Development"
+  },
+  {
+    "id": "P_NEW_1",
+    "type": "academic",
+    "title": "Comparative Analysis of Engineering Performance and Experience Frameworks: DORA, SPACE, HEART, and Beyond"
+  },
+  {
+    "id": "P0603",
+    "type": "academic",
+    "title": "Understanding and effectively mitigating code review anxiety"
+  },
+  {
+    "id": "P0003",
+    "type": "academic",
+    "title": "A Framework for Automating the Measurement of DevOps Research and Assessment (DORA) Metrics"
+  },
+  {
+    "id": "P1303",
+    "type": "academic",
+    "title": "More Than Just Efficiency: Impact of Generative AI on Developer Productivity"
+  },
+  {
+    "id": "P0536",
+    "type": "academic",
+    "title": "Hyacinth macaw: a project-based learning program to develop talents in Software Engineering for Artificial Intelligence"
+  },
+  {
+    "id": "P0479",
+    "type": "academic",
+    "title": "Seamless Data Migration between Database Schemas with DAMI-Framework: An Empirical Study on Developer Experience"
+  },
+  {
+    "id": "P0184",
+    "type": "academic",
+    "title": "How developers feel about tools: an investigation on software startup professionals experience with virtual kanban boards"
+  },
+  {
+    "id": "P0271",
+    "type": "academic",
+    "title": "Code Red: The Business Impact of Code Quality - A Quantitative Study of 39 Proprietary Production Codebases"
+  },
+  {
+    "id": "P0061",
+    "type": "academic",
+    "title": "How Developers and Managers Define and Trade Productivity for Quality"
+  },
+  {
+    "id": "P0515",
+    "type": "academic",
+    "title": "Flow Experience in Software Engineering"
+  },
+  {
+    "id": "P0412",
+    "type": "academic",
+    "title": "Organizational Ohm's Law\u2014Case in Point: Engineering Velocity"
+  },
+  {
+    "id": "G017",
+    "type": "grey",
+    "title": "What are DORA Metrics and How to Unlock Elite Engineering Performance"
+  },
+  {
+    "id": "G038",
+    "type": "grey",
+    "title": "DORA Metrics with Process Behavior Charts"
+  },
+  {
+    "id": "G060",
+    "type": "grey",
+    "title": "A systematic review of productivity factors in software development"
+  },
+  {
+    "id": "G023",
+    "type": "grey",
+    "title": "What is Developer Experience? Complete Guide (2026)"
+  },
+  {
+    "id": "G001",
+    "type": "grey",
+    "title": "DORA's Software Delivery Performance Metrics - Guide"
+  }
+]

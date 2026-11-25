@@ -1,0 +1,35 @@
+{
+  "id": "P2083",
+  "kind": "academic",
+  "fields": {
+    "primary_secondary": {"claude": "Secondary", "nlm": "Secondary", "value": "Secondary", "note": "Multivocal literature review."},
+    "study_type": {"claude": "Review-Secondary (multivocal literature review)", "nlm": "Review-Secondary (multivocal literature review)", "value": "Review-Secondary", "note": ""},
+    "research_method": {"claude": "MLR: SLR (Kitchenham) in ACM DL, IEEE Xplore and Scopus (815 records, 6 included + 5 via snowballing = 11) plus grey literature review of Dev.to (Garousi et al.; Strategy A 100 posts -> 9, Strategy B 59 posts -> 6); GQM, PICO; thematic synthesis (Cruzes & Dyba), 24 + 23 themes", "nlm": "MLR: SLR (Kitchenham) with snowballing (6 + 5 = 11 studies) plus Dev.to grey literature (Garousi et al.; 9 + 6 = 15 posts); GQM, PICO, quasi-gold standard; thematic synthesis, 24 + 23 themes", "value": "Multivocal literature review: SLR (Kitchenham guidelines) in ACM DL, IEEE Xplore and Scopus with backward/forward snowballing (6 + 5 = 11 studies) plus grey literature review of Dev.to posts (Garousi et al.; two search strategies, 9 + 6 = 15 posts); GQM goal, PICO strings, quasi-gold standard; thematic synthesis (Cruzes & Dyba) yielding 24 SLR and 23 GLR themes", "note": "Record counts (815 returned; 100 and 59 posts screened) given only by Claude, not contradicted."},
+    "context": {"claude": "Mixed (academic studies on software professionals and LGBTQIA+ practitioner posts); 11 studies + 15 posts", "nlm": "Industry and online developer community (Dev.to), agile software engineering; 26 sources (11 academic, 15 grey)", "value": "academic (secondary/review); 26 sources (11 academic studies and 15 Dev.to practitioner posts) on LGBTQIA+ developers in agile teams", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Both state DORA is not cited."},
+    "space_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Both state SPACE is not cited."},
+    "ai_discussed": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "remote_covid": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Remote/hybrid work as a safety and identity-control mechanism is a synthesized finding and a recommendation (not the study's own setting)."},
+    "data_window": {"claude": "no basis", "nlm": "no basis", "value": null, "note": "Review coverage period not stated by either."},
+    "cat_productivity": {"claude": "Yes", "nlm": "no basis", "value": null, "note": "Claude lists diverse vs. non-diverse team productivity (reported by S1) as a Productivity metric; NotebookLM mentions higher productivity of diverse teams only as a finding, with no productivity metric. Thin basis."},
+    "cat_quality": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_collaboration": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Psychological safety, team dynamics and inclusion; destructive criticism in code reviews."},
+    "cat_satisfaction": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Affect dimension of DX (Fagerholm & Münch), engagement, frustration, belonging, impostor syndrome."},
+    "cat_activity": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": "NotebookLM tags retention/turnover risk 'Delivery / DevEx', which is not a delivery metric."},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "DX lens is Fagerholm & Münch (cognition, conation, affect); Greiler/Storey/Noda actionable framework only referenced."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Agile teams are the setting (search string includes scrum, XP, squads), but no process metric is synthesized."},
+    "cat_survey": {"claude": "No", "nlm": "Yes", "value": null, "note": "NotebookLM lists questionnaires, interviews and psychological-safety scales as collection for DX dimensions. Claude: industry satisfaction/productivity surveys only cited in background; the review synthesizes perceptions from qualitative studies and posts."}
+  },
+  "evidence": [
+    {"field": "study_type, primary_secondary", "quote": "This study aimed to examine traditional and grey literature data through a Multivocal Literature Review focused on the DX of LGBTQIA+ professionals in agile teams.", "loc": "PDF p. 1 (Abstract)"},
+    {"field": "research_method", "quote": "Stage 3) We classified the studies and updated the systematic review employing backward and forward snowballing. Then, we conducted a thematic synthesis of all included studies.", "loc": "PDF p. 3"},
+    {"field": "research_method, context", "quote": "Table III lists all the works included in the mapping of traditional literature (six studies)", "loc": "PDF p. 4"},
+    {"field": "research_method, context", "quote": "In Strategy A, nine documents (posts) were included, in Strategy B, six documents were included.", "loc": "PDF p. 7"},
+    {"field": "remote_covid", "quote": "The studies recommend offering remote or hybrid work options, promoting democratic structures that allow workspace choice, and fostering inclusive recruitment and onboarding (S2, S9, S10).", "loc": "PDF p. 6"},
+    {"field": "remote_covid, cat_collaboration", "quote": "In remote work (S2), LGBTQIA+ professionals benefit from a sense of safety and control, which aids team integration and performance, though challenges like isolation and invisibility persist.", "loc": "PDF p. 4"},
+    {"field": "cat_collaboration", "quote": "This dynamic supports agile environments by fostering psychological safety while highlighting areas for improved visibility and inclusive communication.", "loc": "PDF p. 4"},
+    {"field": "cat_satisfaction", "quote": "This issue of invisibility in S2 relates to team integration and engagement, impacting developers' motivation in agile environments.", "loc": "PDF p. 5"},
+    {"field": "cat_satisfaction, cat_collaboration", "quote": "Conversely, professionals who feel welcomed by their teams and organizations, especially in processes tailored to their needs, report more positive team dynamics and engagement.", "loc": "PDF p. 1 (Abstract)"}
+  ]
+}

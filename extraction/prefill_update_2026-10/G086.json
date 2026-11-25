@@ -1,0 +1,31 @@
+{
+  "id": "G086",
+  "kind": "grey",
+  "fields": {
+    "primary_secondary": {"claude": "Primary", "nlm": "Primary", "value": "Primary", "note": "Both describe the author's own case study (SocialMize repository), N = 1 experiment and practitioner survey (N = 30)."},
+    "gl_type": {"claude": "Thesis (Master's thesis, Software Engineering, University of Turku)", "nlm": "Thesis (Master's thesis)", "value": "Thesis", "note": ""},
+    "dora_applied": {"claude": "No", "nlm": "No", "value": "No", "note": "Both state DORA is not mentioned."},
+    "space_applied": {"claude": "No (reference only)", "nlm": "No (reference only)", "value": "No (reference only)", "note": "SPACE dimensions described in the background; not used as the measurement instrument."},
+    "ai_discussed": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "AI-assisted low-code development (Lovable) is the object of study."},
+    "remote_covid": {"claude": "No", "nlm": "No", "value": "No", "note": "Neither mentions remote work or COVID-19."},
+    "data_window": {"claude": "May 2025–April 2026 (repository history)", "nlm": "no basis", "value": null, "note": "Claude gives May 2025–April 2026; NotebookLM only says 3,945 commits over 345 days, without dates."},
+    "cat_productivity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Task completion time in the manual vs AI-assisted experiment (85 vs 200 min)."},
+    "cat_quality": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Compile/runtime errors, semantic defects, code duplication (jscpd), type-safety markers, reverts."},
+    "cat_collaboration": {"claude": "No", "nlm": "No", "value": "No", "note": "Code review only appears as a practitioner recommendation."},
+    "cat_satisfaction": {"claude": "No", "nlm": "No", "value": "No", "note": "Borderline: only a 'comfortable using AI tools' survey item and an Emotional/affective prompt code (Claude); no satisfaction or well-being measure."},
+    "cat_activity": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Commits, commit cadence and authorship, LOC added/deleted, per-file churn."},
+    "cat_delivery": {"claude": "No", "nlm": "No", "value": "No", "note": ""},
+    "cat_devex": {"claude": "No", "nlm": "No", "value": "No", "note": "Cognitive load is an RQ, but the DevEx framework is not used (NotebookLM lists DevEx only as discussed)."},
+    "cat_agile": {"claude": "No", "nlm": "No", "value": "No", "note": "Story points only criticized as a proxy (Claude)."},
+    "cat_survey": {"claude": "Yes", "nlm": "Yes", "value": "Yes", "note": "Practitioner survey (N = 30, 5-point Likert perception items)."}
+  },
+  "evidence": [
+    {"field": "gl_type", "quote": "Software Engineering Master's thesis Mohammad Rafi Uddin 2026 Turku", "loc": "PDF p. 1"},
+    {"field": "ai_discussed", "quote": "This thesis investigates the impact of AI-assisted coding tools and low-code development platforms on software developer productivity, code quality, and perceived trust and usability", "loc": "PDF p. 2"},
+    {"field": "cat_productivity, cat_quality", "quote": "AI assistance accelerated pattern-rich work, with the experiment showing roughly 57.5% faster task completion and about 71% fewer compile errors", "loc": "PDF p. 2"},
+    {"field": "cat_activity", "quote": "All 3,945 commits between 2025-05-15 and 2026-04-24 were exported using git log --all --numstat with author identity, date, subject, and per-file insertion/deletion counts.", "loc": "PDF p. 25"},
+    {"field": "cat_quality", "quote": "Code duplication was measured with jscpd 4.x at the default threshold (50 tokens / 5 lines).", "loc": "PDF p. 25"},
+    {"field": "cat_survey", "quote": "The survey was administered online by using the Webropol platform and was disseminated via various channels such as coding communities, social media, and professional networks.", "loc": "PDF p. 34"},
+    {"field": "cat_survey", "quote": "AI tools help me complete tasks faster 4.1 5 AI tools save me time overall 4.1 5", "loc": "PDF p. 64 (Table 5.5)"}
+  ]
+}
