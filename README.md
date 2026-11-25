@@ -4,7 +4,9 @@ Replication package of the article.
 
 **Authors.** Rafael Rampin Soratto (State University of Maringá, UEM, Brazil), Getúlio Coimbra (Federal University of Technology – Paraná, UTFPR, Brazil), Jorge Melegati (INESC TEC, Faculty of Engineering, University of Porto, Portugal), Igor Steinmacher (Northern Arizona University, USA), and Igor Wiese (State University of Maringá, UEM, Brazil).
 
-**Archived release.** The DOI of the archived release will be added here after the first release on Zenodo.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24541590.svg)](https://doi.org/10.5281/zenodo.24541590)
+
+**Archived release.** Zenodo, https://doi.org/10.5281/zenodo.24541590
 
 ## Overview
 

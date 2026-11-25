@@ -20,6 +20,7 @@ authors:
     given-names: "Igor"
     affiliation: "State University of Maringá (UEM)"
 version: "2.0.1"
+doi: "10.5281/zenodo.24541590"
 date-released: "2026-11-25"
 license: CC-BY-4.0
 keywords:
