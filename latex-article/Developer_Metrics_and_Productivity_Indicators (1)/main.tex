@@ -93,7 +93,9 @@
 
 % Elsarticle journal metadata
 \journal{Information and Software Technology}
-
+\makeatletter
+\def\ps@pprintTitle{\let\@oddhead\@empty\let\@evenhead\@empty\let\@oddfoot\@empty\let\@evenfoot\@oddfoot}
+\makeatother
 % ============================================================
 \begin{document}
 
@@ -208,7 +210,7 @@ DORA, SPACE, and DevEx were first published outside peer-reviewed venues. The DO
 
 We map how developer productivity was measured in academic and practitioner literature between 2016 and 2026. The window covers the period during which the three frameworks were proposed and when the pandemic and AI coding assistants may have changed working conditions. The four research questions cover the metrics and frameworks in use (RQ1), their temporal evolution (RQ2), the impact of AI assistants (RQ3), and the challenges that affect measurement (RQ4). 
 
-We first searched academic databases and practitioner sources (Section~\ref{sec:search}) and selected records using the inclusion and exclusion criteria (Section~\ref{sec:selection}). We then assessed each source's quality (Section~\ref{sec:quality}), extracted data using two LLM-based assistants with human validation (Section~\ref{sec:extraction}), and synthesized the results (Section~\ref{sec:synthesis}). Other authors reviewed all decisions (Section~\ref{sec:second-reviewer}). We ran the original academic searches in January and February 2026. In October 2026, we updated the search to cover the rest of the review window and processed the new sources with the same criteria, forms, and rubrics. Each subsection reports where the update differed. We defined the protocol, including the search strings, criteria, extraction form, and quality rubrics, \textit{a priori}, which are available in the replication package~\cite{replication2026}. The supplementary material of this article lists the 153 academic sources (Table S1), the 75 gray literature sources (Table S2), and the 62 canonical metrics (Table S3).
+We first searched academic databases and practitioner sources (Section~\ref{sec:search}) and selected records using the inclusion and exclusion criteria (Section~\ref{sec:selection}). We then assessed each source's quality (Section~\ref{sec:quality}), extracted data using two LLM-based assistants with human validation (Section~\ref{sec:extraction}), and synthesized the results (Section~\ref{sec:synthesis}). Other authors reviewed all decisions (Section~\ref{sec:second-reviewer}). We ran the original academic searches in January and February 2026. In October 2026, we updated the search to cover the rest of the review window and processed the new sources with the same criteria, forms, and rubrics. Each subsection reports where the update differed. We defined the protocol, including the search strings, criteria, extraction form, and quality rubrics, \textit{a priori}. Material outside this article is provided in two separate forms. The \textit{supplementary material} is a file published with the article that contains the three tables cited in the text: the 153 academic sources (Table S1), the 75 gray literature sources with their GL identifiers (Table S2), and the 62 canonical metrics (Table S3). The \textit{replication package}~\cite{replication2026}, archived on Zenodo, contains the protocol, the search exports, the selection and extraction records, and the scripts needed to audit and reproduce the review.
 
 \subsection{Search Strategy}
 \label{sec:search}
@@ -621,7 +623,7 @@ In this section, we present the results that support the answer to RQ2: \textit{
 
 The number of academic papers grew across the periods, with 19 in 2016--2019, 25 in 2020--2022, and 109 in 2023--2026 (Table~\ref{tab:temporal_detail}). The update added 87 of them, 74 from 2023--2026 and 13 from earlier years, 11 of which came from the candidates of the July 2026 Google Scholar re-run. Of the 75 gray sources, 67 (89.3\%) appeared in 2023--2026~[\refG{G004}, \refG{G009}, \refG{G022}, \refG{G027}, \refG{G036}, \refG{G040}, \refG{G046}, \refG{G047}, \refG{G048}, \refG{G092}, \refG{G099}, \refG{G115}].
 
-The use of the frameworks as measurement instruments falls almost entirely in the most recent period (Table~\ref{tab:temporal_detail}). All nine academic DORA uses~\cite{P0003, P0470, P1261, P2017} and all twelve DevEx uses fall in 2023--2026, as do 16 of the 19 SPACE uses. The other three SPACE uses date from 2021 and 2022~\cite{P1259, P0061, P0549}, and no academic study used any of the three frameworks before 2020. With no use before 2020 and at most three uses per framework in 2020--2022, the counts are too small to test the differences between periods for each framework.
+The use of the frameworks as measurement instruments falls almost entirely in the most recent period (Table~\ref{tab:temporal_detail}). All nine academic DORA uses~\cite{P0470, P0003, P1261, P2008, P2013, P2014, P2017, P2026, P2043} and all twelve DevEx uses fall in 2023--2026, as do 16 of the 19 SPACE uses. The other three SPACE uses date from 2021 and 2022~\cite{P1259, P0061, P0549}, and no academic study used any of the three frameworks before 2020. With no use before 2020 and at most three uses per framework in 2020--2022, the counts are too small to test the differences between periods for each framework.
 
 \begin{table}[htbp]
 \centering
@@ -775,7 +777,7 @@ Table~\ref{tab:challenges} groups the reported challenges into seven themes. A s
 \caption{Measurement challenges in academic studies ($n$\,=\,85). The coding is multi-label, so the shares do not sum to 100\%.}
 \label{tab:challenges}
 \footnotesize
-\begin{tabular}{p{4.6cm} c c}
+\begin{tabular}{>{\raggedright\arraybackslash}p{4.6cm} c c}
 \toprule
 \textbf{Challenge Theme} & \textbf{Studies} & \textbf{\%} \\
 \midrule
@@ -948,7 +950,7 @@ We thank CNPq/MCTI/FNDCT \#409359/2024-6, \#444802/2024-0, \#4317015/2025-7 for 
 \section*{Data Availability Statement}
 
 All extraction data, quality assessment scores, PRISMA selection numbers, search strings, and the full list of included and excluded sources are available in our replication package~\cite{replication2026}.
-The package is archived on Zenodo (\url{https://doi.org/10.5281/zenodo.24541590}) and is also available at \url{https://github.com/sorattorafa/developer-productivity-mlr-2026}.
+The package is archived on Zenodo (\url{https://doi.org/10.5281/zenodo.24541590}) and is also available at \url{https://github.com/sorattorafa/developer-productivity-mlr-2026}. The tables cited in the text (Tables S1 to S3) are published with this article as supplementary material.
 
 \section*{CRediT Author Statement}
 
