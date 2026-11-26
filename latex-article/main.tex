@@ -208,8 +208,6 @@ Three gaps follow from these reviews. They stop before the decade in which the t
 
 DORA, SPACE, and DevEx were first published outside peer-reviewed venues. The DORA metrics came out of the State of DevOps research program and reached a wide audience through the book \textit{Accelerate}~\cite{forsgren2018accelerate}, and the program still reports on them in the annual \textit{State of DevOps Reports}~[\refG{G005}, \refG{G004}]. SPACE and DevEx appeared in ACM magazines for practitioners~\cite{P1259, P1280}, and DevEx was later extended in industry reports~[\refG{G022}]. A review restricted to peer-reviewed work would miss the documents that propose the frameworks, as well as practitioner sources that report on how organizations adopt and discuss them. We therefore conducted a multivocal literature review (MLR), following Garousi et al.~\cite{garousi2019mlr}.
 
-We map how developer productivity was measured in academic and practitioner literature between 2016 and 2026. The window covers the period during which the three frameworks were proposed and when the pandemic and AI coding assistants may have changed working conditions. The four research questions cover the metrics and frameworks in use (RQ1), their temporal evolution (RQ2), the impact of AI assistants (RQ3), and the challenges that affect measurement (RQ4). 
-
 We first searched academic databases and practitioner sources (Section~\ref{sec:search}) and selected records using the inclusion and exclusion criteria (Section~\ref{sec:selection}). We then assessed each source's quality (Section~\ref{sec:quality}), extracted data using two LLM-based assistants with human validation (Section~\ref{sec:extraction}), and synthesized the results (Section~\ref{sec:synthesis}). Other authors reviewed all decisions (Section~\ref{sec:second-reviewer}). We ran the original academic searches in January and February 2026. In October 2026, we updated the search to cover the rest of the review window and processed the new sources with the same criteria, forms, and rubrics. Each subsection reports where the update differed. We defined the protocol, including the search strings, criteria, extraction form, and quality rubrics, \textit{a priori}. Material outside this article is provided in two separate forms. The \textit{supplementary material} is a file published with the article that contains the three tables cited in the text: the 153 academic sources (Table S1), the 75 gray literature sources with their GL identifiers (Table S2), and the 62 canonical metrics (Table S3). The \textit{replication package}~\cite{replication2026}, archived on Zenodo, contains the protocol, the search exports, the selection and extraction records, and the scripts needed to audit and reproduce the review.
 
 \subsection{Search Strategy}
@@ -466,7 +464,7 @@ The first author carried out the selection, extraction, and quality assessment. 
 \section{Results}
 \label{sec:results}
 
-We first describe the included studies and then report the results for each research question. The final corpus comprises 228 sources, 153 academic studies (67.1\%) and 75 gray literature sources (32.9\%), summarized in Table~\ref{tab:overview}. The original search contributed 121, and the October 2026 update contributed 107.
+The final corpus comprises 228 sources, 153 academic studies (67.1\%) and 75 gray literature sources (32.9\%), summarized in Table~\ref{tab:overview}. The original search contributed 121, and the October 2026 update contributed 107.
 
 \subsection{Overview of the Included Studies}
 \label{sec:overview}
@@ -524,8 +522,6 @@ Thesis               & 1  & 0.7  & Repository Mining        & 15 & 9.8  \\
 
 \subsection{RQ1. Frameworks, metrics, and tools}
 \label{sec:rq1}
-
-In this section, we present results that address RQ1: \textit{What frameworks, metrics, and tools have been used to measure software developer productivity in academic and practitioner literature from 2016 to 2026?} 
 
 \subsubsection{Framework Citation and Use}
 
@@ -619,37 +615,9 @@ In academic studies, the frameworks are cited far more often than they are used 
 \subsection{RQ2. Temporal evolution}
 \label{sec:rq2}
 
-In this section, we present the results that support the answer to RQ2: \textit{How has developer productivity measurement evolved across the pre-pandemic, pandemic transition, and post-pandemic/AI era?}
+The number of academic papers grew across the periods, with 19 in 2016--2019, 25 in 2020--2022, and 109 in 2023--2026 (Table~\ref{tab:overview}). The update added 87 of them, 74 from 2023--2026 and 13 from earlier years, 11 of which came from the candidates of the July 2026 Google Scholar re-run. Of the 75 gray sources, 67 (89.3\%) appeared in 2023--2026~[\refG{G004}, \refG{G009}, \refG{G022}, \refG{G027}, \refG{G036}, \refG{G040}, \refG{G046}, \refG{G047}, \refG{G048}, \refG{G092}, \refG{G099}, \refG{G115}].
 
-The number of academic papers grew across the periods, with 19 in 2016--2019, 25 in 2020--2022, and 109 in 2023--2026 (Table~\ref{tab:temporal_detail}). The update added 87 of them, 74 from 2023--2026 and 13 from earlier years, 11 of which came from the candidates of the July 2026 Google Scholar re-run. Of the 75 gray sources, 67 (89.3\%) appeared in 2023--2026~[\refG{G004}, \refG{G009}, \refG{G022}, \refG{G027}, \refG{G036}, \refG{G040}, \refG{G046}, \refG{G047}, \refG{G048}, \refG{G092}, \refG{G099}, \refG{G115}].
-
-The use of the frameworks as measurement instruments falls almost entirely in the most recent period (Table~\ref{tab:temporal_detail}). All nine academic DORA uses~\cite{P0470, P0003, P1261, P2008, P2013, P2014, P2017, P2026, P2043} and all twelve DevEx uses fall in 2023--2026, as do 16 of the 19 SPACE uses. The other three SPACE uses date from 2021 and 2022~\cite{P1259, P0061, P0549}, and no academic study used any of the three frameworks before 2020. With no use before 2020 and at most three uses per framework in 2020--2022, the counts are too small to test the differences between periods for each framework.
-
-\begin{table}[htbp]
-\centering
-\caption{Key indicators by period.}
-\label{tab:temporal_detail}
-\footnotesize
-\begin{tabular}{l c c c}
-\toprule
-\textbf{Indicator} & \textbf{Pre-pand.} & \textbf{Pandemic} & \textbf{Post-pand.} \\
- & \textbf{(2016--19)} & \textbf{(2020--22)} & \textbf{(2023--26)} \\
-\midrule
-\multicolumn{4}{l}{\textit{Source counts}} \\
-\quad Academic papers & 19 & 25 & 109 \\
-\quad Gray literature & 2  & 6  & 67 \\
-\midrule
-\multicolumn{4}{l}{\textit{Framework used as measurement instrument (academic)}} \\
-\quad DORA  & 0 & 0 & 9 \\
-\quad SPACE & 0 & 3 & 16 \\
-\quad DevEx & 0 & 0 & 12 \\
-\midrule
-\multicolumn{4}{l}{\textit{Emerging themes (academic)}} \\
-\quad Remote/hybrid studies & 0 & 8 & 12 \\
-\quad AI-related studies  & 0 & 1 & 60 \\
-\bottomrule
-\end{tabular}
-\end{table}
+The use of the frameworks as measurement instruments falls almost entirely in the most recent period. All nine academic DORA uses~\cite{P0470, P0003, P1261, P2008, P2013, P2014, P2017, P2026, P2043} and all twelve DevEx uses fall in 2023--2026, as do 16 of the 19 SPACE uses. The other three SPACE uses date from 2021 and 2022~\cite{P1259, P0061, P0549}, and no academic study used any of the three frameworks before 2020. With no use before 2020 and at most three uses per framework in 2020--2022, the counts are too small to test the differences between periods for each framework.
 
 Table~\ref{tab:cat_period} shows the share of academic sources reporting each of the nine metric categories and remote-specific measurement in each period. Three movements stand out. Activity metrics jumped from 5\% of studies in 2016--2019 to 52\% in 2020--2022, then settled at 40\% afterward, and collaboration rose from 26\% to 48\% and stayed at 49\%. Quality (16\%, 24\%, 58\%), delivery performance (5\%, 4\%, 23\%), and productivity and performance (58\%, 56\%, 69\%) rose only after 2022, and the DevEx dimensions appear in that period alone (11\%). Satisfaction and well-being (53\%, 64\%, 63\%), survey or perceptual measurement (79\%, 60\%, 78\%), and agile and process metrics (21--24\%) stayed within a narrow band throughout. Remote or COVID-specific measurement appears in 32\% of the pandemic-period studies and in 11\% of those from 2023--2026.
 
@@ -681,34 +649,11 @@ Remote/COVID-specific      & 0 (0)   & 8 (32)  & 12 (11) \\
 
 \subsubsection{Remote and Hybrid Work}
 
-Of the 153 academic papers, 20 explicitly address remote or hybrid work~\cite{P0001, P0027, P0181, P0184, P0473, P0551, P0611, P1259, P1280, P1503, P2021, P2056, P2068, P2083, P2086, P2112, P2115, P2125, P2130, P2132}, as do 3 of the 75 gray sources~[\refG{G006}, \refG{G007}, \refG{G076}]. None was published in 2016--2019, eight appeared in 2020--2022 (32.0\% of that period), and 12 in 2023--2026 (11.0\%). Given the small number of studies, the analysis below is qualitative and describes what these studies measured in each period (Table~\ref{tab:remote}).
+Of the 153 academic papers, 20 explicitly address remote or hybrid work~\cite{P0001, P0027, P0181, P0184, P0473, P0551, P0611, P1259, P1280, P1503, P2021, P2056, P2068, P2083, P2086, P2112, P2115, P2125, P2130, P2132}, as do 3 of the 75 gray sources~[\refG{G006}, \refG{G007}, \refG{G076}]. None was published in 2016--2019, eight appeared in 2020--2022 (32.0\% of that period), and 12 in 2023--2026 (11.0\%). Given the small number of studies, the analysis below is qualitative and describes what these studies measured in each period.
 
-\begin{table}[htbp]
-\centering
-\caption{Remote and hybrid work studies by period (academic sources).}
-\label{tab:remote}
-\footnotesize
-\begin{tabular}{l c c c}
-\toprule
- & \textbf{Pre-pand.} & \textbf{Pandemic} & \textbf{Post-pand.} \\
-\midrule
-Total academic papers  & 19 & 25 & 109 \\
-Remote/hybrid studies  & 0  & 8  & 12  \\
-Proportion             & 0.0\% & 32.0\% & 11.0\% \\
-\midrule
-\multicolumn{4}{l}{\textit{Metric categories in the remote/hybrid studies}} \\
-\quad Collaboration     & n/a & 7 & 10 \\
-\quad Well-being/Satisf. & n/a & 7 & 9 \\
-\quad Activity metrics  & n/a & 4 & 6 \\
-\quad Quality           & n/a & 1 & 6 \\
-\quad DevEx dimensions  & n/a & 0 & 2 \\
-\bottomrule
-\end{tabular}
-\end{table}
+Pandemic-era studies measured how the move to remote work affected productivity and collaboration~\cite{P1503, P2130, P2132}. At Microsoft, the number of pull requests opened per developer rose by 4.4\% over 2019, while 32--38\% of surveyed engineers reported being less productive~\cite{P2132}. In Brazilian teams, a survey of 58 team members measured self-rated productivity, motivation, and communication with co-workers, and 74.1\% rated their productivity as good or excellent~\cite{P2130}. At Baidu, working from home had positive or negative effects depending on the metric and the project~\cite{P0611}. Seven of the eight pandemic-era studies measured collaboration, and seven measured satisfaction or well-being, compared with four that measured activity.
 
-Pandemic-era studies measured how the move to remote work affected productivity and collaboration~\cite{P1503, P2130, P2132}. At Microsoft, the number of pull requests opened per developer rose by 4.4\% over 2019, while 32--38\% of surveyed engineers reported being less productive~\cite{P2132}. In Brazilian teams, a survey of 58 team members measured self-rated productivity, motivation, and communication with co-workers, and 74.1\% rated their productivity as good or excellent~\cite{P2130}. At Baidu, working from home had positive or negative effects depending on the metric and the project~\cite{P0611}. Seven of the eight pandemic-era studies measured collaboration, and seven measured satisfaction or well-being, compared with four that measured activity (Table~\ref{tab:remote}).
-
-In 2023--2026, remote and hybrid work appears in 12 studies, mostly as context for studies on developer experience, well-being, or productivity models~\cite{P0473, P2056, P2021}. At Google, a quarterly developer survey running since 2018 and logs from several tools made comparisons before, during, and after the pandemic possible~\cite{P2112, P2125}, and engineers on consistent hybrid schedules (one to three office days a week) had changelist throughput indistinguishable from those always in the office~\cite{P2086}. Two of these studies measured the DevEx dimensions~\cite{P0001, P1280}.
+In 2023--2026, remote and hybrid work appears in 12 studies, mostly as context for studies on developer experience, well-being, or productivity models~\cite{P0473, P2056, P2021}. At Google, a quarterly developer survey running since 2018 and logs from several tools made comparisons before, during, and after the pandemic possible~\cite{P2112, P2125}, and engineers on consistent hybrid schedules (one to three office days a week) had changelist throughput indistinguishable from those always in the office~\cite{P2086}. Of these, ten measured collaboration and nine measured satisfaction or well-being, and two measured the DevEx dimensions~\cite{P0001, P1280}.
 
 \begin{tcolorbox}[colback=gray!5, colframe=gray!50, title={\textbf{Summary of RQ2}}, fonttitle=\small]
 \footnotesize
@@ -719,43 +664,13 @@ The corpus splits into three periods, with 19 academic and 2 gray sources before
 \subsection{RQ3. AI impact}
 \label{sec:rq3}
 
-In this section, we present results that address RQ3: \textit{What is the reported impact of AI coding assistants and autonomous agents on developer productivity measurement, and what new approaches have emerged?}
-
-Of the 153 academic papers, 61 (39.9\%) discuss AI coding assistants, LLMs, or generative AI tools in relation to developer productivity~\cite{P0030, P0244, P0549, P0591, P1299, P1303, P1402, P1816, P2019, P2025, P2029, P2032}. Of these, 60 were published after 2022, which is 55.0\% of the 109 studies from 2023 to 2026. In six studies, AI is the measurement instrument rather than the tool under evaluation~\cite{P2014, P2026, P2044, P2056, P2060, P2108}. Among the 61 academic AI studies, 43 measure productivity or performance, 38 measure quality, 28 measure activity, 23 measure collaboration, and 10 measure delivery performance. In the gray literature, 41 of the 75 sources (54.7\%) discuss AI~[\refG{G009}, \refG{G014}, \refG{G015}, \refG{G016}, \refG{G036}, \refG{G058}, \refG{G067}, \refG{G071}, \refG{G091}, \refG{G092}, \refG{G099}, \refG{G109}]. Table~\ref{tab:ai_impact} summarizes the AI-related findings in academic and gray literature.
-
-\begin{table}[htbp]
-\centering
-\caption{AI impact on developer productivity measurement.}
-\label{tab:ai_impact}
-\footnotesize
-\begin{tabular}{l c c}
-\toprule
-\textbf{Indicator} & \textbf{Academic} & \textbf{Gray Lit.} \\
-\midrule
-Total sources                     & 153  & 75 \\
-AI-related studies                & 61 (39.9\%) & 41 (54.7\%) \\
-\midrule
-\multicolumn{3}{l}{\textit{AI tools discussed}} \\
-\quad GitHub Copilot                & \checkmark & \checkmark \\
-\quad ChatGPT / GPT models         & \checkmark & \checkmark \\
-\quad Google Gemini                 & \checkmark & \checkmark \\
-\quad Coding agents (e.g., Cursor, Claude Code) & \checkmark & \checkmark \\
-\quad In-house assistants           & \checkmark & \checkmark \\
-\quad Generic ``AI assistants''     & \checkmark & \checkmark \\
-\midrule
-\multicolumn{3}{l}{\textit{Reported impact direction}} \\
-\quad Positive                      & \checkmark & \checkmark \\
-\quad Mixed                         & \checkmark & \checkmark \\
-\quad Negative overall effect       & n/a        & \checkmark \\
-\bottomrule
-\end{tabular}
-\end{table}
+Of the 153 academic papers, 61 (39.9\%) discuss AI coding assistants, LLMs, or generative AI tools in relation to developer productivity~\cite{P0030, P0244, P0549, P0591, P1299, P1303, P1402, P1816, P2019, P2025, P2029, P2032}. Of these, 60 were published after 2022, which is 55.0\% of the 109 studies from 2023 to 2026. In six studies, AI is the measurement instrument rather than the tool under evaluation~\cite{P2014, P2026, P2044, P2056, P2060, P2108}. Among the 61 academic AI studies, 43 measure productivity or performance, 38 measure quality, 28 measure activity, 23 measure collaboration, and 10 measure delivery performance. In the gray literature, 41 of the 75 sources (54.7\%) discuss AI~[\refG{G009}, \refG{G014}, \refG{G015}, \refG{G016}, \refG{G036}, \refG{G058}, \refG{G067}, \refG{G071}, \refG{G091}, \refG{G092}, \refG{G099}, \refG{G109}].
 
 Studies that measure activity alone, such as code-generation speed, task completion time, or changelist throughput, report positive effects~\cite{P0549, P2029}~[\refG{G076}]. At Google, changelist throughput per user-month rose 17.5\% among adopters of AI-based IDE features~\cite{P2029}. Studies that also measure quality, rework, or review effort report smaller gains or costs. In 806 open-source projects that adopted Cursor, lines added rose 281\% and commits 55\% in the first month, but the gains faded after two months, while static-analysis warnings (+30\%) and code complexity (+41\%) persisted~\cite{P2032}.
 
 Studies measuring several dimensions, using SPACE, DevEx, or their own multidimensional instruments, report positive or mixed results~\cite{P0244, P1303, P1402, P2019, P2020, P2025}~[\refG{G078}, \refG{G092}]. They report more cognitive load from checking AI-generated code, fewer learning opportunities for junior developers~[\refG{G080}, \refG{G075}], and problems in calibrating trust~\cite{P1402}. Houck et al.~\cite{P2020} structured a survey of 530 developers by the SPACE dimensions. Most respondents agreed that AI improved their task throughput (88\%) and efficiency (82\%), fewer agreed for job satisfaction (62\%) and collaboration with teammates (48\%), and the authors note that the survey did not measure productivity outcomes directly. In a controlled study at SAP, either in-code suggestions or chat alone reduced task time and workload, but combining the two provided no additional benefit~\cite{P2019}. With autonomous agents, students solved more tasks correctly in half the time without being more satisfied~\cite{P2025}. Fortes et al.~\cite{P0244}, measuring the DevEx dimensions of 106 developers, found that flow state was associated with productivity among Copilot users ($\beta$\,=\,0.314) and negatively among Gemini users ($\beta$\,=\,$-$0.170), which the authors attribute to intrusive autocomplete.
 
-A gray literature randomized controlled trial by Becker et al.~[\refG{G067}] measured 16 experienced open-source maintainers across 246 real tasks in their own repositories. With AI, the tasks took 19\% \textit{longer}, although developers expected AI to cut completion time by 24\%, and experts in economics and machine learning forecast reductions of 39\% and 38\%. Of the 66 AI sources added by the update, 25 report positive effects on productivity, 30 mixed effects, and 11 no direction; none report an overall negative effect. The overall negative effects recorded in Table~\ref{tab:ai_impact} come from gray sources elsewhere in the corpus, such as the trial reported above~[\refG{G067}].
+A gray literature randomized controlled trial by Becker et al.~[\refG{G067}] measured 16 experienced open-source maintainers across 246 real tasks in their own repositories. With AI, the tasks took 19\% \textit{longer}, although developers expected AI to cut completion time by 24\%, and experts in economics and machine learning forecast reductions of 39\% and 38\%. Of the 66 AI sources added by the update, 25 report positive effects on productivity, 30 mixed effects, and 11 no direction; none report an overall negative effect. The overall negative effects in the corpus come from gray sources, such as the trial reported above~[\refG{G067}].
 
 Li et al.~\cite{P1303} found mixed outcomes across the five SPACE dimensions, and Hartto~[\refG{G078}] reported trade-offs in flow that depend on the dimension. The DORA 2024 industry survey estimated a 7.2\% drop in delivery stability for every 25\% increase in AI adoption, and the 2025 report sustains the finding~[\refG{G004}, \refG{G009}]. These estimates come from a non-peer-reviewed survey. Gray sources from 2026 report that commit activity rose by 40\% to 180\% across three generations of AI tools while pull requests and releases grew far less~[\refG{G109}], and that pull-request throughput rose only 10--15\% over more than a year~[\refG{G100}]. Sikand et al.~\cite{P1816} reviewed 50 studies on generative AI developer tools through the SPACE lens, and only one assessed communication and collaboration.
 
@@ -766,8 +681,6 @@ AI is discussed in 61 academic papers (39.9\%) and 41 gray sources (54.7\%), alm
 
 \subsection{RQ4. Challenges and context}
 \label{sec:rq4}
-
-In this section, we present the results that support the answer to RQ4: \textit{What are the main challenges and contextual factors that influence the effectiveness of developer productivity measurement?}
 
 Of the 153 academic papers, 85 (55.6\%) report measurement challenges. The share is highest in the most recent period, with 9 of 19 studies in 2016--2019 (47.4\%), 9 of 25 in 2020--2022 (36.0\%), and 67 of 109 in 2023--2026 (61.5\%).
 Table~\ref{tab:challenges} groups the reported challenges into seven themes. A study may report several themes, and each assignment rests on a quote from the source.
@@ -823,12 +736,9 @@ Measurement challenges appear in 85 academic studies (55.6\%), and their share i
 \section{Discussion}
 \label{sec:discussion}
 
-We organize this section according to three findings. First, the three frameworks are cited far more often than they are used as measurement instruments, and no academic study used one before 2020 (Sections~\ref{sec:rq1} and~\ref{sec:rq2}). Second, delivery metrics concentrate in the gray literature, while perceptual measures appear in academic studies, so the two communities measure different things (Section~\ref{sec:rq1}). Third, in studies of AI assistants, what a study measures alongside output is associated with whether it reports a gain or a trade-off (Section~\ref{sec:rq3}). We first compare these results with previous reviews, then draw lessons from them, and then state what they imply for practitioners and for researchers.
-
+We organize this section according to three findings. First, the three frameworks are cited far more often than they are used as measurement instruments, and no academic study used one before 2020 (Sections~\ref{sec:rq1} and~\ref{sec:rq2}). Second, delivery metrics concentrate in the gray literature, while perceptual measures appear in academic studies, so the two communities measure different things (Section~\ref{sec:rq1}). Third, in studies of AI assistants, what a study measures alongside output is associated with whether it reports a gain or a trade-off (Section~\ref{sec:rq3}).
 
 \subsection{Comparison with Previous Reviews}
-
-We compare our results with previous reviews of productivity metrics, considering their scope, the themes and metrics they report, and their key messages.
 
 Kupiainen et al.~\cite{kupiainen2015metrics} found that agile teams used metrics mainly to plan sprints and projects, track progress, improve quality, fix process problems, and motivate people. Most of their metrics are process and planning measures, which correspond to our agile and process category. In our corpus, this category appears in 21.6\% of the academic studies, and its share stayed between 21\% and 24\% across the three periods, while quality, delivery, and DevEx metrics grew after 2022 (Table~\ref{tab:cat_period}). The focus of measurement thus seems to have widened from the process to the developer and the delivery system, since process metrics kept a stable share.
 
